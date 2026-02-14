@@ -1,0 +1,1777 @@
+{
+	"1": [
+		[
+			{
+				"slopes": [
+					[
+						15,
+						239.0258,
+						0
+					],
+					[
+						0,
+						289.0732
+					],
+					[
+						40,
+						408.6002
+					],
+					[
+						60,
+						418.5006
+					],
+					[
+						50,
+						438.4059
+					],
+					[
+						35,
+						498.1414
+					],
+					[
+						30,
+						832.0577
+					],
+					[
+						20,
+						842.2167
+					],
+					[
+						0,
+						1016.6072
+					],
+					[
+						5,
+						1026.7842,
+						0
+					],
+					[
+						0,
+						1164.084
+					],
+					[
+						5,
+						1181.1359,
+						0
+					],
+					[
+						0,
+						1238.8368
+					],
+					[
+						95,
+						2604.1035
+					],
+					[
+						120,
+						2614.1582
+					],
+					[
+						100,
+						2694.1786
+					],
+					[
+						-10,
+						2714.4657
+					],
+					[
+						0,
+						2793.7802
+					],
+					[
+						-5,
+						2801.3891,
+						0
+					],
+					[
+						0,
+						2860.1331
+					],
+					[
+						95,
+						3963.767
+					],
+					[
+						120,
+						3973.8375
+					],
+					[
+						100,
+						4054.1194
+					],
+					[
+						-5,
+						4074.4969
+					],
+					[
+						0,
+						4104.6062
+					],
+					[
+						-5,
+						4164.6281,
+						3
+					],
+					[
+						0,
+						4204.0704
+					],
+					[
+						0,
+						4369.4578
+					],
+					[
+						0,
+						4419.7617
+					],
+					[
+						5,
+						4798.9742,
+						0
+					],
+					[
+						0,
+						4848.9125
+					],
+					[
+						5,
+						4857.9152
+					],
+					[
+						0,
+						4927.3589
+					],
+					[
+						30,
+						0
+					],
+					[
+						90,
+						5553.3759
+					],
+					[
+						0,
+						5712.6389
+					],
+					[
+						45,
+						5820.9598
+					],
+					[
+						0,
+						5969.0275
+					],
+					[
+						25,
+						0
+					],
+					[
+						0,
+						6138.2284
+					],
+					[
+						5,
+						6147.1086,
+						0
+					],
+					[
+						0,
+						6217.2334
+					],
+					[
+						5,
+						7292.0119,
+						1
+					],
+					[
+						0,
+						7340.3714
+					],
+					[
+						5,
+						7484.6027,
+						3
+					],
+					[
+						0,
+						7524.5552
+					]
+				],
+				"slopeLength": 49.9463,
+				"sensors": [
+					118.6167,
+					191.0197,
+					1317.6644,
+					1377.5352,
+					2989.7539,
+					3048.2536,
+					4521.3438,
+					5433.6928,
+					6295.8877,
+					6353.7834,
+					7169.584
+				],
+				"stations": [
+					{
+						"path": 1,
+						"pos": 212.6848,
+						"linkedSensor": 1,
+						"id": 106,
+						"name": "Улица Айзека Кляйнера"
+					},
+					{
+						"path": 1,
+						"pos": 1397.8828,
+						"linkedSensor": 3,
+						"id": 105,
+						"hasSwitches": true,
+						"name": "Куровская",
+						"isLast": false
+					},
+					{
+						"path": 1,
+						"pos": 3063.825,
+						"linkedSensor": 5,
+						"id": 104,
+						"hasSwitches": false,
+						"rightDoors": false,
+						"name": "Площадь восстания",
+						"isLast": false
+					},
+					{
+						"path": 1,
+						"pos": 4621.4772,
+						"linkedSensor": 7,
+						"id": 103,
+						"hasSwitches": false,
+						"rightDoors": true,
+						"name": "Индустриальная",
+						"isLast": false
+					},
+					{
+						"dist_last_start": 5728.5732,
+						"dist_last_end": 5888.0989,
+						"linkedSensor": 8,
+						"id": 102,
+						"path": 1,
+						"pos": 5532.363,
+						"hasSwitches": true,
+						"name_last": "Антиколлаб-ой",
+						"isInWrong": true,
+						"rightDoors": true,
+						"name": "Антиколлаб-ая",
+						"isLast": true
+					},
+					{
+						"path": 1,
+						"pos": 6372.5714,
+						"linkedSensor": 9,
+						"id": 101,
+						"hasSwitches": false,
+						"rightDoors": false,
+						"name": "Артемидовская",
+						"isLast": false
+					},
+					{
+						"dist_last_start": 7675.3835,
+						"dist_last_end": 8275.3835,
+						"linkedSensor": 11,
+						"id": 100,
+						"path": 1,
+						"pos": 7251.3835,
+						"hasSwitches": true,
+						"name_last": "Советской",
+						"isInWrong": false,
+						"rightDoors": true,
+						"name": "Советская",
+						"isLast": true
+					}
+				],
+				"signals": [
+					[
+						"AKG",
+						66.9725
+					],
+					[
+						"1604",
+						119.2011
+					],
+					[
+						"1602",
+						171.6951
+					],
+					[
+						"151",
+						224.1964
+					],
+					[
+						"1511",
+						276.6918
+					],
+					[
+						"1513",
+						329.1884
+					],
+					[
+						"1515",
+						429.6595
+					],
+					[
+						"1517",
+						529.8602
+					],
+					[
+						"1519",
+						634.8618
+					],
+					[
+						"1521",
+						725.7418
+					],
+					[
+						"1523",
+						820.4161
+					],
+					[
+						"1525",
+						912.6122
+					],
+					[
+						"1527",
+						1013.493
+					],
+					[
+						"KR1529",
+						1118.4913
+					],
+					[
+						"KR1531",
+						1223.4956
+					],
+					[
+						"1533",
+						1288.0979
+					],
+					[
+						"1535",
+						1352.5993
+					],
+					[
+						"141",
+						1405.0984
+					],
+					[
+						"1411",
+						1457.6019
+					],
+					[
+						"1413",
+						1510.109
+					],
+					[
+						"1415",
+						1577.2301
+					],
+					[
+						"1417",
+						1682.2492
+					],
+					[
+						"1419",
+						1787.251
+					],
+					[
+						"1421",
+						1892.2674
+					],
+					[
+						"1423",
+						1997.2774
+					],
+					[
+						"1425",
+						2102.2837
+					],
+					[
+						"1427",
+						2207.2787
+					],
+					[
+						"1429",
+						2312.2848
+					],
+					[
+						"1431",
+						2417.2879
+					],
+					[
+						"1433",
+						2522.2923
+					],
+					[
+						"1435",
+						2627.2938
+					],
+					[
+						"1437",
+						2692.294
+					],
+					[
+						"1439",
+						2757.2321
+					],
+					[
+						"1441",
+						2862.2355
+					],
+					[
+						"1443",
+						2914.7338
+					],
+					[
+						"1445",
+						2967.2358
+					],
+					[
+						"1447",
+						3019.7295
+					],
+					[
+						"91M",
+						3072.2302
+					],
+					[
+						"911",
+						3124.7377
+					],
+					[
+						"M1",
+						3132.6951
+					],
+					[
+						"913",
+						3177.2372
+					],
+					[
+						"915",
+						3232.7537
+					],
+					[
+						"917",
+						3337.753
+					],
+					[
+						"919",
+						3442.7619
+					],
+					[
+						"921",
+						3547.7648
+					],
+					[
+						"923",
+						3652.7579
+					],
+					[
+						"925",
+						3757.7712
+					],
+					[
+						"927",
+						3862.7657
+					],
+					[
+						"929",
+						3967.8094
+					],
+					[
+						"931",
+						4038.5591
+					],
+					[
+						"933",
+						4103.8535
+					],
+					[
+						"935",
+						4208.8538
+					],
+					[
+						"937",
+						4313.8251
+					],
+					[
+						"939",
+						4366.3047
+					],
+					[
+						"M3",
+						4403.021
+					],
+					[
+						"941",
+						4418.6279
+					],
+					[
+						"943",
+						4471.1281
+					],
+					[
+						"945",
+						4523.6248
+					],
+					[
+						"947",
+						4576.1244
+					],
+					[
+						"111",
+						4628.6185
+					],
+					[
+						"1111",
+						4681.1263
+					],
+					[
+						"1113",
+						4752.2473
+					],
+					[
+						"1115",
+						4857.2428
+					],
+					[
+						"1117",
+						4962.2891
+					],
+					[
+						"1119",
+						5067.2948
+					],
+					[
+						"1121",
+						5172.2858
+					],
+					[
+						"1123",
+						5277.2785
+					],
+					[
+						"1125",
+						5329.7822
+					],
+					[
+						"KB1127M",
+						5382.2861
+					],
+					[
+						"KB1R1",
+						5421.002
+					],
+					[
+						"1129",
+						5434.782
+					],
+					[
+						"1131",
+						5487.2782
+					],
+					[
+						"121",
+						5538.3295
+					],
+					[
+						"1211",
+						5579.3439
+					],
+					[
+						"1213",
+						5620.8746
+					],
+					[
+						"1215",
+						5703.8957
+					],
+					[
+						"1217",
+						5808.8961
+					],
+					[
+						"1219",
+						5892.0748
+					],
+					[
+						"1221",
+						5975.9033
+					],
+					[
+						"1223",
+						6076.644
+					],
+					[
+						"1225",
+						6170.3757
+					],
+					[
+						"1227",
+						6222.8916
+					],
+					[
+						"1229",
+						6275.3984
+					],
+					[
+						"1231",
+						6327.9021
+					],
+					[
+						"131",
+						6380.4121
+					],
+					[
+						"1311",
+						6432.9229
+					],
+					[
+						"1313",
+						6521.6868
+					],
+					[
+						"1315",
+						6626.7232
+					],
+					[
+						"1317",
+						6731.7175
+					],
+					[
+						"1319",
+						6836.745
+					],
+					[
+						"1321",
+						6941.7562
+					],
+					[
+						"1323",
+						7046.8272
+					],
+					[
+						"1325",
+						7099.4109
+					],
+					[
+						"1327",
+						7151.9125
+					],
+					[
+						"1329",
+						7204.4087
+					],
+					[
+						"201",
+						7256.907
+					],
+					[
+						"2001",
+						7309.4114
+					],
+					[
+						"2003",
+						7361.927
+					],
+					[
+						"2005",
+						7467.0689
+					],
+					[
+						"SV2005",
+						7519.6329
+					],
+					[
+						"2007",
+						7572.0576
+					],
+					[
+						"SV1S",
+						7624.5603
+					],
+					[
+						"SV1ST",
+						7690.8649
+					]
+				],
+				"slope": [
+					[
+						7474.6089,
+						2.2432
+					],
+					[
+						7484.6027,
+						2.6353
+					],
+					[
+						7494.5092,
+						3.3356
+					],
+					[
+						7504.3345,
+						4.8592
+					],
+					[
+						7514.4891,
+						3.1873
+					]
+				]
+			},
+			7720.3194
+		],
+		[
+			{
+				"slopes": [
+					[
+						-5,
+						278.1236,
+						0
+					],
+					[
+						0,
+						308.5341
+					],
+					[
+						30,
+						0
+					],
+					[
+						0,
+						367.7294
+					],
+					[
+						5,
+						377.1783,
+						0
+					],
+					[
+						0,
+						446.717
+					],
+					[
+						5,
+						1534.6247,
+						1
+					],
+					[
+						0,
+						1584.4248
+					],
+					[
+						-40,
+						1762.0653
+					],
+					[
+						10,
+						1891.9525
+					],
+					[
+						0,
+						1921.4883
+					],
+					[
+						-35,
+						2030.3938,
+						0
+					],
+					[
+						0,
+						2170.8843
+					],
+					[
+						5,
+						2790.7584,
+						1
+					],
+					[
+						0,
+						2841.0324
+					],
+					[
+						5,
+						2858.325,
+						0
+					],
+					[
+						0,
+						2916.8788
+					],
+					[
+						-5,
+						3380.4152,
+						3
+					],
+					[
+						0,
+						3420.28
+					],
+					[
+						-25,
+						0
+					],
+					[
+						-95,
+						3628.6393
+					],
+					[
+						-120,
+						3638.5112
+					],
+					[
+						-100,
+						3718.5301
+					],
+					[
+						15,
+						3738.8304
+					],
+					[
+						0,
+						3769.3008
+					],
+					[
+						30,
+						0
+					],
+					[
+						0,
+						4978.6711
+					],
+					[
+						-25,
+						4988.3926
+					],
+					[
+						-100,
+						5058.5321
+					],
+					[
+						15,
+						5068.2968
+					],
+					[
+						0,
+						5199.8447
+					],
+					[
+						25,
+						0
+					],
+					[
+						0,
+						6678.8847
+					],
+					[
+						20,
+						6688.3441
+					],
+					[
+						-35,
+						6787.0537
+					],
+					[
+						5,
+						7189.8325
+					],
+					[
+						0,
+						7309.0504
+					],
+					[
+						-35,
+						7328.606
+					],
+					[
+						-55,
+						7348.7689
+					],
+					[
+						0,
+						7489.196
+					]
+				],
+				"slopeCurrent": 799,
+				"signals": [
+					[
+						"SV2",
+						83.1383
+					],
+					[
+						"RC90",
+						188.3513
+					],
+					[
+						"RC88",
+						235.2913
+					],
+					[
+						"RC86",
+						340.2873
+					],
+					[
+						"RC84",
+						392.7829
+					],
+					[
+						"RC82",
+						445.281
+					],
+					[
+						"RC80",
+						497.7774
+					],
+					[
+						"132",
+						550.2818
+					],
+					[
+						"1302",
+						605.6129
+					],
+					[
+						"1304",
+						658.1184
+					],
+					[
+						"1306",
+						710.6142
+					],
+					[
+						"1308",
+						815.6089
+					],
+					[
+						"1310",
+						920.6216
+					],
+					[
+						"1312",
+						1025.6947
+					],
+					[
+						"1314",
+						1130.6969
+					],
+					[
+						"1316",
+						1235.6999
+					],
+					[
+						"1318",
+						1288.1795
+					],
+					[
+						"1320",
+						1340.6814
+					],
+					[
+						"1322",
+						1393.181
+					],
+					[
+						"122",
+						1445.6828
+					],
+					[
+						"1200A",
+						1498.1804
+					],
+					[
+						"1202",
+						1550.6871
+					],
+					[
+						"1204",
+						1612.7323
+					],
+					[
+						"1206",
+						1717.7127
+					],
+					[
+						"1210",
+						1827.7165
+					],
+					[
+						"1212",
+						1942.7066
+					],
+					[
+						"1214",
+						2047.7116
+					],
+					[
+						"1216",
+						2108.5989
+					],
+					[
+						"KB1218",
+						2169.6491
+					],
+					[
+						"1220",
+						2222.151
+					],
+					[
+						"KB112",
+						2274.6503
+					],
+					[
+						"1102R",
+						2297.1449
+					],
+					[
+						"1102R2",
+						2300.5396
+					],
+					[
+						"1102",
+						2327.1542
+					],
+					[
+						"1104",
+						2379.616
+					],
+					[
+						"1106",
+						2479.6998
+					],
+					[
+						"1108",
+						2579.67
+					],
+					[
+						"1110",
+						2684.6597
+					],
+					[
+						"1112",
+						2789.6728
+					],
+					[
+						"1114",
+						2880.1661
+					],
+					[
+						"1114D",
+						2948.3388
+					],
+					[
+						"1116",
+						3000.8431
+					],
+					[
+						"1118",
+						3053.3392
+					],
+					[
+						"1120",
+						3105.8443
+					],
+					[
+						"92M",
+						3158.34
+					],
+					[
+						"912",
+						3210.8443
+					],
+					[
+						"M4",
+						3247.9241
+					],
+					[
+						"914",
+						3263.3351
+					],
+					[
+						"916",
+						3368.4025
+					],
+					[
+						"918",
+						3473.4303
+					],
+					[
+						"920",
+						3578.3775
+					],
+					[
+						"922",
+						3746.5321
+					],
+					[
+						"924",
+						3851.5219
+					],
+					[
+						"926",
+						3956.5327
+					],
+					[
+						"928",
+						4061.553
+					],
+					[
+						"930",
+						4166.5501
+					],
+					[
+						"932",
+						4271.5644
+					],
+					[
+						"934",
+						4376.5769
+					],
+					[
+						"936",
+						4481.6012
+					],
+					[
+						"938",
+						4586.6241
+					],
+					[
+						"M2",
+						4624.3188
+					],
+					[
+						"940",
+						4639.1189
+					],
+					[
+						"942",
+						4691.6157
+					],
+					[
+						"944",
+						4744.1197
+					],
+					[
+						"142",
+						4796.6175
+					],
+					[
+						"1412",
+						4849.1197
+					],
+					[
+						"1414",
+						4901.6145
+					],
+					[
+						"1416",
+						4954.1402
+					],
+					[
+						"1418",
+						5059.1742
+					],
+					[
+						"1420",
+						5174.2356
+					],
+					[
+						"1422",
+						5279.1476
+					],
+					[
+						"1424",
+						5384.1655
+					],
+					[
+						"1426",
+						5489.1822
+					],
+					[
+						"1428",
+						5594.1917
+					],
+					[
+						"1430",
+						5699.1911
+					],
+					[
+						"1432",
+						5804.1885
+					],
+					[
+						"1434",
+						5909.1891
+					],
+					[
+						"1436",
+						6014.223
+					],
+					[
+						"1438",
+						6119.2282
+					],
+					[
+						"1440",
+						6224.1265
+					],
+					[
+						"1442",
+						6329.2576
+					],
+					[
+						"KR1444",
+						6381.7557
+					],
+					[
+						"KR1446",
+						6434.2567
+					],
+					[
+						"1448",
+						6486.767
+					],
+					[
+						"KR152",
+						6539.2647
+					],
+					[
+						"KR2R2",
+						6566.5156
+					],
+					[
+						"1512",
+						6591.6632
+					],
+					[
+						"1514",
+						6644.1667
+					],
+					[
+						"1516",
+						6749.165
+					],
+					[
+						"1518",
+						6854.1586
+					],
+					[
+						"1520",
+						6959.1541
+					],
+					[
+						"1522",
+						7082.0372
+					],
+					[
+						"1524",
+						7190.8014
+					],
+					[
+						"1526",
+						7288.0487
+					],
+					[
+						"1528",
+						7388.4895
+					],
+					[
+						"1530",
+						7516.6649
+					],
+					[
+						"1532",
+						7568.0838
+					],
+					[
+						"1534",
+						7619.6664
+					],
+					[
+						"AK1536",
+						7672.1678
+					],
+					[
+						"1538",
+						7726.6802
+					],
+					[
+						"AK162",
+						7779.185
+					],
+					[
+						"RCAK1",
+						7831.6966
+					]
+				],
+				"sensors": [
+					444.8741,
+					1363.2493,
+					1421.7763,
+					3061.9242,
+					4709.3731,
+					4767.8907,
+					6430.6995,
+					6510.0091,
+					7666.1804,
+					7737.3006
+				],
+				"slope": [
+					[
+						7957.0097,
+						2.2379
+					]
+				],
+				"slopeLength": 1.1451,
+				"stations": [
+					{
+						"path": 2,
+						"pos": 543.4641,
+						"linkedSensor": 1,
+						"id": 100,
+						"hasSwitches": false,
+						"rightDoors": true,
+						"name": "Советская",
+						"isLast": false
+					},
+					{
+						"path": 2,
+						"pos": 1440.3226,
+						"linkedSensor": 2,
+						"id": 101,
+						"hasSwitches": false,
+						"rightDoors": false,
+						"name": "Артемидовская",
+						"isLast": false
+					},
+					{
+						"dist_last_start": 2390.9269,
+						"dist_last_end": 2770.7409,
+						"name_last": "Антиколлаб-ой",
+						"path": 2,
+						"isInWrong": false,
+						"hasSwitches": true,
+						"id": 102,
+						"pos": 2265.824,
+						"rightDoors": true,
+						"name": "Антиколлаб-ая",
+						"isLast": true
+					},
+					{
+						"path": 2,
+						"pos": 3149.7607,
+						"linkedSensor": 4,
+						"id": 103,
+						"hasSwitches": false,
+						"rightDoors": true,
+						"name": "Индустриальная",
+						"isLast": false
+					},
+					{
+						"path": 2,
+						"pos": 4784.3819,
+						"linkedSensor": 5,
+						"id": 104,
+						"hasSwitches": false,
+						"rightDoors": false,
+						"name": "Площадь восстания",
+						"isLast": false
+					},
+					{
+						"linkedSensor": 7,
+						"name_last": "Куровской",
+						"path": 2,
+						"pos": 6529.4968,
+						"hasSwitches": true,
+						"isInWrong": true,
+						"id": 105,
+						"name": "Куровская",
+						"isLast": true
+					},
+					{
+						"dist_last_start": 7941.2871,
+						"dist_last_end": 7973.3729,
+						"linkedSensor": 9,
+						"id": 106,
+						"path": 2,
+						"pos": 7751.4991,
+						"hasSwitches": false,
+						"name_last": "улицы А. Кляйнера",
+						"isInWrong": false,
+						"name": "улица А. Кляйнера",
+						"isLast": true
+					}
+				]
+			},
+			7958.1547
+		]
+	],
+	"markers": [
+		{
+			"TrackPath": 2,
+			"TrackX": 17880.610258695848,
+			"PALastStation": true,
+			"PAStationID": 451,
+			"PAStationPath": 2,
+			"Angles": "{359.9986 0.0837 0}",
+			"PAStationName": "Волосы Брина",
+			"Pos": "[3972.9456 10703.2627 -873.2592]",
+			"PAType": 1
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 2,
+			"PADeadlockEnd": false,
+			"TrackX": 643.9827385175232,
+			"PALastStation": false,
+			"PAStationID": 462,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 2,
+			"Angles": "{359.9983 179.4629 0}",
+			"PAStationName": "Икарусь",
+			"Pos": "[-2118.1509 13403.7861 5242.6226]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 2,
+			"PADeadlockEnd": false,
+			"TrackX": 1579.5128910280498,
+			"PALastStation": false,
+			"PAStationID": 461,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 2,
+			"Angles": "{0.0046 0.0396 0}",
+			"PAStationName": "СМРК",
+			"Pos": "[-229.0247 -12967.2529 4941.4839]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 2,
+			"PADeadlockEnd": false,
+			"TrackX": 3455.5571284446696,
+			"PALastStation": false,
+			"PAStationID": 460,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 2,
+			"Angles": "{359.9977 0.0592 0}",
+			"PAStationName": "Флора",
+			"Pos": "[3891.717 -15800.791 4498.4844]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 2,
+			"PADeadlockEnd": false,
+			"TrackX": 5438.337993152172,
+			"PALastStation": false,
+			"PAStationID": 458,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 2,
+			"Angles": "{359.9966 359.9275 0}",
+			"PAStationName": "Аэропорт",
+			"Pos": "[934.4636 -15260.5049 3452.103]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 2,
+			"PADeadlockEnd": false,
+			"TrackX": 6989.496101499827,
+			"PALastStation": false,
+			"PAStationID": 457,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 2,
+			"Angles": "{0.0006 270.1422 0}",
+			"PAStationName": "Славная страна",
+			"Pos": "[-14657.5156 -979.9751 2848.4778]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 2,
+			"PADeadlockEnd": false,
+			"TrackX": 9032.480823284666,
+			"PALastStation": false,
+			"PAStationID": 456,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 2,
+			"Angles": "{0.0108 269.9936 0}",
+			"PAStationName": "Литиевая",
+			"Pos": "[-15152.752 1347.8328 2246.2441]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 2,
+			"PADeadlockEnd": false,
+			"TrackX": 10667.057741604469,
+			"PALastStation": false,
+			"PAStationID": 455,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 2,
+			"Angles": "{359.9951 179.9942 0}",
+			"PAStationName": "Анал",
+			"Pos": "[-1920.7378 14561.5664 1608.4431]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 2,
+			"PADeadlockEnd": false,
+			"TrackX": 12209.798584571368,
+			"PALastStation": false,
+			"PAStationID": 454,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 2,
+			"Angles": "{0.0007 90.0627 0}",
+			"PAStationName": "Парк",
+			"Pos": "[10789.8662 2059.728 970.4288]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 2,
+			"PADeadlockEnd": false,
+			"TrackX": 14502.77301031916,
+			"PALastStation": false,
+			"PAStationID": 453,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 2,
+			"Angles": "{359.9996 270.0202 0}",
+			"PAStationName": "Жосефскайп",
+			"Pos": "[14920.1475 2284.7227 331.4954]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 2,
+			"PADeadlockEnd": false,
+			"TrackX": 15935.05531832384,
+			"PALastStation": false,
+			"PAStationID": 452,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 2,
+			"Angles": "{359.9973 359.9083 0}",
+			"PAStationName": "Вхэ",
+			"Pos": "[-107.8668 14607.8242 -270.6391]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 1,
+			"PADeadlockEnd": false,
+			"TrackX": 17303.855366133717,
+			"PALastStation": false,
+			"PAStationID": 462,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 1,
+			"Angles": "{359.9966 359.9383 0}",
+			"PAStationName": "Икарусь",
+			"Pos": "[827.9299 12793.166 5242.7803]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 1,
+			"PADeadlockEnd": false,
+			"TrackX": 16382.31067691911,
+			"PALastStation": false,
+			"PAStationID": 461,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 1,
+			"Angles": "{359.9951 179.6496 0}",
+			"PAStationName": "СМРК",
+			"Pos": "[-3060.0808 -12165.4111 4941.5278]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 1,
+			"PADeadlockEnd": false,
+			"TrackX": 14576.181737681103,
+			"PALastStation": false,
+			"PAStationID": 460,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 1,
+			"Angles": "{359.9964 180.0544 0}",
+			"PAStationName": "Флора",
+			"Pos": "[1102.6862 -14685.0752 4498.5088]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 1,
+			"PADeadlockEnd": false,
+			"TrackX": 12767.838175910389,
+			"PALastStation": false,
+			"PAStationID": 458,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 1,
+			"Angles": "{359.9893 179.9983 0}",
+			"PAStationName": "Аэропорт",
+			"Pos": "[-2171.9441 -13764.9844 3452.1497]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 1,
+			"PADeadlockEnd": false,
+			"TrackX": 11325.987803026768,
+			"PALastStation": false,
+			"PAStationID": 457,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 1,
+			"Angles": "{359.8952 89.6626 0}",
+			"PAStationName": "Славная страна",
+			"Pos": "[-13463.75 1827.1033 2848.335]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 1,
+			"PADeadlockEnd": false,
+			"TrackX": 9413.58712437949,
+			"PALastStation": false,
+			"PAStationID": 456,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 1,
+			"Angles": "{0.0423 90.2121 0}",
+			"PAStationName": "Литиевая",
+			"Pos": "[-14382.9863 4439.564 2246.4941]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 1,
+			"PADeadlockEnd": false,
+			"TrackX": 7850.839780180823,
+			"PALastStation": false,
+			"PAStationID": 455,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 1,
+			"Angles": "{359.9986 359.955 0}",
+			"PAStationName": "Анал",
+			"Pos": "[857.9612 13541.5557 1608.4788]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 1,
+			"PADeadlockEnd": false,
+			"TrackX": 6425.574826878596,
+			"PALastStation": false,
+			"PAStationID": 454,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 1,
+			"Angles": "{0.0062 270.0172 0}",
+			"PAStationName": "Парк",
+			"Pos": "[10525.3711 -733.9092 970.579]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 1,
+			"PADeadlockEnd": false,
+			"TrackX": 4139.149823505034,
+			"PALastStation": false,
+			"PAStationID": 453,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 1,
+			"Angles": "{0.0175 90.0338 0}",
+			"PAStationName": "Жосефскайп",
+			"Pos": "[15185.4043 5122.2681 331.5802]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 1,
+			"PADeadlockEnd": false,
+			"TrackX": 2529.983559308131,
+			"PALastStation": false,
+			"PAStationID": 452,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 1,
+			"Angles": "{359.9995 180.0508 0}",
+			"PAStationName": "Вхэ",
+			"Pos": "[-2843.9709 15631.7969 -270.6074]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"TrackPath": 1,
+			"TrackX": 418.4882564220742,
+			"PALastStation": true,
+			"PAStationID": 451,
+			"PAStationPath": 1,
+			"Angles": "{0.0051 179.9838 0}",
+			"PAStationName": "Волосы Брина",
+			"Pos": "[1097.9358 12384.8945 -873.0629]",
+			"PAType": 1
+		}
+	]
+}
