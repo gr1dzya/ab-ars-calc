@@ -2,6 +2,8 @@ R50_MODE = false
 RAYS = false
 NEW_ERA = true
 
+local angle_mirror = Angle(0, 180, 0)
+
 function getSignalTrackRerailTrace(trackID, x, isBack)
     local downVector = Vector(0, 0, -300)
     local pos, dir = Metrostroi.GetTrackPosition(Metrostroi.Paths[trackID], x)
@@ -70,7 +72,7 @@ function getAutostopNewEraTrackPositionAngles(rerailTrace)
     end
 
     local position = rerailTrace.centerpos - Vector(0, 0, 9.5)
-    local angles = rerailTrace.right:GetNegated():Angle()
+    local angles = rerailTrace.right:Angle()
     return position, angles
 end
 
@@ -85,22 +87,61 @@ function getRayTrackPositionAngles(rerailTrace)
     return position, angles
 end
 
+function editParams(options)
+	local Params = {}
+	if options.Left then Params.FLeft = true end
+	if options.Letter then Params.Letter = options.Letter end 
+	if options.Street then 
+		Params.Street = true 
+		Params.Shit = true
+	end 
+	if options.OnPoleZ then Params.OnPoleZ = options.OnPoleZ end 
+	if options.Krons then Params.Krons = options.Krons end 
+	if options.Led then Params.Led = true end 
+	if options.ColorLens then Params.ColorLens = true end 
+	if options.DTM then Params.DTM = true end 
+	if options.Pole then Params.Pole = options.Pole end 
+	--if options.OW then Params.OW = true end 
+	if options.OW then 
+		Params.OW = true
+		Params.VectorOW = options.OW 
+	end 
+	if options.Kanava then Params.Kanava = true end 
+	Params.SpawnRC = true
+	Params.LetterA = true
+	if options.LetterK then Params.LetterK = true end 
+	if options.FrontArsName then Params.LetterL = options.FrontArsName else Params.LetterL = string.sub(options.Name, 3) end 
+	if options.Types then Params.Types = options.Types end
+	return Params
+end
+
 function placeSignal(position, angles, options)
     local ent = ents.Create("gmod_track_signal")
     ent:SetPos(position)
     ent:SetAngles(angles)
     ent:Spawn()
-    ent.SignalType = options.SignalType
+    ent.SignalType = options.SignalType ~= 0 and options.SignalType or 7
     ent.LensesStr = options.LensesStr
     ent.ARSOnly = options.ARSOnly
     ent.Name = options.Name
     ent.Left = options.Left
     ent.Double = options.Double
+	ent.TwoToSix = options.TwoToSix
+	ent.Approve0 = options.Approve0
     ent.DoubleL = options.DoubleL
+	ent.PassOcc = options.PassOcc
     ent.Left = options.Left
     ent.NonAutoStop = options.NonAutoStop
-    ent.RouteNumberSetup = options.RouteNumberSetup
-    ent.Routes = options.Routes
+	ent.RouteNumberSetup = options.RouteNumberSetup
+	ent.RouteNumber = options.RouteNumber
+	ent.Params = editParams(options)
+	ent.Routes = options.Routes --({
+    --    {
+    --        NextSignal = "*",
+    --        ARSCodes = options.ARSCodes,
+    --        Lights = options.Lights,
+    --    },
+    --})
 
     if R50_MODE then
         ent.IsolateSwitches = ent.IsolateSwitches or {}
@@ -148,7 +189,7 @@ end
 function placeAutostopNewEra(position, angles, options)
     local ent = ents.Create("gmod_track_autostop")
     ent:SetPos(position)
-    ent:SetAngles(angles)
+    ent:SetAngles(angles + angle_mirror)
     ent.SignalLink = options.SignalName or ""
     ent.MaxSpeed = 0
     ent.Type = 1
@@ -174,16 +215,18 @@ function placeRay(position, angles, options, trackID, trackX)
     ent:Spawn()
 end
 
-function importSignalData(fileName, trackID)
+function importSignalData(fileName, trackID, deleteAutostop)
     for k, v in pairs(ents.FindByClass("gmod_scb_autostop")) do
         local signal = v.Signal
         if signal and signal.TrackPosition and signal.TrackPosition.path.id == trackID then v:Remove() end
     end
 
-    for k, v in pairs(ents.FindByClass("gmod_track_autostop")) do
-        local signal = v.Sig
-        if signal and signal.TrackPosition and signal.TrackPosition.path.id == trackID then v:Remove() end
-    end
+    if deleteAutostop then
+		for k, v in pairs(ents.FindByClass("gmod_track_autostop")) do
+			local signal = v.Sig
+			if signal and signal.TrackPosition and signal.TrackPosition.path.id == trackID then v:Remove() end
+		end
+	end
 
     for k, v in pairs(ents.FindByClass("gmod_track_signal")) do
         if v.TrackPosition and v.TrackPosition.path.id == trackID then v:Remove() end
@@ -236,7 +279,14 @@ concommand.Add( "metrostroi_signal_import", function(ply, args)
     importSignalData(args[1], tonumber(args[2]))
 end )
 
-importSignalData("signals-crossline-redux-1.json", 6)
+-- importSignalData("signals-imagine-1.json", 9, true)
+-- importSignalData("signals-imagine-2.json", 1, true)
+-- importSignalData("signals-imagine-1_additional.json", 9, false)
+-- importSignalData("signals-imagine-2_additional.json", 1, false)
 -- importSignalData("signals-crossline-redux-2.json", 7)
 -- importSignalData("signals-crossline-redux-3.json", 4)
 -- importSignalData("signals-crossline-redux-4.json", 5)
+importSignalData("signals-surface-1.json", 7, true)
+importSignalData("signals-surface-2.json", 8, true)
+importSignalData("signals-surface-1_additional.json", 7, false)
+importSignalData("signals-surface-2_additional.json", 8, false)
