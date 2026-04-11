@@ -386,7 +386,7 @@ function trackPeregon() {
         const ARSOnly = true;
         const LensesStr = '';
         const SignalType = 0;
-        const Routes = [
+        let Routes = [
             {
                 NextSignal: '*',
                 ARSCodes: ARSCodes,
@@ -507,6 +507,9 @@ function trackPeregon() {
         if (el.wall) {
             result[joint].Invisible = true;
         }
+
+        const ARSCode = result[joint].Routes[0].ARSCodes
+        if (!result[joint].Name[0].match(/[0-9]/)) {result[joint].Routes[0].ARSCodes = ARSCode.replace('0', '2')} // замена частоты 0 на АО у ПА
 
         if (el.gmod) {
             if (el.gmod.Routes && el.gmod.Routes[0]) {
