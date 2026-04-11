@@ -127,7 +127,7 @@ lines['surface']['2'] = [
             { joint: '119б', name: '113', lenses: 'YRG', autostop: 1, noRY: true, guard: 60, y: '113', yg: 'NEXT_y', g: 'NEXT_g', gmod: { Pole: 1 } },
             { joint: '117', name: '111', lenses: 'YGR', autostop: 1, noRY: true, guard: 60, y: '111', g: 'NEXT_y', shift: 9 },
             { joint: '115', name: '109', lenses: 'YGR', autostop: 1, noRY: true, guard: 60, y: '109', g: 'NEXT_y', gmod: { Pole: 3 } },
-            { joint: '109', name: '107M', lenses: 'RYGR', autostop: 3, noRY: true, guard: 60, y: '107а' },
+            { joint: '109', name: '107M', lenses: 'RYGR', autostop: 3, noRY: true, guard: 35, y: '107а' },
             ],
         mks: [
             

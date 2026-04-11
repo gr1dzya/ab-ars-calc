@@ -89,7 +89,11 @@ end
 
 function editParams(options)
 	local Params = {}
-	if options.Left then Params.FLeft = true end
+	if options.Left then 
+		Params.FLeft = true 
+	else
+		Params.LetterA = true
+	end
 	if options.Letter then Params.Letter = options.Letter end 
 	if options.Street then 
 		Params.Street = true 
@@ -108,7 +112,6 @@ function editParams(options)
 	end 
 	if options.Kanava then Params.Kanava = true end 
 	Params.SpawnRC = true
-	Params.LetterA = true
 	if options.LetterK then Params.LetterK = true end 
 	if options.FrontArsName then Params.LetterL = options.FrontArsName else Params.LetterL = string.sub(options.Name, 3) end 
 	if options.Types then Params.Types = options.Types end
@@ -279,14 +282,14 @@ concommand.Add( "metrostroi_signal_import", function(ply, args)
     importSignalData(args[1], tonumber(args[2]))
 end )
 
--- importSignalData("signals-imagine-1.json", 9, true)
--- importSignalData("signals-imagine-2.json", 1, true)
--- importSignalData("signals-imagine-1_additional.json", 9, false)
--- importSignalData("signals-imagine-2_additional.json", 1, false)
+importSignalData("signals-imagine-1.json", 9, true)
+importSignalData("signals-imagine-2.json", 1, true)
+importSignalData("signals-imagine-1_additional.json", 9, false)
+importSignalData("signals-imagine-2_additional.json", 1, false)
 -- importSignalData("signals-crossline-redux-2.json", 7)
 -- importSignalData("signals-crossline-redux-3.json", 4)
 -- importSignalData("signals-crossline-redux-4.json", 5)
-importSignalData("signals-surface-1.json", 7, true)
-importSignalData("signals-surface-2.json", 8, true)
-importSignalData("signals-surface-1_additional.json", 7, false)
-importSignalData("signals-surface-2_additional.json", 8, false)
+-- importSignalData("signals-surface-1.json", 7, true)
+-- importSignalData("signals-surface-2.json", 8, true)
+-- importSignalData("signals-surface-1_additional.json", 7, false)
+-- importSignalData("signals-surface-2_additional.json", 8, false)
