@@ -49,7 +49,7 @@ lines['surface']['1'] = [
             { joint: '1872', name: 'КУ1814', lenses: 'YRGW', autostop: 1, noRY: true, guard: 60, y: '1880', g: 'NEXT_y', gmod: { Pole: 3, SignalType: 8, Street: true, Krons: "L", Routes: [{  }, { Switches: "KU2-,KU3-,KU1-,KU5-", NextSignal: "*", Lights: "2-2-2-2-2-13" }] } },
             { joint: '1874', name: 'КУ1816', lenses: 'BWYG-YRWM', autostop: 1, noRY: true, guard: 60, y: '72', g: '74', gmod: { Pole: 3, SignalType: 8, Street: true, Krons: "LL", Routes: [{ Switches: "KU2+,KU3+", RouteName: "KU2-2" }, { Switches: "KU2-,KU3-,KU1+,KU5+", NextSignal: "KUFIX3", Manual: true, RouteName: "KU2-1", Lights: "6-6-6-6-2" }, { Switches: "KU2-,KU3-,KU1-,KU5-", Manual: true, NextSignal: "KUFIX3", RouteName: "KU2-3", Lights: "6-6-6-6-35" }] } },
             { joint: '72', name: '74М', lenses: 'X', autostop: 3, noRY: true, guard: 35 },
-            { joint: '1868', name: 'ОП', gmod: { name: 'KUOP', Letter: "OP2", DTM: true, Pole: 3, SignalType: 8, Street: true, Krons: "L", Left: true }, lenses: 'R', row: 3.5, autostop: 3, shift: -25, back: true },
+            { joint: '1868', name: 'ОП', gmod: { name: 'KUOP2', Letter: "OP2", DTM: true, Pole: 3, SignalType: 8, Street: true, Krons: "L", Left: true }, lenses: 'R', row: 3.5, autostop: 3, shift: -25, back: true },
         ],
         mks: [
         ],
