@@ -1,5 +1,5 @@
-wagonCount = 8;
-trainHalf = wagonLength * wagonCount / 2;
+//wagonCount = 8;
+//trainHalf = wagonLength * wagonCount / 2;
 var lines = lines || {};
 lines['barikek'] = lines['barikek'] || {};
 lines['barikek']['1'] = [

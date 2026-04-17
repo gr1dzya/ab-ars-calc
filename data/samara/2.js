@@ -1,6 +1,6 @@
 var lines = lines || {};
-lines['surface'] = lines['surface'] || {};
-lines['surface']['2'] = [
+lines['samara'] = lines['samara'] || {};
+lines['samara']['2'] = [
     {
         name: 'Советская',
         arsDrawBreakpoint: 7,
@@ -14,14 +14,6 @@ lines['surface']['2'] = [
             845: 'T',
         },
         joints: [
-            { x: 0, name: '149', limit: 0 },
-            { x: 62, name: '147', limit: 0 },
-            { x: 62 + 75, name: '145', limit: 0 },
-            { x: 837 - 75 - 50 - 62.5 - 62.5 - 62.5, name: '145а', limit: 0 },
-            { x: 837 - 75 - 50 - 62.5 - 62.5, name: '145б', limit: 0 },
-            { x: 837 - 75 - 50 - 62.5, name: '145в', limit: 0 },
-            { x: 837 - 75 - 50, name: '143', limit: 0 },
-            { x: 837 - 75, name: '141', limit: 0 },
             { x: 837, name: '139', limit: 0 },
             { x: 837 + 62.5, name: '137', limit: 0 },
             { x: 837 + 62.5 + 62.5, name: '135', limit: 0 },
@@ -267,9 +259,9 @@ lines['surface']['2'] = [
             { joint: '1867', name: 'AK187', lenses: 'YRGW', autostop: 3, noRY: true, guard: 60, y: '1875', yg: 'NEXT_y', g: 'NEXT_g', shift: 20, gmod: { Pole: 3, SignalType: 8, Street: true } },
             { joint: '1869', name: 'АК189', lenses: 'YRGW', autostop: 1, noRY: true, guard: 60, y: '1877', yg: 'NEXT_y', g: 'NEXT_g', gmod: { Pole: 3, SignalType: 8, Street: true } },
             { joint: '1871', name: 'АК1811', lenses: 'YRGW', autostop: 1, noRY: true, guard: 60, y: '1879', yg: 'NEXT_y', g: 'NEXT_g', gmod: { Pole: 3, SignalType: 8, Street: true } },
-            { joint: '1873', name: 'АК1813', lenses: 'BYGRW', autostop: 1, noRY: true, guard: 60, y: '1911', g: 'NEXT_yg', gmod: { Pole: 3, SignalType: 8, Street: true, ColorLens: true } },
+            { joint: '1873', name: 'АК1813', lenses: 'BYGRW', autostop: 1, noRY: true, guard: 60, y: '1911', g: 'NEXT_yg', gmod: { Pole: 3, SignalType: 8, Street: true } },
             { joint: '1875', name: 'АК1815', lenses: 'YRGW', autostop: 1, noRY: true, guard: 60, yg: '1913', gmod: { Pole: 3, SignalType: 8, Street: true } },
-            { joint: '1911', name: 'АК191', lenses: 'BWZZ-RWM', autostop: 3, noRY: true, guard: 35, y: '1915', gmod: { Pole: 3, SignalType: 8, ColorLens: true, Street: true, Routes: [{Switches: "AK1+", RouteName: "AK1P", Lights: "5"}, {Switches: "AK1+", NextSignal: "*", RouteName: "AK1-1", Manual: true, EnRou: true, PRou: "1", Lights: "5-5-5-5-5-2"}, { Switches: "AK1-,AK3+,AK5+", NextSignal: "AKFIX3", Manual: true, EnRou: true, PRou: "3", RouteName: "AK1-3", Lights: "5-5-5-2" }, { Switches: "AK1-,AK3-,AK6-", NextSignal: "AKFIX3", Manual: true, EnRou: true, PRou: "3", RouteName: "AK1-4", Lights: "5-5-5-2" }] } },
+            { joint: '1911', name: 'АК191', lenses: 'BWYZ-RWM', autostop: 3, noRY: true, guard: 35, y: '1915', gmod: { Pole: 3, SignalType: 8, Street: true } },
             { joint: '1873', name: 'ОП', gmod: { name: 'AKOP', Letter: "OP", DTM: true, Pole: 3, SignalType: 8, Street: true, Left: true }, lenses: 'R', autostop: 3, back: true, left: true, shift: -25 },
         ],
         mks: [

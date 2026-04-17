@@ -105,7 +105,6 @@ function editParams(options)
 	if options.ColorLens then Params.ColorLens = true end 
 	if options.DTM then Params.DTM = true end 
 	if options.Pole then Params.Pole = options.Pole end 
-	--if options.OW then Params.OW = true end 
 	if options.OW then 
 		Params.OW = true
 		Params.VectorOW = options.OW 
@@ -123,7 +122,7 @@ function placeSignal(position, angles, options)
     ent:SetPos(position)
     ent:SetAngles(angles)
     ent:Spawn()
-    ent.SignalType = options.SignalType ~= 0 and options.SignalType or 7
+    ent.SignalType = options.SignalType ~= 0 and options.SignalType or 6
     ent.LensesStr = options.LensesStr
     ent.ARSOnly = options.ARSOnly
     ent.Name = options.Name
