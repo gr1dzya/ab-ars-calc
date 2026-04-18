@@ -30,7 +30,7 @@ lines['surface']['1'] = [
             { x: 0 + 50 + 50 + 25 + 50 + 25, name: '1820', limit: Gay, gmod: { TwoToSix: true } },
             { x: 0 + 50 + 50 + 25 + 50 + 25 + 50, name: '1822', limit: Gay, gmod: { TwoToSix: true } },
             { x: 0 + 50 + 50 + 25 + 50 + 25 + 50 + 137.5, name: '1824', limit: Gay, gmod: { TwoToSix: true } },
-            { x: 0 + 50 + 50 + 25 + 50 + 25 + 50 + 200 + 125, name: '1826', limit: Gay, gmod: { TwoToSix: true } },
+            { x: 0 + 50 + 50 + 25 + 50 + 25 + 50 + 137.5 + 187.5, name: '1826', limit: Gay, gmod: { TwoToSix: true } },
             { x: 1187.5 - 50 - 37.5 - 62.5 - 50 - 37.5 - 50 - 62.5 - 87.5 - 87.5, name: '1862', limit: Gay, gmod: { TwoToSix: true } },
             { x: 1187.5 - 50 - 37.5 - 62.5 - 50 - 37.5 - 50 - 62.5 - 87.5, name: '1864', limit: Gay, gmod: { TwoToSix: true } },
             { x: 1187.5 - 50 - 37.5 - 62.5 - 50 - 37.5 - 50 - 62.5, name: '1866', limit: Gay, gmod: { TwoToSix: true } },
@@ -192,7 +192,7 @@ lines['surface']['1'] = [
             { joint: '108в', name: 'А114', lenses: 'YRG-w', autostop: 1, noRY: true, guard: 60, y: '114', yg: 'NEXT_y', g: 'NEXT_g' },            
             { joint: '110', name: 'А116', lenses: 'YGR-w', autostop: 1, noRY: true, guard: 60, y: '116', g: 'NEXT_y' },            
             { joint: '112', name: 'А118', lenses: 'YGR-w', autostop: 1, noRY: true, guard: 60, y: '118', g: '120в', gmod: { Routes: [{RouteName: "A2-2", Switches: "KB2+"}] } },  
-            { joint: '114', name: 'Д', lenses: 'WY-RY-w', autostop: 3, guard: 35, back: true, row: -1, gmod: { name: 'AD', Letter: "D", OnPoleZ: 25, DTM: true, Pole: 3, LensesStr: "WY-RY-M-W", OnPoleZ: 10, Routes: [ { NextSignal: "x" }, {RouteName: "AD-1", NextSignal: "AFIX5", Manual: true, Switches: "KB1-,KB2-,KB3+", ARSCodes: "1", Lights: "3-3-3-3-3-24" }, { RouteName: "AD-3", NextSignal: "AFIX5", Manual: true, Switches: "KB1-,KB2-,KB3-", ARSCodes: "1", Lights: "3-3-3-3-3-1" }] } },   
+            { joint: '114', name: 'Д', lenses: 'WY-RY-w', autostop: 3, guard: 35, back: true, left: true, row: -1, gmod: { name: 'AD', Letter: "D", OnPoleZ: 25, DTM: true, Pole: 3, LensesStr: "WY-RY-M-W", Routes: [ { NextSignal: " ", EnRou: true, PRou: "1", Switches: "KB1-,KB2-,KB3+" }, { NextSignal: "", EnRou: true, PRou: "3", Switches: "KB1-,KB2-,KB3-", Lights: "3" }, {RouteName: "AD-1", NextSignal: "AFIX5", Manual: true, Switches: "KB1-,KB2-,KB3+", ARSCodes: "1", Lights: "3-3-3-3-3-24" }, { RouteName: "AD-3", NextSignal: "AFIX5", Manual: true, Switches: "KB1-,KB2-,KB3-", ARSCodes: "1", Lights: "3-3-3-3-3-1" }] } },   
         ],
         mks: [
         ],

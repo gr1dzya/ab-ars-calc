@@ -52,7 +52,12 @@ lines['imagine']['1'] = [
             { joint: '223', name: '227M', lenses: 'x', guard: 35, autostop: 3 },
         ],
         switches: [
-			{ x: 1145, name: '1', left: true, trailing: true },
+			{ x: 110 + 87.5, name: '3', left: true, trailing: false },
+			{ x: 110 + 87.5 + 39, name: '1', left: true, trailing: true },
+			{ x: 110 + 84 + 50 + 215 - 10.5 + 10, name: '5', left: false, trailing: false },
+			{ x: 110 + 1099 - 60.5 - 100 - 87.5 - 62.5 - 62.5 - 62.5 - 87.5 - 12.5 + 38, name: '7', left: false, trailing: true },
+			{ x: 110 + 1099 - 60.5 - 100 - 87.5 - 62.5 - 62.5 - 62.5 - 87.5 - 12.5 + 38, name: '9', left: true, trailing: false },
+			{ x: 110 + 1099 - 63, name: '1', left: true, trailing: true },
 		],
     },
     {

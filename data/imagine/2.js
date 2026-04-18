@@ -270,6 +270,12 @@ lines['imagine']['2'] = [
             //{ joint: '226', name: 'КС224', lenses: 'YBYRw', guard: 40, autostop: 3, g: '224', gmod: { SignalType: 8, OW: "[-3 0 0]" } },
             //{ joint: '218', name: 'КС222', lenses: 'x', guard: 35, autostop: 3 },
         ],
+        switches: [
+			{ x: 63.5, name: '2', left: true, trailing: false },
+			{ x: 483.5, name: '6', left: true, trailing: false },
+			{ x: 1009.5, name: '2', left: true, trailing: false },
+			{ x: 1048.5, name: '4', left: true, trailing: true },
+		],
         mks: [
         ],
     },

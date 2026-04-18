@@ -120,7 +120,7 @@ lines['surface']['2'] = [
             { x: 887 + 62.5 + 87.5 + 325, name: '105', limit: 0 },
         ],
         signals: [
-            { joint: '123', name: 'А121', lenses: 'WG-RY-w', autostop: 3, noRY: true, guard: 35, yg: '121а', gmod: { Pole: 3, LensesStr: "WY-RY-M-W", OnPoleZ: 10, Routes: [{RouteName: "A1-1", Switches: "KB1+,KB3+"}, { RouteName: "A1-3", NextSignal: "*", Manual: true, Switches: "KB1+,KB3-", ARSCodes: "1", Lights: "3-3-3-1" }, {RouteName: "A1P", Manual: true, Switches: "KB1+,KB3+"}] } },
+            { joint: '123', name: 'А121', lenses: 'WG-RY-w', autostop: 3, noRY: true, guard: 35, yg: '121а', gmod: { Pole: 3, LensesStr: "WY-RY-M-W", OnPoleZ: 10, Routes: [{RouteName: "A1-1", Switches: "KB1+,KB3+"}, { NextSignal: "", Switches: "KB1+,KB3-", EnRou: true, PRou: "3", ARSCodes: "1", Lights: "3" }, { RouteName: "A1-3", NextSignal: "*", Manual: true, Switches: "KB1+,KB3-", ARSCodes: "1", Lights: "3-3-3-1" }, {RouteName: "A1P", Manual: true, NextSignal: "MFIX2", Switches: "KB1+,KB3-", Lights: "3"}] } },
             { joint: '121а', name: '119', lenses: 'YGR', autostop: 3, noRY: true, guard: 60, y: '119б', g: 'NEXT_y', gmod: { Pole: 3 } },
             { joint: '119', name: '117', lenses: 'YRG', autostop: 3, noRY: true, guard: 60, y: '117', yg: 'NEXT_y', g: 'NEXT_yg', gmod: { Pole: 1 } },
             { joint: '119а', name: '115', lenses: 'YRG', autostop: 3, noRY: true, guard: 60, y: '115', yg: 'NEXT_y', g: 'NEXT_yg' },
