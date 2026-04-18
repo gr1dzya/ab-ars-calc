@@ -388,7 +388,6 @@ function trackPeregon() {
         const SignalType = 0;
         let Routes = [
             {
-                NextSignal: '*',
                 ARSCodes: ARSCodes,
             },
         ];
@@ -414,9 +413,10 @@ function trackPeregon() {
             if (!result[origName].Routes[0].ARSCodes) {
                 result[origName].Routes[0].ARSCodes = ARSCodes;
             }
-            if (!result[origName].Routes[0].NextSignal) {
-                result[origName].Routes[0].NextSignal = "*";
-            }
+        }
+        
+        if (!result[origName].Routes[0].NextSignal) {
+            result[origName].Routes[0].NextSignal = "*";
         }
 
         if (el.bothDirections || el.back) {
@@ -456,7 +456,6 @@ function trackPeregon() {
                 Back: true,
                 Routes: [
                     {
-                        NextSignal: '*',
                         Lights: redLense,
                     }
                 ],
@@ -474,6 +473,10 @@ function trackPeregon() {
                         result[joint + '_back'].Routes[0].Lights = '';
                     }
                 }
+            }
+
+            if (!result[joint + '_back'].Routes[0].NextSignal) {
+            result[joint + '_back'].Routes[0].NextSignal = "*";
             }
 
             if (el.autostop && el.shift && Math.abs(el.shift) > 0) {
