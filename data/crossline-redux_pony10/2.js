@@ -1,6 +1,6 @@
 var lines = lines || {};
-lines['crossline-redux'] = lines['crossline-redux'] || {};
-lines['crossline-redux']['2'] = [
+lines['crossline-redux_pony10'] = lines['crossline-redux_pony10'] || {};
+lines['crossline-redux_pony10']['2'] = [
     {
         name: 'Молодёжная',
         arsDrawBreakpoint: 7,
