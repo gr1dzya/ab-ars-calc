@@ -5,7 +5,7 @@ lines['crossline-redux']['2'] = [
         name: 'Молодёжная',
         arsDrawBreakpoint: 7,
         arsAllSteps: false,
-        tStay: 25,
+        tStay: 0,
         K: 1,
         interval: 44,
         modes: {
@@ -31,9 +31,9 @@ lines['crossline-redux']['2'] = [
             { x: 74.5 + 1765 - 75 - 75 - 75 - 75 - 75 - 137.5, name: '410', limit: 80, later: { 70: 1 } },
             { x: 74.5 + 1765 - 75 - 75 - 75 - 75 - 75, name: '410а', limit: 80 },
             { x: 74.5 + 1765 - 75 - 75 - 75 - 75, name: '408', limit: 80 },
-            { x: 74.5 + 1765 - 75 - 75 - 75, name: '406', limit: 70 },
-            { x: 74.5 + 1765 - 75 - 75, name: '404', limit: 70 },
-            { x: 74.5 + 1765 - 75, name: '402', limit: 60 },
+            { x: 74.5 + 1765 - 75 - 75 - 75, name: '406', limit: 80 }, // 70
+            { x: 74.5 + 1765 - 75 - 75, name: '404', limit: 80 }, // 70
+            { x: 74.5 + 1765 - 75, name: '402', limit: 80 }, // 60
             { x: 74.5 + 1765, name: '400', limit: 40 },
             { x: 74.5 + 1765 + 75, name: '398', limit: 0 },
             { x: 74.5 + 1765 + 75 + 87.5, name: '398а', limit: 0 },
@@ -45,12 +45,14 @@ lines['crossline-redux']['2'] = [
             { joint: '416б', name: '414', lenses: 'YY-GR', guard: 80, autostop: 3, y: '414', g: 'NEXT_y' },
             { joint: '414', name: '412', lenses: 'YY-GR', left: true, guard: 80, autostop: 3, y: '412', g: 'NEXT_y' },
             { joint: '412', name: '410', lenses: 'YY-GR', guard: 80, autostop: 3, y: '410а', g: 'NEXT_y' },
-            { joint: '410', name: '408', lenses: 'YY-GR', guard: 80, autostop: 3, y: '408', yg: 'NEXT_y', g: 'NEXT_yg', shift: 20 },
-            { joint: '410а', name: '406', lenses: 'YY-GR', left: true, guard: 70, autostop: 3, y: '406', yg: 'NEXT_y', g: 'NEXT_yg', shift: 20 },
-            { joint: '408', name: '404', lenses: 'YY-GR', guard: 70, autostop: 1, y: '404', yg: 'NEXT_y', g: 'NEXT_g', shift: 20 },
-            { joint: '406', name: '402', lenses: 'YY-GR', guard: 70, autostop: 1, y: '402', g: 'NEXT_yg', shift: 20 },
-            { joint: '404', name: '400', lenses: 'YY-GR', guard: 70, autostop: 1, yg: '400', shift: 20 },
-            { joint: '400', name: '398м', lenses: 'x', guard: 35, autostop: 3 },
+            //{ joint: '410', name: '408', lenses: 'YY-GR', guard: 80, autostop: 3, y: '408', yg: 'NEXT_y', g: 'NEXT_yg', shift: 20 },
+            //{ joint: '410а', name: '406', lenses: 'YY-GR', left: true, guard: 70, autostop: 3, y: '406', yg: 'NEXT_y', g: 'NEXT_yg', shift: 20 },
+            //{ joint: '408', name: '404', lenses: 'YY-GR', guard: 70, autostop: 1, y: '404', yg: 'NEXT_y', g: 'NEXT_g', shift: 20 },
+            //{ joint: '406', name: '402', lenses: 'YY-GR', guard: 70, autostop: 1, y: '402', g: 'NEXT_yg', shift: 20 },
+            //{ joint: '404', name: '400', lenses: 'YY-GR', guard: 70, autostop: 1, yg: '400', shift: 20 },
+            { joint: '410', name: '408', lenses: 'YY-GR', guard: 80, autostop: 1, y: '404', g: 'NEXT_g' },
+            { joint: '408', name: '404', lenses: 'ZY-GR', guard: 80, autostop: 1, g: '398' },
+            { joint: '400', name: '398м', lenses: 'x', guard: 70, autostop: 3, shift: 5 },
             { joint: '422', name: 'Д', gmod: { name: 'МЛ-Д', RouteNumberSetup: '234' }, lenses: 'BW-Rw', back: true },
         ],
     },
@@ -70,9 +72,9 @@ lines['crossline-redux']['2'] = [
         },
         joints: [
             { x: 74.5 - 75, name: '402', limit: 0 },
-            { x: 74.5, name: '400', limit: 60, later: { 60: 1 } },
-            { x: 74.5 + 75, name: '398', limit: 70, later: { 40: 1 } },
-            { x: 74.5 + 75 + 87.5, name: '398а', limit: 70 },
+            { x: 74.5, name: '400', limit: 80 }, // 60, later: { 60: 1 }
+            { x: 74.5 + 75, name: '398', limit: 80 }, // 70, later: { 40: 1 }
+            { x: 74.5 + 75 + 87.5, name: '398а', limit: 80 }, // 70
             { x: 1917 - 60.4 - 75 - 75 - 112.5 - 275 - 300 - 300 - 325, name: '398б', limit: 80 },
             { x: 1917 - 60.4 - 75 - 75 - 112.5 - 275 - 300 - 300, name: '396', limit: 80 },
             { x: 1917 - 60.4 - 75 - 75 - 112.5 - 275 - 300, name: '394', limit: 80 },
