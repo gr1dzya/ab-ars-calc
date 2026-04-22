@@ -255,7 +255,7 @@ lines['imagine']['2'] = [
             { x: -1.5 + 1125 - 62.5 - 37.5 - 125 - 87.5, name: '228а', limit: 60 },
             { x: -1.5 + 1125 - 62.5 - 37.5 - 125, name: '226', limit: 60 },
             //{ x: -1.5 + 1125 - 62.5 - 75, name: '226', limit: 60 },
-            { x: -1.5 + 1125 - 62.5, name: '226а', limit: 60, gmod: { RouteNumber: "2", DTM: true } },
+            { x: -1.5 + 1125 - 62.5, name: '226а', limit: 60, gmod: { RouteNumber: "2", DTM: true, Routes: [{}, { NextSignal: "*", Switches: "KS4-", ARSCodes: "4" }] } },
             //{ x: -1.5 + 1125, name: '222', limit: 40 },
             //{ x: -1.5 + 1125 + 62.5, name: '220', limit: 40 },
             { x: -1.5 + 1125 + 62.5 + 25 - 50, name: '218', limit: 60, gmod: {Kanava: true, PassOcc: true} },
