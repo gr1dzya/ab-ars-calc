@@ -1,0 +1,799 @@
+{
+  "314": {
+    "x": 244.42,
+    "Name": "314",
+    "LensesStr": "YY-GR",
+    "SignalType": 0,
+    "FrontArsName": "322",
+    "ColorLens": true,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "046",
+        "Lights": "4-42-24-24-13"
+      }
+    ]
+  },
+  "315": {
+    "x": 369.42,
+    "Name": "TC318",
+    "LensesStr": "",
+    "SignalType": 0,
+    "FrontArsName": "318",
+    "ARSOnly": true,
+    "Kanava": true,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "0446",
+        "Lights": ""
+      }
+    ]
+  },
+  "316": {
+    "x": 303,
+    "Name": "PID",
+    "ARSOnly": false,
+    "LensesStr": "BW-M-RW",
+    "SignalType": 0,
+    "Back": true,
+    "Krons": "LNL",
+    "DTM": false,
+    "OW": "[-7 0 0]",
+    "FrontArsName": "318",
+    "Letter": "D",
+    "Routes": [
+      {
+        "NextSignal": "",
+        "ARSCodes": "2",
+        "Lights": "3"
+      },
+      {
+        "NextSignal": "TC313",
+				"RouteName": "pid-1",
+        "ARSCodes": "22224",
+				"Manual": true,
+        "PRou": "1",
+        "EnRou": true,
+        "Lights": "3-3-3-3-2",
+        "Switches": "PR1-,PR4-,PR6+"
+      },
+      {
+        "NextSignal": "TC06",
+				"RouteName": "pid-2",
+        "ARSCodes": "2224",
+        "PRou": "2",
+				"Manual": true,
+        "EnRou": true,
+        "Lights": "3-3-3-2",
+        "Switches": "PR1+,PR2+,PR4+,PR6+"
+      }
+    ]
+  },
+  "318": {
+    "x": 2782.19,
+    "Name": "SVD",
+    "ARSOnly": false,
+    "LensesStr": "YBY-RW",
+    "SignalType": 0,
+    "Left": true,
+    "Back": true,
+    "DTM": true,
+    "OW": "[-7 0 -15]",
+    "Krons": "MM",
+    "Letter": "D",
+    "FrontArsName": "298",
+    "Routes": [
+      {
+        "NextSignal": "",
+        "ARSCodes": "2",
+        "Lights": "4"
+      },
+      {
+        "NextSignal": "TC295",
+				"RouteName": "SVD-1",
+        "ARSCodes": "2224",
+        "PRou": "1",
+        "EnRou": true,
+        "Manual": true,
+        "Lights": "4-4-4-13",
+        "Switches": "SV1-,SV2-"
+      }
+    ]
+  },
+  "319": {
+    "x": 2,
+    "Name": "TC02",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "Back": true,
+    "DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "",
+        "ARSCodes": "1",
+        "Lights": ""
+      }
+    ]
+  },
+  "320": {
+    "x": 60,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "TC04",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "Back": true,
+    "SignalType": 0
+  },
+  "321": {
+    "x": 157,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "TC06",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "Back": true,
+    "DTM": true,
+    "SignalType": 0
+  },
+  "315_back": {
+    "x": 158.21,
+    "Name": "PI4",
+    "ARSOnly": false,
+    "LensesStr": "BW-RW-23",
+    "SignalType": 0,
+    "Left": true,
+    "Krons": "LLN",
+    "Routes": [
+      {
+        "NextSignal": "",
+        "ARSCodes": "2",
+        "Lights": "3"
+      },
+      {
+        "NextSignal": "314",
+				"RouteName": "pi4-2",
+        "ARSCodes": "226",
+        "Lights": "3-3-2",
+        "PRou": "2",
+        "EnRou": true,
+        "Switches": "PR1+,PR2+,PR4+,PR6+"
+      },
+      {
+        "NextSignal": "KRAMPUS_GAY",
+				"RouteName": "pi4-3",
+        "ARSCodes": "2224",
+        "Lights": "3-3-3-2",
+        "PRou": "3",
+        "EnRou": true,
+        "Switches": "PR5-,PR3-,PR2-"
+      }
+    ]
+  },
+  "322": {
+    "x": 444,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "PRFIX1",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "Back": true,
+    "DTM": true,
+    "SignalType": 0
+  },
+  "323": {
+    "x": 11906.98,
+    "Name": "AS224",
+    "ARSOnly": false,
+    "LensesStr": "BYYYGRWM",
+    "SignalType": 8,
+    "Pole": 1,
+    "Krons": "L",
+    "OW": "[-5 0 -10]",
+    "FrontArsName": "226D",
+    "Routes": [
+      {
+        "NextSignal": "",
+        "ARSCodes": "2",
+        "Lights": "6"
+      },
+      {
+        "NextSignal": "KRAMPUS_GAY2",
+				"RouteName": "AS2-1",
+        "ARSCodes": "224",
+        "Lights": "6-6-6-24",
+        "PRou": "1",
+        "Switches": "KS1-,KS4-"
+      },
+      {
+        "NextSignal": "TC226",
+				"RouteName": "AS2-2",
+        "ARSCodes": "226",
+        "Lights": "6-6-6-35",
+        "PRou": "2",
+        "Switches": "KS1+,KS2+,KS4+"
+      }
+    ]
+  },
+  "324": {
+    "x": 12131,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "04"
+      }
+    ],
+    "Name": "KSFIX1",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "DTM": true,
+    "SignalType": 0
+  },
+  "325": {
+    "x": 12130.75,
+    "Name": "AS2",
+    "ARSOnly": false,
+    "LensesStr": "RW",
+		"NonAutoStop": true,
+    "SignalType": 8,
+    "Back": true,
+    "OW": "[-2 0 0]",
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "2",
+        "Lights": "1"
+      }
+    ]
+  },
+  "326": {
+    "x": 11980.78,
+    "Name": "AS4",
+    "ARSOnly": false,
+    "FrontArsName": "226A",
+    "LensesStr": "BYWYRWMM",
+    "SignalType": 8,
+    "Back": true,
+    "OW": "[-2 0 -25]",
+    "Routes": [
+      {
+        "NextSignal": "",
+        "ARSCodes": "2",
+        "Lights": "5"
+      },
+      {
+        "NextSignal": "TC207",
+				"RouteName": "AS4-1",
+        "ARSCodes": "22224",
+        "Lights": "5-5-5-5-24-2b4",
+        "PRou": "1",
+        "Switches": "KS1+,KS2-,KS3-,D4+"
+      },
+      {
+        "NextSignal": "TC207",
+				"RouteName": "AS4-V",
+        "ARSCodes": "22224",
+				"Manual": true,
+        "Lights": "5-5-5-5-3",
+        "PRou": "V",
+        "Switches": "KS2-,KS3-"
+      },
+      {
+        "NextSignal": "TC207",
+				"RouteName": "DEPOT3",
+        "ARSCodes": "22224",
+				"Manual": true,
+        "Lights": "5-5-5-5-2b4",
+        "EnRou": true,
+        "PRou": "1D",
+        "Switches": "KS2-,KS3-,D4-,D2-,D7+"
+      }
+    ]
+  },
+  "327": {
+    "x": 10907,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "04"
+      }
+    ],
+    "Name": "TC2",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "Back": true,
+    "DTM": true,
+    "SignalType": 0
+  },
+  "328": {
+    "x": 11426.4,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4",
+        "Switches": "KS6-"
+      },
+      {
+        "NextSignal": "1226",
+        "Repeater": true,
+        "Switches": "KS6+"
+      }
+    ],
+    "Name": "KSFIX2",
+    "ARSOnly": true,
+		"PassOcc": true,
+    "LensesStr": "",
+    "DTM": true,
+    "SignalType": 0
+  },
+  "329": {
+    "x": 11906.97,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "KSFIX4",
+    "ARSOnly": true,
+		"Back": true,
+    "LensesStr": "",
+    "DTM": true,
+    "SignalType": 0
+  },
+  "330": {
+    "x": 12242,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "KSFIX6",
+    "ARSOnly": true,
+    "FrontArsName": "2",
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "330a": {
+    "x": 12241,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "KSFIX6A",
+    "DTM": true,
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "332": {
+    "x": 2868,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "SVFIX2",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "Back": true,
+    "DTM": true,
+    "SignalType": 0
+  },
+  "333": {
+    "x": 1056,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "2",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "MK118",
+    "LensesStr": "RY",
+    "Back": true,
+    "DTM": true,
+    "OnPoleZ": 15,
+    "Pole": 1,
+		"NonAutoStop": true,
+    "SignalType": 0
+  },
+  "334": {
+    "x": 2657.2,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "2",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "MK116",
+    "LensesStr": "RY",
+    "Back": true,
+    "DTM": true,
+    "Left": true,
+    "OnPoleZ": 15,
+    "Pole": 1,
+		"NonAutoStop": true,
+    "SignalType": 0
+  },
+  "335": {
+    "x": 4143,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "2",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "MK114",
+    "LensesStr": "RY",
+    "Back": true,
+    "DTM": true,
+    "OnPoleZ": 15,
+    "Pole": 1,
+		"NonAutoStop": true,
+    "SignalType": 0
+  },
+  "336": {
+    "x": 5031,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "2",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "MK112",
+    "LensesStr": "RY",
+    "Back": true,
+    "DTM": true,
+    "OnPoleZ": 15,
+    "Pole": 1,
+		"NonAutoStop": true,
+    "SignalType": 0
+  },
+  "337": {
+    "x": 6900,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "2",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "MK110",
+    "LensesStr": "RY",
+    "Back": true,
+    "Left": true,
+    "DTM": true,
+    "OnPoleZ": 15,
+    "Pole": 1,
+		"NonAutoStop": true,
+    "SignalType": 0
+  },
+  "338": {
+    "x": 7810,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "2",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "MK108",
+    "LensesStr": "RY",
+    "Back": true,
+    "DTM": true,
+    "OnPoleZ": 15,
+    "Pole": 1,
+		"NonAutoStop": true,
+    "SignalType": 0
+  },
+  "339": {
+    "x": 8570,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "2",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "MK106",
+    "LensesStr": "RY",
+    "Back": true,
+    "DTM": true,
+    "Left": true,
+    "OnPoleZ": 15,
+    "Pole": 1,
+		"NonAutoStop": true,
+    "SignalType": 0
+  },
+  "340": {
+    "x": 9143,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "2",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "MK104",
+    "LensesStr": "RY",
+    "Back": true,
+    "DTM": true,
+    "OnPoleZ": 15,
+    "Pole": 1,
+		"NonAutoStop": true,
+    "SignalType": 0
+  },
+  "341": {
+    "x": 10663,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "2",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "MK102",
+    "LensesStr": "RY",
+    "Back": true,
+    "DTM": true,
+    "OnPoleZ": 15,
+    "Pole": 1,
+		"NonAutoStop": true,
+    "SignalType": 0
+  },
+  "342": {
+    "x": 10575,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Repeater": true,
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "M102",
+    "LensesStr": "R",
+    "DTM": true,
+		"PassOcc": true,
+    "Pole": 1,
+		"NonAutoStop": true,
+    "SignalType": 8
+  },
+  "343": {
+    "x": 8996,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Repeater": true,
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "M104",
+    "LensesStr": "R",
+    "DTM": true,
+		"PassOcc": true,
+    "Pole": 1,
+		"NonAutoStop": true,
+    "SignalType": 8
+  },
+  "344": {
+    "x": 8465,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Repeater": true,
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "M106",
+    "LensesStr": "R",
+    "DTM": true,
+		"PassOcc": true,
+    "Pole": 1,
+		"NonAutoStop": true,
+    "SignalType": 8
+  },
+  "345": {
+    "x": 7719,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Repeater": true,
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "M108",
+    "LensesStr": "R",
+    "DTM": true,
+		"PassOcc": true,
+    "Pole": 1,
+		"NonAutoStop": true,
+    "SignalType": 8
+  },
+  "346": {
+    "x": 6796,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Repeater": true,
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "M110",
+    "LensesStr": "R",
+    "DTM": true,
+    "Pole": 1,
+		"PassOcc": true,
+		"NonAutoStop": true,
+    "SignalType": 8
+  },
+  "347": {
+    "x": 4946,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Repeater": true,
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "M112",
+    "LensesStr": "R",
+    "DTM": true,
+    "Pole": 1,
+		"PassOcc": true,
+		"NonAutoStop": true,
+    "SignalType": 8
+  },
+  "348": {
+    "x": 4015,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Repeater": true,
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "M114",
+    "LensesStr": "R",
+    "DTM": true,
+    "Pole": 1,
+		"PassOcc": true,
+		"NonAutoStop": true,
+    "SignalType": 8
+  },
+  "349": {
+    "x": 2537,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Repeater": true,
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "M116",
+    "LensesStr": "R",
+    "DTM": true,
+    "Pole": 1,
+		"PassOcc": true,
+		"NonAutoStop": true,
+    "SignalType": 8
+  },
+  "351": {
+    "x": 927,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Repeater": true,
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "M118",
+    "LensesStr": "R",
+    "DTM": true,
+		"PassOcc": true,
+    "Pole": 1,
+		"NonAutoStop": true,
+    "SignalType": 8
+  },
+  "350": {
+    "x": 11434,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "",
+        "ARSCodes": "1"
+      },
+      {
+        "NextSignal": "KSFIX10",
+        "Lights": "2b-",
+        "ARSCodes": "1",
+        "Repeater": true,
+        "Switches": "KS6-"
+      }
+    ],
+    "Name": "ASDOP",
+    "LensesStr": "XR",
+    "Letter": "DOP",
+    "DTM": true,
+    "Left": true,
+    "Back": true,
+		"PassOcc": true,
+    "Pole": 1,
+		"NonAutoStop": true,
+    "SignalType": 7
+  },
+  "353": {
+    "x": 11040,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "",
+        "ARSCodes": "1"
+      },
+      {
+        "NextSignal": "MEFIX4",
+        "Lights": "2b-2b-2b-2b-",
+        "ARSCodes": "1",
+        "Repeater": true,
+        "Switches": "PM2-"
+      }
+    ],
+    "Name": "MEDOP",
+    "LensesStr": "XR",
+    "Letter": "DOP",
+    "DTM": true,
+    "Back": true,
+		"PassOcc": true,
+    "Pole": 1,
+		"NonAutoStop": true
+  },
+  "354": {
+    "x": 11369.5,
+    "Routes": [
+      {
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "KSFIX10",
+    "ARSOnly": true,
+    "LensesStr": "",
+		"PassOcc": true,
+    "DTM": true,
+    "SignalType": 0
+  },
+  "355": {
+    "x": 10982.5,
+    "Routes": [
+      {
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "MEFIX4",
+    "ARSOnly": true,
+    "LensesStr": "",
+		"PassOcc": true,
+    "DTM": true,
+    "SignalType": 0
+  }
+}
