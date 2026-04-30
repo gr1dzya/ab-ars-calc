@@ -227,7 +227,7 @@ lines['imagine']['2'] = [
            { joint: '242б', name: 'ME238', lenses: 'YYG-Rw', autostop: 1, guard: 70, y: '238', yg: 'NEXT_y', g: 'NEXT_g', shift: 4 },
            { joint: '240', name: 'ME236', lenses: 'BYY-GRw', autostop: 1, guard: 60, y: '236', g: 'NEXT_yg' },
            { joint: '238', name: 'ME234', lenses: 'YYG-Rw', autostop: 1, guard: 60, yg: '234' },
-           { joint: '238', name: 'ОП', gmod: { name: 'MEOP', Letter: "OP", DTM: true, Pole: 4, OnPoleZ: 25 }, lenses: 'ZR', left: true, autostop: 3, back: true },
+           { joint: '238', name: 'ОП', gmod: { name: 'MEOP', Letter: "OP", Krons: "M", DTM: true, Pole: 1 }, lenses: 'ZR', autostop: 3, back: true },
         ],
         mks: [
         ],
