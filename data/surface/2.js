@@ -208,8 +208,8 @@ lines['surface']['2'] = [
             { x: 1755.5 + 50, name: 'KUFIX4', limit: 0 },
             { x: 1755.5 + 50 + 20, name: '1811', limit: 0, gmod: { DTM: true } },
             { x: 1755.5 + 50 + 75, name: '1813', limit: 0 },
-            { x: 1755.5 + 50 + 75 + 50, name: '1815', limit: 0, gmod: { TwoToSix: true } },
-            { x: 1755.5 + 50 + 75 + 50 + 10, name: '1863', limit: 0, gmod: { TwoToSix: true } },
+            { x: 1755.5 + 50 + 75 + 10, name: '1815', limit: 0, gmod: { TwoToSix: true } },
+            { x: 1755.5 + 50 + 75 + 10 + 10, name: '1817', limit: 0, gmod: { TwoToSix: true } },
         ],
         signals: [
             { joint: '93', name: '91M', lenses: 'RY-GR', autostop: 3, noRY: true, guard: 35, y: '91а', g: 'NEXT_y', gmod: { Pole: 3, OnPoleZ: 15 } },
@@ -217,10 +217,10 @@ lines['surface']['2'] = [
             { joint: '91а', name: '89M', lenses: 'RY-GR', autostop: 1, noRY: true, left: true, guard: 90, y: '89а', g: 'NEXT_y', gmod: { OW: "[-6 0 0]", Street: true, SignalType: 6, Led: true, ColorLens: true } },
             { joint: '89', name: '87', lenses: 'YGR', autostop: 3, noRY: true, guard: 90, y: '87а', yg: 'NEXT_y', g: 'NEXT_yg', gmod: { OW: "[-6 0 10]", Street: true, SignalType: 6, Led: true } },  
             { joint: '89а', name: '85', lenses: 'YRG', autostop: 3, noRY: true, guard: 80, y: '85', yg: 'NEXT_y', g: 'NEXT_yg', shift: 18, gmod: { OW: "[-5 0 -10]", SignalType: 6, Led: true } },
-            { joint: '87', name: 'КУ83', lenses: 'YR-Gw', autostop: 3, noRY: true, guard: 70, y: '83', yg: 'NEXT_y', g: 'NEXT_g', gmod: { OW: "[-10 0 0]", SignalType: 6, Led: true, ColorLens: true } },
-            { joint: '87а', name: 'КУ81', lenses: 'YR-Gw', autostop: 1, noRY: true, guard: 60, y: '81', yg: 'NEXT_y', g: 'NEXT_g', gmod: { OW: "[-6 0 -10]", Street: true, SignalType: 6, Led: true } },
-            { joint: '85', name: 'КУ79', lenses: 'YG-Rw', autostop: 1, noRY: true, guard: 60, y: '79', g: 'NEXT_y', gmod: { OW: "[-4 0 -10]", Street: true, SignalType: 6, Led: true } },
-            { joint: '83', name: 'КУ77', lenses: 'YGR-w', autostop: 1, noRY: true, guard: 60, y: '1811', g: '1815', shift: 13, gmod: { Pole: 1, LetterK: true } }, // , Routes: [{ }, { Switches: "KU3-,KU1+,KU2-,KU5+", Lights: "3-3-3-3-3-1", NextSignal: "*" }]
+            { joint: '87', name: 'КЦ83', lenses: 'YR-Gw', autostop: 3, noRY: true, guard: 70, y: '83', yg: 'NEXT_y', g: 'NEXT_g', gmod: { OW: "[-10 0 0]", SignalType: 6, Led: true, ColorLens: true } },
+            { joint: '87а', name: 'КЦ81', lenses: 'YR-Gw', autostop: 1, noRY: true, guard: 60, y: '81', yg: 'NEXT_y', g: 'NEXT_g', gmod: { OW: "[-6 0 -10]", Street: true, SignalType: 6, Led: true } },
+            { joint: '85', name: 'КЦ79', lenses: 'YG-Rw', autostop: 1, noRY: true, guard: 60, y: '79', g: 'NEXT_y', gmod: { OW: "[-4 0 -10]", Street: true, SignalType: 6, Led: true } },
+            { joint: '83', name: 'КЦ77', lenses: 'YGR-w', autostop: 1, noRY: true, guard: 60, y: '1811', g: '1815', shift: 13, gmod: { Pole: 1, LetterK: true } }, // , Routes: [{ }, { Switches: "KU3-,KU1+,KU2-,KU5+", Lights: "3-3-3-3-3-1", NextSignal: "*" }]
             { joint: '83', name: 'ОП', gmod: { name: 'KUOP', Letter: "OP1", DTM: true, Pole: 1, Left: true }, lenses: 'XR', row: -1, autostop: 3, shift: -12.5, back: true },
         ],
         mks: [
@@ -263,7 +263,7 @@ lines['surface']['2'] = [
             { x: 1223 + 50 + 50 + 25 + 50 + 25, name: '1919', limit: 0, gmod: { TwoToSix: true } },
         ],
         signals: [
-            { joint: 'KUFIX4', name: 'КУ181', lenses: 'BWYR-GWM', autostop: 3, noRY: true, guard: 60, y: '1819', yg: 'NEXT_y', g: 'NEXT_yg', gmod: { Pole: 3, SignalType: 8, Street: true, Routes: [{ Switches: "KU3+,KU1+,KU2+,KU5+", RouteName: "KU1-1" }, { Switches: "KU3-,KU1+,KU2-,KU5+",  RouteName: "KU1-2", NextSignal: "*", Manual: true, EnRou: true, PRou: "1", Lights: "4-4-4-4-2"}, { Switches: "KU3+,KU1+,KU2+,KU5+",  RouteName: "KU1-G", NextSignal: "*", Manual: true, EnRou: true, PRou: "G", Lights: "4-4-4-4-2"}, { Switches: "KU3+,KU1+,KU2+,KU5+",  RouteName: "KU1P", NextSignal: "MFIX2", Manual: true, Lights: "4"} ] } },
+            { joint: 'KUFIX4', name: 'КЦ181', lenses: 'BWYR-GWM', autostop: 3, noRY: true, guard: 60, y: '1819', yg: 'NEXT_y', g: 'NEXT_yg', gmod: { Pole: 3, SignalType: 8, Street: true, ColorLens: true, Routes: [{ Switches: "KU3+,KU1+,KU2+,KU5+", RouteName: "KC1-1" }, { Switches: "KU3-,KU1+,KU2-,KU5+",  RouteName: "KC1-2", NextSignal: "*", Manual: true, EnRou: true, PRou: "1", Lights: "4-4-4-4-2"}, { Switches: "KU3+,KU1+,KU2+,KU5+",  RouteName: "KC1-G", NextSignal: "*", Manual: true, EnRou: true, PRou: "G", Lights: "4-4-4-4-2"}, { Switches: "KU3+,KU1+,KU2+,KU5+",  RouteName: "KC1P", NextSignal: "MFIX2", Manual: true, Lights: "4"} ] } },
             { joint: '1817', name: '183', lenses: 'YRG', autostop: 3, noRY: true, guard: 60, y: '1867', yg: 'NEXT_y', g: 'NEXT_yg', gmod: { Pole: 3, SignalType: 8, Street: true } },
             { joint: '1865', name: '185', lenses: 'YRG', autostop: 3, noRY: true, guard: 60, y: '1869', yg: 'NEXT_y', g: 'SECOND_yg', shift: 20, gmod: { Pole: 3, SignalType: 8, Street: true } },
             { joint: '1867', name: 'AK187', lenses: 'YRGW', autostop: 3, noRY: true, guard: 60, y: '1875', yg: 'NEXT_y', g: 'NEXT_g', shift: 20, gmod: { Pole: 3, SignalType: 8, Street: true } },
