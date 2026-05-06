@@ -100,6 +100,7 @@ function editParams(options)
 		Params.Shit = true
 	end 
 	if options.OnPoleZ then Params.OnPoleZ = options.OnPoleZ end 
+	if options.Types then Params.Types = options.Types end 
 	if options.Krons then Params.Krons = options.Krons end 
 	if options.Led then Params.Led = true end 
 	if options.ColorLens then Params.ColorLens = true end 
@@ -122,7 +123,7 @@ function placeSignal(position, angles, options)
     ent:SetPos(position)
     ent:SetAngles(angles)
     ent:Spawn()
-    ent.SignalType = options.SignalType ~= 0 and options.SignalType or 6
+    ent.SignalType = options.SignalType ~= 0 and options.SignalType or 8
     ent.LensesStr = options.LensesStr
     ent.ARSOnly = options.ARSOnly
     ent.Name = options.Name
@@ -292,4 +293,8 @@ end )
 -- importSignalData("signals-surface-2.json", 8, true)
 -- importSignalData("signals-surface-1_additional.json", 7, false)
 -- importSignalData("signals-surface-2_additional.json", 8, false)
-importSignalData("signals-samara-1.json", 1, true)
+-- importSignalData("signals-samara-1.json", 1, true)
+importSignalData("signals-sokolka-1.json", 1, true)
+importSignalData("signals-sokolka-2.json", 2, true)
+importSignalData("signals-sokolka-1_additional.json", 1, false)
+importSignalData("signals-sokolka-2_additional.json", 2, false)
