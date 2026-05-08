@@ -46,7 +46,7 @@ lines['imagine']['2'] = [
            { joint: '306б', name: '302', lenses: 'YY-GR', autostop: 3, guard: 65, y: '302', yg: 'NEXT_y', g: 'NEXT_yg', left: true, gmod: { OW: "[-5 0 0]"} },
            { joint: '304', name: 'СЯ300', lenses: 'YYG-Rw', autostop: 3, guard: 60, y: '300', yg: 'NEXT_y', g: 'NEXT_yg', left: true, gmod: { Krons: "MM", OW: "[-6 0 5]"} },
            { joint: '302', name: 'СЯ298', lenses: 'YYG-Rw', autostop: 1, guard: 60, y: '298', yg: 'NEXT_y', g: 'NEXT_g', gmod: { OW: "[-6 0 5]"} },
-           { joint: '300', name: 'СЯ296', lenses: 'BYY-GRw', autostop: 1, guard: 60, y: '296', g: 'NEXT_yg', left: true, gmod: { Led: true, ColorLens: true, OW: "[-6 0 5]", Routes: [{ Switches: "SV1+", RouteName: "SV2-2"}, { Switches: "SV1-", Lights: "5", ARSCodes: "2" }] } },
+           { joint: '300', name: 'СЯ296', lenses: 'BYY-GRw', autostop: 1, guard: 60, y: '296', g: 'NEXT_yg', left: true, gmod: { Led: true, ColorLens: true, OW: "[-6 0 5]", Routes: [{ Switches: "SV1+", RouteName: "SV2-2", Rezab1: "5-1" }, { Switches: "SV1-", Lights: "5", ARSCodes: "2" }] } },
            { joint: '298', name: '294', lenses: 'YY-GR', left: true, autostop: 1, guard: 60, yg: '294', gmod: { Krons: "MM" } },
      
         ],
@@ -226,7 +226,7 @@ lines['imagine']['2'] = [
            { joint: '242а', name: 'ME240', lenses: 'YYG-Rw', autostop: 3, guard: 80, y: '240', g: 'NEXT_y' },
            { joint: '242б', name: 'ME238', lenses: 'YYG-Rw', autostop: 1, guard: 70, y: '238', yg: 'NEXT_y', g: 'NEXT_g', shift: 4 },
            { joint: '240', name: 'ME236', lenses: 'BYY-GRw', autostop: 1, guard: 60, y: '236', g: 'NEXT_yg' },
-           { joint: '238', name: 'ME234', lenses: 'YYG-Rw', autostop: 1, guard: 60, yg: '234' },
+           { joint: '238', name: 'ME234', lenses: 'BYY-GRw', autostop: 1, guard: 60, yg: '234', gmod: {Routes: [{Rezab1: "5-1"}]} },
            { joint: '238', name: 'ОП', gmod: { name: 'MEOP', Letter: "OP", Krons: "M", DTM: true, Pole: 1 }, lenses: 'ZR', autostop: 3, back: true },
         ],
         mks: [
@@ -262,9 +262,9 @@ lines['imagine']['2'] = [
             { x: -1.5 + 1125 + 62.5 + 25 - 50 + 200, name: '216', limit: 0 },
         ],
         signals: [
-            { joint: '234', name: 'МЕ232', lenses: 'BWY-YGR-Zw-24-D3', guard: 35, autostop: 3, y: '232б', g: 'NEXT_y', gmod: { Kanava: true, ColorLens: true, Pole: 4, Krons: "SSSLN", OW: "[25 0 -10]", Routes: [{ Switches: "PM2+", RouteName: "ME2-2", PRou: "2", EnRou: true }, { NextSignal: "TC6", RouteName: "ME2-3", Switches: "PM5-,PM4-,PM2-", Lights: "6-6-6-2", ARSCodes: "2224", PRou: "3", EnRou: true, AutostopOffSignals: "ME1" }, { NextSignal: "TC6", RouteName: "ME2-4", Switches: "PM6+,PM4+,PM2-,PM5+", Lights: "6-6-6-2", ARSCodes: "2224", PRou: "4", EnRou: true, AutostopOffSignals: "ME2" }, { NextSignal: "*", RouteName: "ME2P", Manual: true, Switches: "PM2+", Lights: "6-64", ARSCodes: "24" }] } },
+            { joint: '234', name: 'МЕ232', lenses: 'BWY-YGR-Zw-24-D3', guard: 35, autostop: 3, y: '232б', g: 'NEXT_y', gmod: { Kanava: true, ColorLens: true, Pole: 4, Krons: "SSSLN", OW: "[25 0 -10]", Routes: [{ Switches: "PM2+", RouteName: "ME2-2", PRou: "2", EnRou: true, Rezab1: "6-1" }, { NextSignal: "TC6", RouteName: "ME2-3", Switches: "PM5-,PM4-,PM2-", Lights: "6-6-6-2", ARSCodes: "2224", PRou: "3", EnRou: true, AutostopOffSignals: "ME1" }, { NextSignal: "TC6", RouteName: "ME2-4", Switches: "PM6+,PM4+,PM2-,PM5+", Lights: "6-6-6-2", ARSCodes: "2224", PRou: "4", EnRou: true, AutostopOffSignals: "ME2" }, { NextSignal: "*", RouteName: "ME2P", Manual: true, Switches: "PM2+", Lights: "6-64", ARSCodes: "24" }] } },
             { joint: '232б', name: 'АС230', lenses: 'YYG-Rw', guard: 60, autostop: 3, y: '230', g: 'NEXT_y', gmod: { Pole: 1, Routes: [{ Switches: "KS6+" }, { NextSignal: "*", Switches: "KS6-", Lights: "4-24-1-1-31", ARSCodes: "046" }] }},
-            { joint: '230', name: 'АС228', lenses: 'BYY-1D-YYG-Rw', guard: 60, autostop: 3, y: '228а', g: 'NEXT_y', gmod: { OW: "[-4 0 0]", ColorLens: true, Krons: "LNLD", Routes: [{ Switches: "KS6+", RouteName: "ME2-2", Lights: "7-73-73-5-6" }, { NextSignal: "TCDEPOT", RouteName: "DEPOT2", Lights: "7-7-7-24-2b4", Switches: "KS6-,KS5-,D3-,D1+", ARSCodes: "2224" }] }},
+            { joint: '230', name: 'АС228', lenses: 'BYY-2D-YYG-Rw', guard: 60, autostop: 3, y: '228а', g: 'NEXT_y', gmod: { OW: "[-4 0 0]", ColorLens: true, Krons: "LNLD", Routes: [{ Switches: "KS6+", RouteName: "ME2-2", Lights: "7-73-73-5-6", Rezab1: "7-1" }, { NextSignal: "TCDEPOT", RouteName: "DEPOT2", Lights: "7-7-7-24-2b4", Switches: "KS6-,KS5-,D3-,D1+", ARSCodes: "2224" }] }},
             { joint: '228', name: '1226', lenses: 'YYGR', guard: 60, autostop: 3, y: '226', g: 'NEXT_g', gmod: { Pole: 3, Street: true, SignalType: 8, RouteNumber: "2", Routes: [{Lights: "4-42-42-1-1-1-3"}] } },
             { joint: '228а', name: 'АС226', lenses: 'YYGRw', guard: 60, autostop: 3, g: '218', gmod: { Street: true, Pole: 3, SignalType: 8, Krons: "L", Routes: [{Lights: "4-42-42-42-24-31-3"}] } },
             //{ joint: '226', name: 'КС224', lenses: 'YBYRw', guard: 40, autostop: 3, g: '224', gmod: { SignalType: 8, OW: "[-3 0 0]" } },
