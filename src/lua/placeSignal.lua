@@ -94,6 +94,7 @@ function editParams(options)
 	else
 		Params.LetterA = true
 	end
+	if options.FLeft then Params.FLeft = true end 
 	if options.Letter then Params.Letter = options.Letter end 
 	if options.Street then 
 		Params.Street = true 
