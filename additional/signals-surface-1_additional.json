@@ -79,32 +79,6 @@
     "DTM": true,
     "SignalType": 0
   },
-  "69": {
-    "x": 215.86,
-    "Routes": [
-      {
-        "NextSignal": "*",
-        "ARSCodes": "1"
-      }
-    ],
-    "Name": "TC1978",
-    "ARSOnly": true,
-    "LensesStr": "",
-    "SignalType": 8
-  },
-  "70": {
-    "x": 153.36,
-    "Routes": [
-      {
-        "NextSignal": "*",
-        "ARSCodes": "1"
-      }
-    ],
-    "Name": "TC1976",
-    "ARSOnly": true,
-    "LensesStr": "",
-    "SignalType": 8
-  },
   "71": {
     "x": 5435,
     "Routes": [

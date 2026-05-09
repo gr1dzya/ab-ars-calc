@@ -1,0 +1,86 @@
+{
+  "1": {
+    "x": 8606.13, 
+    "Routes": [
+      {
+        "Lights": "5",
+        "ARSCodes": "2",
+        "NextSignal": ""
+      },
+      {
+        "Lights": "5-5-5-1",
+        "ARSCodes": "2224",
+        "RouteName": "SPD-1",
+        "Manual": true,
+        "Switches": "SP_SW_1-,SP_SW_2-",
+        "NextSignal": "SPFIX3"
+      }
+    ],
+    "Name": "SPD",
+    "Letter": "DM",
+    "LensesStr": "BYW-YRW",
+    "SignalType": 0,
+    "DTM": true,
+    "Left": true,
+    "NonAutoStop": true,
+    "Back": true,
+    "TwoToSix": true,
+    "Approve0": true
+  },
+  "2": {
+    "x": 105,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "04"
+      }
+    ],
+    "Name": "TCSPPREOP",
+    "ARSOnly": true,
+    "FrontArsName": "1577",
+    "LensesStr": "",
+    "Kanava": true,
+    "Back": true,
+    "SignalType": 6
+  },
+  "3": {
+    "x": 8519,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "1"
+      },
+      {
+        "Switches": "SP_SW_1-,SP_SW_2-",
+        "NextSignal": "*",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "SPFIX2",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "DTM": true,
+    "Back": true,
+    "SignalType": 6
+  },
+  "4": {
+    "x": 163,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Repeater": true
+      },
+      {
+        "Switches": "UZ_SW_3-,UZ_SW_2-",
+        "ARSCodes": "0"
+      }
+    ],
+    "Name": "UZFIX2",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "TwoToSix": true,
+    "PassOcc": true,
+    "DTM": true,
+    "SignalType": 6
+  }
+}

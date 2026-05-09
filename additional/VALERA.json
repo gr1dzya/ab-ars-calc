@@ -1,0 +1,771 @@
+{
+  "64": {
+    "x": 280,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]
+  },
+  "84a1": {
+    "x": 380,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+    "SignalType": 0,
+	"PassOcc": true,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]
+  },
+  "84": {
+    "x": 480,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]
+  },
+  "85": {
+    "x": 580,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]
+  },
+  "86": {
+    "x": 680,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]
+  },
+  "87": {
+    "x": 780,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]
+  },
+  "88": {
+    "x": 880,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]
+  },
+  "89": {
+    "x": 980,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]
+  },
+  "90": {
+    "x": 1080,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]
+  },
+  "91": {
+    "x": 1180,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]
+  },
+  "92": {
+    "x": 1280,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]
+  },
+  "93": {
+    "x": 1380,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]
+  },
+  "94": {
+    "x": 1480,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]
+  },
+  "84a": {
+    "x": 1580,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]
+  },
+  "91115": {
+    "x": 1680,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "96": {
+    "x": 1780,
+    "Name": "GAY1",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "951": {
+    "x": 1880,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "952": {
+    "x": 1980,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "953": {
+    "x": 2080,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "954": {
+    "x":2180,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "955": {
+    "x": 2280,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "965": {
+    "x": 2380,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "957": {
+    "x": 2480,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "958": {
+    "x": 2580,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "959": {
+    "x": 2680,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "950": {
+    "x": 2780,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "9511": {
+    "x": 2880,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "9512": {
+    "x": 2980,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "9513": {
+    "x": 3080,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "9514": {
+    "x": 3180,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "9515": {
+    "x": 3280,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "9523": {
+    "x": 3380,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "9521": {
+    "x": 3480,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "9522": {
+    "x": 3580,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "195": {
+    "x": 3680,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "295": {
+    "x": 3780,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "395": {
+    "x": 3880,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "495": {
+    "x": 3980,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "595": {
+    "x": 1880,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "695": {
+    "x": 4080,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "795": {
+    "x": 4180,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "895": {
+    "x": 4280,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "995": {
+    "x": 4380,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "095": {
+    "x": 4480,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "1195": {
+    "x": 4580,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "1295": {
+    "x": 4680,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "1395": {
+    "x": 4780,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "1495": {
+    "x": 4880,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "1595": {
+    "x": 4980,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "1695": {
+    "x": 1880,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "1795": {
+    "x": 5080,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "1895": {
+    "x": 5180,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "2295": {
+    "x": 5280,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "2195": {
+    "x": 5380,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  },
+  "2395": {
+    "x": 5480,
+    "Name": "KRAMPUS_GEI",
+    "LensesStr": "BYBYB",
+	"DTM": true,
+	"PassOcc": true,
+    "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "12b34b5"
+      }
+    ]	
+  }
+}

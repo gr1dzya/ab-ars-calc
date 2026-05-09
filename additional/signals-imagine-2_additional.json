@@ -36,6 +36,7 @@
     "ARSOnly": false,
     "LensesStr": "BW-M-RW",
     "SignalType": 0,
+    "r": 0,
     "Back": true,
     "Krons": "LNL",
     "DTM": false,
@@ -71,32 +72,34 @@
     ]
   },
   "318": {
-    "x": 2782.19,
+    "x": 2785.133,
     "Name": "SVD",
     "ARSOnly": false,
-    "LensesStr": "YBY-RW",
+    "LensesStr": "XXY-BW-RY",
     "SignalType": 0,
-    "Left": true,
     "Back": true,
     "DTM": true,
-    "OW": "[-7 0 -15]",
-    "Krons": "MM",
-    "Letter": "D",
-    "FrontArsName": "298",
+    "r": 0,
+    "ColorLens": true,
+    "Letter": "DM",
+    "Krons": "SLN",
+    "Pole": 4,
+    "OnPoleZ": 25,
     "Routes": [
       {
         "NextSignal": "",
         "ARSCodes": "2",
-        "Lights": "4"
+        "Lights": "6"
       },
       {
         "NextSignal": "TC295",
 				"RouteName": "SVD-1",
         "ARSCodes": "2224",
-        "PRou": "1",
-        "EnRou": true,
         "Manual": true,
-        "Lights": "4-4-4-13",
+        "RezabCommand": "suka",
+        "RezabEnabled": false,
+        "Rezab1": "6-6-6-4",
+        "Lights": "6-6-6-37",
         "Switches": "SV1-,SV2-"
       }
     ]
@@ -153,6 +156,7 @@
     "LensesStr": "BW-RW-23",
     "SignalType": 0,
     "Left": true,
+    "r": 0,
     "Krons": "LLN",
     "Routes": [
       {
@@ -165,6 +169,9 @@
 				"RouteName": "pi4-2",
         "ARSCodes": "226",
         "Lights": "3-3-2",
+        "RezabCommand": "suka",
+        "RezabEnabled": false,
+        "Rezab1": "3-3-1",
         "PRou": "2",
         "EnRou": true,
         "Switches": "PR1+,PR2+,PR4+,PR6+"
@@ -202,6 +209,7 @@
     "LensesStr": "BYYYGRWM",
     "SignalType": 8,
     "Pole": 1,
+    "r": 0,
     "Krons": "L",
     "OW": "[-5 0 -10]",
     "FrontArsName": "226D",
@@ -216,6 +224,9 @@
 				"RouteName": "AS2-1",
         "ARSCodes": "224",
         "Lights": "6-6-6-24",
+        "RezabCommand": "suka",
+        "RezabEnabled": false,
+        "Rezab1": "6-6-6-1",
         "PRou": "1",
         "Switches": "KS1-,KS4-"
       },
@@ -224,6 +235,9 @@
 				"RouteName": "AS2-2",
         "ARSCodes": "226",
         "Lights": "6-6-6-35",
+        "RezabCommand": "suka",
+        "RezabEnabled": false,
+        "Rezab1": "6-6-6-1",
         "PRou": "2",
         "Switches": "KS1+,KS2+,KS4+"
       }
@@ -249,6 +263,7 @@
     "ARSOnly": false,
     "LensesStr": "RW",
 		"NonAutoStop": true,
+    "r": 0,
     "SignalType": 8,
     "Back": true,
     "OW": "[-2 0 0]",
@@ -262,11 +277,13 @@
   },
   "326": {
     "x": 11980.78,
-    "Name": "AS4",
+    "Name": "ASV",
+    "Letter": "V",
     "ARSOnly": false,
     "FrontArsName": "226A",
     "LensesStr": "BYWYRWMM",
     "SignalType": 8,
+    "r": 0,
     "Back": true,
     "OW": "[-2 0 -25]",
     "Routes": [
@@ -277,25 +294,35 @@
       },
       {
         "NextSignal": "TC207",
-				"RouteName": "AS4-1",
+				"RouteName": "ASV-1",
         "ARSCodes": "22224",
+        "RezabCommand": "suka",
+        "RezabEnabled": false,
+        "Rezab1": "5-5-5-5-1",
         "Lights": "5-5-5-5-24-2b4",
         "PRou": "1",
         "Switches": "KS1+,KS2-,KS3-,D4+"
       },
       {
         "NextSignal": "TC207",
-				"RouteName": "AS4-V",
+				"RouteName": "ASV-G",
         "ARSCodes": "22224",
+        "RezabCommand": "suka",
+        "RezabEnabled": false,
+        "Rezab1": "5-5-5-5-1",
 				"Manual": true,
         "Lights": "5-5-5-5-3",
-        "PRou": "V",
+				"EnRou": true,
+        "PRou": "G",
         "Switches": "KS2-,KS3-"
       },
       {
         "NextSignal": "TC207",
 				"RouteName": "DEPOT3",
         "ARSCodes": "22224",
+        "RezabCommand": "suka",
+        "RezabEnabled": false,
+        "Rezab1": "5-5-5-5-1",
 				"Manual": true,
         "Lights": "5-5-5-5-2b4",
         "EnRou": true,
@@ -398,6 +425,22 @@
     "DTM": true,
     "SignalType": 0
   },
+  "332a": {
+    "x": 2756.5,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4",
+        "Switches": "SV1-,SV2-"
+      }
+    ],
+    "Name": "SVFIX4",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "Back": true,
+    "DTM": true,
+    "SignalType": 0
+  },
   "333": {
     "x": 1056,
     "Routes": [
@@ -410,6 +453,7 @@
     "Name": "MK118",
     "LensesStr": "RY",
     "Back": true,
+    "r": 0,
     "DTM": true,
     "OnPoleZ": 15,
     "Pole": 1,
@@ -428,6 +472,7 @@
     "Name": "MK116",
     "LensesStr": "RY",
     "Back": true,
+    "r": 0,
     "DTM": true,
     "Left": true,
     "OnPoleZ": 15,
@@ -448,6 +493,7 @@
     "LensesStr": "RY",
     "Back": true,
     "DTM": true,
+    "r": 0,
     "OnPoleZ": 15,
     "Pole": 1,
 		"NonAutoStop": true,
@@ -466,6 +512,7 @@
     "LensesStr": "RY",
     "Back": true,
     "DTM": true,
+    "r": 0,
     "OnPoleZ": 15,
     "Pole": 1,
 		"NonAutoStop": true,
@@ -484,6 +531,7 @@
     "LensesStr": "RY",
     "Back": true,
     "Left": true,
+    "r": 0,
     "DTM": true,
     "OnPoleZ": 15,
     "Pole": 1,
@@ -502,6 +550,7 @@
     "Name": "MK108",
     "LensesStr": "RY",
     "Back": true,
+    "r": 0,
     "DTM": true,
     "OnPoleZ": 15,
     "Pole": 1,
@@ -522,6 +571,7 @@
     "Back": true,
     "DTM": true,
     "Left": true,
+    "r": 0,
     "OnPoleZ": 15,
     "Pole": 1,
 		"NonAutoStop": true,
@@ -540,6 +590,7 @@
     "LensesStr": "RY",
     "Back": true,
     "DTM": true,
+    "r": 0,
     "OnPoleZ": 15,
     "Pole": 1,
 		"NonAutoStop": true,
@@ -559,6 +610,7 @@
     "Back": true,
     "DTM": true,
     "OnPoleZ": 15,
+    "r": 0,
     "Pole": 1,
 		"NonAutoStop": true,
     "SignalType": 0
@@ -576,6 +628,7 @@
     "LensesStr": "R",
     "DTM": true,
 		"PassOcc": true,
+    "r": 0,
     "Pole": 1,
 		"NonAutoStop": true,
     "SignalType": 8
@@ -592,6 +645,7 @@
     "Name": "M104",
     "LensesStr": "R",
     "DTM": true,
+    "r": 0,
 		"PassOcc": true,
     "Pole": 1,
 		"NonAutoStop": true,
@@ -609,6 +663,7 @@
     "Name": "M106",
     "LensesStr": "R",
     "DTM": true,
+    "r": 0,
 		"PassOcc": true,
     "Pole": 1,
 		"NonAutoStop": true,
@@ -626,6 +681,7 @@
     "Name": "M108",
     "LensesStr": "R",
     "DTM": true,
+    "r": 0,
 		"PassOcc": true,
     "Pole": 1,
 		"NonAutoStop": true,
@@ -644,6 +700,7 @@
     "LensesStr": "R",
     "DTM": true,
     "Pole": 1,
+    "r": 0,
 		"PassOcc": true,
 		"NonAutoStop": true,
     "SignalType": 8
@@ -662,6 +719,7 @@
     "DTM": true,
     "Pole": 1,
 		"PassOcc": true,
+    "r": 0,
 		"NonAutoStop": true,
     "SignalType": 8
   },
@@ -678,6 +736,7 @@
     "LensesStr": "R",
     "DTM": true,
     "Pole": 1,
+    "r": 0,
 		"PassOcc": true,
 		"NonAutoStop": true,
     "SignalType": 8
@@ -694,6 +753,7 @@
     "Name": "M116",
     "LensesStr": "R",
     "DTM": true,
+    "r": 0,
     "Pole": 1,
 		"PassOcc": true,
 		"NonAutoStop": true,
@@ -710,6 +770,7 @@
     ],
     "Name": "M118",
     "LensesStr": "R",
+    "r": 0,
     "DTM": true,
 		"PassOcc": true,
     "Pole": 1,
@@ -735,6 +796,7 @@
     "Name": "ASDOP",
     "LensesStr": "XR",
     "Letter": "DOP",
+    "r": 0,
     "DTM": true,
     "Left": true,
     "Back": true,
@@ -764,6 +826,7 @@
     "Letter": "DOP",
     "DTM": true,
     "Back": true,
+    "r": 0,
 		"PassOcc": true,
     "Pole": 1,
 		"NonAutoStop": true

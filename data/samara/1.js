@@ -260,7 +260,7 @@ lines['samara']['1'] = [
             { x: 1853 - 50 - 62.5 - 62.5 - 112.5 - 112.5, name: '1169', limit: 80, gmod: { TwoToSix: true } },
             { x: 1853 - 50 - 62.5 - 62.5 - 112.5, name: '1171', limit: 70, gmod: { TwoToSix: true } },
             { x: 1853 - 50 - 62.5 - 62.5, name: '1173', limit: 60, gmod: { TwoToSix: true } }, //, Routes: [{ARSCodes: "22446"}]
-            { x: 1853 - 50 - 62.5, name: '1175', limit: 60, gmod: { TwoToSix: true } },
+            { x: 1853 - 50 - 62.5, name: '1175', limit: 60, later: { 40: -1 }, gmod: { TwoToSix: true } },
             { x: 1853 - 50, name: '1177', limit: 60, gmod: { TwoToSix: true } },
             { x: 1853, name: '1179', limit: 60, gmod: { TwoToSix: true, DTM: true  } },
             { x: 1853 + 62.5, name: '1011', limit: 40, gmod: { TwoToSix: true, Approve0: true } },
