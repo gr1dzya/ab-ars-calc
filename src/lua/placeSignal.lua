@@ -1,6 +1,7 @@
 R50_MODE = false
 RAYS = false
 NEW_ERA = true
+local pogashenie = false
 
 local angle_mirror = Angle(0, 180, 0)
 
@@ -123,7 +124,7 @@ function placeSignal(position, angles, options)
     ent:SetPos(position)
     ent:SetAngles(angles)
     ent:Spawn()
-    ent.SignalType = options.SignalType ~= 0 and options.SignalType or 6
+    ent.SignalType = options.SignalType ~= 0 and options.SignalType or 8
 	ent.RouteNumberSetup = options.RouteNumberSetup
     ent.NonAutoStop = options.NonAutoStop
 	ent.RouteNumber = options.RouteNumber
@@ -144,7 +145,7 @@ function placeSignal(position, angles, options)
     --        Lights = options.Lights,
     --    },
     --})
-    if options.r ~= 0 and not options.ARSOnly then
+    if options.r ~= 0 and not options.ARSOnly and pogashenie then
         ent.Routes[1].RezabCommand = "suka"
         ent.Routes[1].RezabEnabled = false
         if not ent.Routes[1].Rezab1 then ent.Routes[1].Rezab1 = "0" end
@@ -286,10 +287,10 @@ concommand.Add( "metrostroi_signal_import", function(ply, args)
     importSignalData(args[1], tonumber(args[2]))
 end )
 
-importSignalData("signals-imagine-1.json", 9, true)
-importSignalData("signals-imagine-2.json", 1, true)
-importSignalData("signals-imagine-1_additional.json", 9, false)
-importSignalData("signals-imagine-2_additional.json", 1, false)
+-- importSignalData("signals-imagine-1.json", 9, true)
+-- importSignalData("signals-imagine-2.json", 1, true)
+-- importSignalData("signals-imagine-1_additional.json", 9, false)
+-- importSignalData("signals-imagine-2_additional.json", 1, false)
 -- importSignalData("signals-crossline-redux-2.json", 7)
 -- importSignalData("signals-crossline-redux-3.json", 4)
 -- importSignalData("signals-crossline-redux-4.json", 5)
@@ -298,7 +299,7 @@ importSignalData("signals-imagine-2_additional.json", 1, false)
 -- importSignalData("signals-surface-1_additional.json", 7, false)
 -- importSignalData("signals-surface-2_additional.json", 8, false)
 -- importSignalData("signals-samara-1.json", 1, true)
--- importSignalData("signals-sokolka-1.json", 1, true)
--- importSignalData("signals-sokolka-2.json", 2, true)
--- importSignalData("signals-sokolka-1_additional.json", 1, false)
--- importSignalData("signals-sokolka-2_additional.json", 2, false)
+importSignalData("signals-sokolka-1.json", 1, true)
+importSignalData("signals-sokolka-2.json", 2, true)
+importSignalData("signals-sokolka-1_additional.json", 1, false)
+importSignalData("signals-sokolka-2_additional.json", 2, false)
