@@ -89,33 +89,32 @@ end
 
 function editParams(options)
 	local Params = {}
+	Params.SpawnRC = true
+	if options.Led then Params.Led = true end 
+	if options.DTM then Params.DTM = true end 
+	if options.FLeft then Params.FLeft = true end 
+	if options.Kanava then Params.Kanava = true end 
+	if options.LetterK then Params.LetterK = true end 
+	if options.ColorLens then Params.ColorLens = true end 
+	if options.FrontArsName then Params.LetterL = options.FrontArsName else Params.LetterL = string.sub(options.Name, 3) end 
+	if options.OnPoleZ then Params.OnPoleZ = options.OnPoleZ end 
+	if options.Letter then Params.Letter = options.Letter end 
+	if options.Types then Params.Types = options.Types end 
+	if options.Krons then Params.Krons = options.Krons end 
+	if options.Pole then Params.Pole = options.Pole end 
 	if options.Left then 
 		Params.FLeft = true 
 	else
 		Params.LetterA = true
 	end
-	if options.FLeft then Params.FLeft = true end 
-	if options.Letter then Params.Letter = options.Letter end 
 	if options.Street then 
 		Params.Street = true 
 		Params.Shit = true
 	end 
-	if options.OnPoleZ then Params.OnPoleZ = options.OnPoleZ end 
-	if options.Types then Params.Types = options.Types end 
-	if options.Krons then Params.Krons = options.Krons end 
-	if options.Led then Params.Led = true end 
-	if options.ColorLens then Params.ColorLens = true end 
-	if options.DTM then Params.DTM = true end 
-	if options.Pole then Params.Pole = options.Pole end 
 	if options.OW then 
 		Params.OW = true
 		Params.VectorOW = options.OW 
 	end 
-	if options.Kanava then Params.Kanava = true end 
-	Params.SpawnRC = true
-	if options.LetterK then Params.LetterK = true end 
-	if options.FrontArsName then Params.LetterL = options.FrontArsName else Params.LetterL = string.sub(options.Name, 3) end 
-	if options.Types then Params.Types = options.Types end
 	return Params
 end
 
@@ -125,20 +124,19 @@ function placeSignal(position, angles, options)
     ent:SetAngles(angles)
     ent:Spawn()
     ent.SignalType = options.SignalType ~= 0 and options.SignalType or 6
+	ent.RouteNumberSetup = options.RouteNumberSetup
+    ent.NonAutoStop = options.NonAutoStop
+	ent.RouteNumber = options.RouteNumber
     ent.LensesStr = options.LensesStr
-    ent.ARSOnly = options.ARSOnly
-    ent.Name = options.Name
-    ent.Left = options.Left
-    ent.Double = options.Double
+	ent.Params = editParams(options)
 	ent.TwoToSix = options.TwoToSix
 	ent.Approve0 = options.Approve0
+    ent.ARSOnly = options.ARSOnly
     ent.DoubleL = options.DoubleL
 	ent.PassOcc = options.PassOcc
+    ent.Double = options.Double
+    ent.Name = options.Name
     ent.Left = options.Left
-    ent.NonAutoStop = options.NonAutoStop
-	ent.RouteNumberSetup = options.RouteNumberSetup
-	ent.RouteNumber = options.RouteNumber
-	ent.Params = editParams(options)
 	ent.Routes = options.Routes --({
     --    {
     --        NextSignal = "*",
@@ -146,11 +144,11 @@ function placeSignal(position, angles, options)
     --        Lights = options.Lights,
     --    },
     --})
-    if options.r ~= 0 then
+    if options.r ~= 0 and not options.ARSOnly then
         ent.Routes[1].RezabCommand = "suka"
         ent.Routes[1].RezabEnabled = false
+        if not ent.Routes[1].Rezab1 then ent.Routes[1].Rezab1 = "0" end
     end
-    if not ent.Routes[1].Rezab1 then ent.Routes[1].Rezab1 = "0" end
 
     if R50_MODE then
         ent.IsolateSwitches = ent.IsolateSwitches or {}
