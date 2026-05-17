@@ -1,6 +1,6 @@
 local paths = Metrostroi.GetTrackPaths()
 if not paths then return end
-local trackPath = paths[14]
+local trackPath = paths[1]
 local function getProfile(path)
     local step = 11
     ------------------------------------------------------------------

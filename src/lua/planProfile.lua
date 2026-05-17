@@ -165,7 +165,7 @@ end
 
 local paths = Metrostroi.GetTrackPaths()
 if not paths then return end
-local trackNum = 4
+local trackNum = 1
 local trackPath = paths[trackNum]
 local plan = getPlan(trackPath)
 local profile = getProfile(trackPath)
