@@ -28,8 +28,8 @@ lines['sokolka']['2'] = [
             { x: 1417.5 - 50 - 50 - 62.5 - 75 - 100 - 100 - 137.5, name: '1964', limit: 70, gmod: { TwoToSix: true } },
             { x: 1417.5 - 50 - 50 - 62.5 - 75 - 100 - 100, name: '1966', limit: 70, gmod: { TwoToSix: true } },
             { x: 1417.5 - 50 - 50 - 62.5 - 75 - 100, name: '1968', limit: 70, gmod: { TwoToSix: true } },
-            { x: 1417.5 - 50 - 50 - 62.5 - 75, name: '1970', limit: 70, gmod: { TwoToSix: true } },
-            { x: 1417.5 - 50 - 50 - 62.5, name: '1972', limit: 70, later:{60:-1}, gmod: { TwoToSix: true } },
+            { x: 1417.5 - 50 - 50 - 75 - 75, name: '1970', limit: 70, later:{60:-1}, gmod: { TwoToSix: true } },
+            { x: 1417.5 - 50 - 50 - 75, name: '1972', limit: 70, later:{60:-1}, gmod: { TwoToSix: true } },
             { x: 1417.5 - 50 - 50, name: '1974', limit: 70, later:{60:-1}, gmod: { TwoToSix: true } },
             { x: 1417.5 - 50, name: '1976', limit: 60, gmod: { TwoToSix: true, Kanava: true } },
             { x: 1417.5, name: '1978', limit: 60, gmod: { TwoToSix: true, Kanava: true } },
@@ -40,7 +40,14 @@ lines['sokolka']['2'] = [
             { x: 1417.5 + 37.5 + 62.5 + 62.5 + 62.5 + 75, name: '1818', limit: 0, gmod: { TwoToSix: true } }
         ],
         signals: [
-			{ joint: '1912', name: '192М', lenses: 'YGR', gmod: { Routes: [{Lights: " "}], SignalType: 6, OW: "[2 0 0]", FLeft: true } },
+			{ joint: '1912', name: '192М', lenses: 'YGR', 
+                gmod: { 
+                    Routes: [{Lights: " "}], 
+                    SignalType: 6, 
+                    OW: "[2 0 0]", 
+                    FLeft: true 
+                } 
+            },
         ],
     },
     {
@@ -56,11 +63,10 @@ lines['sokolka']['2'] = [
             2504: 'T'
         },
         joints: [
-            { x: 10.5, name: '1978', limit: 0, gmod: { TwoToSix: true, Kanava: true } },
             { x: 10.5 + 37.5, name: '1980', limit: 0, gmod: { TwoToSix: true, Kanava: true } },
             { x: 10.5 + 37.5 + 62.5, name: '1812', limit: 40, gmod: { TwoToSix: true, Approve0: true } },
             { x: 10.5 + 37.5 + 62.5 + 62.5, name: '1814', limit: 60, gmod: { TwoToSix: true } },
-            { x: 10.5 + 37.5 + 62.5 + 62.5 + 62.5, name: '1816', limit: 70, gmod: { TwoToSix: true } },
+            { x: 10.5 + 37.5 + 62.5 + 62.5 + 62.5, name: '1816', limit: 60, gmod: { TwoToSix: true } },
             { x: 10.5 + 37.5 + 62.5 + 62.5 + 62.5 + 87.5, name: '1818', limit: 80, gmod: { TwoToSix: true } },
             { x: 10.5 + 37.5 + 62.5 + 62.5 + 62.5 + 87.5 + 137.5, name: '1820', limit: 80, later:{80:-1}, gmod: { TwoToSix: true } },
             { x: 10.5 + 37.5 + 62.5 + 62.5 + 62.5 + 87.5 + 137.5 + 137.5, name: '1822', limit: 80, gmod: { TwoToSix: true } },
@@ -78,17 +84,61 @@ lines['sokolka']['2'] = [
             { x: 2544 - 62.5 - 33.5 - 62.5 - 75 - 87.5, name: '1870', limit: 80, gmod: { TwoToSix: true } },
             { x: 2544 - 62.5 - 33.5 - 62.5 - 75, name: '1872', limit: 70, gmod: { TwoToSix: true } },
             { x: 2544 - 62.5 - 33.5 - 62.5, name: '1874', limit: 70, gmod: { TwoToSix: true } },
-            { x: 2544 - 62.5 - 33.5, name: '1876', limit: 60, gmod: { TwoToSix: true } },
-            { x: 2544 - 37.5, name: '1878', limit: 60, gmod: { TwoToSix: true, Kanava: true } },
-            { x: 2544 + 12.5, name: '1880', limit: 60, gmod: { TwoToSix: true, Kanava: true } },
+            { x: 2544 - 62.5 - 33.5, name: '1876', limit: 60, gmod: { TwoToSix: true, RouteNumber: "2", Routes: [{},{ARSCodes: "0004", NextSignal: "*", Switches: "UN_SW_2-"}] } },
+            { x: 2544 - 37.5, name: '1878', limit: 60, gmod: { TwoToSix: true, Kanava: true, Routes: [{},{ARSCodes: "0004", NextSignal: "*", Switches: "UN_SW_2-"}] } },
+            { x: 2544 + 12.5, name: '1880', limit: 60, gmod: { TwoToSix: true, Kanava: true, Routes: [{},{ARSCodes: "0004", NextSignal: "*", Switches: "UN_SW_2-"}] } },
             { x: 2544 + 12.5 + 50, name: '1712', limit: 40, gmod: { TwoToSix: true, Approve0: true } },
             { x: 2544 + 12.5 + 50 + 50, name: '1714', limit: 0, gmod: { TwoToSix: true } },
             { x: 2544 + 12.5 + 50 + 50 + 37.5, name: '1716', limit: 0, gmod: { TwoToSix: true } },
             { x: 2544 + 12.5 + 50 + 50 + 37.5 + 50, name: '1716', limit: 0, gmod: { TwoToSix: true } },
         ],
         signals: [
-			{ joint: '1812', name: '182М', lenses: 'YGR', gmod: { Routes: [{Lights: " "}], SignalType: 6, OW: "[4 0 0]", Krons: "L", FLeft: true } },
-            { joint: '1874', name: 'УН-188', lenses: 'BGRw', gmod: { Routes: [{Lights: "3-1"}], Pole: 1 } },
+			{ joint: '1812', name: '182М', lenses: 'YGR', 
+                gmod: { 
+                    Krons: "L", 
+                    SignalType: 6, 
+                    Routes: [{Lights: " "}], 
+                    OW: "[4 0 0]", 
+                    FLeft: true 
+                } 
+            },
+            { joint: '1874', name: 'УН-188', lenses: 'BGRw', 
+                gmod: { Pole: 1, Routes: [
+                        {Lights: "3-1", Switches: "UN_SW_2+", RouteName: "UN2-2"},
+                        {Lights: "3", ARSCodes: "2", Switches: "UN_SW_2-"} 
+                    ]
+                } 
+            },
+            { joint: '1876', name: 'Д', lenses: 'BWR-wM', back: true, 
+                gmod: { 
+                    TwoToSix: true, 
+                    Approve0: true,
+                    DTM: true,
+                    Name: "UND",
+                    Letter: "D",
+                    Routes: [
+                        { Lights: "3" },
+                        {
+                            RouteName: "UND-3",
+                            Lights: "3-3-3-3-3-1",
+                            ARSCodes: "222224",
+                            Switches: "UN_SW_2-,UN_SW_4-,UN_SW_5-",
+                            NextSignal: "UNFIX8",
+                            EnRou: true,
+                            Manual: true
+                        },
+                        {
+                            RouteName: "UND-4",
+                            Lights: "3-3-3-3-1",
+                            ARSCodes: "22224",
+                            Switches: "UN_SW_2-,UN_SW_4+,UN_SW_6+",
+                            NextSignal: "UNFIX8",
+                            EnRou: true,
+                            Manual: true
+                        }
+                    ]
+                }
+            },
         ],
     },
     {
@@ -136,8 +186,8 @@ lines['sokolka']['2'] = [
             { x: 2769 + 62.5 + 62.5 + 62.5 + 62.5, name: '1616', limit: 0, gmod: { TwoToSix: true, Approve0: true } },
         ],
         signals: [
-			{ joint: '1712', name: '172М', lenses: 'YGR', gmod: { Routes: [{Lights: " "}], SignalType: 6} },
-            ],
+			{ joint: '1712', name: '172М', lenses: 'YGR', gmod: {Routes: [{Lights: " "}], SignalType: 6} },
+        ],
         mks: [
             
         ],
@@ -171,14 +221,29 @@ lines['sokolka']['2'] = [
             { x: 1602.5 - 37.5 - 50 - 50, name: '1674', limit: 70, gmod: { TwoToSix: true } },
             { x: 1602.5 - 37.5 - 50, name: '1676', limit: 60, gmod: { TwoToSix: true } },
             { x: 1590, name: '1678', limit: 60, gmod: { Kanava: true, TwoToSix: true } },
-            { x: 1602.5 + 37.5, name: '1680', limit: 40, gmod: { Kanava: true } },
-            { x: 1602.5 + 37.5 + 50, name: '1512', limit: 0, gmod: { TwoToSix: true } },
+            { x: 1602.5 + 37.5, name: '1680', limit: 40, gmod: { Kanava: true, TwoToSix: true } },
+            { x: 1602.5 + 37.5 + 50, name: '1512', limit: 0, gmod: { TwoToSix: true, Routes: [{ARSCodes: "0"}] } },
             { x: 1602.5 + 37.5 + 37.5 + 75, name: '1514', limit: 0 , gmod: { Routes: [{NextSignal: "TC1512"}] }},
         ],
         signals: [
 			{ joint: '1612', name: '162М', lenses: 'YGR', gmod: { Routes: [{Lights: " "}]} },
 			{ joint: '1512', name: '151', lenses: 'YGR', gmod: { Routes: [{Lights: " "}], SignalType: 6} },
-            { joint: '1672', name: 'СП-168', lenses: 'BYGRw', gmod: { Pole: 1, Routes: [{ Lights: "4" }, { NextSignal: "*", Lights: "4-4-1", ARSCodes: "22044667", Manual: true, RouteName: "SP2-2", Switches: "SP_SW_1+" }] } },
+            { joint: '1672', name: 'СП-168', lenses: 'BYGRw', 
+                gmod: { 
+                    Pole: 1, 
+                    Routes: [
+                        { Lights: "4" }, 
+                        { 
+                            NextSignal: "*", 
+                            Lights: "4-4-1", 
+                            ARSCodes: "22044667", 
+                            Manual: true, 
+                            RouteName: "SP2-2", 
+                            Switches: "SP_SW_2+" 
+                        }
+                    ] 
+                }
+            },
         ],
     },
     {

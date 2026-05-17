@@ -15,13 +15,13 @@ lines['sokolka']['1'] = [
         },
         joints: [
             { x: 7 + 50, name: '1579', limit: 40, gmod: { TwoToSix: true, Kanava: true } },
-            { x: 7 + 50 + 62.5, name: '1611', limit: 40, gmod: { TwoToSix: true, Approve0: true, Routes: [{ARSCodes: "2224"}] } },
-            { x: 7 + 50 + 62.5 + 50, name: '1613', limit: 60, gmod: { TwoToSix: true, Routes: [{},{ARSCodes: "0", Switches: "SP_SW_2-"}] } },
-            { x: 7 + 50 + 62.5 + 50 + 50, name: '1615', limit: 70, gmod: { TwoToSix: true, Routes: [{},{NextSignal: "*", ARSCodes: "0", Switches: "SP_SW_2-"}] } },
-            { x: 7 + 50 + 62.5 + 50 + 50 + 62.5, name: '1617', limit: 70, gmod: { TwoToSix: true, Routes: [{},{NextSignal: "*", ARSCodes: "004", Switches: "SP_SW_2-"}] } },
-            { x: 7 + 50 + 62.5 + 50 + 50 + 62.5 + 75, name: '1619', limit: 70, gmod: { TwoToSix: true, Routes: [{},{NextSignal: "*", ARSCodes: "004", Switches: "SP_SW_2-"}] } },
+            { x: 7 + 50 + 62.5, name: '1611', limit: 40, gmod: { TwoToSix: true, Approve0: true, Routes: [{NextSignal: " "}] } },
+            { x: 7 + 50 + 62.5 + 50, name: '1613', limit: 60, gmod: { TwoToSix: true, Routes: [{},{ARSCodes: "0", Switches: "SP_SW_1-"}] } },
+            { x: 7 + 50 + 62.5 + 50 + 50, name: '1615', limit: 70, gmod: { TwoToSix: true, Routes: [{},{NextSignal: "*", ARSCodes: "0", Switches: "SP_SW_1-"}] } },
+            { x: 7 + 50 + 62.5 + 50 + 50 + 62.5, name: '1617', limit: 70, gmod: { TwoToSix: true, Routes: [{},{NextSignal: "*", ARSCodes: "004", Switches: "SP_SW_1-"},{NextSignal: "*", ARSCodes: "004", Switches: "SP_SW_3-"}] } },
+            { x: 7 + 50 + 62.5 + 50 + 50 + 62.5 + 75, name: '1619', limit: 70, gmod: { TwoToSix: true, Routes: [{},{NextSignal: "*", ARSCodes: "004", Switches: "SP_SW_1-"},{NextSignal: "*", ARSCodes: "004", Switches: "SP_SW_3-"}] } },
             { x: 7 + 50 + 62.5 + 50 + 50 + 62.5 + 75 + 100, name: '1621', limit: 70, gmod: { TwoToSix: true } },
-            { x: 7 + 50 + 62.5 + 50 + 50 + 62.5 + 75 + 100 + 62.5, name: '1623', limit: 70, gmod: { TwoToSix: true } },
+            { x: 7 + 50 + 62.5 + 50 + 50 + 62.5 + 75 + 100 + 62.5, name: '1623', limit: 70, gmod: { TwoToSix: true, RouteNumber: "1", Routes: [{},{NextSignal: "*", ARSCodes: "004", Switches: "SP_SW_3-"}] } },
             { x: 7 + 50 + 62.5 + 50 + 50 + 62.5 + 75 + 100 + 62.5 + 137.5, name: '1625', limit: 70, gmod: { TwoToSix: true } },
             { x: 7 + 50 + 62.5 + 50 + 50 + 62.5 + 75 + 100 + 62.5 + 137.5 + 137.5, name: '1627', limit: 70, gmod: { TwoToSix: true } },
             { x: 7 + 50 + 62.5 + 50 + 50 + 62.5 + 75 + 100 + 62.5 + 137.5 + 137.5 + 137.5, name: '1629', limit: 70, gmod: { TwoToSix: true } },
@@ -43,8 +43,23 @@ lines['sokolka']['1'] = [
             { x:  1707  + 50 + 50 + 37.5 + 50 + 37.5 + 62.5, name: '1719', limit: 0, gmod: { TwoToSix: true } },
         ],
         signals: [
-            { joint: '1611', name: 'СП-161М', lenses: 'BWY-GRw', gmod: { Routes: [{Lights: "5-5-5-1"}] } },
-            { joint: '1621', name: 'СП-163М', lenses: 'BWY-GRw', gmod: { Routes: [{Lights: "5-1", RouteName: "SP163-1"}] } },
+            { joint: '1611', name: 'СП-161М', lenses: 'BWYG-RwM', 
+                gmod: { 
+                    Routes: [
+                        {Lights: "5"},
+                        {Lights: "5-5-5-1", Switches: "SP_SW_1+", EnRou:true, NextSignal: "*", RouteName: "SP1-1", ARSCodes: "2224", Manual: true},
+                        {Lights: "5-5-5-1", Switches: "SP_SW_1+", EnRou:true, NextSignal: "*", RouteName: "SP1-V", ARSCodes: "2224", Manual: true, PRou: "V"}
+                    ] 
+                } 
+            },
+            { joint: '1621', name: 'СП-163М', lenses: 'BWYG-RwM', 
+                gmod: { 
+                    Routes: [
+                        {Lights: "5-1", RouteName: "SP163-1", Switches: "SP_SW_3+", EnRou:true},
+                        {Lights: "5-5-1", RouteName: "SP163-3", Switches: "SP_SW_3-", NextSignal: "SPFIX1", ARSCodes: "224", Manual: true, EnRou:true}
+                    ] 
+                } 
+            },
         ],
         switches: [
 		],
@@ -66,7 +81,7 @@ lines['sokolka']['1'] = [
         joints: [
             { x: -10.5 + 50, name: '1679', limit: 0, gmod: { TwoToSix: true, Kanava: true } },
             { x: -10.5 + 50 + 50, name: '1711', limit: 40, gmod: { TwoToSix: true, Approve0: true, Kanava: true } },
-            { x: 0 + 50 + 50 + 37.5, name: '1713', limit: 60, gmod: { TwoToSix: true } },
+            { x: 0 + 50 + 50 + 37.5, name: '1713', limit: 40, gmod: { TwoToSix: true, Approve0: true } },
             { x: 0 + 50 + 50 + 37.5 + 50, name: '1715', limit: 60, gmod: { TwoToSix: true } },
             { x: 0 + 50 + 50 + 37.5 + 50 + 37.5, name: '1717', limit: 60, gmod: { TwoToSix: true } },
             { x: 0 + 50 + 50 + 37.5 + 50 + 37.5 + 62.5, name: '1719', limit: 60, gmod: { TwoToSix: true } },
@@ -103,7 +118,16 @@ lines['sokolka']['1'] = [
         ],
         signals: [ 
 			{ joint: '1713', name: '171М', lenses: 'YGR', gmod: { Routes: [{Lights: " "}]} },
-            { joint: '1811', name: 'УН-181МГ', lenses: 'BWY-K-GRW-M', gmod: { Krons: "SRLN", Types: "8666", ColorLens: true, Routes: [{Lights: "5-53-53-1"}] } },
+            { joint: '1765', name: 'УН-177', lenses: 'BYGRw', gmod: { Routes: [{Lights: "4-1"}], Pole: 1 } },
+            { joint: '1811', name: 'УН-181МГ', lenses: 'BWY-GRW-M' },
+            { joint: '1765', name: 'ОП', lenses: 'R', back: true,
+                gmod: { 
+                    name: 'УНОП', 
+                    Letter: "OP",
+                    DTM: true, 
+                    Pole: 1 
+                } 
+            },
         ],
         mks: [
         ],
@@ -126,7 +150,7 @@ lines['sokolka']['1'] = [
             { x: 3, name: '1777', limit: 60, gmod: { TwoToSix: true, Kanava: true } },
             { x: 3 + 37.5, name: '1779', limit: 60, later: { 60: -1 }, gmod: { TwoToSix: true, Kanava: true } },
             { x: 3 + 37.5 + 44, name: '1811', limit: 40, gmod: { TwoToSix: true, Approve0: true, } },
-            { x: 3 + 37.5 + 37.5 + 50, name: '1813', limit: 60, gmod: { TwoToSix: true, RouteNumber: "1" } },
+            { x: 3 + 37.5 + 37.5 + 50, name: '1813', limit: 60, gmod: { TwoToSix: true, RouteNumber: "1", Routes: [{},{ARSCodes: "4", Switches: "UN_SW_1-"}] } },
             { x: 3 + 37.5 + 37.5 + 50 + 62.5, name: '1815', limit: 70, gmod: { TwoToSix: true } },
             { x: 3 + 37.5 + 37.5 + 50 + 62.5 + 37.5, name: '1817', limit: 70, gmod: { TwoToSix: true } },
             { x: 3 + 37.5 + 37.5 + 50 + 62.5 + 37.5 + 37.5, name: '1819', limit: 70, gmod: { TwoToSix: true } },
@@ -160,7 +184,44 @@ lines['sokolka']['1'] = [
             { x: 2665.5 + 50 + 37.5 + 50 + 50 + 50 + 50, name: '1919', limit: 0, gmod: { TwoToSix: true } },
         ],
         signals: [
-            { joint: '1811', name: 'УН-181МГ', lenses: 'BWY-K-GRW-M', gmod: { Krons: "SRLN", Types: "8666", ColorLens: true, Routes: [{Lights: "5-53-53-1", EnRou: true}] } },
+            { joint: '1811', name: 'УН-181МГ', lenses: 'BWY-K-GRW-M',
+                gmod: { 
+                    Krons: "SRLN", 
+                    Types: "8666", 
+                    ColorLens: true, 
+                    Routes: [
+                        {
+                            RouteName: "UN1-1",
+                            Lights: "5-53-53-1",
+                            Switches: "UN_SW_1+",
+                            EnRou: true
+                        },
+                        { 
+                            ARSCodes: "2",
+                            Lights: "5",
+                            Switches: "UN_SW_1-"
+                        },
+                        {
+                            RouteName: "UN1-3",
+                            Lights: "5-5-5-5-1",
+                            ARSCodes: "22224",
+                            Switches: "UN_SW_1-,UN_SW_3+,UN_SW_5+",
+                            NextSignal: "UNFIX9",
+                            EnRou: true,
+                            Manual: true
+                        },
+                        {
+                            RouteName: "UN1-4",
+                            Lights: "5-5-5-5-5-1",
+                            ARSCodes: "222224",
+                            Switches: "UN_SW_1-,UN_SW_3-,UN_SW_6-",
+                            NextSignal: "UNFIX9",
+                            EnRou: true,
+                            Manual: true
+                        }
+                    ]
+                }
+            },
         ],
         mks: [
         ],
@@ -202,8 +263,24 @@ lines['sokolka']['1'] = [
         ],
         signals: [
 			{ joint: '1911', name: '191М', lenses: 'YGR', gmod: { OW: "[5 0 0]", Krons: "L", SignalType: 6, Routes: [{Lights: " "}], FLeft: true } },
-			{ joint: '2011', name: '201', lenses: 'YGR', gmod: { OW: "[4 0 0]", Krons: "L", SignalType: 6, Routes: [{Lights: " "}] } },
-            { joint: '2015', name: 'УЗ-163', lenses: 'BWRw', gmod: { OW: "[1 0 -15]", Krons: "L", Routes: [ {}, { RouteName: "UZ1-1", Lights: "3-3-1", Manual:true, ARSCodes: "224", NextSignal: "*", Switches: "UZ_SW_3+" }] } },
+			{ joint: '2011', name: '201',  lenses: 'YGR', gmod: { OW: "[4 0 0]", Krons: "L", SignalType: 6, Routes: [{Lights: " "}] } },
+            { joint: '2015', name: 'УЗ-207', lenses: 'BWRw', 
+                gmod: { 
+                    OW: "[1 0 -15]", 
+                    Krons: "L", 
+                    Routes: [ 
+                        {}, 
+                        { 
+                            RouteName: "UZ1-1", 
+                            Lights: "3-3-1", 
+                            Manual: true, 
+                            ARSCodes: "224", 
+                            NextSignal: "*", 
+                            Switches: "UZ_SW_3+" 
+                        }
+                    ] 
+                } 
+            },
         ],
         mks: [
         ],
