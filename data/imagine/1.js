@@ -242,7 +242,7 @@ lines['imagine']['1'] = [
             { joint: '285б', name: '287', lenses: 'YYG-RZ', guard: 70, autostop: 1, y: '287', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '285в', name: '289', lenses: 'YYG-RZ', guard: 60, autostop: 1, y: '289', yg: 'NEXT_y', g: 'NEXT_yg', shift: 11 },
             { joint: '287', name: '291', lenses: 'YYG-RZ', guard: 60, autostop: 1, y: '291', yg: 'NEXT_y', g: 'NEXT_yg', shift: 5 },
-            { joint: '289', name: 'СЯ293', lenses: 'BYY-GRW', guard: 60, autostop: 1, y: '293', yg: '295', gmod: { ColorLens: true } },
+            { joint: '289', name: 'СЯ293', lenses: 'BYY-GRW', guard: 60, autostop: 1, y: '293', yg: '295', gmod: { ColorLens: true, Routes: [{Rezab1: "5-1"}] } },
             { joint: '289', name: 'ОП', gmod: { name: 'SQOP', Letter: "OP", Led: true, DTM: true, OW: "[-7 0 25]" }, lenses: 'ZZ', left: true, autostop: 3, back: true },
             
         ],
