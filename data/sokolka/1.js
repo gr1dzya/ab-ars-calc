@@ -218,6 +218,14 @@ lines['sokolka']['1'] = [
                             NextSignal: "UNFIX9",
                             EnRou: true,
                             Manual: true
+                        },
+                        {
+                            RouteName: "UN1P",
+                            Lights: "5-5-5-5-53",
+                            ARSCodes: "22224",
+                            Switches: "UN_SW_1+",
+                            NextSignal: "FIX",
+                            Manual: true
                         }
                     ]
                 }
@@ -262,7 +270,7 @@ lines['sokolka']['1'] = [
             { x: 1400 + 50 + 37.5 + 50 + 50, name: '2015', limit: 40, gmod: { TwoToSix: true, Routes: [{ARSCodes: "2", NextSignal: " "}] } },
         ],
         signals: [
-			{ joint: '1911', name: '191М', lenses: 'YGR', gmod: { OW: "[5 0 0]", Krons: "L", SignalType: 6, Routes: [{Lights: " "}], FLeft: true } },
+			{ joint: '1911', name: '191', lenses: 'YGR', gmod: { OW: "[5 0 0]", Krons: "L", SignalType: 6, Routes: [{Lights: " "}], FLeft: true } },
 			{ joint: '2011', name: '201',  lenses: 'YGR', gmod: { OW: "[4 0 0]", Krons: "L", SignalType: 6, Routes: [{Lights: " "}] } },
             { joint: '2015', name: 'УЗ-207', lenses: 'BWRw', 
                 gmod: { 

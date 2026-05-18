@@ -40,7 +40,7 @@ lines['sokolka']['2'] = [
             { x: 1417.5 + 37.5 + 62.5 + 62.5 + 62.5 + 75, name: '1818', limit: 0, gmod: { TwoToSix: true } }
         ],
         signals: [
-			{ joint: '1912', name: '192М', lenses: 'YGR', 
+			{ joint: '1912', name: '192', lenses: 'YGR', 
                 gmod: { 
                     Routes: [{Lights: " "}], 
                     SignalType: 6, 
