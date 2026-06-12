@@ -274,7 +274,27 @@ lines['surface']['1'] = [
             { joint: '132', name: '138', lenses: 'YGR', autostop: 1, noRY: true, guard: 60, y: '138', g: 'NEXT_y', gmod: { Pole: 3 } },  
             { joint: '134', name: '140', lenses: 'YGR', autostop: 1, noRY: true, guard: 60, y: '140', g: '4', gmod: { Pole: 3 } },  
             { joint: '140', name: 'СО142', lenses: 'GZ-ZR-W', autostop: 3, noRY: true, guard: 35, g: '4', gmod: { Pole: 3, LensesStr: "WX-XR-M-W", Routes: [{ EnRou: true }] } },  
-            { joint: '142а', name: 'СО144', lenses: 'GZR-Zw', autostop: 3, noRY: true, guard: 35, g: '4', gmod: { LensesStr: "WXR-M-XW", Krons: "MNM", OW: "[-7 0 10]", Street: true, SignalType: 6, Led: true, Routes: [{ NextSignal: "*", RouteName: "SO2-3", Switches: "SV2-,SV3-", EnRou: true, Manual: true }, { NextSignal: "*", RouteName: "SO2-4", Lights: "3-3-3-3-1", Switches: "SV2+,SV3+,SV4+", EnRou: true, Manual: true }] } },  
+            { joint: '142а', name: 'СО144', lenses: 'GZR-Zw', autostop: 3, noRY: true, guard: 35, g: '4', 
+                gmod: { 
+                    LensesStr: "WX-12-RX-I", Krons: "MNMN", 
+                    OW: "[-8 0 10]", Street: true, 
+                    SignalType: 6, Led: true, Routes: [
+                        { 
+                            NextSignal: "*", 
+                            RouteName: "SO2-3", 
+                            Switches: "SV2-,SV3-", 
+                            EnRou: true, Manual: true 
+                        }, 
+                        { 
+                            NextSignal: "*", 
+                            RouteName: "SO2-4", 
+                            Lights: "3-3-3-3-1", 
+                            Switches: "SV2+,SV3+,SV4+", 
+                            EnRou: true, Manual: true 
+                        }
+                    ] 
+                } 
+            },  
         ],
         mks: [
         ],

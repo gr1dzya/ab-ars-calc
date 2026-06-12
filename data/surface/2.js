@@ -217,11 +217,11 @@ lines['surface']['2'] = [
             { joint: '91а', name: '89M', lenses: 'RY-GR', autostop: 1, noRY: true, left: true, guard: 90, y: '89а', g: 'NEXT_y', gmod: { OW: "[-6 0 0]", Street: true, SignalType: 6, Led: true, ColorLens: true } },
             { joint: '89', name: '87', lenses: 'YGR', autostop: 3, noRY: true, guard: 90, y: '87а', yg: 'NEXT_y', g: 'NEXT_yg', gmod: { OW: "[-6 0 10]", Street: true, SignalType: 6, Led: true } },  
             { joint: '89а', name: '85', lenses: 'YRG', autostop: 3, noRY: true, guard: 80, y: '85', yg: 'NEXT_y', g: 'NEXT_yg', shift: 18, gmod: { OW: "[-5 0 -10]", SignalType: 6, Led: true } },
-            { joint: '87', name: 'КЦ83', lenses: 'YR-Gw', autostop: 3, noRY: true, guard: 70, y: '83', yg: 'NEXT_y', g: 'NEXT_g', gmod: { OW: "[-10 0 0]", SignalType: 6, Led: true, ColorLens: true } },
-            { joint: '87а', name: 'КЦ81', lenses: 'YR-Gw', autostop: 1, noRY: true, guard: 60, y: '81', yg: 'NEXT_y', g: 'NEXT_g', gmod: { OW: "[-6 0 -10]", Street: true, SignalType: 6, Led: true } },
-            { joint: '85', name: 'КЦ79', lenses: 'YG-Rw', autostop: 1, noRY: true, guard: 60, y: '79', g: 'NEXT_y', gmod: { OW: "[-4 0 -10]", Street: true, SignalType: 6, Led: true } },
+            { joint: '87', name: 'КЦ83', lenses: 'YRG-I', autostop: 3, noRY: true, guard: 70, y: '83', yg: 'NEXT_y', g: 'NEXT_g', gmod: { OW: "[-10 0 0]", SignalType: 6, Led: true, Pole: 1, ColorLens: true, Krons: "MN" } },
+            { joint: '87а', name: 'КЦ81', lenses: 'YRG-I', autostop: 1, noRY: true, guard: 60, y: '81', yg: 'NEXT_y', g: 'NEXT_g', gmod: { OW: "[-6 0 -10]", Street: true, SignalType: 6, Led: true, Krons: "MN" } },
+            { joint: '85', name: 'КЦ79', lenses: 'YGR-I', autostop: 1, noRY: true, guard: 60, y: '79', g: 'NEXT_y', gmod: { OW: "[-4 0 -10]", Street: true, SignalType: 6, Led: true, Krons: "MN" } },
             { joint: '83', name: 'КЦ77', lenses: 'YGR-w', autostop: 1, noRY: true, guard: 60, y: '1811', g: '1815', shift: 13, gmod: { Pole: 1, LetterK: true } }, // , Routes: [{ }, { Switches: "KU3-,KU1+,KU2-,KU5+", Lights: "3-3-3-3-3-1", NextSignal: "*" }]
-            { joint: '83', name: 'ОП', gmod: { name: 'KUOP', Letter: "OP1", DTM: true, Pole: 1, Left: true }, lenses: 'XR', row: -1, autostop: 3, shift: -12.5, back: true },
+            { joint: '83', name: 'ОП', gmod: { name: 'KUOP', Letter: "OP1", DTM: true, Pole: 1, Left: true }, lenses: 'XR', row: 3.5, autostop: 3, shift: -12.5, back: true },
         ],
         mks: [
         ],
