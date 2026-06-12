@@ -20,7 +20,7 @@ lines['sokolka']['2'] = [
             { x: -32.5, name: '2078', limit: 40, gmod: { TwoToSix: true, Kanava: true } },
             { x: -32.5 + 62.5, name: '2080', limit: 40, gmod: { TwoToSix: true, Kanava: true } },
             { x: -32.5 + 62.5 + 62.5, name: '1912', limit: 40, gmod: { TwoToSix: true, Approve0: true } },
-            { x: -32.5 + 62.5 + 62.5 + 62.5, name: '1914', limit: 60, gmod: { TwoToSix: true } },
+            { x: -32.5 + 62.5 + 62.5 + 62.5, name: '1914', limit: 70, gmod: { TwoToSix: true } },
             { x: -32.5 + 62.5 + 62.5 + 62.5 + 137.5, name: '1920', limit: 70, gmod: { TwoToSix: true } },
             { x: -32.5 + 62.5 + 62.5 + 62.5 + 137.5 + 137.5, name: '1922', limit: 70, gmod: { TwoToSix: true } },
             { x: -32.5 + 62.5 + 62.5 + 62.5 + 137.5 + 137.5 + 137.5, name: '1924', limit: 70, gmod: { TwoToSix: true } },
@@ -109,7 +109,7 @@ lines['sokolka']['2'] = [
                     ]
                 } 
             },
-            { joint: '1876', name: 'Д', lenses: 'BWR-wM', back: true, 
+            { joint: '1876', name: 'Д', lenses: 'BWR-wM', back: true, row:3.5,
                 gmod: { 
                     TwoToSix: true, 
                     Approve0: true,
@@ -156,7 +156,7 @@ lines['sokolka']['2'] = [
         joints: [
             { x: 81.5 - 50, name: '1880', limit: 0, gmod: { TwoToSix: true } },
             { x: 81.5, name: '1712', limit: 40, gmod: { TwoToSix: true, Approve0: true } },
-            { x: 81.5 + 50, name: '1714', limit: 60, gmod: { TwoToSix: true } },
+            { x: 81.5 + 50, name: '1714', limit: 70, gmod: { TwoToSix: true } },
             { x: 81.5 + 50 + 37.5, name: '1716', limit: 70, gmod: { TwoToSix: true } },
             { x: 81.5 + 50 + 37.5 + 50, name: '1718', limit: 70, gmod: { TwoToSix: true } },
             { x: 81.5 + 50 + 37.5 + 50 + 125, name: '1722', limit: 70, gmod: { TwoToSix: true } },
@@ -207,7 +207,7 @@ lines['sokolka']['2'] = [
         joints: [
             { x: 115 - 62.5, name: '1780', limit: 0, gmod: { TwoToSix: true, Kanava: true } },
             { x: 115, name: '1612', limit: 40, gmod: { TwoToSix: true, Approve0: true } },
-            { x: 115 + 62.5, name: '1614', limit: 60, gmod: { TwoToSix: true } },
+            { x: 115 + 62.5, name: '1614', limit: 70, gmod: { TwoToSix: true } },
             { x: 115 + 62.5 + 137.5, name: '1616', limit: 70, gmod: { TwoToSix: true } },
             { x: 115 + 62.5 + 137.5 + 137.5, name: '1618', limit: 70, gmod: { TwoToSix: true } },
             { x: 115 + 62.5 + 137.5 + 137.5 + 137.5, name: '1620', limit: 70, gmod: { TwoToSix: true } },
@@ -215,8 +215,8 @@ lines['sokolka']['2'] = [
             { x: 115 + 62.5 + 137.5 + 137.5 + 137.5 + 137.5 + 137.5, name: '1624', limit: 70, gmod: { TwoToSix: true } },
             { x: 1602.5 - 37.5 - 50 - 50 - 50 - 75 - 75 - 125 - 137.5, name: '1664', limit: 70, gmod: { TwoToSix: true } },
             { x: 1602.5 - 37.5 - 50 - 50 - 50 - 75 - 75 - 125, name: '1666', limit: 70, gmod: { TwoToSix: true } },
-            { x: 1602.5 - 37.5 - 50 - 50 - 50 - 75 - 75, name: '1668', limit: 70, gmod: { TwoToSix: true } },
-            { x: 1602.5 - 37.5 - 50 - 50 - 50 - 75, name: '1670', limit: 70, gmod: { TwoToSix: true } },
+            { x: 1602.5 - 37.5 - 50 - 50 - 50 - 75 - 75, name: '1668', limit: 70, later: { 60: 1 }, gmod: { TwoToSix: true } },
+            { x: 1602.5 - 37.5 - 50 - 50 - 50 - 75, name: '1670', limit: 70, later: { 40: 1 }, gmod: { TwoToSix: true } },
             { x: 1602.5 - 37.5 - 50 - 50 - 50, name: '1672', limit: 70, gmod: { TwoToSix: true, Routes: [{ NextSignal: "- NONE -", ARSCodes: "2" }] } },
             { x: 1602.5 - 37.5 - 50 - 50, name: '1674', limit: 70, gmod: { TwoToSix: true } },
             { x: 1602.5 - 37.5 - 50, name: '1676', limit: 60, gmod: { TwoToSix: true } },

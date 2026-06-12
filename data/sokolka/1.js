@@ -16,8 +16,8 @@ lines['sokolka']['1'] = [
         joints: [
             { x: 7 + 50, name: '1579', limit: 40, gmod: { TwoToSix: true, Kanava: true } },
             { x: 7 + 50 + 62.5, name: '1611', limit: 40, gmod: { TwoToSix: true, Approve0: true, Routes: [{NextSignal: " "}] } },
-            { x: 7 + 50 + 62.5 + 50, name: '1613', limit: 60, gmod: { TwoToSix: true, Routes: [{},{ARSCodes: "0", Switches: "SP_SW_1-"}] } },
-            { x: 7 + 50 + 62.5 + 50 + 50, name: '1615', limit: 70, gmod: { TwoToSix: true, Routes: [{},{NextSignal: "*", ARSCodes: "0", Switches: "SP_SW_1-"}] } },
+            { x: 7 + 50 + 62.5 + 50, name: '1613', limit: 70, gmod: { TwoToSix: true, Routes: [{},{ARSCodes: "0", Switches: "SP_SW_1-"},{NextSignal: "*", ARSCodes: "004", Switches: "SP_SW_3-"}] } },
+            { x: 7 + 50 + 62.5 + 50 + 50, name: '1615', limit: 70, gmod: { TwoToSix: true, Routes: [{},{NextSignal: "*", ARSCodes: "0", Switches: "SP_SW_1-"},{NextSignal: "*", ARSCodes: "004", Switches: "SP_SW_3-"}] } },
             { x: 7 + 50 + 62.5 + 50 + 50 + 62.5, name: '1617', limit: 70, gmod: { TwoToSix: true, Routes: [{},{NextSignal: "*", ARSCodes: "004", Switches: "SP_SW_1-"},{NextSignal: "*", ARSCodes: "004", Switches: "SP_SW_3-"}] } },
             { x: 7 + 50 + 62.5 + 50 + 50 + 62.5 + 75, name: '1619', limit: 70, gmod: { TwoToSix: true, Routes: [{},{NextSignal: "*", ARSCodes: "004", Switches: "SP_SW_1-"},{NextSignal: "*", ARSCodes: "004", Switches: "SP_SW_3-"}] } },
             { x: 7 + 50 + 62.5 + 50 + 50 + 62.5 + 75 + 100, name: '1621', limit: 70, gmod: { TwoToSix: true } },
@@ -46,7 +46,7 @@ lines['sokolka']['1'] = [
             { joint: '1611', name: 'СП-161М', lenses: 'BWYG-RwM', 
                 gmod: { 
                     Routes: [
-                        {Lights: "5"},
+                        {Lights: "5"}, // остальное в рц
                         {Lights: "5-5-5-1", Switches: "SP_SW_1+", EnRou:true, NextSignal: "*", RouteName: "SP1-1", ARSCodes: "2224", Manual: true},
                         {Lights: "5-5-5-1", Switches: "SP_SW_1+", EnRou:true, NextSignal: "*", RouteName: "SP1-V", ARSCodes: "2224", Manual: true, PRou: "V"}
                     ] 
@@ -56,6 +56,7 @@ lines['sokolka']['1'] = [
                 gmod: { 
                     Routes: [
                         {Lights: "5-1", RouteName: "SP163-1", Switches: "SP_SW_3+", EnRou:true},
+                        {Lights: "5", ARSCodes: "2" },
                         {Lights: "5-5-1", RouteName: "SP163-3", Switches: "SP_SW_3-", NextSignal: "SPFIX1", ARSCodes: "224", Manual: true, EnRou:true}
                     ] 
                 } 
@@ -120,7 +121,7 @@ lines['sokolka']['1'] = [
 			{ joint: '1713', name: '171М', lenses: 'YGR', gmod: { Routes: [{Lights: " "}]} },
             { joint: '1765', name: 'УН-177', lenses: 'BYGRw', gmod: { Routes: [{Lights: "4-1"}], Pole: 1 } },
             { joint: '1811', name: 'УН-181МГ', lenses: 'BWY-GRW-M' },
-            { joint: '1765', name: 'ОП', lenses: 'R', back: true,
+            { joint: '1765', name: 'ОП', lenses: 'R', back: true, row:3.5,
                 gmod: { 
                     name: 'УНОП', 
                     Letter: "OP",
@@ -150,7 +151,7 @@ lines['sokolka']['1'] = [
             { x: 3, name: '1777', limit: 60, gmod: { TwoToSix: true, Kanava: true } },
             { x: 3 + 37.5, name: '1779', limit: 60, later: { 60: -1 }, gmod: { TwoToSix: true, Kanava: true } },
             { x: 3 + 37.5 + 44, name: '1811', limit: 40, gmod: { TwoToSix: true, Approve0: true, } },
-            { x: 3 + 37.5 + 37.5 + 50, name: '1813', limit: 60, gmod: { TwoToSix: true, RouteNumber: "1", Routes: [{},{ARSCodes: "4", Switches: "UN_SW_1-"}] } },
+            { x: 3 + 37.5 + 37.5 + 50, name: '1813', limit: 70, gmod: { TwoToSix: true, RouteNumber: "1", Routes: [{},{ARSCodes: "4", Switches: "UN_SW_1-"}] } },
             { x: 3 + 37.5 + 37.5 + 50 + 62.5, name: '1815', limit: 70, gmod: { TwoToSix: true } },
             { x: 3 + 37.5 + 37.5 + 50 + 62.5 + 37.5, name: '1817', limit: 70, gmod: { TwoToSix: true } },
             { x: 3 + 37.5 + 37.5 + 50 + 62.5 + 37.5 + 37.5, name: '1819', limit: 70, gmod: { TwoToSix: true } },
@@ -249,8 +250,8 @@ lines['sokolka']['1'] = [
         joints: [
             { x: 12.5 + 50, name: '1879', limit: 0, gmod: { TwoToSix: true, Kanava: true } },
             { x: 12.5 + 50 + 37.5, name: '1911', limit: 40, gmod: { TwoToSix: true, Approve0: true } },
-            { x: 12.5 + 50 + 37.5 + 50, name: '1913', limit: 60, gmod: { TwoToSix: true } },
-            { x: 12.5 + 50 + 37.5 + 50 + 50, name: '1915', limit: 60, gmod: { TwoToSix: true } },
+            { x: 12.5 + 50 + 37.5 + 50, name: '1913', limit: 70, gmod: { TwoToSix: true } },
+            { x: 12.5 + 50 + 37.5 + 50 + 50, name: '1915', limit: 70, gmod: { TwoToSix: true } },
             { x: 12.5 + 50 + 37.5 + 50 + 50 + 50, name: '1917', limit: 70, gmod: { TwoToSix: true } },
             { x: 12.5 + 50 + 37.5 + 50 + 50 + 50 + 100, name: '1919', limit: 70, gmod: { TwoToSix: true } },
             { x: 12.5 + 50 + 37.5 + 50 + 50 + 50 + 100 + 137.5, name: '1921', limit: 70, gmod: { TwoToSix: true } },
