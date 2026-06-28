@@ -145,7 +145,7 @@ function placeSignal(position, angles, options)
     --        Lights = options.Lights,
     --    },
     --})
-    if options.r ~= 0 and not options.ARSOnly and pogashenie then
+    if options.noPogashenie ~= 0 and not options.ARSOnly and pogashenie then
         ent.Routes[1].RezabCommand = "suka"
         ent.Routes[1].RezabEnabled = false
         if not ent.Routes[1].Rezab1 then ent.Routes[1].Rezab1 = "0" end
@@ -287,15 +287,15 @@ concommand.Add( "metrostroi_signal_import", function(ply, args)
     importSignalData(args[1], tonumber(args[2]))
 end )
 
--- importSignalData("signals-imagine-1.json", 9, true)
--- importSignalData("signals-imagine-2.json", 1, true)
--- importSignalData("signals-imagine-1_additional.json", 9, false)
--- importSignalData("signals-imagine-2_additional.json", 1, false)
-importSignalData("signals-crossline-redux_pony10-1.json", 6, true)
-importSignalData("REDUX1_ADD.json", 6, false)
-importSignalData("Redux_MD3.json", 2, true)
-importSignalData("signals-crossline-redux_pony10-2.json", 7, true)
-importSignalData("REDUX2_ADD.json", 7, false)
+importSignalData("signals-imagine-1.json", 9, true)
+importSignalData("signals-imagine-2.json", 1, true)
+importSignalData("signals-imagine-1_additional.json", 9, false)
+importSignalData("signals-imagine-2_additional.json", 1, false)
+----mportSignalData("signals-crossline-redux_pony10-1.json", 6, true)
+----mportSignalData("REDUX1_ADD.json", 6, false)
+----mportSignalData("Redux_MD3.json", 2, true)
+----mportSignalData("signals-crossline-redux_pony10-2.json", 7, true)
+----mportSignalData("REDUX2_ADD.json", 7, false)
 -- importSignalData("signals-surface-1.json", 7, true)
 -- importSignalData("signals-surface-2.json", 8, true)
 -- importSignalData("signals-surface-1_additional.json", 7, false)

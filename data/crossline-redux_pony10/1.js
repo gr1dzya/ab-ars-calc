@@ -265,7 +265,7 @@ lines['crossline-redux_pony10']['1'] = [
             { x: 1552 -3 + 75 + 62.5 + 75, name: '139а', limit: 0 },
         ],
         signals: [
-            { joint: '119а', name: '121М', lenses: 'ZY-GR', guard: 35, autostop: 3, y: '121б', g: 'NEXT_y', gmod: { Pole: 1, Led: true } },
+            { joint: '119а', name: '121М', lenses: 'ZY-GR', guard: 35, autostop: 3, y: '121б', g: 'NEXT_y', gmod: { LetterK: true, Led: true } },
             { joint: '121б', name: '123', lenses: 'YGR', guard: 80, autostop: 3, y: '123а', g: 'NEXT_y', gmod:{Pole:1, Led: true} },
             { joint: '123', name: '125', lenses: 'YGR', guard: 80, autostop: 3, y: '125', g: 'NEXT_y', gmod:{Pole:1, Led: true} },
             { joint: '123а', name: '127', lenses: 'YGR', guard: 80, autostop: 3, y: '127а', g: 'NEXT_y', gmod:{Pole:1, Led: true} },
@@ -312,7 +312,7 @@ lines['crossline-redux_pony10']['1'] = [
             { x: 1653 +6.5 + 75 + 62.5 + 75, name: '155а', limit: 0 },
         ],
         signals: [
-            { joint: '137', name: 'ОК-139мГ', lenses: 'WYG-Rw-M', guard: 35, autostop: 3, g: '139б', gmod: { Krons: "LNULN", LensesStr: "WY-K-1-GRw-34" } },
+            { joint: '137', name: 'ОК-139мГ', lenses: 'WYG-Rw-M', guard: 35, autostop: 3, g: '139б', gmod: { Krons: "LNULN", LensesStr: "WY-K-1-GRW-34" } },
             { joint: '139б', name: '141', lenses: 'YGR', guard: 80, autostop: 3, g: '141', gmod: { Pole:1 } },
             { joint: '141', name: '143', lenses: 'YY-GR', guard: 80, autostop: 3, y: '143б', g: 'NEXT_y', gmod: { Pole:1 } },
             { joint: '143а', name: '145', lenses: 'YY-GR', guard: 80, autostop: 3, y: '145', yg: 'NEXT_y', g: 'NEXT_yg', gmod: { Pole:1 } },
@@ -409,7 +409,7 @@ lines['crossline-redux_pony10']['1'] = [
     },
     {
         name: 'Пролетарская',
-        arsDrawBreakpoint: 1,
+        arsDrawBreakpoint: 10,
         arsAllSteps: false,
         tStay: 25,
         K: 1,
