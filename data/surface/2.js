@@ -271,7 +271,18 @@ lines['surface']['2'] = [
             { joint: '1871', name: 'АК1811', lenses: 'YRGW', autostop: 1, noRY: true, guard: 60, y: '1879', yg: 'NEXT_y', g: 'NEXT_g', gmod: { Pole: 3, SignalType: 8, Street: true } },
             { joint: '1873', name: 'АК1813', lenses: 'BYGRW', autostop: 1, noRY: true, guard: 60, y: '1911', g: 'NEXT_yg', gmod: { Pole: 3, SignalType: 8, Street: true, ColorLens: true } },
             { joint: '1875', name: 'АК1815', lenses: 'YRGW', autostop: 1, noRY: true, guard: 60, yg: '1913', gmod: { Pole: 3, SignalType: 8, Street: true } },
-            { joint: '1911', name: 'АК191', lenses: 'BWZZ-RWM', autostop: 3, noRY: true, guard: 35, y: '1915', gmod: { Pole: 3, SignalType: 8, ColorLens: true, Street: true, Routes: [{Switches: "", RouteName: "AK1P", Lights: "5"}, {Switches: "AK1+", NextSignal: "*", RouteName: "AK1-1", Manual: true, EnRou: true, PRou: "1", Lights: "5-5-5-5-5-2"}, { Switches: "AK1-,AK3+,AK5+", NextSignal: "AKFIX3", Manual: true, EnRou: true, PRou: "3", RouteName: "AK1-3", Lights: "5-5-5-5-2" }, { Switches: "AK1-,AK3-,AK6-", NextSignal: "AKFIX3", Manual: true, EnRou: true, PRou: "4", RouteName: "AK1-4", Lights: "5-5-5-5-2" }] } },
+            { joint: '1911', name: 'АК191', lenses: 'BWZZ-RWM', autostop: 3, noRY: true, guard: 35, y: '1915', 
+                gmod: 
+                { 
+                    Pole: 3, SignalType: 8, ColorLens: true, Street: true, 
+                    Routes: [
+                        {Switches: "AK1+", RouteName: "AK1P", Lights: "5"}, 
+                        {Switches: "AK1+", NextSignal: "*", RouteName: "AK1-1", Manual: true, EnRou: true, PRou: "1", Lights: "5-5-5-5-5-2"}, 
+                        { Switches: "AK1-,AK3+,AK5+", NextSignal: "AKFIX3", Manual: true, EnRou: true, PRou: "3", RouteName: "AK1-3", Lights: "5-5-5-5-2" }, 
+                        { Switches: "AK1-,AK3-,AK6-", NextSignal: "AKFIX3", Manual: true, EnRou: true, PRou: "4", RouteName: "AK1-4", Lights: "5-5-5-5-2" }
+                    ] 
+                } 
+            },
             { joint: '1873', name: 'ОП', gmod: { name: 'AKOP', Letter: "OP", DTM: true, Pole: 3, SignalType: 8, Street: true, Left: true }, lenses: 'R', autostop: 3, back: true, left: true, shift: -25 },
         ],
         mks: [
