@@ -2,6 +2,7 @@ R50_MODE = false
 RAYS = false
 NEW_ERA = true
 local pogashenie = false
+local sigType = 6
 
 local angle_mirror = Angle(0, 180, 0)
 
@@ -124,7 +125,7 @@ function placeSignal(position, angles, options)
     ent:SetPos(position)
     ent:SetAngles(angles)
     ent:Spawn()
-    ent.SignalType = options.SignalType ~= 0 and options.SignalType or 6
+    ent.SignalType = options.SignalType ~= 0 and options.SignalType or sigType
 	ent.RouteNumberSetup = options.RouteNumberSetup
     ent.NonAutoStop = options.NonAutoStop
 	ent.RouteNumber = options.RouteNumber
@@ -287,19 +288,19 @@ concommand.Add( "metrostroi_signal_import", function(ply, args)
     importSignalData(args[1], tonumber(args[2]))
 end )
 
--- importSignalData("signals-imagine-1.json", 9, true)
--- importSignalData("signals-imagine-2.json", 1, true)
--- importSignalData("signals-imagine-1_additional.json", 9, false)
--- importSignalData("signals-imagine-2_additional.json", 1, false)
-importSignalData("signals-crossline-redux_pony10-1.json", 6, true)
-importSignalData("REDUX1_ADD.json", 6, false)
-importSignalData("Redux_MD3.json", 2, true)
-importSignalData("signals-crossline-redux_pony10-2.json", 7, true)
-importSignalData("REDUX2_ADD.json", 7, false)
--- importSignalData("signals-surface-1.json", 7, true)
--- importSignalData("signals-surface-2.json", 8, true)
--- importSignalData("signals-surface-1_additional.json", 7, false)
--- importSignalData("signals-surface-2_additional.json", 8, false)
+ importSignalData("signals-imagine-1.json", 9, true)
+ importSignalData("signals-imagine-2.json", 1, true)
+ importSignalData("signals-imagine-1_additional.json", 9, false)
+ importSignalData("signals-imagine-2_additional.json", 1, false)
+--  importSignalData("signals-crossline-redux_pony10-1.json", 6, true)
+--  importSignalData("REDUX1_ADD.json", 6, false)
+--  importSignalData("Redux_MD3.json", 2, true)
+--  importSignalData("signals-crossline-redux_pony10-2.json", 7, true)
+--  importSignalData("REDUX2_ADD.json", 7, false)
+ --importSignalData("signals-surface-1.json", 7, true)
+ --importSignalData("signals-surface-2.json", 8, true)
+ --importSignalData("signals-surface-1_additional.json", 7, false)
+ --importSignalData("signals-surface-2_additional.json", 8, false)
 -- importSignalData("signals-samara-1.json", 1, true)
 -- importSignalData("signals-samara-2.json", 2, true)
 -- importSignalData("signals-sokolka-1.json", 1, true)
