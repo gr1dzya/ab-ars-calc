@@ -1,0 +1,1595 @@
+{
+  "1611": {
+    "x": 254.86,
+    "Routes": [
+      {
+        "Lights": "5",
+        "NextSignal": " ",
+        "ARSCodes": "2004"
+      },
+      {
+        "Lights": "5-5-5-1",
+        "Switches": "SP_SW_1+",
+        "EnRou": true,
+        "NextSignal": "*",
+        "RouteName": "SP1-1",
+        "ARSCodes": "2224",
+        "Manual": true
+      },
+      {
+        "Lights": "5-5-5-1",
+        "Switches": "SP_SW_1+",
+        "EnRou": true,
+        "NextSignal": "*",
+        "RouteName": "SP1-V",
+        "ARSCodes": "2224",
+        "Manual": true,
+        "PRou": "V"
+      }
+    ],
+    "Name": "SP161M",
+    "ARSOnly": false,
+    "LensesStr": "BWY-GRW-M",
+    "SignalType": 0,
+    "TwoToSix": true,
+    "Approve0": true,
+    "FrontArsName": "1579",
+    "Left": false,
+    "Double": false,
+    "DoubleL": false,
+    "NonAutoStop": true
+  },
+  "1613": {
+    "x": 304.86,
+    "Routes": [
+      {
+        "ARSCodes": "00046",
+        "NextSignal": "*"
+      },
+      {
+        "ARSCodes": "0",
+        "Switches": "SP_SW_1-"
+      }
+    ],
+    "Name": "TC1611",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1615": {
+    "x": 354.86,
+    "Routes": [
+      {
+        "ARSCodes": "004467",
+        "NextSignal": "*"
+      },
+      {
+        "NextSignal": "*",
+        "ARSCodes": "0",
+        "Switches": "SP_SW_1-"
+      }
+    ],
+    "Name": "TC1613",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1617": {
+    "x": 417.36,
+    "Routes": [
+      {
+        "ARSCodes": "00447",
+        "NextSignal": "*"
+      },
+      {
+        "NextSignal": "*",
+        "ARSCodes": "004",
+        "Switches": "SP_SW_1-"
+      },
+      {
+        "NextSignal": "*",
+        "ARSCodes": "004",
+        "Switches": "SP_SW_3-"
+      }
+    ],
+    "Name": "TC1615",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1619": {
+    "x": 492.36,
+    "Routes": [
+      {
+        "ARSCodes": "00467",
+        "NextSignal": "*"
+      },
+      {
+        "NextSignal": "*",
+        "ARSCodes": "004",
+        "Switches": "SP_SW_1-"
+      },
+      {
+        "NextSignal": "*",
+        "ARSCodes": "004",
+        "Switches": "SP_SW_3-"
+      }
+    ],
+    "Name": "TC1617",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1621": {
+    "x": 592.36,
+    "Routes": [
+      {
+        "Lights": "5-1",
+        "RouteName": "SP163-1",
+        "Switches": "SP_SW_3+",
+        "EnRou": true,
+        "ARSCodes": "2047",
+        "NextSignal": "*"
+      },
+      {
+        "Lights": "5-5-1",
+        "RouteName": "SP163-3",
+        "Switches": "SP_SW_3-",
+        "NextSignal": "SPFIX1",
+        "ARSCodes": "224",
+        "Manual": true,
+        "EnRou": true
+      }
+    ],
+    "Name": "SP163M",
+    "ARSOnly": false,
+    "LensesStr": "BWY-GRW-M",
+    "SignalType": 0,
+    "TwoToSix": true,
+    "FrontArsName": "1619",
+    "Left": false,
+    "Double": false,
+    "DoubleL": false,
+    "NonAutoStop": true
+  },
+  "1623": {
+    "x": 654.86,
+    "Routes": [
+      {
+        "ARSCodes": "0467",
+        "NextSignal": "*"
+      },
+      {
+        "NextSignal": "*",
+        "ARSCodes": "004",
+        "Switches": "SP_SW_3-"
+      }
+    ],
+    "Name": "TC1621",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true,
+    "RouteNumber": "1"
+  },
+  "1625": {
+    "x": 792.36,
+    "Routes": [
+      {
+        "ARSCodes": "0467",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1623",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1627": {
+    "x": 929.86,
+    "Routes": [
+      {
+        "ARSCodes": "0467",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1625",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1629": {
+    "x": 1067.3600000000001,
+    "Routes": [
+      {
+        "ARSCodes": "0067",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1627",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1659": {
+    "x": 1156.8600000000001,
+    "Routes": [
+      {
+        "ARSCodes": "047",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1629",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1661": {
+    "x": 1294.3600000000001,
+    "Routes": [
+      {
+        "ARSCodes": "0467",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1659",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1663": {
+    "x": 1431.8600000000001,
+    "Routes": [
+      {
+        "ARSCodes": "00467",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1661",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1665": {
+    "x": 1531.8600000000001,
+    "Routes": [
+      {
+        "ARSCodes": "004467",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1663",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1667": {
+    "x": 1606.8600000000001,
+    "Routes": [
+      {
+        "ARSCodes": "0004467",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1665",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1669": {
+    "x": 1656.8600000000001,
+    "Routes": [
+      {
+        "ARSCodes": "0004467",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1667",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1671": {
+    "x": 1706.8600000000001,
+    "Routes": [
+      {
+        "ARSCodes": "0004467",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1669",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1673": {
+    "x": 1756.8600000000001,
+    "Routes": [
+      {
+        "ARSCodes": "0004467",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1671",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true,
+    "Kanava": true
+  },
+  "1675": {
+    "x": 1794.3600000000001,
+    "Routes": [
+      {
+        "ARSCodes": "000446",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1673",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true,
+    "Kanava": true
+  },
+  "1677": {
+    "x": 1831.8600000000001,
+    "Routes": [
+      {
+        "ARSCodes": "000446",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1675",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true,
+    "Kanava": true
+  },
+  "1679": {
+    "x": 1881.8600000000001,
+    "Routes": [
+      {
+        "ARSCodes": "000446",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1677",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true,
+    "Kanava": true
+  },
+  "1711": {
+    "x": 1931.86,
+    "Routes": [
+      {
+        "ARSCodes": "0004",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1679",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true,
+    "Approve0": true,
+    "Kanava": true
+  },
+  "1713": {
+    "x": 1979.86,
+    "Routes": [
+      {
+        "Lights": " ",
+        "ARSCodes": "0004",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "171M",
+    "ARSOnly": false,
+    "LensesStr": "YGR",
+    "SignalType": 0,
+    "TwoToSix": true,
+    "Approve0": true,
+    "FrontArsName": "1711",
+    "Left": false,
+    "Double": false,
+    "DoubleL": false,
+    "NonAutoStop": true
+  },
+  "1715": {
+    "x": 2029.86,
+    "Routes": [
+      {
+        "ARSCodes": "00046",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1713",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1717": {
+    "x": 2067.3599999999997,
+    "Routes": [
+      {
+        "ARSCodes": "0046",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1715",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1719": {
+    "x": 2129.8599999999997,
+    "Routes": [
+      {
+        "ARSCodes": "006",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1717",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1721": {
+    "x": 2242.3599999999997,
+    "Routes": [
+      {
+        "ARSCodes": "046",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1719",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1723": {
+    "x": 2379.8599999999997,
+    "Routes": [
+      {
+        "ARSCodes": "0446",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1721",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1725": {
+    "x": 2517.3599999999997,
+    "Routes": [
+      {
+        "ARSCodes": "0068",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1723",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1727": {
+    "x": 2654.8599999999997,
+    "Routes": [
+      {
+        "ARSCodes": "0468",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1725",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1729": {
+    "x": 2792.3599999999997,
+    "Routes": [
+      {
+        "ARSCodes": "0468",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1727",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1731": {
+    "x": 2929.8599999999997,
+    "Routes": [
+      {
+        "ARSCodes": "0478",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1729",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1733": {
+    "x": 3067.3599999999997,
+    "Routes": [
+      {
+        "ARSCodes": "0468",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1731",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1735": {
+    "x": 3204.8599999999997,
+    "Routes": [
+      {
+        "ARSCodes": "0478",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1733",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1747": {
+    "x": 3342.3599999999997,
+    "Routes": [
+      {
+        "ARSCodes": "0478",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1735",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1749": {
+    "x": 3479.8599999999997,
+    "Routes": [
+      {
+        "ARSCodes": "04678",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1747",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1751": {
+    "x": 3617.3599999999997,
+    "Routes": [
+      {
+        "ARSCodes": "0068",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1749",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1753": {
+    "x": 3754.8599999999997,
+    "Routes": [
+      {
+        "ARSCodes": "0468",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1751",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1755": {
+    "x": 3892.3599999999997,
+    "Routes": [
+      {
+        "ARSCodes": "0468",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1753",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1757": {
+    "x": 4029.8599999999997,
+    "Routes": [
+      {
+        "ARSCodes": "00468",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1755",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1759": {
+    "x": 4167.36,
+    "Routes": [
+      {
+        "ARSCodes": "0068",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1757",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1761": {
+    "x": 4304.86,
+    "Routes": [
+      {
+        "ARSCodes": "0466778",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1759",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1763": {
+    "x": 4429.86,
+    "Routes": [
+      {
+        "ARSCodes": "0044466778",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1761",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1765": {
+    "x": 4554.86,
+    "Routes": [
+      {
+        "Lights": "4-1",
+        "ARSCodes": "200046778",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "UN177",
+    "ARSOnly": false,
+    "LensesStr": "BYG-RW",
+    "SignalType": 0,
+    "TwoToSix": true,
+    "FrontArsName": "1763",
+    "Left": false,
+    "Double": false,
+    "DoubleL": false,
+    "NonAutoStop": true,
+    "Pole": 1
+  },
+  "1767": {
+    "x": 4617.36,
+    "Routes": [
+      {
+        "ARSCodes": "0004466778",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1765",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1769": {
+    "x": 4654.86,
+    "Routes": [
+      {
+        "ARSCodes": "00044667",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1767",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1771": {
+    "x": 4704.86,
+    "Routes": [
+      {
+        "ARSCodes": "00044667",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1769",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1773": {
+    "x": 4754.86,
+    "Routes": [
+      {
+        "ARSCodes": "0004467",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1771",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1775": {
+    "x": 4792.36,
+    "Routes": [
+      {
+        "ARSCodes": "000446",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1773",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true,
+    "Kanava": true
+  },
+  "1777": {
+    "x": 4842.36,
+    "Routes": [
+      {
+        "ARSCodes": "000446",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1775",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true,
+    "Kanava": true
+  },
+  "1779": {
+    "x": 4879.86,
+    "Routes": [
+      {
+        "ARSCodes": "000446",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1777",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true,
+    "Kanava": true
+  },
+  "1811": {
+    "x": 4923.86,
+    "Routes": [
+      {
+        "RouteName": "UN1-1",
+        "Lights": "5-53-53-1",
+        "Switches": "UN_SW_1+",
+        "EnRou": true,
+        "ARSCodes": "2004",
+        "NextSignal": "*"
+      },
+      {
+        "ARSCodes": "2",
+        "Lights": "5",
+        "Switches": "UN_SW_1-"
+      },
+      {
+        "RouteName": "UN1-3",
+        "Lights": "5-5-5-5-1",
+        "ARSCodes": "22224",
+        "Switches": "UN_SW_1-,UN_SW_3+,UN_SW_5+",
+        "NextSignal": "UNFIX9",
+        "EnRou": true,
+        "Manual": true
+      },
+      {
+        "RouteName": "UN1-4",
+        "Lights": "5-5-5-5-5-1",
+        "ARSCodes": "222224",
+        "Switches": "UN_SW_1-,UN_SW_3-,UN_SW_6-",
+        "NextSignal": "UNFIX9",
+        "EnRou": true,
+        "Manual": true
+      }
+    ],
+    "Name": "UN181MG",
+    "ARSOnly": false,
+    "LensesStr": "BWY-GRW-M",
+    "SignalType": 0,
+    "TwoToSix": true,
+    "Approve0": true,
+    "FrontArsName": "1779",
+    "Left": false,
+    "Double": false,
+    "DoubleL": false,
+    "NonAutoStop": true,
+    "Krons": "SRLN",
+    "Types": "8666",
+    "ColorLens": true
+  },
+  "1813": {
+    "x": 4967.36,
+    "Routes": [
+      {
+        "ARSCodes": "000046",
+        "NextSignal": "*"
+      },
+      {
+        "ARSCodes": "4",
+        "Switches": "UN_SW_1-"
+      }
+    ],
+    "Name": "TC1811",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true,
+    "RouteNumber": "1"
+  },
+  "1815": {
+    "x": 5029.86,
+    "Routes": [
+      {
+        "ARSCodes": "00047",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1813",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1817": {
+    "x": 5067.36,
+    "Routes": [
+      {
+        "ARSCodes": "0007",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1815",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1819": {
+    "x": 5104.86,
+    "Routes": [
+      {
+        "ARSCodes": "007",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1817",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1821": {
+    "x": 5242.36,
+    "Routes": [
+      {
+        "ARSCodes": "0467",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1819",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1823": {
+    "x": 5379.86,
+    "Routes": [
+      {
+        "ARSCodes": "0068",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1821",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1825": {
+    "x": 5517.36,
+    "Routes": [
+      {
+        "ARSCodes": "0478",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1823",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1827": {
+    "x": 5654.86,
+    "Routes": [
+      {
+        "ARSCodes": "0468",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1825",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1829": {
+    "x": 5792.36,
+    "Routes": [
+      {
+        "ARSCodes": "0468",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1827",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1831": {
+    "x": 5929.86,
+    "Routes": [
+      {
+        "ARSCodes": "0478",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1829",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1833": {
+    "x": 6067.36,
+    "Routes": [
+      {
+        "ARSCodes": "0478",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1831",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1849": {
+    "x": 6204.86,
+    "Routes": [
+      {
+        "ARSCodes": "0478",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1833",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1851": {
+    "x": 6342.36,
+    "Routes": [
+      {
+        "ARSCodes": "0478",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1849",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1853": {
+    "x": 6479.86,
+    "Routes": [
+      {
+        "ARSCodes": "0478",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1851",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1855": {
+    "x": 6617.36,
+    "Routes": [
+      {
+        "ARSCodes": "0478",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1853",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1857": {
+    "x": 6754.86,
+    "Routes": [
+      {
+        "ARSCodes": "048",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1855",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1859": {
+    "x": 6892.36,
+    "Routes": [
+      {
+        "ARSCodes": "04678",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1857",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1861": {
+    "x": 7029.86,
+    "Routes": [
+      {
+        "ARSCodes": "0046778",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1859",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1863": {
+    "x": 7129.86,
+    "Routes": [
+      {
+        "ARSCodes": "00446778",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1861",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1865": {
+    "x": 7204.86,
+    "Routes": [
+      {
+        "ARSCodes": "0004467",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1863",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1867": {
+    "x": 7267.36,
+    "Routes": [
+      {
+        "ARSCodes": "0004467",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1865",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1869": {
+    "x": 7317.36,
+    "Routes": [
+      {
+        "ARSCodes": "000446",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1867",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1871": {
+    "x": 7367.36,
+    "Routes": [
+      {
+        "ARSCodes": "000446",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1869",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1873": {
+    "x": 7417.36,
+    "Routes": [
+      {
+        "ARSCodes": "000446",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1871",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true,
+    "Kanava": true
+  },
+  "1875": {
+    "x": 7454.86,
+    "Routes": [
+      {
+        "ARSCodes": "000446",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1873",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true,
+    "Kanava": true
+  },
+  "1877": {
+    "x": 7504.86,
+    "Routes": [
+      {
+        "ARSCodes": "000446",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1875",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true,
+    "Kanava": true
+  },
+  "1879": {
+    "x": 7554.86,
+    "Routes": [
+      {
+        "ARSCodes": "000446",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1877",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true,
+    "Kanava": true
+  },
+  "1911": {
+    "x": 7592.36,
+    "Routes": [
+      {
+        "Lights": " ",
+        "ARSCodes": "0004",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "191",
+    "ARSOnly": false,
+    "LensesStr": "YGR",
+    "SignalType": 6,
+    "TwoToSix": true,
+    "Approve0": true,
+    "FrontArsName": "1879",
+    "Left": false,
+    "Double": false,
+    "DoubleL": false,
+    "NonAutoStop": true,
+    "OW": "[5 0 0]",
+    "Krons": "L",
+    "FLeft": true
+  },
+  "1913": {
+    "x": 7642.36,
+    "Routes": [
+      {
+        "ARSCodes": "00046",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1911",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1915": {
+    "x": 7692.36,
+    "Routes": [
+      {
+        "ARSCodes": "0046",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1913",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1917": {
+    "x": 7742.36,
+    "Routes": [
+      {
+        "ARSCodes": "0067",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1915",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1919": {
+    "x": 7842.36,
+    "Routes": [
+      {
+        "ARSCodes": "047",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1917",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1921": {
+    "x": 7979.86,
+    "Routes": [
+      {
+        "ARSCodes": "047",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1919",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1923": {
+    "x": 8117.36,
+    "Routes": [
+      {
+        "ARSCodes": "04467",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1921",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1925": {
+    "x": 8254.86,
+    "Routes": [
+      {
+        "ARSCodes": "0467",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1923",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1963": {
+    "x": 8392.36,
+    "Routes": [
+      {
+        "ARSCodes": "00467",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1925",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1965": {
+    "x": 8517.36,
+    "Routes": [
+      {
+        "ARSCodes": "0044667",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1963",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1967": {
+    "x": 8592.36,
+    "Routes": [
+      {
+        "ARSCodes": "0044667",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1965",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1969": {
+    "x": 8667.36,
+    "Routes": [
+      {
+        "ARSCodes": "00444667",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1967",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1971": {
+    "x": 8742.36,
+    "Routes": [
+      {
+        "ARSCodes": "0004467",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1969",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1973": {
+    "x": 8804.86,
+    "Routes": [
+      {
+        "ARSCodes": "0004467",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1971",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "1975": {
+    "x": 8842.36,
+    "Routes": [
+      {
+        "ARSCodes": "000446",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1973",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true,
+    "Kanava": true
+  },
+  "1977": {
+    "x": 8892.36,
+    "Routes": [
+      {
+        "ARSCodes": "00046",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1975",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true,
+    "Kanava": true
+  },
+  "1979": {
+    "x": 8942.36,
+    "Routes": [
+      {
+        "ARSCodes": "00046",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1977",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true,
+    "Kanava": true
+  },
+  "2011": {
+    "x": 8979.86,
+    "Routes": [
+      {
+        "Lights": " ",
+        "ARSCodes": "004",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "201",
+    "ARSOnly": false,
+    "LensesStr": "YGR",
+    "SignalType": 6,
+    "TwoToSix": true,
+    "Approve0": true,
+    "Kanava": true,
+    "FrontArsName": "1979",
+    "Left": false,
+    "Double": false,
+    "DoubleL": false,
+    "NonAutoStop": true,
+    "OW": "[4 0 0]",
+    "Krons": "L"
+  },
+  "2013": {
+    "x": 9029.86,
+    "Routes": [
+      {
+        "ARSCodes": "0004",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC2011",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "2015": {
+    "x": 9079.86,
+    "Routes": [
+      {
+        "ARSCodes": "2",
+        "NextSignal": " ",
+        "Lights": "3"
+      },
+      {
+        "RouteName": "UZ1-1",
+        "Lights": "3-3-1",
+        "Manual": true,
+        "ARSCodes": "224",
+        "NextSignal": "*",
+        "Switches": "UZ_SW_3+"
+      }
+    ],
+    "Name": "UZ207",
+    "ARSOnly": false,
+    "LensesStr": "BW-RW",
+    "SignalType": 0,
+    "TwoToSix": true,
+    "FrontArsName": "2013",
+    "Left": false,
+    "Double": false,
+    "DoubleL": false,
+    "NonAutoStop": true,
+    "OW": "[1 0 -15]",
+    "Krons": "L"
+  },
+  "1765_back": {
+    "x": 4554.86,
+    "Name": "UNOP",
+    "ARSOnly": false,
+    "LensesStr": "R",
+    "SignalType": 0,
+    "Left": true,
+    "Back": true,
+    "Routes": [
+      {
+        "Lights": 1,
+        "NextSignal": "*"
+      }
+    ],
+    "NonAutoStop": true,
+    "name": "УНОП",
+    "Letter": "OP",
+    "DTM": true,
+    "Pole": 1,
+    "SignalName": "OP"
+  }
+}

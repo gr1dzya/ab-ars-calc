@@ -1,0 +1,420 @@
+{
+  "1": {
+    "x": 417.7,
+    "Routes": [
+      {
+        "Lights": "3",
+        "ARSCodes": "2",
+        "NextSignal": ""
+      },
+      {
+        "Lights": "3-3-1",
+        "RouteName": "SPV-1",
+        "ARSCodes": "224",
+        "Switches": "SP_SW_1+",
+        "PRou": "1",
+        "Manual": true,
+        "EnRou": true,
+        "NextSignal": "*"
+      },
+      {
+        "Lights": "3-3-3-3-3-3-1",
+        "RouteName": "SPV-2",
+        "ARSCodes": "22222224",
+        "Switches": "SP_SW_1-,SP_SW_2-",
+        "PRou": "2",
+        "Manual": true,
+        "EnRou": true,
+        "NextSignal": "SPFIX33"
+      }
+    ],
+    "Name": "SPV",
+    "Letter": "V",
+    "LensesStr": "BWRWM",
+    "SignalType": 0,
+    "Pole": 1,
+    "DTM": true,
+    "Left": true,
+    "NonAutoStop": true,
+    "Back": true,
+    "TwoToSix": true,
+    "Approve0": true
+  },
+  "2": {
+    "x": 0.001,
+    "Routes": [
+      {
+        "Lights": "1"
+      }
+    ],
+    "Name": "SPOP",
+    "Letter": "OP",
+    "FrontArsName": "9112",
+    "LensesStr": "R",
+    "SignalType": 0,
+    "Left": true,
+    "NonAutoStop": true,
+    "Back": true
+  },
+  "3": {
+    "x": 105,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "04"
+      }
+    ],
+    "Name": "TCSPPREOP",
+    "ARSOnly": true,
+    "FrontArsName": "1577",
+    "LensesStr": "",
+    "Kanava": true,
+    "Back": true,
+    "SignalType": 6
+  },
+  "3a": {
+    "x": 9143,
+    "Routes": [
+      {
+        "Lights": "3",
+        "ARSCodes": "2",
+        "NextSignal": ""
+      },
+      {
+        "Lights": "3-3-3-3-1",
+        "RouteName": "UZ1-2",
+        "Switches": "UZ_SW_3-,UZ_SW_2-",
+        "ARSCodes": "22224",
+        "Manual": true,
+        "NextSignal": "UZFIX2"
+      }
+    ],
+    "Name": "UZ1",
+    "LensesStr": "BWRW",
+    "SignalType": 0,
+    "Pole": 1,
+    "NonAutoStop": true,
+    "Back": true,
+    "TwoToSix": true,
+    "Approve0": true
+  },
+  "4": {
+    "x": 174.86,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "00004"
+      }
+    ],
+    "Name": "pohui",
+    "ARSOnly": true,
+    "FrontArsName": "1577",
+    "LensesStr": "",
+    "Kanava": true,
+    "SignalType": 6
+  },
+  "5": {
+    "x": 9099,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "1"
+      },
+      {
+        "NextSignal": "TC2072",
+        "Switches": "UZ_SW_3-,UZ_SW_2-",
+        "Repeater": true
+      }
+    ],
+    "Name": "UZFIX1",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "Back": true,
+    "TwoToSix": true,
+    "DTM": true,
+    "SignalType": 6
+  },
+  "6": {
+    "x": 9232,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "UZFIX3",
+    "FrontArsName": "3",
+    "ARSOnly": true,
+    "FLeft": true,
+    "LensesStr": "",
+    "SignalType": 6
+  },
+  "7": {
+    "x": 9287,
+    "Routes": [
+      {
+        "NextSignal": ""
+      }
+    ],
+    "Name": "UZFIX5",
+    "DTM": true,
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 6
+  },
+  "8": {
+    "x": 9142,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "UZFIX7",
+    "DTM": true,
+    "PassOcc": true,
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 6
+  },
+  "9": {
+    "x": 9080,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "UZFIX9",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "Back": true,
+    "DTM": true,
+    "SignalType": 6
+  },
+  "10": {
+    "x": 4990,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "UNFIX1",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "Back": true,
+    "DTM": true,
+    "SignalType": 6
+  },
+  "11": {
+    "x": 4755,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "UNFIX5",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "RouteNumber": "1",
+    "Back": true,
+    "DTM": true,
+    "SignalType": 6
+  },
+  "12": {
+    "x": 666,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "SPFIX9",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "Back": true,
+    "DTM": true,
+    "SignalType": 6
+  },
+  "13": {
+    "x": 592,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "1"
+      },
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4",
+        "Switches": "SP_SW_3-"
+      }
+    ],
+    "Name": "SPFIX11",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "Back": true,
+    "PassOcc": true,
+    "DTM": true,
+    "SignalType": 6
+  },
+  "131": {
+    "x": 5316,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Repeater": true,
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "M169",
+    "LensesStr": "R",
+    "DTM": true,
+		"PassOcc": true,
+		"TwoToSix": true,
+    "Pole": 1,
+		"NonAutoStop": true,
+    "SignalType": 8
+  },
+  "14": {
+    "x": 5404,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "MK169",
+    "LensesStr": "R",
+    "Back": true,
+    "DTM": true,
+    "Pole": 1,
+		"NonAutoStop": true,
+    "SignalType": 0
+  },
+  "15": {
+    "x": 3216,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Repeater": true,
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "M229",
+    "LensesStr": "R",
+    "DTM": true,
+		"TwoToSix": true,
+		"PassOcc": true,
+    "Pole": 1,
+		"NonAutoStop": true,
+    "SignalType": 8
+  },
+  "16": {
+    "x": 3312,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "MK229",
+    "LensesStr": "R",
+    "Back": true,
+    "DTM": true,
+    "Pole": 1,
+		"NonAutoStop": true,
+    "SignalType": 0
+  },
+  "17": {
+    "x": 641,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Repeater": true,
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "M231",
+    "LensesStr": "R",
+    "DTM": true,
+		"TwoToSix": true,
+		"PassOcc": true,
+    "Pole": 1,
+		"NonAutoStop": true,
+    "SignalType": 8
+  },
+  "18": {
+    "x": 725,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "MK231",
+    "LensesStr": "R",
+    "Back": true,
+    "DTM": true,
+    "Pole": 1,
+		"NonAutoStop": true,
+    "SignalType": 0
+  },
+  "19": {
+    "x": 1,
+    "Routes": [
+      {
+        "NextSignal": "FIX1",
+        "ARSCodes": "0"
+      }
+    ],
+    "Name": "FIX",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "DTM": true,
+    "SignalType": 6
+  },
+  "20": {
+    "x": 1,
+    "Routes": [
+      {
+        "NextSignal": "FIX2",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "FIX1",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "DTM": true,
+    "SignalType": 6
+  },
+  "21": {
+    "x": 1,
+    "Routes": [
+      {
+        "NextSignal": "FIX3",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "FIX2",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "DTM": true,
+    "SignalType": 6
+  },
+  "22": {
+    "x": 1,
+    "Routes": [
+      {
+        "NextSignal": "",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "FIX3",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "DTM": true,
+    "SignalType": 6
+  }
+}
