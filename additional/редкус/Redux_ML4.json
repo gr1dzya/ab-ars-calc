@@ -1,0 +1,141 @@
+{
+  "66": {
+    "x": 6.7,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Switches": "",
+        "ARSCodes": "1"
+      },
+      {
+        "NextSignal": "*",
+        "Switches": "MO2-,MO4+,MO6+",
+        "ARSCodes": "4"
+      },
+      {
+        "NextSignal": "MOFIX3",
+        "Switches": "MO2-,MO4-,MO5-",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "MOFIX4",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "FrontArsName": "6476",
+    "SignalType": 0
+  },
+  "67": {
+    "x": 27,
+    "Routes": [
+      {
+        "NextSignal": "MOFIX2",
+        "Switches": "MO6+",
+        "ARSCodes": "004"
+      },
+      {
+        "NextSignal": "MOFIX31",
+        "Switches": "MO6-",
+        "ARSCodes": "0004"
+      }
+    ],
+    "Name": "MOFIX42",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "FrontArsName": "6",
+    "PassOcc": true,
+    "Back": true,
+    "SignalType": 0
+  },
+  "68": {
+    "x": 48,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "MOTC6",
+    "ARSOnly": true,
+    "FrontArsName": "6",
+    "LensesStr": "",
+    "DTM": true,
+    "SignalType": 0
+  },
+  "70": {
+    "x": 176,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "MOTC4a",
+    "ARSOnly": true,
+    "FrontArsName": "4A",
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "69": {
+    "x": 125,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "MOTC4",
+    "ARSOnly": true,
+    "FrontArsName": "4",
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "78": {
+    "x": 48.5,
+    "Name": "MO4",
+    "ARSOnly": false,
+    "LensesStr": "BWRWM",
+    "FrontArsName": "4",
+    "noPogashenie": 0,
+		"OW": "[25 0 -20]",
+    "Pole": 1,
+    "SignalType": 8,
+    "Back": true,
+    "FLeft": true,
+    "Routes": [
+      {
+        "NextSignal": "",
+        "Lights": "3",
+        "ARSCodes": "2"
+      },
+      {
+				"RouteName": "MO4-1", "NextSignal": "*",
+        "Manual": true, "EnRou": true, "PRou": "1",
+        "Switches": "MO1-,MO3-,MO6-",
+        "Lights": "3-3-3-3-3-2", "Rezab1": "3-3-3-3-3-2", "RezabCommand": "suka",
+        "ARSCodes": "222224"
+      },
+      {
+				"RouteName": "MO4-2", "NextSignal": "*",
+        "Manual": true, "EnRou": true, "PRou": "2",
+        "Switches": "MO2-,MO4+,MO5+,MO6+",
+        "Lights": "3-3-3-3-3-2", "Rezab1": "3-3-1", "RezabCommand": "suka",
+        "ARSCodes": "224"
+      }
+    ]
+  },
+  "79": {
+    "x": 220,
+    "Routes": [
+      {
+        "NextSignal": "",
+        "ARSCodes": "0"
+      }
+    ],
+    "Name": "MOFIX411",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "FrontArsName": "5",
+    "PassOcc": true,
+    "SignalType": 0
+  }
+}

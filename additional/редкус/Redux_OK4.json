@@ -1,0 +1,143 @@
+{
+  "66": {
+    "x": 10,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Switches": "",
+        "ARSCodes": "1"
+      },
+      {
+        "NextSignal": "*",
+        "Switches": "OK2-,OK4+,OK6+",
+        "ARSCodes": "4"
+      },
+      {
+        "NextSignal": "OKFIX3",
+        "Switches": "OK2-,OK4-,OK5-",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "OKFIX4",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "FrontArsName": "136",
+    "SignalType": 0
+  },
+  "67": {
+    "x": 34,
+    "Routes": [
+      {
+        "NextSignal": "OKFIX2",
+        "Switches": "OK6+",
+        "ARSCodes": "004"
+      },
+      {
+        "NextSignal": "OKFIX31",
+        "Switches": "OK6-",
+        "ARSCodes": "0004"
+      }
+    ],
+    "Name": "OKFIX42",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "FrontArsName": "6",
+    "PassOcc": true,
+    "Back": true,
+    "SignalType": 0
+  },
+  "68": {
+    "x": 64,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "OKTC6",
+    "ARSOnly": true,
+    "FrontArsName": "6",
+    "LensesStr": "",
+    "DTM": true,
+    "SignalType": 0
+  },
+  "70": {
+    "x": 214,
+    "Name": "V2M",
+    "ARSOnly": false,
+    "LensesStr": "YG-RW",
+    "FrontArsName": "8",
+    "noPogashenie": 0,
+    "Routes": [
+      {
+        "NextSignal": "",
+        "Lights": "3",
+        "ARSCodes": "2"
+      },
+      {
+        "NextSignal": "*",
+        "Switches": "OK1-,OK3-,OK6-",
+        "Lights": "3-13",
+        "ARSCodes": "24"
+      },
+      {
+        "NextSignal": "*",
+        "Switches": "OK2-,OK4+,OK5+,OK6+",
+        "Lights": "3-31",
+        "ARSCodes": "24"
+      }
+    ]
+  },
+  "78": {
+    "x": 64.44,
+    "Name": "OK2",
+    "ARSOnly": false,
+    "LensesStr": "WRW-12",
+    "FrontArsName": "4",
+    "noPogashenie": 0,
+		"Krons": "LN",
+    "Back": true,
+    "Routes": [
+      {
+        "NextSignal": "",
+        "Lights": "2",
+        "ARSCodes": "2"
+      },
+      {
+        "NextSignal": "*",
+				"RouteName": "OK4-1",
+        "Manual": true,
+        "EnRou": true,
+        "PRou": "1",
+        "Switches": "OK1-,OK3-,OK6-",
+        "Lights": "2-2-2-2-2-1",
+        "ARSCodes": "222224"
+      },
+      {
+        "NextSignal": "*",
+				"RouteName": "OK4-2",
+        "Manual": true,
+        "EnRou": true,
+        "PRou": "2",
+        "Switches": "OK2-,OK4+,OK5+,OK6+",
+        "Lights": "2-2-2-1",
+        "ARSCodes": "2224"
+      }
+    ]
+  },
+  "79": {
+    "x": 220,
+    "Routes": [
+      {
+        "NextSignal": "",
+        "ARSCodes": "0"
+      }
+    ],
+    "Name": "OKFIX411",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "FrontArsName": "5",
+    "PassOcc": true,
+    "SignalType": 0
+  }
+}

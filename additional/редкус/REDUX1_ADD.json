@@ -1,0 +1,330 @@
+{
+  "64": {
+    "x": 1660,
+    "Name": "MK11",
+    "ARSOnly": false,
+    "LensesStr": "YR",
+    "noPogashenie": 0,
+		"Pole": 1,
+		"NonAutoStop": true,
+		"Back": true,
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "1"
+      }
+    ]
+  },
+  "66": {
+    "x": 10,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "AKFIX6",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "DTM": true,
+    "SignalType": 0
+  },
+  "74": {
+    "x": 2508,
+    "Name": "M9",
+    "ARSOnly": false,
+    "LensesStr": "XR",
+    "noPogashenie": 0,
+		"Pole": 1,
+		"NonAutoStop": true,
+		"PassOcc": true,
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "",
+        "Repeater": true
+      }
+    ]
+  },"64f": {
+    "x": 2609,
+    "Name": "MK9",
+    "ARSOnly": false,
+    "LensesStr": "YR",
+    "noPogashenie": 0,
+		"Pole": 1,
+		"NonAutoStop": true,
+		"Back": true,
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "1"
+      }
+    ]
+  },
+  "77": {
+    "x": 221.08,
+    "Name": "MJG",
+    "ARSOnly": false,
+    "LensesStr": "WR-I",
+		"Krons": "LN",
+    "FrontArsName": "25",
+    "noPogashenie": 0,
+		"Letter": "G",
+		"Left": true,
+		"Pole": 1,
+    "Routes": [
+      {
+        "NextSignal": "",
+        "Lights": "2",
+        "ARSCodes": "2"
+      },
+      {
+        "NextSignal": "*",
+				"RouteName": "MJG-1",
+        "Manual": true,
+        "Switches": "MJ1+",
+        "Lights": "2-2-1",
+        "ARSCodes": "224"
+      }
+    ]
+  },
+  "77a": {
+    "x": 271.50,
+    "Name": "33",
+    "ARSOnly": false,
+		"Pole": 1,
+    "FrontArsName": "27",
+    "LensesStr": "YXR",
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "3-31-31-1",
+        "ARSCodes": "004"
+      }
+    ]
+  },
+  "78": {
+    "x": 271.5,
+    "Name": "MJD",
+    "ARSOnly": false,
+    "LensesStr": "WRW-1-34",
+		"Letter": "D",
+    "noPogashenie": 0,
+		"Krons": "LNU",
+    "Back": true,
+    "Pole": 1,
+		"NonAutoStop": true,
+		"DTM": true,
+		"Left": true,
+    "Routes": [
+      {
+        "NextSignal": "",
+        "Lights": "2"
+      },
+      {
+        "NextSignal": "*",
+				"RouteName": "MJD-1",
+        "Manual": true,
+        "EnRou": true,
+        "PRou": "1",
+        "Switches": "MJ1+",
+        "Lights": "2-2-2-1",
+        "ARSCodes": "2224"
+      },
+      {
+        "NextSignal": "MJFIX3",
+				"RouteName": "MJD-3",
+        "Manual": true,
+        "EnRou": true,
+        "PRou": "3",
+        "Switches": "MJ1-,MJ3+,MJ5+,MJ6+",
+        "Lights": "2-2-2-2-1",
+        "ARSCodes": "22224"
+      },
+      {
+        "NextSignal": "MJFIX3",
+				"RouteName": "MJD-4",
+        "Manual": true,
+        "EnRou": true,
+        "PRou": "4",
+        "Switches": "MJ1-,MJ3-,MJ5+,MJ6-",
+        "Lights": "2-2-2-2-2-1",
+        "ARSCodes": "222224"
+      }
+    ]
+  },
+  "79": {
+    "x": 224,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Switches": "MJ1+",
+        "ARSCodes": "4"
+      },
+      {
+        "NextSignal": "*",
+        "Switches": "MJ1-",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "MJFIX1",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "PassOcc": true,
+    "DTM": true,
+    "SignalType": 0
+  },
+  "80": {
+    "x": 224,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "MJFIX1Back",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "PassOcc": true,
+    "DTM": true,
+    "Back": true,
+    "SignalType": 0
+  },
+  "81": {
+    "x": 9043,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "OKFIX1",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "Back": true,
+    "PassOcc": true,
+    "DTM": true,
+    "SignalType": 0
+  },
+  "82": {
+    "x": 8933,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "OKPREOP",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "DTM": true,
+		"Back": true,
+    "SignalType": 0
+  },
+  "84": {
+    "x": 14740,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "OLFIX1",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "Back": true,
+    "PassOcc": true,
+    "DTM": true,
+    "SignalType": 0
+  },
+  "85": {
+    "x": 14596,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "OLPREOP",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "DTM": true,
+		"Back": true,
+    "SignalType": 0
+  },
+  "87": {
+    "x": 18307,
+    "Name": "MOE",
+    "ARSOnly": false,
+    "LensesStr": "BWR",
+    "DTM": true,
+		"Back": true,
+    "noPogashenie": 0,
+		"Letter": "E",
+    "OW": "[25 0 -15]",
+		"Pole": 1,
+    "Routes": [
+      {
+        "NextSignal": "",
+        "Lights": "3",
+        "ARSCodes": "2"
+      },
+      {
+				"RouteName": "MOE-1", "NextSignal": "*", "Manual": true, "RezabCommand": "suka",
+        "Switches": "MO1+", "Lights": "3-3-2", "Rezab1": "3-3-1", "ARSCodes": "224"
+      }
+    ],
+    "SignalType": 8
+  },
+  "88": {
+    "x": 18300,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "MOFIX1",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "Back": true,
+    "PassOcc": true,
+    "DTM": true,
+    "SignalType": 0
+  },
+  "89": {
+    "x": 18108,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "MOPREOP",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "DTM": true,
+		"Back": true,
+    "SignalType": 0
+  },
+  "90": {
+    "x": 108.58,
+    "Name": "MJ3",
+    "ARSOnly": false,
+		"Krons": "LN",
+    "FrontArsName": "23",
+    "LensesStr": "XR-I",
+    "noPogashenie": 0,
+		"Pole": 1,
+    "Routes": [
+      {
+        "NextSignal": "",
+        "Lights": "2",
+        "ARSCodes": "2"
+      }
+    ]
+  }
+}

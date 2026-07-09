@@ -1,0 +1,131 @@
+{
+  "66": {
+    "x": 10,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Switches": "",
+        "ARSCodes": "1"
+      },
+      {
+        "NextSignal": "*",
+        "Switches": "MJ1-,MJ3+,MJ5+",
+        "ARSCodes": "4"
+      },
+      {
+        "NextSignal": "MJFIX4",
+        "Switches": "MJ1-,MJ3-,MJ6-",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "MJFIX3",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "FrontArsName": "27",
+    "SignalType": 0
+  },
+  "67": {
+    "x": 35,
+    "Routes": [
+      {
+        "NextSignal": "MJFIX1",
+        "Switches": "MJ5+",
+        "ARSCodes": "004"
+      },
+      {
+        "NextSignal": "MJFIX42",
+        "Switches": "MJ5-",
+        "ARSCodes": "0004"
+      }
+    ],
+    "Name": "MJFIX31",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "FrontArsName": "5",
+    "PassOcc": true,
+    "Back": true,
+    "SignalType": 0
+  },
+  "68": {
+    "x": 64,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "MJTC5",
+    "ARSOnly": true,
+    "FrontArsName": "5",
+    "LensesStr": "",
+    "DTM": true,
+    "SignalType": 0
+  },
+  "69": {
+    "x": 151.5,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "MJTC3",
+    "ARSOnly": true,
+    "FrontArsName": "3",
+    "LensesStr": "",
+    "Left": true,
+    "SignalType": 8
+  },
+  "70": {
+    "x": 214,
+    "Routes": [
+      {
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "MJTC3a",
+    "ARSOnly": true,
+    "FrontArsName": "3A",
+    "LensesStr": "",
+    "Left": true,
+    "SignalType": 8
+  },
+  "78": {
+    "x": 64.44,
+    "Name": "MJ1",
+    "ARSOnly": false,
+    "LensesStr": "WRW-12",
+    "FrontArsName": "3",
+    "noPogashenie": 0,
+		"Krons": "LN",
+		"OW": "[-1 0 -20]",
+    "Back": true,
+    "Routes": [
+      {
+        "NextSignal": "",
+        "Lights": "2",
+        "ARSCodes": "2"
+      },
+      {
+        "NextSignal": "*",
+				"RouteName": "MJ3-1",
+        "Manual": true,
+        "EnRou": true,
+        "PRou": "1",
+        "Switches": "MJ1-,MJ3+,MJ5+,MJ6+",
+        "Lights": "2-2-2-2-2-2-1",
+        "ARSCodes": "2222224"
+      },
+      {
+        "NextSignal": "*",
+				"RouteName": "MJ3-2",
+        "Manual": true,
+        "EnRou": true,
+        "PRou": "2",
+        "Switches": "MJ2-,MJ4-,MJ5-,MJ6+",
+        "Lights": "2-2-2-2-2-1",
+        "ARSCodes": "222224"
+      }
+    ]
+  }
+}

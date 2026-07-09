@@ -1,0 +1,107 @@
+{
+  "66": {
+    "x": 10,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Switches": "",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "OLFIX3",
+    "ARSOnly": true,
+    "DTM": true,
+    "LensesStr": "",
+    "FrontArsName": "666666666666",
+    "SignalType": 0
+  },
+  "67": {
+    "x": 20,
+    "Routes": [
+      {
+        "NextSignal": "OLFIX2",
+        "Switches": "OL3+",
+        "ARSCodes": "004"
+      },
+      {
+        "NextSignal": "OLFIX1",
+        "Switches": "OL3-",
+        "ARSCodes": "0004"
+      }
+    ],
+    "Name": "OLFIX31",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "FrontArsName": "6",
+    "Back": true,
+    "Left": true,
+    "SignalType": 0
+  },
+  "68": {
+    "x": 64,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "OLTC5",
+    "ARSOnly": true,
+    "FrontArsName": "6",
+    "LensesStr": "",
+    "DTM": true,
+    "SignalType": 0
+  },
+  "69": {
+    "x": 151.5,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "OLTC3",
+    "ARSOnly": true,
+    "FrontArsName": "3",
+    "LensesStr": "",
+    "SignalType": 8
+  },
+  "70": {
+    "x": 214,
+    "Routes": [
+      {
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "OLTC3a",
+    "ARSOnly": true,
+    "FrontArsName": "3A",
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "78": {
+    "x": 64.44,
+    "Name": "OL3", 
+    "LensesStr": "BWRWM", "FrontArsName": "3",
+    "Left": true, "Pole": 1, 
+    "Back": true, "ARSOnly": false,
+    "noPogashenie": 0, "SignalType": 8,
+    "Routes": [
+      {
+        "NextSignal": "", "Lights": "3", "ARSCodes": "2"
+      },
+      {
+				"RouteName": "OL3-1", "NextSignal": "*",
+        "Manual": true, "EnRou": true, "PRou": "2",
+        "Switches": "OL1-,OL3-", "RezabCommand": "suka",
+        "Lights": "3-3-3-3-2", "Rezab1": "3-3-3-3-1", "ARSCodes": "22224"
+      },
+      {
+				"RouteName": "OL3-2", "NextSignal": "*",
+        "Manual": true, "EnRou": true, "PRou": "2",
+        "Switches": "OL2-,OL3+", "RezabCommand": "suka",
+        "Lights": "3-3-3-2", "Rezab1": "3-3-3-1", "ARSCodes": "2224"
+      }
+    ]
+  }
+}

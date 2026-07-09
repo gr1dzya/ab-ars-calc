@@ -1,0 +1,433 @@
+{
+  "64": {
+    "x": 1660,
+    "Name": "MK11",
+    "ARSOnly": false,
+    "LensesStr": "YR",
+		"Pole": 1,
+		"NonAutoStop": true,
+		"Back": true,
+    "noPogashenie": 0,
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "1"
+      }
+    ]
+  },
+  "66": {
+    "x": 17582,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "MJFIXOP",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "DTM": true,
+		"Back": true,
+    "SignalType": 0
+  },
+  "67": {
+    "x": 17969,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "MJPREOP",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "DTM": true,
+		"Back": true,
+    "SignalType": 0
+  },
+  "74": {
+    "x": 2508,
+    "Name": "M9",
+    "ARSOnly": false,
+    "LensesStr": "XR",
+		"Pole": 1,
+		"NonAutoStop": true,
+		"PassOcc": true,
+    "noPogashenie": 0,
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Repeater": true,
+        "Lights": ""
+      }
+    ]
+  },"64f": {
+    "x": 2609,
+    "Name": "MK9",
+    "ARSOnly": false,
+    "LensesStr": "YR",
+    "noPogashenie": 0,
+		"Pole": 1,
+		"NonAutoStop": true,
+		"Back": true,
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "1"
+      }
+    ]
+  },
+  "77": {
+    "x": 139,
+    "Name": "MOG",
+    "ARSOnly": false,
+    "LensesStr": "BWRW",
+    "noPogashenie": 0,
+    "FrontArsName": "6474",
+		"Letter": "G",
+		"Pole": 1,
+    "Routes": [
+      {
+        "NextSignal": "",
+        "Lights": "3",
+        "ARSCodes": "2"
+      },
+      {
+				"RouteName": "MOG-2", "NextSignal": "*", "Manual": true,
+        "Switches": "MO2+", "Lights": "3-3-3-3-2", "Rezab1": "3-3-1", "ARSCodes": "224"
+      }
+    ],
+    "SignalType": 8
+  },
+  "78": {
+    "x": 192.5,
+    "Name": "MOD",
+    "ARSOnly": false,
+    "LensesStr": "BWRWM",
+		"Letter": "D",
+		"Pole": 1,
+    "OW": "[-6 0 -15]",
+    "Back": true,
+		"NonAutoStop": true,
+    "noPogashenie": 0,
+		"DTM": true,
+		"Left": true,
+    "Routes": [
+      {
+        "NextSignal": "",
+        "Lights": "3",
+        "ARSCodes": "2"
+      },
+      {
+				"RouteName": "MOD-2", "NextSignal": "*",
+        "Manual": true, "EnRou": true, "PRou": "1",
+        "Switches": "MO2+",
+        "Lights": "3-3-3-2", "Rezab1": "3-3-3-3-1",
+        "ARSCodes": "2224"
+      },
+      {
+				"RouteName": "MOD-3", "NextSignal": "MOFIX4",
+        "Manual": true, "EnRou": true, "PRou": "3",
+        "Switches": "MO2-,MO4-,MO5-,MO6+",
+        "Lights": "3-3-3-3-3-2", "Rezab1": "3-3-3-3-3-1",
+        "ARSCodes": "222224"
+      },
+      {
+				"RouteName": "MOD-4", "NextSignal": "MOFIX4",
+        "Manual": true, "EnRou": true, "PRou": "4",
+        "Switches": "MO2-,MO4+,MO5+,MO6+",
+        "Lights": "3-3-3-3-2", "Rezab1": "3-3-3-3-1",
+        "ARSCodes": "22224"
+      }
+    ],
+    "SignalType": 8
+  },
+  "79": {
+    "x": 18082,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Switches": "MJ2+",
+        "ARSCodes": "4"
+      },
+      {
+        "NextSignal": "*",
+        "Switches": "MJ2-",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "MJFIX2",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "PassOcc": true,
+    "DTM": true,
+    "Back": true,
+    "SignalType": 0
+  },
+  "80": {
+    "x": 9222,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Repeater": true
+      }
+    ],
+    "Name": "OKFIX2",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "PassOcc": true,
+    "DTM": true,
+    "SignalType": 0
+  },
+  "82": {
+    "x": 9261.26,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Switches": "OK2+",
+        "Repeater": true
+      },
+      {
+        "NextSignal": "*",
+        "Switches": "OK2-",
+        "ARSCodes": "004"
+      }
+    ],
+    "Name": "OKFIX130",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "PassOcc": true,
+    "DTM": true,
+    "SignalType": 0
+  },
+  "83": {
+    "x": 9261.27,
+    "Name": "OKD",
+    "ARSOnly": false,
+    "LensesStr": "WRW-34",
+		"Letter": "D",
+    "noPogashenie": 0,
+		"Krons": "MN",
+    "Back": true,
+    "LetterK": true,
+    "Pole": 1,
+		"NonAutoStop": true,
+		"DTM": true,
+		"Left": true,
+    "Routes": [
+      {
+        "NextSignal": "",
+        "Lights": "2",
+        "ARSCodes": "2"
+      },
+      {
+        "NextSignal": "OKFIX4",
+				"RouteName": "OKD-3",
+        "Manual": true,
+        "EnRou": true,
+        "PRou": "3",
+        "Switches": "OK2-,OK4-,OK5-,OK6+",
+        "Lights": "2-2-2-2-1",
+        "ARSCodes": "22224"
+      },
+      {
+        "NextSignal": "OKFIX4",
+				"RouteName": "OKD-4",
+        "Manual": true,
+        "EnRou": true,
+        "PRou": "4",
+        "Switches": "OK2-,OK4+,OK5+,OK6+",
+        "Lights": "2-2-2-1",
+        "ARSCodes": "2224"
+      }
+    ]
+  },
+  "84": {
+    "x": 3815,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Repeater": true
+      }
+    ],
+    "Name": "OLFIX2",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "PassOcc": true,
+    "DTM": true,
+    "SignalType": 0
+  },
+  "84a": {
+    "x": 3815,
+    "Routes": [
+      {
+        "NextSignal": "*", "ARSCodes": "4"
+      }
+    ],
+    "Name": "OLFIX2Back",
+    "ARSOnly": true,
+    "Back": true,
+    "LensesStr": "",
+    "PassOcc": true,
+    "DTM": true,
+    "SignalType": 0
+  },
+  "85": {
+    "x": 3855.73,
+    "Name": "OLD",
+    "ARSOnly": false,
+    "LensesStr": "BWRW",
+		"Letter": "D",
+    "noPogashenie": 0,
+    "SignalType": 8,
+    "Back": true,
+    "Pole": 1,
+		"NonAutoStop": true,
+		"DTM": true,
+		"Left": true,
+    "Routes": [
+      {
+        "NextSignal": "", "Lights": "3", "ARSCodes": "2"
+      },
+      {
+				"RouteName": "OLD-3", "NextSignal": "OLFIX3",
+        "Manual": true, "EnRou": true,
+        "Switches": "OL2-,OK3+", "ARSCodes": "22224",
+        "Lights": "3-3-3-3-2", "Rezab1": "3-3-3-3-1"
+      }
+    ]
+  },
+  "86": {
+    "x": 139.5,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Repeater": true
+      }
+    ],
+    "Name": "MOFIX2",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "PassOcc": true,
+    "DTM": true,
+    "SignalType": 0
+  },
+  "87": {
+    "x": 139.5,
+    "Routes": [
+      {
+        "NextSignal": "*", "ARSCodes": "4"
+      }
+    ],
+    "Name": "MOFIX2Back",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "DTM": true,
+    "Back": true,
+    "SignalType": 0
+  },
+  "88": {
+    "x": 62.51,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "MOTC6474",
+    "ARSOnly": true,
+    "FrontArsName": "6474",
+    "LensesStr": "",
+    "Back": true,
+		"Left": true,
+    "SignalType": 8
+  },
+  "89": {
+    "x": 0.01,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "MOTC6472",
+    "ARSOnly": true,
+    "FrontArsName": "6472",
+    "LensesStr": "",
+    "Back": true,
+		"Left": true,
+    "SignalType": 8
+  },
+  "90": {
+    "x": 193.31,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "004"
+      }
+    ],
+    "Name": "MOTC6476",
+    "ARSOnly": true,
+    "FrontArsName": "6476",
+    "LensesStr": "",
+    "SignalType": 8
+  },
+  "91": {
+    "x": 268.31,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "0004"
+      }
+    ],
+    "Name": "MOTC6478",
+    "ARSOnly": true,
+    "Kanava": true,
+    "FrontArsName": "6478",
+    "LensesStr": "",
+    "SignalType": 8
+  },
+  "92": {
+    "x": 18197,
+    "Name": "MJ4",
+    "ARSOnly": false,
+		"Krons": "LN",
+    "FrontArsName": "72A",
+    "Back": true,
+    "LensesStr": "XR-I",
+    "noPogashenie": 0,
+		"Pole": 1,
+    "Routes": [
+      {
+        "NextSignal": "",
+        "Lights": "2",
+        "ARSCodes": "2"
+      }
+    ]
+  },
+  "93": {
+    "x": 18083,
+    "Name": "MJE",
+    "ARSOnly": false,
+    "LensesStr": "WR",
+    "DTM": true,
+		"Back": true,
+    "noPogashenie": 0,
+		"Letter": "E",
+		"Pole": 1,
+    "Routes": [
+      {
+        "NextSignal": "",
+        "Lights": "2",
+        "ARSCodes": "2"
+      },
+      {
+				"RouteName": "MJE-2", "NextSignal": "*", "Manual": true,
+        "Switches": "MJ2+", "Lights": "2-2-1", "ARSCodes": "224"
+      }
+    ]
+  }
+}
