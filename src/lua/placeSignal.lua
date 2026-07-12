@@ -1,7 +1,7 @@
 R50_MODE = false
 RAYS = false
 NEW_ERA = true
-local pogashenie = false
+local pogashenie = 1
 local sigType = 6
 
 local angle_mirror = Angle(0, 180, 0)
@@ -100,6 +100,7 @@ function editParams(options)
 	if options.ColorLens then Params.ColorLens = true end 
 	if options.FrontArsName then Params.LetterL = options.FrontArsName else Params.LetterL = string.sub(options.Name, 3) end 
 	if options.OnPoleZ then Params.OnPoleZ = options.OnPoleZ end 
+	if options.LetterB then Params.LetterB = options.LetterB end 
 	if options.Letter then Params.Letter = options.Letter end 
 	if options.Types then Params.Types = options.Types end 
 	if options.Krons then Params.Krons = options.Krons end 

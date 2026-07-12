@@ -132,8 +132,8 @@ lines['crossline-redux_pony10']['1'] = [
             { x: -14 + 50, name: '71', limit: 60 },
             { x: -14 + 50 + 37.5, name: '71а', limit: 60, later: { 60: 1 } },
             { x: -14 + 50 + 37.5 + 37.5, name: '73', limit: 60, later: { 40: 1 } },
-            { x: -24 + 50 + 37.5 + 37.5 + 37.2, name: '75', limit: 60 },
-            { x: -14 + 50 + 37.5 + 37.5 + 37.5 + 25, name: '75а', limit: 60, gmod: {RouteNumber: "1"} },
+            { x: -24 + 50 + 37.5 + 37.5 + 37.2, name: '75', limit: 60, gmod: { Routes: [{},{Switches: "PH1-", ARSCodes: "00004", NextSignal: "*"}] } },
+            { x: -14 + 50 + 37.5 + 37.5 + 37.5 + 25, name: '75а', limit: 60, gmod: { RouteNumber: "1", Routes: [{},{Switches: "PH1-", ARSCodes: "0004", NextSignal: "*"}] } },
             { x: -14 + 50 + 37.5 + 37.5 + 37.5 + 25 + 62.5, name: '75б', limit: 60 },
             { x: -14 + 50 + 37.5 + 37.5 + 37.5 + 25 + 62.5 + 50, name: '75в', limit: 60 },
             { x: -14 + 50 + 37.5 + 37.5 + 37.5 + 25 + 62.5 + 50 + 100, name: '75г', limit: 60 },
@@ -159,8 +159,10 @@ lines['crossline-redux_pony10']['1'] = [
                 gmod: {
                     LensesStr: "XWY-13-YGR-XW", Krons: "LNLD", Street: true, Led: true, 
                     Routes:[
-                        { Rezab1: "6-64-64-64-64-64-64-5", RouteName: "PH1-1", Switches: "PH1+,PH3+" },
-                        { Lights: "6", ARSCodes: "2", Switches: "PH1-" } 
+                        { Rezab1: "6-64-64-64-64-64-64-5", RouteName: "PH1-1", Switches: "PH1+,PH3+,PH4+" },
+                        { Lights: "6-6-6-6-6-6-6-2", RouteName: "PH1-V", Switches: "PH1+,PH3+,PH4+", Manual: true, NextSignal: "*", ARSCodes: "22222226", EnRou: true, PRou: "1" },
+                        { Lights: "6-6-6-6-6-6-6-2", RouteName: "PH1-G", Switches: "PH1+,PH3-,PH4-", Manual: true, NextSignal: "*", ARSCodes: "22222226", EnRou: true, PRou: "3" },
+                        { Lights: "6", ARSCodes: "2", Switches: "PH1-" }
                     ] 
                 }
             },
@@ -175,7 +177,7 @@ lines['crossline-redux_pony10']['1'] = [
             { joint: '87', name: '93', lenses: 'YY-GR', guard: 60, autostop: 1, shift: 25, left: true, y: '93', yg: 'NEXT_y', gmod: { Double: true, Pole: 1, Led: true } },
             { joint: '89', name: '95', lenses: 'YY-GR', guard: 60, autostop: 1, shift: 13, left: true, y: '95', yg: 'NEXT_y', gmod: { Double: true, Pole: 1, Led: true } },
             { joint: '91', name: '97', lenses: 'YY-GR', guard: 60, autostop: 1, shift: 25, left: true, y: '97', yg: 'NEXT_yg', gmod: { Double: true, Pole: 1, Led: true } },
-            { joint: '93', name: '99', lenses: 'YY-GR', guard: 60, autostop: 1, shift: 25, yg: '99', gmod: { Krons: "LL", OW: "[-10 0 -10]", FLeft: true, Led: true } },
+            { joint: '93', name: '99', lenses: 'YY-GR', guard: 60, autostop: 1, shift: 25, yg: '99', gmod: { Krons: "LL", OW: "[-10 0 -10]", Kanava: true, Led: true } },
             { joint: '97', name: '101М', lenses: 'x', guard: 35, autostop: 3 },
         ],
         mks: [
@@ -299,7 +301,7 @@ lines['crossline-redux_pony10']['1'] = [
         joints: [
             { x: -3, name: '135', limit: 0, gmod: {Kanava: true} },
             { x: -3 + 75 -6.5, name: '137', limit: 60, later: { 60: 1 } },
-            { x: -3 + 75 + 62.5, name: '139', limit: 60, later: { 40: 1 }, gmod: {RouteNumber: "1", Routes: [{Switches: "OK1+"},{Switches: "OK1-", ARSCodes: "0", NextSignal: "TCFIX0"}]} },
+            { x: -3 + 75 + 62.5, name: '139', limit: 60, later: { 40: 1 }, gmod: {RouteNumber: "1", Routes: [{},{Switches: "OK1-", ARSCodes: "4", NextSignal: "TCFIX0"}]} },
             { x: -3 + 75 + 62.5 + 75, name: '139а', limit: 60 },
             { x: -3 + 75 + 62.5 + 75 + 100, name: '139б', limit: 80 },
             { x: -3 + 75 + 62.5 + 75 + 100 + 525, name: '141', limit: 80 },
@@ -321,6 +323,14 @@ lines['crossline-redux_pony10']['1'] = [
                     Routes: [
                         {   RouteName: "OK1-1", Switches: "OK1+"   },
                         {
+                            EnRou: true, PRou: "3", Switches: "OK1-,OK3+,OK5+", 
+                            Lights: "4", ARSCodes: "2"
+                        },
+                        {
+                            EnRou: true, PRou: "4", Switches: "OK1-,OK3-,OK6-", 
+                            Lights: "4", ARSCodes: "2"
+                        },
+                        {
                             RouteName: "OK1-3", NextSignal: "OKFIX3", Manual: true,
                             EnRou: true, PRou: "3", Switches: "OK1-,OK3+,OK5+,OK6+", 
                             Lights: "4-4-4-1", ARSCodes: "2224"
@@ -340,7 +350,7 @@ lines['crossline-redux_pony10']['1'] = [
             { joint: '143б', name: '147', lenses: 'YY-GR', guard: 80, autostop: 3, shift: 10, y: '147', yg: 'NEXT_y', g: 'NEXT_yg', gmod: { Pole:1 } },
             { joint: '145', name: '149', lenses: 'YY-GR', guard: 70, autostop: 1, y: '149', yg: 'NEXT_y', g: 'NEXT_g', gmod: { Pole:1 } },
             { joint: '147', name: '151', lenses: 'YY-GR', guard: 69, autostop: 1, y: '151', g: 'NEXT_yg', gmod: { Pole:1 } },
-            { joint: '149', name: 'РЕ-153', lenses: 'BYY-GRw', guard: 70, autostop: 1, shift: 11, yg: '153', gmod: { Pole:1, Routes:[{Rezab1: "5-1"}] } },
+            { joint: '149', name: 'РЕ-153', lenses: 'BYY-GRw', guard: 70, autostop: 1, shift: 11, yg: '153', gmod: { Routes:[{Rezab1: "5-1"}], OnPoleZ: 10 } },
             { joint: '153', name: 'РЕ-155М', lenses: 'x', guard: 35, autostop: 3 },
         ],
         mks: [
@@ -367,8 +377,8 @@ lines['crossline-redux_pony10']['1'] = [
         joints: [
             { x: 6.5, name: '151', limit: 0 },
             { x: 6.5 + 75 -2.5, name: '153', limit: 60, later: { 60: 1 } },
-            { x: 6.5 + 75 + 62.5, name: '155', limit: 70, later: { 40: 1, 60: 1, 70: 1 }, gmod: {RouteNumber: "1"} },
-            { x: 6.5 + 75 + 62.5 + 75, name: '155а', limit: 80, later: { 40: 1, 60: 1 } },
+            { x: 6.5 + 75 + 62.5, name: '155', limit: 70, later: { 40: 1, 60: 1, 70: 1 }, gmod: { RouteNumber: "1", Routes: [{},{Switches: "RE3-", ARSCodes: "0004", NextSignal: "*"}] } },
+            { x: 6.5 + 75 + 62.5 + 75, name: '155а', limit: 80, later: { 40: 1, 60: 1 }, gmod: { Routes: [{},{Switches: "RE3-", ARSCodes: "004", NextSignal: "*"}] } },
             { x: 6.5 + 75 + 62.5 + 75 + 175, name: '155б', limit: 80 },
             { x: 6.5 + 75 + 62.5 + 75 + 175 + 250, name: '157', limit: 80 },
             { x: 6.5 + 75 + 62.5 + 75 + 175 + 250 + 375, name: '159', limit: 80 },
@@ -388,8 +398,8 @@ lines['crossline-redux_pony10']['1'] = [
                 gmod: { 
                     LensesStr: "BWY-M-YGR-XW", OW: "[25 0 -5]", Kanava: true, Krons: "LNLN",
                     Routes:[
-                        { Rezab1: "6-46-46-46-1", RouteName: "RE1-1", Switches: "RE1+" },
-                        { Lights: "6", ARSCodes: "2", Switches: "RE1-" } 
+                        { Rezab1: "6-46-46-46-1", RouteName: "RE1-1", Switches: "RE3+" },
+                        { Lights: "6", ARSCodes: "2", Switches: "RE3-" } 
                     ] 
                 }
             },
@@ -444,7 +454,7 @@ lines['crossline-redux_pony10']['1'] = [
             { x: 1988 +22.5 - 62.5 - 37.5 - 62.5, name: '6173', limit: 70 },
             { x: 1988 +22.5 - 62.5 - 37.5, name: '6175', limit: 70 },
             { x: 1988 +22.5 - 62.5, name: '6177', limit: 60, gmod: { Kanava: true } },
-            { x: 1988 +22.5, name: '6179', limit: 60, point: true, gmod: { Kanava: true, Routes: [{Switches: "OL1+"},{Switches: "OL1-", ARSCodes: "0", NextSignal: "TCFIX0"}] } },
+            { x: 1988 +22.5, name: '6179', limit: 60, point: true, gmod: { Kanava: true, Routes: [{},{Switches: "OL1-", ARSCodes: "0", NextSignal: "TCFIX0"}] } },
             { x: 1988 +22.5 + 62.5, name: '6211', limit: 40 },
             { x: 1988 +22.5 + 62.5 + 75, name: '6213', limit: 0 },
             { x: 1988 +22.5 + 62.5 + 75 + 100, name: '6215', limit: 0, point: true },
@@ -486,7 +496,7 @@ lines['crossline-redux_pony10']['1'] = [
             //{ x: 0 - 62.5, name: '660', limit: 70 },
             { x: 22.5, name: '6179', limit: 0, point: true, gmod: { Kanava: true } },
             { x: 22.5 + 62.5, name: '6211', limit: 60, later: { 60: 2 } },
-            { x: 22.5 + 62.5 + 75, name: '6213', limit: 60, later: { 40: 2, 60: 1 }, gmod: {RouteNumber: "1"} },
+            { x: 22.5 + 62.5 + 75, name: '6213', limit: 60, later: { 40: 2, 60: 1 }, gmod: {RouteNumber: "1", Routes: [{Switches: "OL1+"},{Switches: "OL1-", ARSCodes: "4", NextSignal: "TCFIX0"}]} },
             { x: 1938 -3 - 62.5 - 62.5 - 75 - 100 - 137.5 - 137.5 - 137.5 - 137.5 - 137.5 - 137.5 - 137.5 - 137.5 - 137.5 - 137.5, name: '6215', limit: 60, later: { 40: 1 } },
             { x: 1938 -3 - 62.5 - 62.5 - 75 - 100 - 137.5 - 137.5 - 137.5 - 137.5 - 137.5 - 137.5 - 137.5 - 137.5 - 137.5, name: '6217', limit: 60, point: true, later: { 40: 1, 60: 1 } },
             { x: 1938 -3 - 62.5 - 62.5 - 75 - 100 - 137.5 - 137.5 - 137.5 - 137.5 - 137.5 - 137.5 - 137.5 - 137.5, name: '6219', limit: 60, later: { 40: 1, 60: 1 } },
@@ -510,9 +520,12 @@ lines['crossline-redux_pony10']['1'] = [
         signals: [
             { joint: '6211', name: 'ОЛ-621М', lenses: 'BWYGRWM', guard: 35, autostop: 3, g: '6219', 
                 gmod: { 
-                    SignalType: 8, Pole: 1, OnPoleZ: 10, noPogashenie: 0, 
+                    SignalType: 8, Pole: 1, OnPoleZ: 10, 
                     Routes: [
-                        {   RouteName: "OL1-1", Switches: "OL1+" },
+                        {   RouteName: "OL1-1", Switches: "OL1+", Rezab1: "5-53-53-53-53-1" },
+                        {
+                            Switches: "OL1-,OL3-", Lights: "5", ARSCodes: "2", EnRou: true, PRou: "3"
+                        },
                         {
                             RouteName: "OL1-3", NextSignal: "OLFIX3", Manual: true, RezabCommand: "suka",
                             Switches: "OL1-,OL3-", Lights: "5-5-5-2", ARSCodes: "2224", Rezab1: "5-5-5-1"
@@ -577,8 +590,8 @@ lines['crossline-redux_pony10']['1'] = [
             { x: 1672 + 25 - 50, name: '6377', limit: 60, point: true, gmod: { Kanava: true } },
             { x: 1672 + 25, name: '6379', limit: 60, point: true, gmod: { Kanava: true, Routes: [{},{Switches: "MO1-", ARSCodes: "0", NextSignal: "TCFIX0"}] } },
             { x: 1672 + 25 + 50, name: '6411', limit: 40 },
-            { x: 1672 + 25 + 50 + 50, name: '6413', limit: 0 },
-            { x: 1672 + 25 + 50 + 50 + 37.5, name: '6415', limit: 0, point: true },
+            { x: 1672 + 25 + 50 + 50, name: '6413', limit: 0, gmod:{Routes:[{ARSCodes:"0004"}]} },
+            { x: 1672 + 25 + 50 + 50 + 37.5, name: '6415', limit: 0, point: true, gmod:{Routes:[{ARSCodes:"004"}]} },
             { x: 1672 + 25 + 50 + 50 + 37.5 + 37.5, name: '6417', limit: 0, point: true },
             { x: 1672 + 25 + 50 + 50 + 37.5 + 37.5 + 50, name: '6419', limit: 0, point: true },
         ],
@@ -590,7 +603,7 @@ lines['crossline-redux_pony10']['1'] = [
             { joint: '6363', name: '639', lenses: 'YYGR', guard: 80, autostop: 3, left: true, y: '6369', yg: 'NEXT_y', g: 'NEXT_yg', gmod: { Pole: 1, SignalType: 8 } },
             { joint: '6365', name: 'МО-6311', lenses: 'YYGRw', guard: 80, autostop: 3, left: true, y: '6373', yg: 'NEXT_y', g: 'NEXT_yg', gmod: { Pole: 1, SignalType: 8 } },
             { joint: '6367', name: 'МО-6313', lenses: 'YYGRw', guard: 80, autostop: 1, left: true, y: '6375', yg: 'NEXT_y', g: 'NEXT_yg', gmod: { Pole: 1, SignalType: 8 } },
-            { joint: '6369', name: 'МО-6315', lenses: 'BYYGRw',guard: 70, autostop: 1, left: true, y: '6377', yg: 'NEXT_y', g: 'NEXT_g', gmod: { Pole: 1, SignalType: 8 } },
+            { joint: '6369', name: 'МО-6315', lenses: 'BYYGRw',guard: 70, autostop: 1, left: true, y: '6377', yg: 'NEXT_y', g: 'NEXT_g', gmod: { Pole: 1, SignalType: 8, Routes:[{Rezab1: "5-1"}] } },
             { joint: '6371', name: 'МО-6317', lenses: 'YYGRw', guard: 70, autostop: 1, left: true, y: '6379', g: 'NEXT_yg', gmod: { Pole: 1, SignalType: 8 } },
             { joint: '6375', name: 'МО-6319', lenses: 'YYGRw', guard: 70, autostop: 1, left: true, shift: 16, yg: '6411', gmod: { Pole: 1, SignalType: 8 } },
             { joint: '6411', name: 'МО-641', lenses: 'BWZY-ZRWM', guard: 35, autostop: 3, 
