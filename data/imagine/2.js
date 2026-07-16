@@ -222,7 +222,7 @@ lines['imagine']['2'] = [
            { x: 2166 + 75 + 75, name: '232', limit: 60 },
         ],
         signals: [
-           { joint: '250', name: '248М', lenses: 'ZY-GR', autostop: 3, guard: 35, g: '248б' },// gmod: { Krons: "MM", Letter: "246M", Routes: [{}, { NextSignal: "GERMFIX1", Manual: true, RouteName: "Germ", Lights: "4", ARSCodes: "0" }] } },
+           { joint: '250', name: '248М', lenses: 'ZY-GR', autostop: 3, guard: 35, g: '248б', gmod: { Krons: "MM" }},// gmod: { Krons: "MM", Letter: "246M", Routes: [{}, { NextSignal: "GERMFIX1", Manual: true, RouteName: "Germ", Lights: "4", ARSCodes: "0" }] } },
            { joint: '248б', name: '246', lenses: 'YGR', autostop: 3, guard: 80, g: '246', gmod: { OW: "[-7 0 -15]" } },
            { joint: '246', name: '244', lenses: 'YGR', autostop: 1, guard: 80, g: '244а' },
            { joint: '244а', name: '242M', lenses: 'ZY-GR', autostop: 3, guard: 80, g: '242б' },// gmod: { Letter: "242M", Routes: [{}, { NextSignal: "GERMFIX1", Manual: true, RouteName: "Germ", Lights: "4", ARSCodes: "0" }] } },
