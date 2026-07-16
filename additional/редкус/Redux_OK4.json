@@ -65,26 +65,31 @@
     "x": 214,
     "Name": "V2M",
     "ARSOnly": false,
-    "LensesStr": "YG-RW",
-    "FrontArsName": "8",
+    "LensesStr": "BYG-RW",
+    "FrontArsName": "4",
     "noPogashenie": 0,
     "Routes": [
       {
         "NextSignal": "",
-        "Lights": "3",
+        "Lights": "4",
         "ARSCodes": "2"
       },
       {
         "NextSignal": "*",
         "Switches": "OK1-,OK3-,OK6-",
-        "Lights": "3-13",
+        "Lights": "4-24",
         "ARSCodes": "24"
       },
       {
         "NextSignal": "*",
         "Switches": "OK2-,OK4+,OK5+,OK6+",
-        "Lights": "3-31",
+        "Lights": "4-24",
         "ARSCodes": "24"
+      },
+      {
+        "RouteName": "V2M-A4", "NextSignal": "*",
+        "Manual": true,
+        "Lights": "4-24-24-3","ARSCodes": "246", "Rezab1": "4-1", "RezabCommand": "suka"
       }
     ]
   },
@@ -109,7 +114,7 @@
         "Manual": true,
         "EnRou": true,
         "PRou": "1",
-        "Switches": "OK1-,OK3-,OK6-",
+        "Switches": "OK1-,OK3-,OK6-,OK5-,OK4+",
         "Lights": "2-2-2-2-2-1",
         "ARSCodes": "222224"
       },
@@ -119,25 +124,272 @@
         "Manual": true,
         "EnRou": true,
         "PRou": "2",
-        "Switches": "OK2-,OK4+,OK5+,OK6+",
+        "Switches": "OK2-,OK4+,OK5-,OK6+,OK3-",
         "Lights": "2-2-2-1",
         "ARSCodes": "2224"
       }
     ]
   },
   "79": {
-    "x": 220,
+    "x": 376,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "06"
+      }
+    ],
+    "Name": "OK6Back",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "DTM": true,
+    "SignalType": 0
+  },
+  "80": {
+    "x": 1539,
+    "Name": "A4",
+    "ARSOnly": false,
+    "LensesStr": "WR-W",
+    "SignalType": 7,
+    "Pole": 3,
+    "noPogashenie": 0,
     "Routes": [
       {
         "NextSignal": "",
-        "ARSCodes": "0"
+        "Lights": "2",
+        "ARSCodes": "2"
+      },
+      {
+        "RouteName": "A4-PA", "NextSignal": "*",
+        "Manual": true, "Switches": "20-,10-,8+,6+,4+",
+        "Lights": "2-2-2-2-2-1","ARSCodes": "222224"
+      }
+    ]
+  },
+  "80A": {
+    "x": 1537,
+    "Name": "E2M",
+    "ARSOnly": false,
+    "Back": true,
+    "DTM": true,
+    "LensesStr": "GR-W",
+    "SignalType": 7,
+    "Pole": 3,
+    "noPogashenie": 0,
+    "Routes": [
+      {
+        "NextSignal": "",
+        "Lights": "2",
+        "ARSCodes": "1"
+      },
+      {
+        "RouteName": "E2-OK4", "NextSignal": "*",
+        "Manual": true, "Switches": "20-,10-,8+,6+,4+",
+        "Lights": "2-2-1","ARSCodes": "114"
+      }
+    ]
+  },
+  "81": {
+    "x": 1573,
+    "Routes": [
+      {
+        "NextSignal": "*"
       }
     ],
-    "Name": "OKFIX411",
+    "Name": "4BACK",
     "ARSOnly": true,
     "LensesStr": "",
-    "FrontArsName": "5",
-    "PassOcc": true,
+    "DTM": true,
     "SignalType": 0
+  },
+  "81BACK": {
+    "x": 1573,
+    "Routes": [
+      {
+        "NextSignal": "*"
+      },
+      {
+        "NextSignal": "3SP", "Switches": "4-"
+      }
+    ],
+    "Name": "4SP",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "DTM": true,
+    "Back": true,
+    "SignalType": 0
+  },
+  "82": {
+    "x": 1659.9,
+    "Routes": [
+      {
+        "NextSignal": "*"
+      },
+      {
+        "NextSignal": "10BACK", "Switches": "10-"
+      },
+      {
+        "NextSignal": "5BACK", "Switches": "8-"
+      }
+    ],
+    "Name": "8BACK",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "DTM": true,
+    "SignalType": 0
+  },
+  "82BACK": {
+    "x": 1701,
+    "Routes": [
+      {
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "10SP",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "DTM": true,
+    "Back": true,
+    "SignalType": 0
+  },
+  "83": {
+    "x": 214,
+    "Name": "OK4",
+    "ARSOnly": false,
+    "LensesStr": "YYG-RW",
+    "Back": true,
+    "Left": true,
+    "DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "",
+        "Lights": "4",
+        "ARSCodes": "2"
+      },
+      {
+        "RouteName": "E2-OK4", "NextSignal": "*",
+        "Manual": true, "Switches": "OK3-,OK4+",
+        "Lights": "4-24-42-1","ARSCodes": "2046", "Rezab1": "0", "RezabCommand": "suka"
+      }
+    ]
+  },
+  "84": {
+    "x": 376.5,
+    "Name": "OK6",
+    "ARSOnly": false,
+    "LensesStr": "BYY-GRW",
+    "Back": true,
+    "Left": true,
+    "FrontArsName": "10V", "LetterB": "8",
+    "noPogashenie": 0,
+    "Routes": [
+      {
+        "NextSignal": "",
+        "Lights": "5",
+        "ARSCodes": "2"
+      },
+      {
+        "RouteName": "E2-OK4", "NextSignal": "*",
+        "Manual": true, "Switches": "OK3-,OK4+",
+        "Lights": "5-53-35-2-3","ARSCodes": "2446", "Rezab1": "5-1", "RezabCommand": "suka"
+      }
+    ]
+  },
+  "85": {
+    "x": 664,
+    "Name": "OK8", "LensesStr": "YYG-RW",
+    "ARSOnly": false, "Back": true, "FrontArsName": "10B", "LetterB": "10V",
+    "Routes": [
+      {
+        "NextSignal": "*", "Lights": "4-24-1-1-3","ARSCodes": "26"
+      }
+    ]
+  },
+  "86": {
+    "x": 1039,
+    "Name": "10", "LensesStr": "YY-GR",
+    "ARSOnly": false, "FrontArsName": "10B", "LetterB": "10A",
+    "Routes": [
+      {
+        "NextSignal": "", "Lights": "4","ARSCodes": "06"
+      },
+      {
+        "RouteName": "V2M-A4", "NextSignal": "*", "Lights": "4-42-1-3", "Manual": true, "ARSCodes": "06", "Rezab1": "0", "RezabCommand": "suka"
+      }
+    ]
+  },
+  "87": {
+    "x": 1314,
+    "Name": "A2", "LensesStr": "YYG-RW",
+    "ARSOnly": false, "FrontArsName": "10A", "LetterB": "10", "Left": true,
+    "Routes": [
+      {
+        "NextSignal": "*", "Lights": "4-24-1-3", "ARSCodes": "26"
+      }
+    ]
+  },
+  "88": {
+    "x": 1314,
+    "Routes": [
+      {
+        "NextSignal": "*", "ARSCodes": "04"
+      }
+    ],
+    "Name": "A2BACK",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "DTM": true,
+    "PassOcc": true,
+    "Back": true,
+    "SignalType": 0
+  },
+  "89": {
+    "x": 1628,
+    "Name": "P",
+    "ARSOnly": false,
+    "LensesStr": "WR-W",
+    "SignalType": 7,
+    "noPogashenie": 0,
+    "Routes": [
+      {
+        "NextSignal": "",
+        "Lights": "2",
+        "ARSCodes": "2"
+      },
+      {
+        "RouteName": "A3-PA", "NextSignal": "*",
+        "Manual": true, "Switches": "20-,10-,8+,6+",
+        "Lights": "2-2-2-1","ARSCodes": "22224"
+      },
+      {
+        "RouteName": "A4-PA", "NextSignal": "*",
+        "Manual": true, "Switches": "20-,10-,8+,6+",
+        "Lights": "2-2-2-1","ARSCodes": "22224"
+      }
+    ]
+  },
+  "90": {
+    "x": 1628,
+    "Name": "X",
+    "Back": true,
+    "LensesStr": "WRW-W",
+    "SignalType": 7,
+    "noPogashenie": 0,
+    "Routes": [
+      {
+        "NextSignal": "",
+        "Lights": "2",
+        "ARSCodes": "2"
+      },
+      {
+        "RouteName": "GA-E1", "NextSignal": "*",
+        "Manual": true, "Switches": "6+,4-,3-",
+        "Lights": "2-2-2-13","ARSCodes": "2224"
+      },
+      {
+        "RouteName": "GA-E2", "NextSignal": "*",
+        "Manual": true, "Switches": "6+,4+",
+        "Lights": "2-2-13","ARSCodes": "224"
+      }
+    ]
   }
 }

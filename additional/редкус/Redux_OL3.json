@@ -33,6 +33,7 @@
     "ARSOnly": true,
     "LensesStr": "",
     "FrontArsName": "6",
+    "LetterB": "6274",
     "Back": true,
     "Left": true,
     "SignalType": 0
@@ -92,7 +93,7 @@
       },
       {
 				"RouteName": "OL3-1", "NextSignal": "*",
-        "Manual": true, "EnRou": true, "PRou": "2",
+        "Manual": true, "EnRou": true, "PRou": "1",
         "Switches": "OL1-,OL3-", "RezabCommand": "suka",
         "Lights": "3-3-3-3-2", "Rezab1": "3-3-3-3-1", "ARSCodes": "22224"
       },

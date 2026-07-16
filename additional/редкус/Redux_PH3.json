@@ -1,0 +1,87 @@
+{
+  "66": {
+    "x": 10,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Switches": "PH3-",
+        "ARSCodes": "4"
+      },
+      {
+        "NextSignal": "*",
+        "Switches": "PH3+",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "PHFIX3",
+    "ARSOnly": true, "FrontArsName": "75", "LetterB": "515",
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "69": {
+    "x": 219,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "PHTC517",
+    "ARSOnly": true,
+    "DTM": true,
+    "LensesStr": "",
+    "SignalType": 8
+  },
+  "70": {
+    "x": 368,
+    "Routes": [
+      {
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "PHTC519",
+    "ARSOnly": true,
+    "Left": true,
+    "FrontArsName": "519",
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "78": {
+    "x": 69,
+    "Name": "PH3", 
+    "LensesStr": "WR-I-12", "FrontArsName": "517", "LetterB": "515",
+    "Pole": 1, "Krons": "LNU",
+    "Back": true, "ARSOnly": false,
+    "noPogashenie": 0, "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "", "Lights": "2", "ARSCodes": "2"
+      },
+      {
+				"RouteName": "PH3-1", "NextSignal": "PHFIX1Back",
+        "Manual": true, "EnRou": true, "PRou": "1",
+        "Switches": "PH1+,PH3-",
+        "Lights": "2-2-2-1","ARSCodes": "2224"
+      },
+      {
+				"RouteName": "PH3-2", "NextSignal": "1102",
+        "Manual": true, "EnRou": true, "PRou": "2", 
+        "Switches": "PH1-,PH2-,PH3-",
+        "Lights": "2-2-1", "ARSCodes": "224"
+      }
+    ]
+  },
+  "79": {
+    "x": 219,
+    "Name": "PH5", 
+    "LensesStr": "XR-I", "FrontArsName": "519", "LetterB": "517",
+    "Pole": 1, "Krons": "LN", "LetterK": true,
+    "Back": true, "NonAutoStop": true,
+    "noPogashenie": 0, "SignalType": 0,
+    "Routes": [
+      {
+        "NextSignal": "*", "Lights": "2", "ARSCodes": "2"
+      }
+    ]
+  }
+}

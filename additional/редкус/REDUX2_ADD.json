@@ -32,7 +32,7 @@
     "SignalType": 0
   },
   "67": {
-    "x": 17969,
+    "x": 18035,
     "Routes": [
       {
         "NextSignal": "*",
@@ -97,7 +97,7 @@
       },
       {
 				"RouteName": "MOG-2", "NextSignal": "*", "Manual": true,
-        "Switches": "MO2+", "Lights": "3-3-3-3-2", "Rezab1": "3-3-1", "ARSCodes": "224"
+        "Switches": "MO2+", "Lights": "3-3-3-3-2", "Rezab1": "3-3-1", "RezabCommand": "suka", "ARSCodes": "224"
       }
     ],
     "SignalType": 8
@@ -123,23 +123,33 @@
       },
       {
 				"RouteName": "MOD-2", "NextSignal": "*",
-        "Manual": true, "EnRou": true, "PRou": "1",
+        "Manual": true, "EnRou": true, "PRou": "2",
         "Switches": "MO2+",
-        "Lights": "3-3-3-2", "Rezab1": "3-3-3-3-1",
+        "Lights": "3-3-3-2", "Rezab1": "3-3-3-3-1", "RezabCommand": "suka",
         "ARSCodes": "2224"
+      },
+      {
+        "EnRou": true, "PRou": "3",
+        "Switches": "MO2-,MO4-,MO5-",
+        "Lights": "3", "ARSCodes": "2"
+      },
+      {
+        "EnRou": true, "PRou": "4",
+        "Switches": "MO2-,MO4+,MO6+",
+        "Lights": "3", "ARSCodes": "2"
       },
       {
 				"RouteName": "MOD-3", "NextSignal": "MOFIX4",
         "Manual": true, "EnRou": true, "PRou": "3",
         "Switches": "MO2-,MO4-,MO5-,MO6+",
-        "Lights": "3-3-3-3-3-2", "Rezab1": "3-3-3-3-3-1",
+        "Lights": "3-3-3-3-3-2", "Rezab1": "3-3-3-3-3-1", "RezabCommand": "suka",
         "ARSCodes": "222224"
       },
       {
 				"RouteName": "MOD-4", "NextSignal": "MOFIX4",
         "Manual": true, "EnRou": true, "PRou": "4",
         "Switches": "MO2-,MO4+,MO5+,MO6+",
-        "Lights": "3-3-3-3-2", "Rezab1": "3-3-3-3-1",
+        "Lights": "3-3-3-3-2", "Rezab1": "3-3-3-3-1", "RezabCommand": "suka",
         "ARSCodes": "22224"
       }
     ],
@@ -179,6 +189,21 @@
     "ARSOnly": true,
     "LensesStr": "",
     "PassOcc": true,
+    "DTM": true,
+    "SignalType": 0
+  },
+  "81": {
+    "x": 9222,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "OKFIX2Back",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "Back": true,
     "DTM": true,
     "SignalType": 0
   },
@@ -224,12 +249,26 @@
         "ARSCodes": "2"
       },
       {
+        "EnRou": true,
+        "PRou": "3",
+        "Switches": "OK2-,OK4-,OK5-",
+        "Lights": "2",
+        "ARSCodes": "2"
+      },
+      {
+        "EnRou": true,
+        "PRou": "4",
+        "Switches": "OK2-,OK4+,OK6+",
+        "Lights": "2",
+        "ARSCodes": "2"
+      },
+      {
         "NextSignal": "OKFIX4",
 				"RouteName": "OKD-3",
         "Manual": true,
         "EnRou": true,
         "PRou": "3",
-        "Switches": "OK2-,OK4-,OK5-,OK6+",
+        "Switches": "OK2-,OK4-,OK5-,OK6+,OK3-",
         "Lights": "2-2-2-2-1",
         "ARSCodes": "22224"
       },
@@ -239,7 +278,7 @@
         "Manual": true,
         "EnRou": true,
         "PRou": "4",
-        "Switches": "OK2-,OK4+,OK5+,OK6+",
+        "Switches": "OK2-,OK4+,OK5+,OK6+,OK3+",
         "Lights": "2-2-2-1",
         "ARSCodes": "2224"
       }
@@ -271,7 +310,6 @@
     "ARSOnly": true,
     "Back": true,
     "LensesStr": "",
-    "PassOcc": true,
     "DTM": true,
     "SignalType": 0
   },
@@ -295,8 +333,8 @@
       {
 				"RouteName": "OLD-3", "NextSignal": "OLFIX3",
         "Manual": true, "EnRou": true,
-        "Switches": "OL2-,OK3+", "ARSCodes": "22224",
-        "Lights": "3-3-3-3-2", "Rezab1": "3-3-3-3-1"
+        "Switches": "OL2-,OL3+", "ARSCodes": "22224",
+        "Lights": "3-3-3-3-2", "Rezab1": "3-3-3-3-1", "RezabCommand": "suka"
       }
     ]
   },
@@ -394,8 +432,10 @@
     "x": 18197,
     "Name": "MJ4",
     "ARSOnly": false,
+    "NonAutoStop": true,
 		"Krons": "LN",
-    "FrontArsName": "72A",
+    "FrontArsName": "72B",
+    "LetterB": "72A",
     "Back": true,
     "LensesStr": "XR-I",
     "noPogashenie": 0,
@@ -429,5 +469,202 @@
         "Switches": "MJ2+", "Lights": "2-2-1", "ARSCodes": "224"
       }
     ]
+  },
+  "94": {
+    "x": 7668,
+    "Name": "RED",
+    "ARSOnly": false,
+    "LensesStr": "BYR-YW",
+		"Letter": "D",
+		"LetterK": true,
+		"Krons": "MM",
+		"Pole": 1,
+    "noPogashenie": 0,
+    "Back": true,
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "", "Lights": "3", "ARSCodes": "2"
+      },
+      {
+				"RouteName": "RED-1", "NextSignal": "TC153",
+        "Manual": true,
+        "Switches": "RE2-,RE3-", "ARSCodes": "22224",
+        "Lights": "3-3-3-3-24-2b4", "Rezab1": "3-3-3-3-1", "RezabCommand": "suka"
+      }
+    ]
+  },
+  "95": {
+    "x": 7600,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "1"
+      },
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4",
+        "Switches": "RE2-,RE3-"
+      }
+    ],
+    "Name": "REFIX2Back",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "Back": true,
+    "DTM": true,
+    "SignalType": 0
+  },
+  "96": {
+    "x": 14155.5,
+    "Name": "PHD",
+    "ARSOnly": false,
+    "LensesStr": "WY-RY-I",
+		"Letter": "D",
+		"Krons": "LLN",
+    "OW": "[5 0 -15]",
+    "noPogashenie": 0,
+		"Led": true,
+    "Back": true,
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "", "Lights": "3", "ARSCodes": "2"
+      },
+      {
+				"RouteName": "PHD-1", "NextSignal": "TC71A",
+        "Manual": true,
+        "Switches": "PH2-,PH1-,PH3+", "ARSCodes": "22222224",
+        "Lights": "3-3-3-3-3-3-3-24"
+      },
+      {
+				"RouteName": "PHD-G", "NextSignal": "TC71A",
+        "Manual": true,
+        "Switches": "PH2-,PH1-,PH3-", "ARSCodes": "22222224",
+        "Lights": "3-3-3-3-3-3-3-1"
+      }
+    ]
+  },
+  "97": {
+    "x": 14108,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "1"
+      },
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4",
+        "Switches": "PH2-,PH1-"
+      }
+    ],
+    "Name": "PHFIX2Back",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "Back": true,
+    "DTM": true,
+    "SignalType": 0
+  },
+  "98": {
+    "x": 18197,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "TC72A",
+    "ARSOnly": true,
+		"DTM": true,
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "99": {
+    "x": 18322,
+    "Routes": [
+      {
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "TC72B",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "100": {
+    "x": 14156,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Switches": "PH2+",
+        "Repeater": true
+      },
+      {
+        "NextSignal": "*",
+        "Switches": "PH2-",
+        "ARSCodes": "00004"
+      }
+    ],
+    "Name": "PHFIX1102",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "PassOcc": true,
+    "DTM": true,
+    "SignalType": 0
+  },
+  "101": {
+    "x": 7668.7,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Switches": "RE2+",
+        "Repeater": true
+      },
+      {
+        "NextSignal": "*",
+        "Switches": "RE2-",
+        "ARSCodes": "0004"
+      }
+    ],
+    "Name": "REFIX146",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "PassOcc": true,
+    "DTM": true,
+    "SignalType": 0
+  },
+  "102": {
+    "x": 3855.6,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Switches": "OL2+",
+        "Repeater": true
+      },
+      {
+        "NextSignal": "*",
+        "Switches": "OL2-",
+        "ARSCodes": "0004"
+      }
+    ],
+    "Name": "OLFIX6220",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "PassOcc": true,
+    "DTM": true,
+    "SignalType": 0
+  },
+  "103": {
+    "x": 18018,
+    "Routes": [
+      {
+        "NextSignal": "*", "ARSCodes": "00004"
+      }
+    ],
+    "Name": "MJAOFIX",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "PassOcc": true,
+    "DTM": true,
+    "SignalType": 0
   }
 }

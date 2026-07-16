@@ -80,7 +80,7 @@ lines['crossline-redux_pony10']['1'] = [
             { x: 2053 - 50 - 62.5 - 75 - 75 - 100 - 125, name: '59а', limit: 80 },
             { x: 2053 - 50 - 62.5 - 75 - 75 - 100, name: '61', limit: 80 },
             { x: 2053 - 50 - 62.5 - 75 - 75, name: '61а', limit: 80 },
-            { x: 2053 - 50 - 62.5 - 75, name: '63', limit: 80 },
+            { x: 2053 - 50 - 62.5 - 62.5 - 12.5, name: '63', limit: 80 },
             { x: 2053 - 50 - 62.5, name: '65', limit: 70 },
             { x: 2053 - 50, name: '67', limit: 60 },
             { x: 2053, name: '69', limit: 60 },
@@ -131,9 +131,9 @@ lines['crossline-redux_pony10']['1'] = [
             { x: -14, name: '69', limit: 0 },
             { x: -14 + 50, name: '71', limit: 60 },
             { x: -14 + 50 + 37.5, name: '71а', limit: 60, later: { 60: 1 } },
-            { x: -14 + 50 + 37.5 + 37.5, name: '73', limit: 60, later: { 40: 1 } },
-            { x: -24 + 50 + 37.5 + 37.5 + 37.2, name: '75', limit: 60, gmod: { Routes: [{},{Switches: "PH1-", ARSCodes: "00004", NextSignal: "*"}] } },
-            { x: -14 + 50 + 37.5 + 37.5 + 37.5 + 25, name: '75а', limit: 60, gmod: { RouteNumber: "1", Routes: [{},{Switches: "PH1-", ARSCodes: "0004", NextSignal: "*"}] } },
+            { x: -14 + 50 + 37.5 + 37.5, name: '73', limit: 60, later: { 40: 1 }, gmod: { Routes: [{},{Switches: "PH3-", ARSCodes: "4", NextSignal: "*"}]}},
+            { x: -24 + 50 + 37.5 + 37.5 + 37.2, name: '75', limit: 60, gmod: { Routes: [{},{Switches: "PH1-", ARSCodes: "00004", NextSignal: "*"},{Switches: "PH3-", ARSCodes: "4", NextSignal: "PHFIX3"}] } },
+            { x: -14 + 50 + 37.5 + 37.5 + 37.5 + 25, name: '75а', limit: 60, gmod: { RouteNumber: "1", Routes: [{},{Switches: "PH1-", ARSCodes: "0004", NextSignal: "*"},{Switches: "PH3-", ARSCodes: "4", NextSignal: "*"}] } },
             { x: -14 + 50 + 37.5 + 37.5 + 37.5 + 25 + 62.5, name: '75б', limit: 60 },
             { x: -14 + 50 + 37.5 + 37.5 + 37.5 + 25 + 62.5 + 50, name: '75в', limit: 60 },
             { x: -14 + 50 + 37.5 + 37.5 + 37.5 + 25 + 62.5 + 50 + 100, name: '75г', limit: 60 },
@@ -159,9 +159,9 @@ lines['crossline-redux_pony10']['1'] = [
                 gmod: {
                     LensesStr: "XWY-13-YGR-XW", Krons: "LNLD", Street: true, Led: true, 
                     Routes:[
-                        { Rezab1: "6-64-64-64-64-64-64-5", RouteName: "PH1-1", Switches: "PH1+,PH3+,PH4+" },
-                        { Lights: "6-6-6-6-6-6-6-2", RouteName: "PH1-V", Switches: "PH1+,PH3+,PH4+", Manual: true, NextSignal: "*", ARSCodes: "22222226", EnRou: true, PRou: "1" },
-                        { Lights: "6-6-6-6-6-6-6-2", RouteName: "PH1-G", Switches: "PH1+,PH3-,PH4-", Manual: true, NextSignal: "*", ARSCodes: "22222226", EnRou: true, PRou: "3" },
+                        { Rezab1: "6-64-64-64-64-64-64-5", RouteName: "PH1-1", Switches: "PH1+,PH3+" },
+                        { Lights: "6-6-6-6-6-6-6-2", RouteName: "PH1-V", Switches: "PH1+,PH3+", Manual: true, NextSignal: "*", ARSCodes: "22222226", EnRou: true, PRou: "1" },
+                        { Lights: "6-6-6-6-6-2", RouteName: "PH1-3", Switches: "PH1+,PH3-", Manual: true, NextSignal: "*", ARSCodes: "222224", EnRou: true, PRou: "3" },
                         { Lights: "6", ARSCodes: "2", Switches: "PH1-" }
                     ] 
                 }
@@ -263,7 +263,7 @@ lines['crossline-redux_pony10']['1'] = [
             { x: 1552 -3 - 62.5 - 75 - 75, name: '129', limit: 80 },
             { x: 1552 -3 - 62.5 - 75, name: '131', limit: 80 },
             { x: 1552 -3 - 62.5, name: '133', limit: 70 },
-            { x: 1552 -3, name: '135', limit: 60, gmod: {Kanava: true, Routes: [{Switches: "OK1+"},{Switches: "OK1-", ARSCodes: "0", NextSignal: "TCFIX0"}] } }, // 2я часть приема
+            { x: 1552 -3, name: '135', limit: 60, gmod: {Kanava: true, Routes: [{},{Switches: "OK1-", ARSCodes: "0", NextSignal: "TCFIX0"}] } }, // 2я часть приема
             { x: 1552 -3 + 75 -6.5, name: '137', limit: 40 },
             { x: 1552 -3 + 75 + 62.5, name: '139', limit: 0 },
             { x: 1552 -3 + 75 + 62.5 + 75, name: '139а', limit: 0 },
@@ -303,7 +303,7 @@ lines['crossline-redux_pony10']['1'] = [
             { x: -3 + 75 -6.5, name: '137', limit: 60, later: { 60: 1 } },
             { x: -3 + 75 + 62.5, name: '139', limit: 60, later: { 40: 1 }, gmod: {RouteNumber: "1", Routes: [{},{Switches: "OK1-", ARSCodes: "4", NextSignal: "TCFIX0"}]} },
             { x: -3 + 75 + 62.5 + 75, name: '139а', limit: 60 },
-            { x: -3 + 75 + 62.5 + 75 + 100, name: '139б', limit: 80 },
+            { x: -3 + 75 + 62.5 + 75 + 100, name: '139б', limit: 60 },
             { x: -3 + 75 + 62.5 + 75 + 100 + 525, name: '141', limit: 80 },
             { x: -3 + 75 + 62.5 + 75 + 100 + 525 + 200, name: '143', limit: 80 },
             { x: 1653 +6.5 - 75 - 75 - 75 - 100 - 112.5, name: '143а', limit: 80 },
@@ -311,7 +311,7 @@ lines['crossline-redux_pony10']['1'] = [
             { x: 1653 +6.5 - 75 - 75 - 75, name: '145', limit: 80 },
             { x: 1653 +6.5 - 75 - 75, name: '147', limit: 80 },
             { x: 1653 +6.5 - 75, name: '149', limit: 70 },
-            { x: 1653 +6.5, name: '151', limit: 60 },
+            { x: 1653 +6.5, name: '151', limit: 60, gmod: {Kanava: true} },
             { x: 1653 +6.5 + 75, name: '153', limit: 40 },
             { x: 1653 +6.5 + 75 + 62.5, name: '155', limit: 0 },
             { x: 1653 +6.5 + 75 + 62.5 + 75, name: '155а', limit: 0 },
@@ -332,12 +332,12 @@ lines['crossline-redux_pony10']['1'] = [
                         },
                         {
                             RouteName: "OK1-3", NextSignal: "OKFIX3", Manual: true,
-                            EnRou: true, PRou: "3", Switches: "OK1-,OK3+,OK5+,OK6+", 
+                            EnRou: true, PRou: "3", Switches: "OK1-,OK3+,OK5+,OK6+,OK4+", 
                             Lights: "4-4-4-1", ARSCodes: "2224"
                         },
                         {
                             RouteName: "OK1-4", NextSignal: "OKFIX3", Manual: true,
-                            EnRou: true, PRou: "4", Switches: "OK1-,OK3-,OK5+,OK6-", 
+                            EnRou: true, PRou: "4", Switches: "OK1-,OK3-,OK6-,OK5+,OK4-", 
                             Lights: "4-4-4-4-1", ARSCodes: "22224"
                         },
                         {   RouteName: "OK1P", Lights: "4-42", Switches: "OK1+", ARSCodes: "24", NextSignal: "*", Manual: true }
@@ -399,6 +399,7 @@ lines['crossline-redux_pony10']['1'] = [
                     LensesStr: "BWY-M-YGR-XW", OW: "[25 0 -5]", Kanava: true, Krons: "LNLN",
                     Routes:[
                         { Rezab1: "6-46-46-46-1", RouteName: "RE1-1", Switches: "RE3+" },
+                        { Lights: "6-6-6-6-2", Rezab1: "6-6-6-6-1", RouteName: "RE1-V", Switches: "RE3+", EnRou: true, PRou: "V", NextSignal: "*", Manual: true },
                         { Lights: "6", ARSCodes: "2", Switches: "RE3-" } 
                     ] 
                 }
@@ -614,6 +615,14 @@ lines['crossline-redux_pony10']['1'] = [
                         {   
                             RouteName: "MO1-1", Switches: "MO1+", NextSignal: "*", Manual: true, EnRou: true, PRou: "1", 
                             Lights: "6-6-6-6-2", Rezab1: "6-6-6-6-1", ARSCodes: "22224", RezabCommand: "suka" 
+                        },
+                        {
+                            EnRou: true, PRou: "3", Switches: "MO1-,MO3+,MO5+", 
+                            Lights: "6", ARSCodes: "2"
+                        },
+                        {
+                            EnRou: true, PRou: "4", Switches: "MO1-,MO3-,MO6-", 
+                            Lights: "6", ARSCodes: "2"
                         },
                         {
                             RouteName: "MO1-3", NextSignal: "MOFIX3", Manual: true,

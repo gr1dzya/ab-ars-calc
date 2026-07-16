@@ -97,11 +97,11 @@
     "ARSOnly": false,
 		"Pole": 1,
     "FrontArsName": "27",
-    "LensesStr": "YXR",
+    "LensesStr": "WXY-XR",
     "Routes": [
       {
         "NextSignal": "*",
-        "Lights": "3-31-31-1",
+        "Lights": "5-35-35-1",
         "ARSCodes": "004"
       }
     ]
@@ -122,7 +122,22 @@
     "Routes": [
       {
         "NextSignal": "",
-        "Lights": "2"
+        "Lights": "2",
+        "ARSCodes": "2"
+      },
+      {
+        "EnRou": true,
+        "PRou": "3",
+        "Switches": "MJ1-,MJ3+,MJ5+",
+        "Lights": "2",
+        "ARSCodes": "2"
+      },
+      {
+        "EnRou": true,
+        "PRou": "4",
+        "Switches": "MJ1-,MJ3-,MJ6-",
+        "Lights": "2",
+        "ARSCodes": "2"
       },
       {
         "NextSignal": "*",
@@ -188,7 +203,7 @@
     "Name": "MJFIX1Back",
     "ARSOnly": true,
     "LensesStr": "",
-    "PassOcc": true,
+    "RouteNumber": "1",
     "DTM": true,
     "Back": true,
     "SignalType": 0
@@ -210,7 +225,7 @@
     "SignalType": 0
   },
   "82": {
-    "x": 8933,
+    "x": 9000,
     "Routes": [
       {
         "NextSignal": "*",
@@ -241,7 +256,7 @@
     "SignalType": 0
   },
   "85": {
-    "x": 14596,
+    "x": 14660,
     "Routes": [
       {
         "NextSignal": "*",
@@ -315,6 +330,7 @@
     "Name": "MJ3",
     "ARSOnly": false,
 		"Krons": "LN",
+    "NonAutoStop": true,
     "FrontArsName": "23",
     "LensesStr": "XR-I",
     "noPogashenie": 0,
@@ -326,5 +342,142 @@
         "ARSCodes": "2"
       }
     ]
+  },
+  "1": {
+    "x": 109,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "TC25",
+    "ARSOnly": true,
+    "Back": true,
+		"DTM": true,
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "91": {
+    "x": 0.1,
+    "Routes": [
+      {
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "TC23",
+    "ARSOnly": true,
+    "Back": true,
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "92": {
+    "x": 4021,
+    "Name": "PHV",
+    "ARSOnly": false,
+    "LensesStr": "WRW",
+		"Letter": "V",
+    "noPogashenie": 0,
+		"Led": true,
+    "Pole": 1,
+    "Back": true,
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "", "Lights": "2", "ARSCodes": "2"
+      },
+      {
+				"RouteName": "PHV-2", "NextSignal": "1102",
+        "Manual": true,
+        "Switches": "PH2-,PH1-,PH3+", "ARSCodes": "224",
+        "Lights": "2-2-1"
+      }
+    ]
+  },
+  "93": {
+    "x": 3940,
+    "Routes": [
+      {
+        "ARSCodes": "1", "NextSignal": "*"
+      },
+      {
+        "ARSCodes": "4", "NextSignal": "*",
+        "Switches": "PH1-"
+      }
+    ],
+    "Name": "PHFIX1Back",
+    "ARSOnly": true,
+    "Back": true,
+		"DTM": true,
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "93a": {
+    "x": 3470,
+    "Routes": [
+      {
+        "ARSCodes": "1", "NextSignal": "*"
+      }
+    ],
+    "Name": "PHOPFIX",
+    "ARSOnly": true,
+    "Back": true,
+		"DTM": true,
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "94": {
+    "x": 10732.8,
+    "Name": "REV",
+    "ARSOnly": false,
+    "LensesStr": "BW-RW",
+		"Letter": "V",
+    "noPogashenie": 0,
+    "Back": true,
+    "Left": true,
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "", "Lights": "3", "ARSCodes": "2"
+      },
+      {
+				"RouteName": "REV-2", "NextSignal": "146",
+        "Manual": true,
+        "Switches": "RE2-,RE3-", "ARSCodes": "2224",
+        "Lights": "3-3-3-2", "RezabCommand": "suka", "Rezab1": "3-3-3-1"
+      }
+    ]
+  },
+  "95": {
+    "x": 10690,
+    "Routes": [
+      {
+        "ARSCodes": "1", "NextSignal": "*"
+      },
+      {
+        "ARSCodes": "4", "NextSignal": "*",
+        "Switches": "RE3-"
+      }
+    ],
+    "Name": "REFIX1back",
+    "ARSOnly": true,
+    "Back": true,
+		"DTM": true,
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "96": {
+    "x": 18233,
+    "Routes": [
+      {
+        "NextSignal": "*", "ARSCodes": "00004"
+      }
+    ],
+    "Name": "MOAOFIX",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "PassOcc": true,
+    "DTM": true,
+    "SignalType": 0
   }
 }
