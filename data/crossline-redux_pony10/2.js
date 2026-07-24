@@ -121,7 +121,7 @@ lines['crossline-redux_pony10']['2'] = [
             { joint: '6112', name: '612', lenses: 'X', guard: 35, autostop: 3 },
         ],
         mks: [
-            { x: 1706.6 - 42, name: '24МК' },
+            { x: 1706.6 - 42, name: '22МК' },
         ],
     },
     {

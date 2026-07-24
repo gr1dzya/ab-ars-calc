@@ -345,7 +345,7 @@ lines['crossline-redux_pony10']['1'] = [
                 } 
             },
             { joint: '139б', name: '141', lenses: 'YGR', guard: 80, autostop: 3, g: '141', gmod: { Pole:1 } },
-            { joint: '141', name: '143', lenses: 'YY-GR', guard: 80, autostop: 3, y: '143б', g: 'NEXT_y', gmod: { Pole:1 } },
+            { joint: '141', name: '143', lenses: 'YY-GR', guard: 80, autostop: 3, y: '143б', yg: 'NEXT_y', g: 'NEXT_yg', gmod: { Pole:1 } },
             { joint: '143а', name: '145', lenses: 'YY-GR', guard: 80, autostop: 3, y: '145', yg: 'NEXT_y', g: 'NEXT_yg', gmod: { Pole:1 } },
             { joint: '143б', name: '147', lenses: 'YY-GR', guard: 80, autostop: 3, shift: 10, y: '147', yg: 'NEXT_y', g: 'NEXT_yg', gmod: { Pole:1 } },
             { joint: '145', name: '149', lenses: 'YY-GR', guard: 70, autostop: 1, y: '149', yg: 'NEXT_y', g: 'NEXT_g', gmod: { Pole:1 } },
@@ -531,7 +531,7 @@ lines['crossline-redux_pony10']['1'] = [
                             RouteName: "OL1-3", NextSignal: "OLFIX3", Manual: true, RezabCommand: "suka",
                             Switches: "OL1-,OL3-", Lights: "5-5-5-2", ARSCodes: "2224", Rezab1: "5-5-5-1"
                         },
-                        {   RouteName: "OL1P", Lights: "5-53", Switches: "OK1+", ARSCodes: "24", NextSignal: "*", Manual: true }
+                        {   RouteName: "OL1P", Lights: "5-53", Switches: "OK1+", ARSCodes: "24", NextSignal: "TCFIX1", Manual: true }
                     ]
                 } 
             },
