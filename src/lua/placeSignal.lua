@@ -7,7 +7,7 @@ local sigType = 6
 local angle_mirror = Angle(0, 180, 0)
 
 function getSignalTrackRerailTrace(trackID, x, isBack)
-    local downVector = Vector(0, 0, -300)
+    local downVector = Vector(0, 0, -100) -- было -300
     local pos, dir = Metrostroi.GetTrackPosition(Metrostroi.Paths[trackID], x)
     if not pos or not dir then
         print("Failed to get track position for trackID: ", trackID, " at x: ", x)
