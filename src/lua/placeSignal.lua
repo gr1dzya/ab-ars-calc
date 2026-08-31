@@ -2,6 +2,7 @@ R50_MODE = false
 RAYS = false
 NEW_ERA = true
 local pogashenie = 1
+local Dnepr = 1
 local sigType = 6
 
 local angle_mirror = Angle(0, 180, 0)
@@ -147,10 +148,11 @@ function placeSignal(position, angles, options)
     --        Lights = options.Lights,
     --    },
     --})
-    if options.noPogashenie ~= 0 and not options.ARSOnly and pogashenie then
+    if options.noPogashenie ~= 0 and (not options.ARSOnly or Dnepr) and pogashenie then
         ent.Routes[1].RezabCommand = "suka"
         ent.Routes[1].RezabEnabled = false
         if not ent.Routes[1].Rezab1 then ent.Routes[1].Rezab1 = "0" end
+        if Dnepr then ent.Routes[1].Dnepr = true end
     end
 
     if R50_MODE then
@@ -293,26 +295,31 @@ end )
  --importSignalData("signals-imagine-2.json", 1, true)
  --importSignalData("signals-imagine-1_additional.json", 9, false)
  --importSignalData("signals-imagine-2_additional.json", 1, false)
-importSignalData("signals-loopline-1.json", 1, true)
-importSignalData("loopline_ADD1.json", 1, false)
-importSignalData("signals-crossline-redux_pony10-1.json", 6, true)
-importSignalData("signals-crossline-redux_pony10-2.json", 7, true)
-importSignalData("REDUX1_ADD.json", 6, false)
-importSignalData("REDUX2_ADD.json", 7, false)
-importSignalData("Redux_MD3.json", 2, false)
-importSignalData("Redux_MD4.json", 1, false)
-importSignalData("Redux_OK3.json", 4, false)
-importSignalData("Redux_OK4.json", 5, false)
-importSignalData("Redux_OL3.json", 8, false)
-importSignalData("Redux_PH3.json", 3, false)
-importSignalData("Redux_ML3.json", 9, false)
-importSignalData("Redux_ML4.json", 10, false)
+--             importSignalData("signals-loopline-1.json", 1, true)
+--             importSignalData("loopline_ADD1.json", 1, false)
+--             importSignalData("signals-loopline-2.json", 2, true)
+--             importSignalData("loopline_ADD2.json", 2, false)
+--             importSignalData("signals-crossline-redux_pony10-1.json", 6, true)
+--             importSignalData("signals-crossline-redux_pony10-2.json", 7, true)
+--             importSignalData("REDUX1_ADD.json", 6, false)
+--             importSignalData("REDUX2_ADD.json", 7, false)
+--             importSignalData("Redux_MD3.json", 2, false)
+--             importSignalData("Redux_MD4.json", 1, false)
+--             importSignalData("Redux_OK3.json", 4, false)
+--             importSignalData("Redux_OK4.json", 5, false)
+--             importSignalData("Redux_OL3.json", 8, false)
+--             importSignalData("Redux_PH3.json", 3, false)
+--             importSignalData("Redux_ML3.json", 9, false)
+--             importSignalData("Redux_ML4.json", 10, false)
 --importSignalData("signals-surface-1.json", 7, true)
  --importSignalData("signals-surface-2.json", 8, true)
  --importSignalData("signals-surface-1_additional.json", 7, false)
  --importSignalData("signals-surface-2_additional.json", 8, false)
--- importSignalData("signals-samara-1.json", 1, true)
--- importSignalData("signals-samara-2.json", 2, true)
+--importSignalData("signals-samara-1.json", 1, true)
+--importSignalData("signals-samara-2.json", 2, true)
+--importSignalData("SAMARA_1ADD.json", 1, false)
+--importSignalData("SAMARA_2ADD.json", 2, false)
+importSignalData("signals-kalina-1.json", 1, true)
 -- importSignalData("signals-sokolka-1.json", 1, true)
 -- importSignalData("signals-sokolka-2.json", 2, true)
 -- importSignalData("signals-sokolka-1_additional.json", 1, false)
