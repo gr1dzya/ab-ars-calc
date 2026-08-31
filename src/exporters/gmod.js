@@ -576,6 +576,9 @@ function rtl(gmodRc) {
         .replaceAll('х', 'h')
         .replaceAll('ц', 'c')
         .replaceAll('ч', 'x')
+        .replaceAll('ш', 'i')
+        .replaceAll('э', "'")
+        .replaceAll('я', "z")
         .replaceAll('А', 'A')
         .replaceAll('Б', 'B')
         .replaceAll('В', 'V')
@@ -599,6 +602,8 @@ function rtl(gmodRc) {
         .replaceAll('Х', 'H')
         .replaceAll('Ц', 'C')
         .replaceAll('Ч', 'X')
+        .replaceAll('Ш', 'W')
+        .replaceAll('Э', "'")
         .replaceAll('Я', 'Q');
 }
 
