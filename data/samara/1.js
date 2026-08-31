@@ -30,7 +30,7 @@ lines['samara']['1'] = [
             { x: 1540.5 - 62.5 - 50 - 50 - 62.5 - 62.5 - 137.5 - 137.5, name: '89', point: true, limit: 40, gmod: { TwoToSix: true } },
             { x: 1540.5 - 62.5 - 50 - 50 - 62.5 - 62.5 - 137.5, name: '87', point: true, limit: 40, gmod: { TwoToSix: true } },
             { x: 1540.5 - 62.5 - 50 - 50 - 62.5 - 62.5, name: '85', point: true, limit: 40, gmod: { TwoToSix: true } },
-            { x: 1540.5 - 62.5 - 50 - 50 - 62.5, name: '83', point: true, limit: 40, gmod: { TwoToSix: true } },
+            { x: 1540.5 - 62.5 - 50 - 50 - 62.5, name: '83', point: true, limit: 40, later: { 40: -1 }, gmod: { TwoToSix: true } },
             { x: 1540.5 - 62.5 - 50 - 50, name: '81', point: true, limit: 40, gmod: { TwoToSix: true } },
             { x: 1540.5 - 62.5 - 50, name: '1675', limit: 40, gmod: { TwoToSix: true } }, //, Routes: [{ARSCodes: "2224"}]
             { x: 1540.5 - 62.5, name: '1677', limit: 40, gmod: { TwoToSix: true } },
@@ -42,7 +42,14 @@ lines['samara']['1'] = [
         signals: [
             { joint: '1АП', name: 'НУ1', lenses: 'BYW-YR-M-w', gmod: { Pole: 3, OnPoleZ: 25, SignalType: 7 } },
             { joint: '99', name: 'Е1', lenses: 'BY-GR-w', gmod: { Pole: 3, OnPoleZ: 25, SignalType: 7, Routes: [{Lights: "4-1"}] } },
-            { joint: '1675', name: 'КР1', lenses: 'YBY-RW', gmod: { Routes: [{Lights: "4-2", RouteName: "KR1-1", Switches: "KR_S1-"}, {Lights: "4", Switches: "KR_S1+", ARSCodes: "2"}] } },
+            { joint: '1675', name: 'КР1', lenses: 'YBY-RW', 
+                gmod: { LetterK: true,
+                Routes: [
+                    { Lights: "4-2", RouteName: "KR1-1", Switches: "KR_S1-" }, 
+                    { Lights: "4", Switches: "KR_S1+", ARSCodes: "2" }
+                ] 
+            } 
+        },
         ],
         switches: [
 		],
@@ -68,10 +75,10 @@ lines['samara']['1'] = [
             //{ x: 0.5 - 62.5, name: '1677', limit: 60, gmod: { TwoToSix: true } },
             { x: 0.5, name: '1679', point: true, limit: 0, gmod: { TwoToSix: true, DTM: true } },
             { x: 0.5 + 62.5, name: '1511', limit: 40, gmod: { TwoToSix: true, Approve0: true  } },
-            { x: 0.5 + 62.5 + 100, name: '1513', point: true, limit: 70, gmod: { TwoToSix: true } },
-            { x: 0.5 + 62.5 + 100 + 137.5, name: '1517', point: true, limit: 80, gmod: { TwoToSix: true } },
-            { x: 0.5 + 62.5 + 100 + 137.5 + 137.5, name: '1519', point: true, limit: 80, gmod: { TwoToSix: true } },
-            { x: 0.5 + 62.5 + 100 + 137.5 + 137.5 + 137.5, name: '1521', point: true, limit: 80, gmod: { TwoToSix: true } },
+            { x: 0.5 + 62.5 + 100, name: '1513', point: true, limit: 70, later: { 40: 4, 60: 3, 70: 3 }, gmod: { TwoToSix: true } },
+            { x: 0.5 + 62.5 + 100 + 137.5, name: '1517', point: true, limit: 80, later: { 40: 3, 60: 2, 70: 1, 80: 1 }, gmod: { TwoToSix: true } },
+            { x: 0.5 + 62.5 + 100 + 137.5 + 137.5, name: '1519', point: true, limit: 80, later: { 40: 2, 60: 1 }, gmod: { TwoToSix: true } },
+            { x: 0.5 + 62.5 + 100 + 137.5 + 137.5 + 137.5, name: '1521', point: true, limit: 80, later: { 40: 1 }, gmod: { TwoToSix: true } },
             { x: 0.5 + 62.5 + 100 + 137.5 + 137.5 + 137.5 + 137.5, name: '1523', point: true, limit: 80, gmod: { TwoToSix: true } },
             { x: 0.5 + 62.5 + 100 + 137.5 + 137.5 + 137.5 + 137.5 + 137.5, name: '1525', point: true, limit: 80, gmod: { TwoToSix: true } },
             { x: 0.5 + 62.5 + 100 + 137.5 + 137.5 + 137.5 + 137.5 + 137.5 + 137.5, name: '1527', point: true, limit: 80, gmod: { TwoToSix: true } },
@@ -114,10 +121,10 @@ lines['samara']['1'] = [
             //{ x: -2.5 - 62.5, name: '1577', limit: 60, gmod: { TwoToSix: true } },
             { x: -2.5, point: true, name: '1579', limit: 0, gmod: { TwoToSix: true, DTM: true } },
             { x: -2.5 + 62.5, name: '1411', limit: 40, gmod: { TwoToSix: true, Approve0: true  } },
-            { x: -2.5 + 62.5 + 87.5, point: true, name: '1413', limit: 70, gmod: { TwoToSix: true } },
-            { x: -2.5 + 62.5 + 87.5 + 75, point: true, name: '1415', limit: 80, gmod: { TwoToSix: true } },
-            { x: -2.5 + 62.5 + 87.5 + 75 + 137.5, point: true, name: '1417', limit: 80, gmod: { TwoToSix: true } },
-            { x: -2.5 + 62.5 + 87.5 + 75 + 137.5 + 137.5, point: true, name: '1419', limit: 80, gmod: { TwoToSix: true } },
+            { x: -2.5 + 62.5 + 87.5, point: true, name: '1413', limit: 70, later: { 40: 3, 60: 2, 70: 2 }, gmod: { TwoToSix: true } },
+            { x: -2.5 + 62.5 + 87.5 + 75, point: true, name: '1415', limit: 80, later: { 40: 3, 60: 2, 70: 2, 80: 1 }, gmod: { TwoToSix: true } },
+            { x: -2.5 + 62.5 + 87.5 + 75 + 137.5, point: true, name: '1417', limit: 80, later: { 40: 2, 60: 1, 70: 1 }, gmod: { TwoToSix: true } },
+            { x: -2.5 + 62.5 + 87.5 + 75 + 137.5 + 137.5, point: true, name: '1419', limit: 80, later: { 40: 1 }, gmod: { TwoToSix: true } },
             { x: -2.5 + 62.5 + 87.5 + 75 + 137.5 + 137.5 + 137.5, point: true, name: '1421', limit: 80, gmod: { TwoToSix: true } },
             { x: -2.5 + 62.5 + 87.5 + 75 + 137.5 + 137.5 + 137.5 + 137.5, point: true, name: '1423', limit: 80, gmod: { TwoToSix: true } },
             { x: 1397.5 - 62.5 - 62.5 - 62.5 - 75 - 100 - 125, point: true, name: '1467', limit: 80, gmod: { TwoToSix: true } },
@@ -155,12 +162,13 @@ lines['samara']['1'] = [
             //{ x: -4.5 - 62.5, name: '1479', limit: 0, gmod: { TwoToSix: true, DTM: true } },
             { x: -4.5, point: true, name: '1479', limit: 0, gmod: { TwoToSix: true, DTM: true } },
             { x: -4.5 + 62.5, name: '1311', limit: 40, gmod: { TwoToSix: true, Approve0: true } },
-            { x: -4.5 + 62.5 + 62.5, point: true, name: '1313', limit: 60, gmod: { TwoToSix: true } },
-            { x: -4.5 + 62.5 + 62.5 + 87.5, point: true, name: '1315', limit: 60, gmod: { TwoToSix: true } },
-            { x: -4.5 + 62.5 + 62.5 + 87.5 + 137.5, point: true, name: '1317', limit: 60, gmod: { TwoToSix: true } },
+            { x: -4.5 + 62.5 + 62.5, point: true, name: '1313', limit: 60, later: { 40: 2, 60: 2 }, gmod: { TwoToSix: true } },
+            { x: -4.5 + 62.5 + 62.5 + 87.5, point: true, name: '1315', limit: 60, later: { 40: 2, 60: 1 }, gmod: { TwoToSix: true } },
+            { x: -4.5 + 62.5 + 62.5 + 87.5 + 137.5, point: true, name: '1317', limit: 60, later: { 40: 1 }, gmod: { TwoToSix: true } },
             { x: -4.5 + 62.5 + 62.5 + 87.5 + 137.5 + 137.5, point: true, name: '1319', limit: 80, gmod: { TwoToSix: true } },
             { x: 1308 - 50 - 50 - 37.5 - 50 - 75 - 62.5 - 100 - 137.5 - 87.5, name: '1321', limit: 80, gmod: { TwoToSix: true } }, //, Routes: [{ARSCodes: "22678"}]
-            { x: 1308 - 50 - 50 - 37.5 - 50 - 75 - 62.5 - 100 - 137.5, name: '1323', limit: 80, gmod: { TwoToSix: true } },
+            { x: 1308 - 50 - 50 - 37.5 - 50 - 75 - 62.5 - 100 - 137.5 - 87.5 + 37.5, name: '1323', limit: 80, gmod: { TwoToSix: true } }, 
+            { x: 1308 - 50 - 50 - 37.5 - 50 - 75 - 62.5 - 100 - 137.5, name: '1325', point: true, limit: 80, gmod: { TwoToSix: true } },
             { x: 1308 - 50 - 50 - 37.5 - 50 - 75 - 62.5 - 100, name: '1365', point: true, limit: 80, gmod: { TwoToSix: true } },
             { x: 1308 - 50 - 50 - 37.5 - 50 - 75 - 75, name: '1367', point: true, limit: 70, gmod: { TwoToSix: true } },
             { x: 1308 - 50 - 50 - 37.5 - 50 - 75, name: '1369', point: true, limit: 60, gmod: { TwoToSix: true } },
@@ -176,7 +184,15 @@ lines['samara']['1'] = [
         ],
         signals: [
             { joint: '1311', name: '131М', lenses: 'YGR', gmod: {Krons: "M"} },
-            { joint: '1321', name: 'ПБ133М', lenses: 'BWY-1-GRW', gmod: { Krons: "MNM", OW: "[-1 0 20]", Routes: [{Lights: "5-1"}] } },
+            { joint: '1321', name: 'ПБ133М', lenses: 'BWY-1-GRW', 
+                gmod: 
+                {
+                    Krons: "MNM", OW: "[-1 0 20]", 
+                    Routes: [
+                        { RouteName: "PB1-1", Switches: "PB_S1+,PB_S2+", Lights: "5-1", PRou: "1", EnRou: true }
+                    ] 
+                } 
+            },
             { joint: '1211', name: '121М', lenses: 'YGR', gmod: {Krons: "L"} },
         ],
         mks: [
@@ -199,7 +215,7 @@ lines['samara']['1'] = [
             //{ x: 9 - 50, name: '1377', limit: 60, gmod: { TwoToSix: true } },
             { x: 6, name: '1379', point: true, limit: 0, gmod: { TwoToSix: true, DTM: true  } },
             { x: 6 + 50, name: '1211', limit: 40, gmod: { TwoToSix: true, Approve0: true } },
-            { x: 6 + 50 + 50, name: '1213', point: true, limit: 60, gmod: { TwoToSix: true } },
+            { x: 6 + 50 + 50, name: '1213', point: true, limit: 60, later: { 60: 3 }, gmod: { TwoToSix: true } },
             { x: 6 + 50 + 50 + 62.5, name: '1215', point: true, limit: 60, gmod: { TwoToSix: true } },
             { x: 6 + 50 + 50 + 62.5 + 50, name: '1217', point: true, limit: 60, gmod: { TwoToSix: true } },
             { x: 6 + 50 + 50 + 62.5 + 50 + 137.5, name: '1219', point: true, limit: 60, gmod: { TwoToSix: true } },

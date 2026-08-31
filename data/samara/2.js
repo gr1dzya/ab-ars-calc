@@ -209,7 +209,7 @@ lines['samara']['2'] = [
         signals: [
             { joint: '1574', name: 'КР-158', lenses: 'BYG-RW', left: true, gmod: { Routes: [{Lights: "4-4-1"}] } },
             { joint: '1612', name: 'КР-162М', lenses: 'BYW-YRW', gmod: { Routes: [{Lights: "5-2"}] } },
-            { joint: '1574', name: 'ОП', lenses: 'ZR', left: true, back: true, row: 3.2, gmod: { name: 'KROP', Letter: "OP", DTM: true } },
+            { joint: '1574', name: 'ОП', lenses: 'ZR', left: true, back: true, row: 3.2, gmod: { name: 'KROP', Letter: "OP", DTM: true, Routes: [{ARSCodes: "1"}] } },
         ],
         mks: [
         ],
@@ -237,7 +237,7 @@ lines['samara']['2'] = [
         joints: [
             { x: -9, name: '1580', limit: 0, point: true, gmod: { TwoToSix: true, DTM: true } },
             { x: -9 + 62.5, name: '1612', limit: 40, gmod: { TwoToSix: true, Approve0: true } },
-            { x: -9 + 62.5 + 50, name: '82', limit: 40, gmod: { TwoToSix: true } },
+            { x: -9 + 62.5 + 50, name: '82', limit: 40, gmod: { TwoToSix: true, RouteNumber: "D" } },
             { x: -9 + 62.5 + 50 + 50, name: '84', limit: 40, point: true, gmod: { TwoToSix: true } },
             { x: -9 + 62.5 + 50 + 50 + 50, name: '86', limit: 40, point: true, gmod: { TwoToSix: true } },
             { x: -9 + 62.5 + 50 + 50 + 50 + 137.5, name: '88', limit: 40, point: true, gmod: { TwoToSix: true } },
@@ -248,7 +248,18 @@ lines['samara']['2'] = [
             { x: 1304, name: '2П', limit: 0, point: true, gmod: { TwoToSix: true } },
         ],
         signals: [
-            { joint: '1612', name: 'КР-162М', lenses: 'BYW-YRW', gmod: { Routes: [{Lights: "5-2"}] } },
+            { joint: '1612', name: 'КР-162М', lenses: 'BYW-YRW', 
+                gmod: { 
+                    LensesStr: "BYW-2D-YRW", Krons: "LNL", LetterK: true, Routes: [
+                        { RouteName: "KR2-2", Lights: "5-52-52-1", Switches: "KR_S2-", EnRou: true },
+                        { Lights: "5", ARSCodes: "2", Switches: "KR_S2+", EnRou: true, PRou: "2", EnRou: true },
+                        { 
+                            RouteName: "KR2-V", Lights: "5-5-5-5-5-5-5-1", ARSCodes: "22222224", 
+                            Switches: "KR_S2+,KR_S4+", EnRou: true, NextSignal: "TCFIX2", Manual: true 
+                        }
+                    ] 
+                } 
+            },
         ],
         mks: [
         ],
