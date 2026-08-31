@@ -33,8 +33,8 @@ lines['loopline']['1'] = [
         ],
         signals: [
             { joint: '159в1',name:'МР-175',lenses: 'BWY-GRW',guard: 80, autostop: 3,                       g: '175' },
-            { joint: '173г', name:'МР-177',lenses: 'BWY-GRW',guard: 80, service: 80, autostop: 3,          g: '177а', gmod: { LetterK: true } },            
-            { joint: '177а', name: '179',  lenses:  'YGR',   guard: 80, service: 80, autostop: 3,          g: '179б', gmod: { Pole: 1 } },            
+            { joint: '173г', name:'МР-177',lenses: 'BWY-GRW',guard: 80, service: 90, autostop: 3,          g: '177а', gmod: { LetterK: true } },            
+            { joint: '177а', name: '179',  lenses:  'YGR',   guard: 80, service: 90, autostop: 3,          g: '179б', gmod: { Pole: 1 } },            
             { joint: '179а', name: '181',  lenses: 'YY-GR',  guard: 80, service: 35, autostop: 3,          y: '181', yg: 'NEXT_y', g: 'NEXT_yg', gmod: { Pole: 3 } },            
             { joint: '179б', name: '183',  lenses: 'YY-GR',  guard: 70, service: 35, autostop: 3,          y: '183', yg: 'NEXT_y', g: 'NEXT_yg' },            
             { joint: '181',  name: '185',  lenses: 'YY-GR',  guard: 70, service: 35, autostop: 1,shift: 5, y: '185', yg: 'NEXT_y', g: 'NEXT_g' },            
@@ -59,11 +59,11 @@ lines['loopline']['1'] = [
         },
         joints: [
             { x: 2.5, name: '187', limit: 0, gmod: { Kanava: true } },
-            { x: 2.5 + 62.5, name: '189', limit: 60 },
-            { x: 2.5 + 62.5 + 50, name: '191', limit: 60 },
-            { x: 2.5 + 62.5 + 50 + 37.5, name: '191а', limit: 60 },
-            { x: 2.5 + 62.5 + 50 + 37.5 + 112.5, name: '191б', limit: 60 },
-            { x: 2.5 + 62.5 + 50 + 37.5 + 112.5 + 300, name: '191в', limit: 70 },
+            { x: 2.5 + 62.5, name: '189', limit: 60, later: { 60: 2 } },
+            { x: 2.5 + 62.5 + 50, name: '191', limit: 60, later: { 40: 3, 60: 2 } },
+            { x: 2.5 + 62.5 + 50 + 37.5, name: '191а', limit: 60, later: { 40: 2, 60: 2 } },
+            { x: 2.5 + 62.5 + 50 + 37.5 + 112.5, name: '191б', limit: 60, later: { 40: 2, 60: 2 } },
+            { x: 2.5 + 62.5 + 50 + 37.5 + 112.5 + 300 - 25, name: '191в', limit: 70, later: { 40: 1 } },
             { x: 2.5 + 62.5 + 50 + 37.5 + 112.5 + 300 + 175, name: '191г', limit: 70 },
             { x: 2.5 + 62.5 + 50 + 37.5 + 112.5 + 300 + 325, name: '193', limit: 80 },
             { x: 2.5 + 62.5 + 50 + 37.5 + 112.5 + 300 + 325 + 225, name: '195', limit: 80 },
@@ -73,7 +73,7 @@ lines['loopline']['1'] = [
             { x: 2.5 + 62.5 + 50 + 37.5 + 112.5 + 300 + 325 + 225 + 212.5 + 225 + 200 + 200, name: '199', limit: 80 },
             { x: 2.5 + 62.5 + 50 + 37.5 + 112.5 + 300 + 325 + 225 + 212.5 + 225 + 200 + 225 + 112.5 + 200 - 12.5, name: '199а', limit: 80 },
             { x: 2.5 + 62.5 + 50 + 37.5 + 112.5 + 300 + 325 + 225 + 212.5 + 225 + 200 + 225 + 112.5 + 200 + 200, name: '201', limit: 80 },
-            { x: 3385 +5 - 62.5 - 75 - 100 - 125 - 125 + 12.5 + 12.5, name: '201а', limit: 80 },
+            { x: 3385 +5 - 62.5 - 75 - 100 - 125 - 125, name: '201а', limit: 80 },
             { x: 3385 +5 - 62.5 - 75 - 100 - 125, name: '201б', limit: 80 },
             { x: 3385 +5 - 62.5 - 75 - 100, name: '203', limit: 80 },
             { x: 3385 +5 - 62.5 - 75, name: '205', limit: 70 },
@@ -85,12 +85,12 @@ lines['loopline']['1'] = [
             { x: 3385 +8 + 62.5 + 50 + 37.5 + 62.5, name: '213б', limit: 0 },
         ],
         signals: [         
-            { joint: '189',  name: '191М',lenses:'YY-GR',guard: 35, service: 80, autostop: 3,                   y: '191г', g: 'NEXT_g' },         
-            { joint: '191в', name: '193', lenses: 'YGR', guard: 80, service: 80, autostop: 3, left: true,       g: '193' },         
-            { joint: '193',  name: '195', lenses:'YY-GR',guard: 80, service: 80, autostop: 3,                   y: '195а', g: 'NEXT_g' },         
-            { joint: '195а', name: '197', lenses: 'YGR', guard: 80, service: 80, autostop: 1, left: true,       g: '197а', gmod: { LetterK: true } },         
-            { joint: '197а', name: '199', lenses: 'YGR', guard: 80, service: 80, autostop: 3, shift: 20,        g: '199а', gmod: { LetterK: true } },         
-            { joint: '199а', name: '201', lenses: 'YGR', guard: 80, service: 80, autostop: 1, left: true,       g: '201б' },             
+            { joint: '189',  name: '191М',lenses:'YY-GR',guard: 35, service: 90, autostop: 3,                   y: '191г', g: 'NEXT_g' },         
+            { joint: '191в', name: '193', lenses: 'YGR', guard: 80, service: 90, autostop: 3, left: true,       g: '193' },         
+            { joint: '193',  name: '195', lenses:'YY-GR',guard: 80, service: 90, autostop: 3,                   y: '195а', g: 'NEXT_g' },         
+            { joint: '195а', name: '197', lenses: 'YGR', guard: 80, service: 90, autostop: 1, left: true,       g: '197а', gmod: { LetterK: true } },         
+            { joint: '197а', name: '199', lenses: 'YGR', guard: 80, service: 90, autostop: 3, shift: 20,        g: '199а', gmod: { LetterK: true } },         
+            { joint: '199а', name: '201', lenses: 'YGR', guard: 80, service: 90, autostop: 1, left: true,       g: '201б', gmod: { LetterK: true } },             
             { joint: '201а', name: '203',   lenses: 'YY-GR',   guard: 80, service: 35, autostop: 3, left: true, y: '203', yg: 'NEXT_y', g: 'NEXT_yg', gmod: { LetterK: true } },       
             { joint: '201б', name: 'ПН-205', lenses: 'YYG-Rw', guard: 80, service: 35, autostop: 3, left: true, y: '205', yg: 'NEXT_y', g: 'NEXT_yg', gmod: { LetterK: true } },       
             { joint: '203',  name: 'ПН-207', lenses: 'YYG-Rw', guard: 70, service: 35, autostop: 1, left: true, y: '207', yg: 'NEXT_y', g: 'NEXT_g',  gmod: { LetterK: true } },       
@@ -128,12 +128,14 @@ lines['loopline']['1'] = [
             { x: 8 + 62.5 + 50 + 37.5, name: '213а', limit: 60, later: { 40: 3, 60: 3 } },
             { x: 8 + 62.5 + 50 + 37.5 + 62.5, name: '213б', limit: 60, later: { 40: 3, 60: 3 } }, //, 70: 3, 80: 2
             { x: 8 + 62.5 + 50 + 37.5 + 62.5 + 200 + 150 - 25, name: '213в', limit: 80, later: { 40: 2, 60: 1 } },
-            { x: 8 + 62.5 + 50 + 37.5 + 62.5 + 200 + 150 + 100, name: '213г', limit: 80, later: { 80: 1 } },
-            { x: 8 + 62.5 + 50 + 37.5 + 62.5 + 200 + 150 + 200, name: '215', limit: 80, later: { 70: 1, 80: 1 } },
-            { x: 8 + 62.5 + 50 + 37.5 + 62.5 + 200 + 150 + 225 + 200, name: '217', limit: 80, later: { 40: 1, 60: 1, 70: 1, 80: 1 } },
-            { x: 8 + 62.5 + 50 + 37.5 + 62.5 + 200 + 150 + 225 + 200 + 225 + 225, name: '219', limit: 80 },
-            { x: 2008 + 12.5 - 50 - 50 - 75 - 100 - 100 - 100, name: '219а', limit: 80 },
-            { x: 2008 + 12.5 - 50 - 50 - 75 - 100 - 100, name: '219б', limit: 80 },
+            { x: 8 + 62.5 + 50 + 37.5 + 62.5 + 200 + 150 + 100, name: '213г', limit: 80 },
+            { x: 8 + 62.5 + 50 + 37.5 + 62.5 + 200 + 150 + 200, name: '215', limit: 80 },
+            { x: 8 + 62.5 + 50 + 37.5 + 62.5 + 200 + 150 + 225 + 200, name: '217', limit: 80 },
+            { x: 8 + 62.5 + 50 + 37.5 + 62.5 + 200 + 150 + 225 + 200 + 150, name: '217а', limit: 80 },
+            { x: 8 + 62.5 + 50 + 37.5 + 62.5 + 200 + 150 + 225 + 200 + 300, name: '219', limit: 80 },
+            { x: 8 + 62.5 + 50 + 37.5 + 62.5 + 200 + 150 + 225 + 200 + 225 + 225, name: '219а', limit: 80 },
+            { x: 2008 + 12.5 - 50 - 50 - 75 - 100 - 100 - 100, name: '219б', limit: 80 },
+            { x: 2008 + 12.5 - 50 - 50 - 75 - 100 - 100, name: '219в', limit: 80 },
             { x: 2008 + 12.5 - 50 - 50 - 75 - 100, name: '221', limit: 80 },
             { x: 2008 + 12.5 - 50 - 50 - 75, name: '223', limit: 80 },
             { x: 2008 + 12.5 - 50 - 50, name: '225', limit: 70 },
@@ -147,7 +149,7 @@ lines['loopline']['1'] = [
         signals: [
             { joint: '211', name: 'ПН-213',lenses: 'YG-Rw', guard: 35, service: 80, autostop: 1, g: '215', gmod: { Krons: "MM" } },   
             { joint: '213в', name: 'ПН-215',lenses: 'BYY-GRw', guard: 80, service: 75, autostop: 3, y: '215', g: 'NEXT_g', gmod: { Routes: [{ Rezab1: "5-5-5-1" }] } },   
-            { joint: '215', name: 'ПН-217',lenses: 'BYG-Rw', guard: 80, service: 75, autostop: 3, left: true, g: '217',
+            { joint: '215', name: 'ПН-217',lenses: 'BYG-Rw', guard: 80, service: 75, autostop: 3, left: true, g: '217а',
                 gmod: { 
                     LetterK: true, Routes: [
                         { Rezab1: "4-1", Switches: "PN7+" },
@@ -155,8 +157,8 @@ lines['loopline']['1'] = [
                     ] 
                 } 
             },
-            { joint: '217', name: 'КР-219', lenses: 'YYG-Rw', guard: 80, service: 80, autostop: 3, left: true, y: '219б',  g: 'NEXT_y' }, 
-            { joint: '219', name: 'КР-221', lenses: 'BYY-GRw', guard: 80, service: 35, autostop: 3, y: '221', yg: 'NEXT_y', g: 'NEXT_yg',
+            { joint: '217', name: 'КР-219', lenses: 'YYG-Rw', guard: 80, service: 90, autostop: 3, left: true, y: '219в',  g: 'NEXT_y' }, 
+            { joint: '219а', name: 'КР-221', lenses: 'BYY-GRw', guard: 80, service: 35, autostop: 3, y: '221', yg: 'NEXT_y', g: 'NEXT_yg',
                 gmod: { 
                     LetterK: true, Routes: [
                         { Rezab1: "5-1", Switches: "KR1+" },
@@ -164,8 +166,8 @@ lines['loopline']['1'] = [
                     ] 
                 } 
             },
-            { joint: '219а', name:  '223',  lenses: 'YY-GR',  guard: 80, service: 35, autostop: 3, left: true, y: '223', yg: 'NEXT_y', g: 'NEXT_yg' }, 
-            { joint: '219б', name:  '225',  lenses: 'YY-GR',  guard: 80, service: 35, autostop: 1, left: true, y: '225', yg: 'NEXT_y', g: 'NEXT_g' }, 
+            { joint: '219б', name:  '223',  lenses: 'YY-GR',  guard: 90, service: 35, autostop: 3, left: true, y: '223', yg: 'NEXT_y', g: 'NEXT_yg' }, 
+            { joint: '219в', name:  '225',  lenses: 'YY-GR',  guard: 80, service: 35, autostop: 1, left: true, y: '225', yg: 'NEXT_y', g: 'NEXT_g' }, 
             { joint: '221',  name:  '227',  lenses: 'YY-GR',  guard: 80, service: 35, autostop: 1, left: true, y: '227', yg: 'NEXT_y', g: 'NEXT_g' }, 
             { joint: '223',  name:  '229',  lenses: 'YY-GR',  guard: 70, service: 35, autostop: 1, left: true, y: '229', g: 'NEXT_yg' }, 
             { joint: '225',  name:  '231',  lenses: 'YY-GR',  guard: 70, autostop: 1,  shift: 15,  left: true, yg:'231' }, 
@@ -177,7 +179,7 @@ lines['loopline']['1'] = [
     },
     {
         name: 'Спермоапрельская',
-        arsDrawBreakpoint: 5,
+        arsDrawBreakpoint: 7,
         arsAllSteps: false,
         tStay: 30,
         K: 1,
@@ -187,14 +189,14 @@ lines['loopline']['1'] = [
             550: '0',
             2200: 'P200',
             2580: '0',
-            2647: 'T',
+            2646: 'T',
         },
         joints: [
             { x: 7 + 12.5, name: '229', limit: 0 },
-            { x: 7 + 12.5 + 50, name: '231', limit: 60 },
-            { x: 7 + 12.5 + 50 + 50, name: '101', limit: 70 },
-            { x: 7 + 12.5 + 50 + 50 + 62.5, name: '101а', limit: 70 },
-            { x: 7 + 12.5 + 50 + 50 + 62.5 + 50, name: '101б', limit: 70 },
+            { x: 7 + 12.5 + 50, name: '231', limit: 60, later: { 60: 1 } },
+            { x: 7 + 12.5 + 50 + 50, name: '101', limit: 70, later: { 40: 1, 60: 1, 70: 1 } },
+            { x: 7 + 12.5 + 50 + 50 + 62.5, name: '101а', limit: 70, later: { 40: 1, 60: 1, 70: 1 } },
+            { x: 7 + 12.5 + 50 + 50 + 62.5 + 50, name: '101б', limit: 70, later: { 40: 1, 60: 1 } },
             { x: 7 + 62.5 + 50 + 37.5 + 62.5 + 250 - 12.5, name: '101в', limit: 70 },
             { x: 7 + 62.5 + 50 + 37.5 + 62.5 + 250 + 250, name: '103', limit: 70 },
             { x: 7 + 62.5 + 50 + 37.5 + 62.5 + 250 + 250 + 100, name: '103а', limit: 70 },
@@ -222,8 +224,8 @@ lines['loopline']['1'] = [
             { joint: '105',  name: '107', lenses: 'YY-GR', guard: 80, service: 80, autostop: 3,          y: '107а', g: 'NEXT_y' },  
             { joint: '107а', name: '109', lenses: 'YY-GR', guard: 80, service: 80, autostop: 1,          y: '109а', g: 'NEXT_y' },  
             { joint: '109а', name: '111', lenses: 'YY-GR', guard: 80, service: 80, autostop: 1,          y: '111б',yg: 'NEXT_y', g: 'NEXT_yg' }, 
-            { joint: '111а', name: '113', lenses: 'YY-GR', guard: 70, service: 35, autostop: 1,shift: 15,y: '113', yg: 'NEXT_y' },  //, g: 'NEXT_yg'
-            { joint: '111б', name: '115', lenses: 'YY-GR', guard: 60, service: 35, autostop: 1,          y: '115', yg: 'NEXT_y' },  //, g: 'NEXT_yg'
+            { joint: '111а', name: '113', lenses: 'YY-GR', guard: 70, service: 35, autostop: 3,shift: 15,y: '113', yg: 'NEXT_y' },  //, g: 'NEXT_yg'
+            { joint: '111б', name: '115', lenses: 'YY-GR', guard: 60, service: 35, autostop: 3,          y: '115', yg: 'NEXT_y' },  //, g: 'NEXT_yg'
             { joint: '113',  name: '117', lenses: 'YY-GR', guard: 60, service: 35, autostop: 1,          y: '117', yg: 'NEXT_y'},   //, g: 'NEXT_g' 
             { joint: '115',  name: '119', lenses: 'YY-GR', guard: 60, service: 35, autostop: 1,shift: 13,y: '119', yg: 'NEXT_yg' },  
             { joint: '117',  name: '121', lenses: 'YY-GR', guard: 60, autostop: 1,                      yg:'121' },     
@@ -251,7 +253,7 @@ lines['loopline']['1'] = [
         joints: [
             { x: -7.5, name: '119', limit: 0, gmod: { Kanava: true } },
             { x: -7.5 + 62.5, name: '121', limit: 60, later: { 40: -1 } },
-            { x: -7.5 + 62.5 + 50, name: '123', limit: 70 },
+            { x: -7.5 + 62.5 + 50, name: '123', limit: 70, later: { 40: 1 } },
             { x: -7.5 + 12.5 + 62.5 + 100, name: '123а', limit: 70 },
             { x: -7.5 + 12.5 + 62.5 + 100 + 75, name: '123б', limit: 70 },
             { x: -7.5 + 12.5 + 62.5 + 100 + 50 + 125 + 125, name: '125', limit: 70 },
@@ -277,8 +279,8 @@ lines['loopline']['1'] = [
             { joint: '123а',name:'ПР-125М',lenses:'BWY-YGR-ZW',guard: 80, service: 80, autostop: 3, y: '125',  g: 'NEXT_y', gmod: { Krons: "LLD", LetterK: true } },       
             { joint: '125', name: 'ПР-127',lenses:'BWY-YGR-ZW',guard: 80, service: 80, autostop: 1, y: '127а', g: 'NEXT_y', gmod: { Krons: "SLD" } },     
             { joint: '127а', name: '131',  lenses:  'YY-GR',   guard: 80, service: 80, autostop: 3, y: '131а', g: 'NEXT_y' },       
-            { joint: '131а', name: '133',  lenses:  'YY-GR',   guard: 80, service: 80, autostop: 1, y: '133в',yg: 'NEXT_y', g: 'NEXT_yg' },          
-            { joint: '133б', name: '135',  lenses:  'YY-GR',   guard: 80, service: 35, autostop: 1, left: true, shift: 10,y: '135', yg: 'NEXT_y', g: 'NEXT_yg' },          
+            { joint: '131а', name: '133',  lenses:  'YY-GR',   guard: 80, service: 80, autostop: 3, y: '133в',yg: 'NEXT_y', g: 'NEXT_yg' },          
+            { joint: '133б', name: '135',  lenses:  'YY-GR',   guard: 80, service: 35, autostop: 3, left: true, shift: 10,y: '135', yg: 'NEXT_y', g: 'NEXT_yg' },          
             { joint: '133в', name: '137',  lenses:  'YY-GR',   guard: 70, service: 35, autostop: 1, left: true, shift: 18,y: '137', yg: 'NEXT_y', g: 'NEXT_yg' },          
             { joint: '135',  name: '139',  lenses:  'YY-GR',   guard: 60, service: 35, autostop: 1, left: true, y: '139', yg: 'NEXT_y', g: 'NEXT_g' },          
             { joint: '137',  name: '141',  lenses:  'YY-GR',   guard: 60, service: 35, autostop: 1, left: true, y: '141', g: 'NEXT_yg' },          
@@ -291,7 +293,7 @@ lines['loopline']['1'] = [
     },
     {
         name: 'Мертвостроителей',
-        arsDrawBreakpoint: 4,
+        arsDrawBreakpoint: 7,
         tStay: 25,
         K: 1.5,
         interval: 44,
@@ -307,7 +309,7 @@ lines['loopline']['1'] = [
         joints: [
             { x: 0, name: '141', limit: 0 },
             { x: 0 + 62.5, name: '143', limit: 60 },
-            { x: 0 + 62.5 + 50, name: '145', limit: 60 },
+            { x: 0 + 62.5 + 50, name: '145', limit: 60, later: { 40: 1 } },
             { x: 0 + 62.5 + 50 + 37.5, name: '145а', limit: 60 },
             { x: 0 + 62.5 + 50 + 37.5 + 62.5, name: '145б', limit: 60 },
             { x: 75 + 50 + 175, name: '145в', limit: 60 },
@@ -338,8 +340,8 @@ lines['loopline']['1'] = [
             { joint: '143',  name: '145М',lenses: 'YY-GR', guard: 35, service: 35, autostop: 3,           y: '145в',yg: 'NEXT_y', g: 'NEXT_yg', gmod: { Pole: 1, Krons: "MM" } },
             { joint: '145в', name: '147', lenses: 'YY-GR', guard: 60, service: 35, autostop: 3,           y: '147б',yg: 'NEXT_y', g: 'NEXT_g' },
             { joint: '147',  name: '149М',lenses: 'YY-GR', guard: 80, service: 35, autostop: 3,left: true,y: '149', g:  'NEXT_y' },
-            { joint: '147б', name: '151М',lenses: 'YY-GR', guard: 70, service: 65, autostop: 3,           y: '151', g:  'NEXT_y' },
-            { joint: '151',  name: '153', lenses: 'YY-GR', guard: 60, service: 60, autostop: 3,left: true,y: '153а',g:  'NEXT_y', gmod: { LetterK: true } },
+            { joint: '147б', name: '151', lenses: 'YY-GR', guard: 70, service: 65, autostop: 3,           y: '151', g:  'NEXT_y' },
+            { joint: '151',  name: '153м',lenses: 'YY-GR', guard: 60, service: 60, autostop: 3,left: true,y: '153а',g:  'NEXT_y', gmod: { LetterK: true } },
             { joint: '153а', name: '155', lenses: 'YY-GR', guard: 60, service: 60, autostop: 3,           y: '155а', g:  'NEXT_y', gmod: { SignalType: 7, Pole: 3 } },
             { joint: '155',  name: '157', lenses: 'YY-GR', guard: 80, service: 60, autostop: 3,           y: '157а',yg: 'NEXT_y', g: 'NEXT_yg', gmod: { LetterK: true } },
             { joint: '157',  name: '159', lenses: 'YY-GR', guard: 80, service: 35, autostop: 3,           y: '159а',yg: 'NEXT_y', g: 'NEXT_yg', gmod: { LetterK: true } },
@@ -375,15 +377,16 @@ lines['loopline']['1'] = [
             { x: -3 + 62.5 + 50 + 25 + 25 + 50, name: '173а', limit: 80, later: { 40: 2, 60: 1, 70: 1 } },
             { x: -3 + 62.5 + 50 + 25 + 25 + 50 + 62.5, name: '173б', limit: 80, later: { 40: 1, 60: 1 } },
             { x: -3 + 62.5 + 50 + 25 + 25 + 50 + 62.5 + 75, name: '173в', limit: 80, later: { 40: 1 } },
-            { x: -3 + 62.5 + 50 + 25 + 25 + 50 + 62.5 + 75 + 162.5, name: '173г1', limit: 80, gmod: { Routes: [{NextSignal: "TC173G", Lights: "5-53-53-53-4" }] } },
-            { x: -3 + 62.5 + 50 + 25 + 25 + 50 + 62.5 + 75 + 162.5 + 62.5, name: '611', limit: 80 },
+            { x: -3 + 62.5 + 50 + 25 + 25 + 50 + 62.5 + 75 + 162.5, name: '173г1', limit: 80, gmod: { Routes: [{NextSignal: "MR1FIX", Lights: "5-5-53-53-53-4" }] } },
+            { x: -3 + 62.5 + 50 + 25 + 25 + 50 + 62.5 + 75 + 162.5 + 62.5, name: '6111', limit: 80 },
+            { x: -3 + 62.5 + 50 + 25 + 25 + 50 + 62.5 + 75 + 162.5 + 62.5 + 10, name: '611', limit: 80 },
             { x: -3 + 62.5 + 50 + 25 + 25 + 50 + 62.5 + 75 + 162.5 + 62.5 + 162.5, name: '631', limit: 80 },
 
         ],
         signals: [
-            { joint: '169', name: 'МР-173', lenses: 'BWY-YGR-Zw', guard: 35, autostop: 1, y: '173г1', g: 'NEXT_g', gmod: { ColorLens: true, LensesStr: "BWY-M-YGR-XW", Krons: "LNLD", Routes: [{ Rezab1: "6-64-64-64-64-64-64-1" }] } },
-            { joint: '173в', name: 'МР-175', lenses: 'BWY-GRW', guard: 80, autostop: 3, g: '611', gmod: { LensesStr: "BWY-M-GRW", Krons: "LNL", OW: "[-7 0 0]", Routes: [{ Rezab1: "5-5-1" }] } },
-            { joint: '173г1', name: 'МР-177', lenses: 'BWY-GRW', guard: 80, autostop: 3, y: '63а', g: 'NEXT_y', gmod: { LetterK: true, RouteNumber: "F", Routes: [{ Rezab1: "5-1" }] } },  
+            { joint: '169', name: 'МР-173', lenses: 'BWY-YGR-Zw', guard: 35, autostop: 1, y: '173г1', g: 'NEXT_g', gmod: { ColorLens: true, LensesStr: "BWY-M-YGR-XW", Krons: "LNLD", Routes: [{ Rezab1: "6-64-64-64-64-64-64-64-1" }] } },
+            { joint: '173в', name: 'МР-175', lenses: 'BWY-GRW', guard: 80, autostop: 3, g: '611', gmod: { LensesStr: "BWY-M-GRW", Krons: "LNL", OW: "[-7 0 0]", Routes: [{ Rezab1: "5-5-5-1" }] } },
+            { joint: '173г1', name: 'МР-177', lenses: 'BWY-GRW', guard: 80, autostop: 3, y: '63а', g: 'NEXT_y', gmod: { LetterK: true, RouteNumber: "F", Routes: [{ Rezab1: "5-5-1" }] } },  
         ],
     },
     {
