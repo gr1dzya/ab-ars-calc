@@ -1311,6 +1311,23 @@
 			"Pos": "[-14740.4805 -14492.0352 -1416.4651]",
 			"PAType": 1,
 			"PALastStationName": "Братеево"
+		},
+		{
+			"PAWrongPath": true,
+			"TrackPath": 2,
+			"PAStationHasSwtiches": true,
+			"PADeadlockEnd": 0,
+			"TrackX": 15643,
+			"PAStationRightDoors": false,
+			"PALastStation": true,
+			"PAStationID": 3515,
+			"PADeadlockStart": 0,
+			"PAStationPath": 2,
+			"Angles": "{0.0026 270.0058 0}",
+			"PAStationName": "Братеево",
+			"Pos": "[-14740.4805 -14492.0352 -1416.4651]",
+			"PAType": 1,
+			"PALastStationName": "Братеево"
 		}
 	]
 }

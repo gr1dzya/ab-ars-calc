@@ -97,7 +97,7 @@ lines['loopline']['1'] = [
             { joint: '205',  name: 'ПН-209', lenses: 'BYY-GRw',guard: 60, service: 35, autostop: 1,             y: '209', g: 'NEXT_yg',
                 gmod: { 
                     LetterK: true, Routes: [
-                        { Rezab1: "5-1", Switches: "PN1+" },
+                        { PogashenieLights: "5-1", Switches: "PN1+" },
                         { Lights: "5", ARSCodes: "2", Switches: "PN1-" }
                     ] 
                 } 
@@ -148,11 +148,11 @@ lines['loopline']['1'] = [
         ],
         signals: [
             { joint: '211', name: 'ПН-213',lenses: 'YG-Rw', guard: 35, service: 80, autostop: 1, g: '215', gmod: { Krons: "MM" } },   
-            { joint: '213в', name: 'ПН-215',lenses: 'BYY-GRw', guard: 80, service: 75, autostop: 3, y: '215', g: 'NEXT_g', gmod: { Routes: [{ Rezab1: "5-5-5-1" }] } },   
+            { joint: '213в', name: 'ПН-215',lenses: 'BYY-GRw', guard: 80, service: 75, autostop: 3, y: '215', g: 'NEXT_g', gmod: { Routes: [{ PogashenieLights: "5-5-5-1" }] } },   
             { joint: '215', name: 'ПН-217',lenses: 'BYG-Rw', guard: 80, service: 75, autostop: 3, left: true, g: '217а',
                 gmod: { 
                     LetterK: true, Routes: [
-                        { Rezab1: "4-1", Switches: "PN7+" },
+                        { PogashenieLights: "4-1", Switches: "PN7+" },
                         { Lights: "4", ARSCodes: "2", Switches: "PN7-" }
                     ] 
                 } 
@@ -161,7 +161,7 @@ lines['loopline']['1'] = [
             { joint: '219а', name: 'КР-221', lenses: 'BYY-GRw', guard: 80, service: 35, autostop: 3, y: '221', yg: 'NEXT_y', g: 'NEXT_yg',
                 gmod: { 
                     LetterK: true, Routes: [
-                        { Rezab1: "5-1", Switches: "KR1+" },
+                        { PogashenieLights: "5-1", Switches: "KR1+" },
                         { Lights: "5", ARSCodes: "2", Switches: "KR1-" }
                     ] 
                 } 
@@ -384,9 +384,9 @@ lines['loopline']['1'] = [
 
         ],
         signals: [
-            { joint: '169', name: 'МР-173', lenses: 'BWY-YGR-Zw', guard: 35, autostop: 1, y: '173г1', g: 'NEXT_g', gmod: { ColorLens: true, LensesStr: "BWY-M-YGR-XW", Krons: "LNLD", Routes: [{ Rezab1: "6-64-64-64-64-64-64-64-1" }] } },
-            { joint: '173в', name: 'МР-175', lenses: 'BWY-GRW', guard: 80, autostop: 3, g: '611', gmod: { LensesStr: "BWY-M-GRW", Krons: "LNL", OW: "[-7 0 0]", Routes: [{ Rezab1: "5-5-5-1" }] } },
-            { joint: '173г1', name: 'МР-177', lenses: 'BWY-GRW', guard: 80, autostop: 3, y: '63а', g: 'NEXT_y', gmod: { LetterK: true, RouteNumber: "F", Routes: [{ Rezab1: "5-5-1" }] } },  
+            { joint: '169', name: 'МР-173', lenses: 'BWY-YGR-Zw', guard: 35, autostop: 1, y: '173г1', g: 'NEXT_g', gmod: { ColorLens: true, LensesStr: "BWY-M-YGR-XW", Krons: "LNLD", Routes: [{ PogashenieLights: "6-64-64-64-64-64-64-64-1" }] } },
+            { joint: '173в', name: 'МР-175', lenses: 'BWY-GRW', guard: 80, autostop: 3, g: '611', gmod: { LensesStr: "BWY-M-GRW", Krons: "LNL", OW: "[-7 0 0]", Routes: [{ PogashenieLights: "5-5-5-1" }] } },
+            { joint: '173г1', name: 'МР-177', lenses: 'BWY-GRW', guard: 80, autostop: 3, y: '63а', g: 'NEXT_y', gmod: { LetterK: true, RouteNumber: "F", Routes: [{ PogashenieLights: "5-5-1" }] } },  
         ],
     },
     {
