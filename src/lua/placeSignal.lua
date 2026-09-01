@@ -149,10 +149,12 @@ function placeSignal(position, angles, options)
     --    },
     --})
     if options.noPogashenie ~= 0 and (not options.ARSOnly or Dnepr) and pogashenie then
-        ent.Routes[1].RezabCommand = "suka"
-        ent.Routes[1].RezabEnabled = false
-        if not ent.Routes[1].Rezab1 then ent.Routes[1].Rezab1 = "0" end
-        if Dnepr then ent.Routes[1].Dnepr = true end
+        ent.Params.PogashenieCommand = "suka"
+        --ent.Params.PogashenieEnabled = false
+        if not ent.Routes[1].PogashenieLights and not options.ARSOnly then 
+            ent.Routes[1].PogashenieLights = "0" 
+        end
+        if Dnepr then ent.Params.PogashenieDnepr = true end
     end
 
     if R50_MODE then
