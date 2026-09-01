@@ -32,7 +32,7 @@ lines['kalina']['1'] = [
         },
         joints: [
             { x: 25, name: '383а', limit: 0, gmod: { Kanava: true } },
-            { x: 25 + 50, name: '381', limit: 60, later: { 60: 1 }, gmod: { Approve0: true, Routes: [{ RezabARS: "004" }] } },
+            { x: 25 + 50, name: '381', limit: 60, later: { 60: 1 }, gmod: { LetterK: true, Approve0: true, Routes: [{ PogashenieARS: "004" }, { RouteName: "802-803", Emer: true, Dnepr: true, NextSignal: "*", Lights: "3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-3-1-1-1-1-1-1-1-1-1-1-1-1-1-1-2", ARSCodes: "00000000000000004" }] } },
             { x: 25 + 50 + 62.5, name: '379', limit: 70, later: { 40: 1, 60: 1, 70: 1 } },
             { x: 25 + 50 + 62.5 + 75, name: '379а', limit: 70, later: { 40: 1, 60: 1, 70: 1 } },
             { x: 25 + 50 + 62.5 + 75 + 325, name: '379б', limit: 80, later: { 60: 1, 70: 1, 80: 1 } },
@@ -41,13 +41,13 @@ lines['kalina']['1'] = [
             { x: 1650 - 37.5 - 25 - 25 - 37.5 - 50 - 62.5 - 62.5 - 50 - 75, name: '375а', limit: 80 },
             { x: 1650 - 37.5 - 25 - 25 - 37.5 - 50 - 62.5 - 62.5 - 50 - 12.5, name: '375б', limit: 80, later: { 70: 1 } },
             { x: 1650 - 37.5 - 25 - 25 - 37.5 - 50 - 62.5 - 62.5 + 12.5, name: '373', limit: 80 },
-            { x: 1650 - 37.5 - 25 - 25 - 37.5 - 50 - 62.5, name: '373а', limit: 80, later: { 40: 1 } },
-            { x: 1650 - 37.5 - 25 - 25 - 37.5 - 50, name: '371', limit: 80 },
-            { x: 1650 - 37.5 - 25 - 25 - 37.5, name: '371а', limit: 80, limit: 80, later: { 80: -1 } },
-            { x: 1650 - 37.5 - 25 - 25, name: '369', limit: 70 },
-            { x: 1650 - 37.5 - 25, name: '369а', limit: 70, gmod: { Left: true } },
-            { x: 1650 - 25, name: '369б', limit: 60, gmod: { Kanava: true } },
-            { x: 1650 + 12.5, name: '367', limit: 60, gmod: { Kanava: true } },
+            { x: 1650 - 37.5 - 25 - 25 - 37.5 - 50 - 62.5, name: '373а', limit: 80, later: { 40: 1 }, gmod: { Routes: [{ RezabCommand: "802-803", RezabARS: "00004667777777777777778" }] }},
+            { x: 1650 - 37.5 - 25 - 25 - 37.5 - 50, name: '371', limit: 80, gmod: { Routes: [{ RezabCommand: "802-803", RezabARS: "000044666666666666668" }] } },
+            { x: 1650 - 37.5 - 25 - 25 - 37.5, name: '371а', limit: 80, limit: 80, later: { 80: -1 }, gmod: { Routes: [{ RezabCommand: "802-803", RezabARS: "00004444444444444448" }] } },
+            { x: 1650 - 37.5 - 25 - 25, name: '369', limit: 70, gmod: { Routes: [{ RezabCommand: "802-803", RezabARS: "0000444444444444447" }] } },
+            { x: 1650 - 37.5 - 25, name: '369а', limit: 70, gmod: { Routes: [{ RezabCommand: "802-803", RezabARS: "000000000000000007" }] } },
+            { x: 1650 - 25, name: '369б', limit: 60, gmod: { Kanava: true, Routes: [{ RezabCommand: "802-803", RezabARS: "00000000000000006" }] } },
+            { x: 1650 + 12.5, name: '367', limit: 60, gmod: { Kanava: true, Routes: [{ RezabCommand: "802-803", RezabARS: "0000000000000006" }] } },
             { x: 1650 + 12.5 + 50, name: '367а', limit: 40 },
             { x: 1650 + 12.5 + 50 + 62.5, name: '365', limit: 0 },
             { x: 1650 + 12.5 + 50 + 62.5 + 62.5, name: '365а', limit: 0 },
@@ -80,7 +80,7 @@ lines['kalina']['1'] = [
         },
         joints: [
             { x: 1650 - 1638 + 12.5, name: '367', limit: 0, gmod: { Kanava: true } },
-            { x: 1650 - 1638 + 12.5 + 50, name: '367а', limit: 60, later: { 40: -1, 60: 1 }, gmod: { Approve0: true, Routes: [{ RezabARS: "004" }] } },
+            { x: 1650 - 1638 + 12.5 + 50, name: '367а', limit: 60, later: { 40: -1, 60: 1 }, gmod: { Approve0: true, Routes: [{ PogashenieARS: "004" }, { RouteName: "803-804", Emer: true, NextSignal: "*", Lights: "4-4-4-4-4-4-4-4-4-4-4-4-4-4-1", ARSCodes: "000000000000004" }] } },
             { x: 1650 - 1638 + 12.5 + 50 + 62.5, name: '365', limit: 60, later: { 40: 1 } },
             { x: 1650 - 1638 + 12.5 + 50 + 62.5 + 62.5, name: '365а', limit: 60, later: { 40: 1 } },
             { x: 1650 - 1638 + 12.5 + 50 + 62.5 + 62.5 + 75, name: '365б', limit: 60 },
@@ -111,7 +111,8 @@ lines['kalina']['1'] = [
                         { 
                             RouteName: "WE1-1",
                             Switches: "we1+",
-                            Rezab1: "4-4-4-2" 
+                            PogashenieLights: "4-4-4-2",
+                            RezabCommand: "803-804", RezabARS: "000007", Rezab1: "4-4-4-4-4-1"
                         },
                         { 
                             Switches: "we1-",
@@ -141,7 +142,7 @@ lines['kalina']['1'] = [
         },
         joints: [
             { x: 1449.5 - 1456 + 12.5, name: '347а', limit: 0, gmod: { Kanava: true } },
-            { x: 1449.5 - 1456 + 37.5 + 25, name: '345', limit: 60, later: { 60: 2 }, gmod: { Approve0: true, Routes: [{ RezabARS: "004" }] } },
+            { x: 1449.5 - 1456 + 37.5 + 25, name: '345', limit: 60, later: { 60: 2 }, gmod: { Approve0: true, Routes: [{ PogashenieARS: "004" }] } },
             { x: 1449.5 - 1456 + 37.5 + 37.5 + 62.5, name: '343', limit: 70, later: { 40: 1, 60: 1, 70: 1 } },
             { x: 1449.5 - 1456 + 37.5 + 37.5 + 62.5 + 87.5, name: '343а', limit: 70, later: { 60: 1, 70: 1 } },
             { x: 1449.5 - 1456 + 37.5 + 37.5 + 62.5 + 87.5 + 100, name: '343б', limit: 80, later: { 60: 1, 70: 1, 80: 1 } },
@@ -187,7 +188,7 @@ lines['kalina']['1'] = [
         },
         joints: [
             { x: 3.5, name: '335а', limit: 0 },
-            { x: 3.5 + 50, name: '335б', limit: 60, later: { 60: 2 }, gmod: { Approve0: true, Routes: [{ RezabARS: "004" }] } },
+            { x: 3.5 + 50, name: '335б', limit: 60, later: { 60: 2 }, gmod: { Approve0: true, Routes: [{ PogashenieARS: "004" }] } },
             { x: 3.5 + 50 + 37.5, name: '333', limit: 70, later: { 40: 3, 60: 2, 70: 2 } },
             { x: 3.5 + 50 + 37.5 + 87.5, name: '331', limit: 80, later: { 40: 2, 60: 2, 70: 1, 80: 1 } },
             { x: 3.5 + 50 + 37.5 + 87.5 + 87.5, name: '331а', limit: 80, later: { 40: 2, 60: 1, 70: 1, 80: 1 } },
