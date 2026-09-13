@@ -250,7 +250,7 @@ lines['loopline']['2'] = [
            { x: 2110 -2.5 - 62.5 - 75 - 100, name: '230', limit: 70 },
            { x: 2110 -2.5 - 62.5 - 75, name: '228', limit: 60 },
            { x: 2110 -2.5 - 62.5, name: '226', limit: 60 },
-           { x: 2110 -2.5, name: '224', limit: 60, gmod: {Kanava: true} },
+           { x: 2110 -2.5, name: '224', limit: 60, gmod: { Kanava: true, Routes: [{},{Switches: "PN2-,PN8+,PN10+", ARSCodes: "0", NextSignal: "FIX3"}] } },
            { x: 2110 -2.5 + 62.5, name: '222', limit: 40 },
            { x: 2110 -2.5 + 62.5 + 52.5, name: '220', limit: 0 },
            { x: 2110 -2.5 + 62.5 + 52.5 + 62.5, name: '220а', limit: 0 },
@@ -288,7 +288,7 @@ lines['loopline']['2'] = [
            { x: 3514 -1.5 - 62.5 - 62.5 - 75 - 75 - 87.5 - 300 - 350 - 350 - 350 - 62.5 - 350 - 12.5 - 350 - 350 - 375 + 25 - 265 + 52.5, name: '220', limit: 70, later: { 40: 2, 60: 1 }, gmod: { RouteNumber: "F" } },
            { x: 3514 -1.5 - 62.5 - 62.5 - 75 - 75 - 87.5 - 300 - 350 - 350 - 350 - 62.5 - 350 - 12.5 - 350 - 350 - 375 + 25 - 265 + 52.5 + 62.5, name: '220а', limit: 70, later: { 40: 1 } },
            { x: 3514 -1.5 - 62.5 - 62.5 - 75 - 75 - 87.5 - 300 - 350 - 350 - 350 - 62.5 - 350 - 12.5 - 350 - 350 - 375 + 25 - 265 + 52.5 + 62.5 + 75 + 12.5, name: '220б', limit: 70 },
-           { x: 3514 -1.5 - 62.5 - 62.5 - 75 - 75 - 87.5 - 300 - 350 - 350 - 350 - 62.5 - 350 - 12.5 - 350 - 350 - 375 + 25, name: '220в', limit: 70, gmod: { RouteNumber: "2" } },
+           { x: 3514 -1.5 - 62.5 - 62.5 - 75 - 75 - 87.5 - 300 - 350 - 350 - 350 - 62.5 - 350 - 12.5 - 350 - 350 - 375 + 25, name: '220в', limit: 70, gmod: { RouteNumber: "2", Routes: [{},{ Switches: "PN2-", ARSCodes: "4" }] } },
            { x: 3514 -1.5 - 62.5 - 62.5 - 75 - 75 - 87.5 - 300 - 350 - 350 - 350 - 62.5 - 350 - 350 - 200 - 250, name: '218', limit: 70 },
            { x: 3514 -1.5 - 62.5 - 62.5 - 75 - 75 - 87.5 - 300 - 350 - 350 - 350 - 62.5 - 350 - 350 - 200, name: '218а', limit: 80 },
            { x: 3514 -1.5 - 62.5 - 62.5 - 75 - 75 - 87.5 - 300 - 350 - 350 - 350 - 62.5 - 350 - 12.5 - 275, name: '216', limit: 80 },
@@ -315,7 +315,12 @@ lines['loopline']['2'] = [
                 gmod: { 
                     LensesStr: "BWY-2-F-L-YGR-YW-34", ColorLens: true, Pole: 4, OnPoleZ: 25,
                     Krons: "LNUSMN", Routes: [
-                        { PogashenieLights: "6-64-64-64-64-1", Switches: "PN2+,PN10+,PN8+" }
+                        { RouteName: "PN2-2", PogashenieLights: "6-64-64-64-64-1", Switches: "PN2+,PN10+,PN8+" },
+                        { Lights: "6", Switches: "PN2-", ARSCodes: "2" },
+                        { RouteName: "PN2P", NextSignal: "*", Manual: true, Lights: "6-64", ARSCodes: "204", Switches: "PN2+" },
+                        { RouteName: "PN2-3", NextSignal: "PNFIX4", Manual: true, Lights: "6-6-6-6-6-6-2", PogashenieLights: "6-6-6-6-6-6-1", ARSCodes: "2222224", Switches: "PN2-,PN4-,PN5-", EnRou: true, PRou: "3" },
+                        { RouteName: "PN2-4", NextSignal: "PNFIX4", Manual: true, Lights: "6-6-6-6-6-2", PogashenieLights: "6-6-6-6-6-1", ARSCodes: "222224", Switches: "PN2-,PN4+,PN6+,PN10+,PN8+", EnRou: true, PRou: "4" },
+                        { RouteName: "PN2-4-2", NextSignal: "PNFIX4", Manual: true, Lights: "6-6-6-6-6-6-37", PogashenieLights: "6-6-6-6-6-6-1", ARSCodes: "2222224", Switches: "PN2-,PN4+,PN6+,PN10-,PN8-", PRou: "2L" }
                     ] 
                 } 
             },
@@ -331,7 +336,7 @@ lines['loopline']['2'] = [
             { joint: '204',  name: '200', lenses: 'YY-GR', autostop: 1, guard: 60, service: 35,             y: '200', yg: 'NEXT_y', g: 'NEXT_g' },
             { joint: '202',  name: '198', lenses: 'YY-GR', autostop: 1, guard: 60,              left: true, y: '198', g: 'NEXT_yg' },
             { joint: '200',  name: '196', lenses: 'YY-GR', autostop: 1, guard: 60,              left: true, yg: '196' },
-            { joint: '220б', name: 'ПС-10', lenses: 'X', gmod: { LensesStr: "I", Krons: "L", OW: "[-7 0 -15]", FLeft: true, Routes: [{ Switches: "PN10+,PN8+" }] } },
+            { joint: '220б', name: 'ПС-10', lenses: 'X', gmod: { LensesStr: "I", Krons: "L", OW: "[-7 0 -15]", FLeft: true, Routes: [{ Switches: "PN10+,PN8+" },{ Switches: "PN10-", ARSCodes: "0", NextSignal: "*" }] } },
             { joint: '196',  name: '194', lenses: 'X', autostop: 3 },
         ],
         switches: [
