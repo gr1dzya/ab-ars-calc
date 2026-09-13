@@ -118,8 +118,8 @@
 				"RouteName": "MO4-2", "NextSignal": "*",
         "Manual": true, "EnRou": true, "PRou": "2",
         "Switches": "MO2-,MO4+,MO5+,MO6+",
-        "Lights": "3-3-3-3-3-2", "Rezab1": "3-3-1", "RezabCommand": "suka",
-        "ARSCodes": "224"
+        "Lights": "3-3-3-3-3-2", "Rezab1": "3-3-3-1", "RezabCommand": "suka",
+        "ARSCodes": "2224"
       }
     ]
   },

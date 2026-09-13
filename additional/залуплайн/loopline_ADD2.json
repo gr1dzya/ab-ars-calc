@@ -1,0 +1,15 @@
+{
+  "1": {
+    "x": 168,
+    "Name": "MR2FIX",
+    "ARSOnly": true,
+    "PassOcc": true,
+    "LensesStr": "",
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "*"
+      }
+    ]
+  }
+}

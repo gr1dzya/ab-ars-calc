@@ -149,6 +149,7 @@
     "Name": "A4",
     "ARSOnly": false,
     "LensesStr": "WR-W",
+    "NonAutoStop": true,
     "SignalType": 7,
     "Pole": 3,
     "noPogashenie": 0,
@@ -161,7 +162,12 @@
       {
         "RouteName": "A4-PA", "NextSignal": "*",
         "Manual": true, "Switches": "20-,10-,8+,6+,4+",
-        "Lights": "2-2-2-2-2-1","ARSCodes": "222224"
+        "Lights": "2-2-1","ARSCodes": "224"
+      },
+      {
+        "RouteName": "A4-PB", "NextSignal": "*",
+        "Manual": true, "Switches": "10+,8+,6+,4+",
+        "Lights": "2-2-1","ARSCodes": "224"
       }
     ]
   },
@@ -261,9 +267,8 @@
     "DTM": true,
     "Routes": [
       {
-        "NextSignal": "",
-        "Lights": "4",
-        "ARSCodes": "2"
+        "RouteName": "V2M-A4", "NextSignal": "",
+        "Lights": "4", "ARSCodes": "2"
       },
       {
         "RouteName": "E2-OK4", "NextSignal": "*",
@@ -283,14 +288,13 @@
     "noPogashenie": 0,
     "Routes": [
       {
-        "NextSignal": "",
-        "Lights": "5",
-        "ARSCodes": "2"
+        "RouteName": "V2M-A4", "NextSignal": "",
+        "Lights": "5", "ARSCodes": "2"
       },
       {
         "RouteName": "E2-OK4", "NextSignal": "*",
         "Manual": true, "Switches": "OK3-,OK4+",
-        "Lights": "5-53-35-2-3","ARSCodes": "2446", "Rezab1": "5-1", "RezabCommand": "suka"
+        "Lights": "5-53-35-2-4","ARSCodes": "2446", "Rezab1": "5-1", "RezabCommand": "suka"
       }
     ]
   },
@@ -310,7 +314,7 @@
     "ARSOnly": false, "FrontArsName": "10B", "LetterB": "10A",
     "Routes": [
       {
-        "NextSignal": "", "Lights": "4","ARSCodes": "06"
+        "RouteName": "E2-OK4", "NextSignal": "", "Lights": "4","ARSCodes": "06"
       },
       {
         "RouteName": "V2M-A4", "NextSignal": "*", "Lights": "4-42-1-3", "Manual": true, "ARSCodes": "06", "Rezab1": "0", "RezabCommand": "suka"
@@ -343,27 +347,37 @@
     "SignalType": 0
   },
   "89": {
-    "x": 1628,
+    "x": 1629,
     "Name": "P",
     "ARSOnly": false,
     "LensesStr": "WR-W",
+    "NonAutoStop": true,
     "SignalType": 7,
     "noPogashenie": 0,
     "Routes": [
       {
         "NextSignal": "",
-        "Lights": "2",
-        "ARSCodes": "2"
+        "Lights": "2"
       },
       {
         "RouteName": "A3-PA", "NextSignal": "*",
-        "Manual": true, "Switches": "20-,10-,8+,6+",
-        "Lights": "2-2-2-1","ARSCodes": "22224"
+        "Manual": true, "Switches": "20-,10-,8+",
+        "Lights": "2-2-2-1"
       },
       {
         "RouteName": "A4-PA", "NextSignal": "*",
-        "Manual": true, "Switches": "20-,10-,8+,6+",
-        "Lights": "2-2-2-1","ARSCodes": "22224"
+        "Manual": true, "Switches": "20-,10-,8+",
+        "Lights": "2-2-2-1"
+      },
+      {
+        "RouteName": "A3-PB", "NextSignal": "*",
+        "Manual": true, "Switches": "10+,8+",
+        "Lights": "2-2-1"
+      },
+      {
+        "RouteName": "A4-PB", "NextSignal": "*",
+        "Manual": true, "Switches": "10+,8+",
+        "Lights": "2-2-1"
       }
     ]
   },
@@ -371,6 +385,8 @@
     "x": 1628,
     "Name": "X",
     "Back": true,
+    "NonAutoStop": true,
+    "DTM": true,
     "LensesStr": "WRW-W",
     "SignalType": 7,
     "noPogashenie": 0,
@@ -378,18 +394,148 @@
       {
         "NextSignal": "",
         "Lights": "2",
-        "ARSCodes": "2"
+        "ARSCodes": "1"
       },
       {
         "RouteName": "GA-E1", "NextSignal": "*",
         "Manual": true, "Switches": "6+,4-,3-",
-        "Lights": "2-2-2-13","ARSCodes": "2224"
+        "Lights": "2-2-2-13"
       },
       {
         "RouteName": "GA-E2", "NextSignal": "*",
         "Manual": true, "Switches": "6+,4+",
-        "Lights": "2-2-13","ARSCodes": "224"
+        "Lights": "2-2-13"
+      },
+      {
+        "RouteName": "GB-E1", "NextSignal": "*",
+        "Manual": true, "Switches": "6+,4-,3-",
+        "Lights": "2-2-2-13"
+      },
+      {
+        "RouteName": "GB-E2", "NextSignal": "*",
+        "Manual": true, "Switches": "6+,4+",
+        "Lights": "2-2-13"
       }
     ]
+  },
+  "91": {
+    "x": 1734,
+    "Name": "GB",
+    "Back": true,
+    "DTM": true,
+    "NonAutoStop": true,
+    "LensesStr": "WRW-W",
+    "SignalType": 7,
+    "Pole": 3,
+    "noPogashenie": 0,
+    "Routes": [
+      {
+        "NextSignal": "",
+        "Lights": "2"
+      },
+      {
+        "RouteName": "GB-E1", "NextSignal": "*",
+        "Manual": true, "Switches": "10+,8+,6+,4-,3-",
+        "Lights": "2-2-13"
+      },
+      {
+        "RouteName": "GB-E2", "NextSignal": "*",
+        "Manual": true, "Switches": "10+,8+,6+,4+",
+        "Lights": "2-2-13"
+      }
+    ]
+  },
+  "92": {
+    "x": 1735,
+    "Name": "PB",
+    "LensesStr": "WR",
+    "NonAutoStop": true,
+    "SignalType": 7,
+    "noPogashenie": 0,
+    "Routes": [
+      {
+        "NextSignal": "",
+        "Lights": "2"
+      },
+      {
+        "RouteName": "PB-D9", "NextSignal": "*",
+        "Manual": true, "Switches": "16+,14+,12+",
+        "Lights": "2-2-2-1"
+      }
+    ]
+  },
+  "93": {
+    "x": 1765,
+    "Routes": [
+      {
+        "NextSignal": "*"
+      },
+      {
+        "NextSignal": "14BACK", "Switches": "12-"
+      }
+    ],
+    "Name": "12BACK",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "DTM": true,
+    "SignalType": 0
+  },
+  "94": {
+    "x": 1817,
+    "Routes": [
+      {
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "16SP",
+    "ARSOnly": true,
+    "Back": true,
+    "LensesStr": "",
+    "DTM": true,
+    "SignalType": 0
+  },
+  "95": {
+    "x": 1817,
+    "Routes": [
+      {
+        "NextSignal": "*"
+      },
+      {
+        "NextSignal": "D8BACK", "Switches": "16-"
+      }
+    ],
+    "Name": "16BACK",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "DTM": true,
+    "SignalType": 0
+  },
+  "96": {
+    "x": 1834,
+    "Routes": [
+      {
+        "NextSignal": "", "Lights": "2"
+      },
+      {
+        "RouteName": "D9-GB", "NextSignal": "*",
+        "Manual": true, "Switches": "16+,14+,12+",
+        "Lights": "2-2-1"
+      }
+    ],
+    "Name": "D9",
+    "LensesStr": "WR",
+    "Back": true,
+    "SignalType": 9
+  },
+  "97": {
+    "x": 1848,
+    "Routes": [
+      {}
+    ],
+    "Name": "D9FIX",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "DTM": true,
+    "SignalType": 0
   }
 }

@@ -261,6 +261,9 @@
       {
         "NextSignal": "*",
         "ARSCodes": "4"
+      },
+      {
+        "RouteName": "AOCOUNTIN", "NextSignal": "*", "ARSCodes": "4", "Manual": true
       }
     ],
     "Name": "OLPREOP",
@@ -387,10 +390,10 @@
         "NextSignal": "", "Lights": "2", "ARSCodes": "2"
       },
       {
-				"RouteName": "PHV-2", "NextSignal": "1102",
+				"RouteName": "PHV-2", "NextSignal": "PHFIX2",
         "Manual": true,
-        "Switches": "PH2-,PH1-,PH3+", "ARSCodes": "224",
-        "Lights": "2-2-1"
+        "Switches": "PH2-,PH1-,PH3+", "ARSCodes": "2224",
+        "Lights": "2-2-2-1"
       }
     ]
   },
@@ -409,6 +412,25 @@
     "ARSOnly": true,
     "Back": true,
 		"DTM": true,
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "93n": {
+    "x": 4020.9,
+    "Routes": [
+      {
+        "ARSCodes": "1", "NextSignal": "*"
+      },
+      {
+        "ARSCodes": "4", "NextSignal": "PHFIX2",
+        "Switches": "PH1-"
+      }
+    ],
+    "Name": "PHFIX1",
+    "ARSOnly": true,
+    "PassOcc": true,
+		"DTM": true,
+    "Back": true,
     "LensesStr": "",
     "SignalType": 0
   },
@@ -441,10 +463,10 @@
         "NextSignal": "", "Lights": "3", "ARSCodes": "2"
       },
       {
-				"RouteName": "REV-2", "NextSignal": "146",
+				"RouteName": "REV-2", "NextSignal": "REFIX2",
         "Manual": true,
-        "Switches": "RE2-,RE3-", "ARSCodes": "2224",
-        "Lights": "3-3-3-2", "RezabCommand": "suka", "Rezab1": "3-3-3-1"
+        "Switches": "RE2-,RE3-", "ARSCodes": "22224",
+        "Lights": "3-3-3-3-2", "RezabCommand": "suka", "Rezab1": "3-3-3-3-1"
       }
     ]
   },
@@ -467,6 +489,285 @@
     "SignalType": 0
   },
   "96": {
+    "x": 4376,
+    "Name": "M7",
+    "ARSOnly": false,
+    "LensesStr": "XR",
+    "noPogashenie": 0,
+		"Pole": 1,
+		"NonAutoStop": true,
+		"PassOcc": true,
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "",
+        "Repeater": true
+      }
+    ]
+  },
+  "97": {
+    "x": 4467,
+    "Name": "MK7",
+    "ARSOnly": false,
+    "LensesStr": "YR",
+    "noPogashenie": 0,
+		"Pole": 1,
+		"NonAutoStop": true,
+		"Back": true,
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "1"
+      }
+    ]
+  },
+  "98": {
+    "x": 6758,
+    "Name": "M5",
+    "ARSOnly": false,
+    "LensesStr": "XR",
+    "noPogashenie": 0,
+		"Pole": 1,
+		"NonAutoStop": true,
+		"PassOcc": true,
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "",
+        "Repeater": true
+      }
+    ]
+  },
+  "99": {
+    "x": 6868,
+    "Name": "MK5",
+    "ARSOnly": false,
+    "LensesStr": "YR",
+    "noPogashenie": 0,
+		"Pole": 1,
+		"NonAutoStop": true,
+		"Back": true,
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "1"
+      }
+    ]
+  },
+  "101": {
+    "x": 7511,
+    "Name": "M3",
+    "ARSOnly": false,
+    "LensesStr": "XR",
+    "noPogashenie": 0,
+		"Pole": 1,
+		"NonAutoStop": true,
+		"PassOcc": true,
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "",
+        "Repeater": true
+      }
+    ]
+  },
+  "102": {
+    "x": 7606,
+    "Name": "MK3",
+    "ARSOnly": false,
+    "LensesStr": "YR",
+    "noPogashenie": 0,
+		"Pole": 1,
+		"NonAutoStop": true,
+		"Back": true,
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "1"
+      }
+    ]
+  },
+  "103": {
+    "x": 9050,
+    "Name": "M13",
+    "ARSOnly": false,
+    "LensesStr": "XR",
+    "noPogashenie": 0,
+		"Pole": 1,
+		"NonAutoStop": true,
+		"PassOcc": true,
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "",
+        "Repeater": true
+      }
+    ]
+  },
+  "104": {
+    "x": 9190,
+    "Name": "MK13",
+    "ARSOnly": false,
+    "LensesStr": "XR",
+    "noPogashenie": 0,
+		"Pole": 1,
+		"NonAutoStop": true,
+		"Back": true,
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "*"
+      }
+    ]
+  },
+  "105": {
+    "x": 10945,
+    "Name": "M15",
+    "ARSOnly": false,
+    "LensesStr": "XR",
+    "noPogashenie": 0,
+		"Pole": 1,
+		"NonAutoStop": true,
+		"PassOcc": true,
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "",
+        "Repeater": true
+      }
+    ]
+  },
+  "106": {
+    "x": 11036,
+    "Name": "MK15",
+    "ARSOnly": false,
+    "LensesStr": "XR",
+    "noPogashenie": 0,
+		"Pole": 1,
+		"NonAutoStop": true,
+		"Back": true,
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "*"
+      }
+    ]
+  },
+  "107": {
+    "x": 11764,
+    "Name": "M17",
+    "ARSOnly": false,
+    "LensesStr": "XR",
+    "noPogashenie": 0,
+		"Pole": 1,
+		"NonAutoStop": true,
+		"PassOcc": true,
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "",
+        "Repeater": true
+      }
+    ]
+  },
+  "108": {
+    "x": 11913,
+    "Name": "MK17",
+    "ARSOnly": false,
+    "LensesStr": "XR",
+    "noPogashenie": 0,
+		"Pole": 1,
+		"NonAutoStop": true,
+		"Back": true,
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "*"
+      }
+    ]
+  },
+  "109": {
+    "x": 13140,
+    "Name": "M19",
+    "ARSOnly": false,
+    "LensesStr": "R",
+    "noPogashenie": 0,
+		"Pole": 1,
+		"NonAutoStop": true,
+		"PassOcc": true,
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "",
+        "Repeater": true
+      }
+    ],
+    "SignalType": 8
+  },
+  "110": {
+    "x": 13270,
+    "Name": "MK19",
+    "ARSOnly": false,
+    "LensesStr": "R",
+    "noPogashenie": 0,
+		"Pole": 1,
+		"NonAutoStop": true,
+		"Back": true,
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "*"
+      }
+    ],
+    "SignalType": 8
+  },
+  "111": {
+    "x": 14800,
+    "Name": "M21",
+    "ARSOnly": false,
+    "LensesStr": "R",
+    "noPogashenie": 0,
+		"Pole": 1,
+		"NonAutoStop": true,
+		"PassOcc": true,
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Lights": "",
+        "Repeater": true
+      }
+    ],
+    "SignalType": 8
+  },
+  "112": {
+    "x": 14931,
+    "Name": "MK21",
+    "ARSOnly": false,
+    "LensesStr": "R",
+    "noPogashenie": 0,
+		"Pole": 1,
+		"NonAutoStop": true,
+		"Back": true,
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "*"
+      }
+    ],
+    "SignalType": 8
+  },
+  "13": {
     "x": 18233,
     "Routes": [
       {
@@ -478,6 +779,34 @@
     "LensesStr": "",
     "PassOcc": true,
     "DTM": true,
+    "SignalType": 0
+  },
+  "14": {
+    "x": 14627,
+    "Routes": [
+      {
+        "NextSignal": "*", "ARSCodes": "0004446"
+      }
+    ],
+    "Name": "OLAOFIX",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "PassOcc": true,
+    "DTM": true,
+    "SignalType": 0
+  },
+  "15": {
+    "x": 10669,
+    "Routes": [
+      {
+        "ARSCodes": "1", "NextSignal": "*"
+      }
+    ],
+    "Name": "REFIX1",
+    "ARSOnly": true,
+    "PassOcc": true,
+		"DTM": true,
+    "LensesStr": "",
     "SignalType": 0
   }
 }

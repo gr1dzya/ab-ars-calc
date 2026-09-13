@@ -1,0 +1,47 @@
+{
+  "1": {
+    "x": 1465.75,
+    "Routes": [
+      {
+        "ARSCodes": "00004",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TCFIX4",
+    "ARSOnly": true,
+    "DTM": true,
+    "PassOcc": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true
+  },
+  "2": {
+    "x": 1514.38,
+    "Routes": [
+      {
+        "Lights": "3",
+        "ARSCodes": "2",
+        "NextSignal": "*"
+      },
+      {
+        "RouteName": "KRD-2",
+        "Lights": "3-3-3-3-1",
+        "ARSCodes": "22224",
+        "Switches": "KR_S1+,KR_S3-,KR_S4+",
+        "NextSignal": "TC1673BACK",
+        "Manual": true
+      }
+    ],
+    "Name": "KRD",
+    "Letter": "D",
+    "LensesStr": "BW-RW",
+    "SignalType": 6,
+    "TwoToSix": true,
+    "Left": true,
+    "Approve0": true,
+    "LetterK": true,
+    "NonAutoStop": true,
+    "DTM": true,
+    "Back": true
+  }
+}

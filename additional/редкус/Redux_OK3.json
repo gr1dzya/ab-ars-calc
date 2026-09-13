@@ -136,8 +136,10 @@
     "x": 376,
     "Routes": [
       {
-        "NextSignal": "*",
-        "ARSCodes": "06"
+        "RouteName": "V1M-A3", "NextSignal": "*", "ARSCodes": "06"
+      },
+      {
+        "RouteName": "E1-OK3", "NextSignal": "TCFIX0", "Manual": true, "ARSCodes": "0"
       }
     ],
     "Name": "OK5Back",
@@ -164,7 +166,12 @@
       {
         "RouteName": "A3-PA", "NextSignal": "*",
         "Manual": true, "Switches": "20-,10-,8+,6+,4-,3-",
-        "Lights": "2-2-2-2-2-2-1","ARSCodes": "2222224"
+        "Lights": "2-2-2-1","ARSCodes": "2224"
+      },
+      {
+        "RouteName": "A3-PB", "NextSignal": "*",
+        "Manual": true, "Switches": "10+,8+,6+,4-,3-",
+        "Lights": "2-2-2-1","ARSCodes": "2224"
       }
     ]
   },
@@ -215,7 +222,7 @@
         "ARSCodes": "1"
       },
       {
-        "RouteName": "E2-OK4", "NextSignal": "*",
+        "RouteName": "E1-OK3", "NextSignal": "*",
         "Manual": true, "Switches": "20-,10-,8+,6+,4+",
         "Lights": "2-2-1","ARSCodes": "114"
       }
@@ -231,9 +238,8 @@
     "DTM": true,
     "Routes": [
       {
-        "NextSignal": "",
-        "Lights": "4",
-        "ARSCodes": "2"
+        "RouteName": "V1M-A3", "NextSignal": "",
+        "Lights": "4", "ARSCodes": "2"
       },
       {
         "RouteName": "E1-OK3", "NextSignal": "*",
@@ -253,14 +259,13 @@
     "noPogashenie": 0,
     "Routes": [
       {
-        "NextSignal": "",
-        "Lights": "5",
-        "ARSCodes": "2"
+        "RouteName": "V1M-A3", "NextSignal": "",
+        "Lights": "5", "ARSCodes": "2"
       },
       {
         "RouteName": "E1-OK3", "NextSignal": "*",
         "Manual": true, "Switches": "OK3+,OK4-",
-        "Lights": "5-53-35-2-3","ARSCodes": "2446", "Rezab1": "5-1", "RezabCommand": "suka"
+        "Lights": "5-53-35-2-4","ARSCodes": "2446", "Rezab1": "5-1", "RezabCommand": "suka"
       }
     ]
   },
@@ -280,10 +285,10 @@
     "ARSOnly": false, "Back": true, "FrontArsName": "11B", "LetterB": "11V",
     "Routes": [
       {
-        "NextSignal": "", "Lights": "4","ARSCodes": "0"
+        "RouteName": "V1M-A3", "NextSignal": "", "Lights": "4","ARSCodes": "0"
       },
       {
-        "RouteName": "E2-OK4", "NextSignal": "*", "Lights": "4-24-42-1-3","ARSCodes": "046", "Manual": true, "Rezab1": "0", "RezabCommand": "suka"
+        "RouteName": "E1-OK3", "NextSignal": "*", "Lights": "4-24-42-1-3","ARSCodes": "046", "Manual": true, "Rezab1": "0", "RezabCommand": "suka"
       }
     ]
   },
@@ -293,10 +298,10 @@
     "ARSOnly": false, "FrontArsName": "11B", "LetterB": "11A",
     "Routes": [
       {
-        "NextSignal": "*", "Lights": "4-42-1-3","ARSCodes": "0"
+        "RouteName": "V1M-A3", "NextSignal": "*", "Lights": "4-42-1-3","ARSCodes": "0"
       },
       {
-        "RouteName": "V1M-A3", "NextSignal": "*", "Lights": "4", "Manual": true, "ARSCodes": "0", "Rezab1": "0", "RezabCommand": "suka"
+        "RouteName": "E1-OK3", "NextSignal": "TCFIX0", "Lights": "4", "Manual": true, "ARSCodes": "0", "Rezab1": "0", "RezabCommand": "suka"
       }
     ]
   },

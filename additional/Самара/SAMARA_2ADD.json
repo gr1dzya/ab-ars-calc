@@ -1,0 +1,34 @@
+{
+  "1": {
+    "x": 8392.68,
+    "Routes": [
+      {
+        "ARSCodes": "04",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TCPREOP",
+    "ARSOnly": true,
+    "DTM": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true,
+    "Back": true
+  },
+  "2": {
+    "x": 8555.18,
+    "Routes": [
+      {
+        "ARSCodes": "1",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1612BACK",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "TwoToSix": true,
+    "DTM": true,
+    "Back": true
+  }
+}

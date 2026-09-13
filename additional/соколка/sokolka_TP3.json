@@ -1,0 +1,121 @@
+{
+  "66": {
+    "x": 30,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Switches": "",
+        "ARSCodes": "0004"
+      }
+    ],
+    "Name": "TPFIX3",
+    "ARSOnly": true,
+    "DTM": true,
+    "Left": true,
+    "LensesStr": "",
+    "RouteNumber": "3",
+    "SignalType": 0
+  },
+  "67": {
+    "x": 30,
+    "Routes": [
+      {
+        "NextSignal": "TPFIX2additional",
+        "Switches": "TP3-",
+        "ARSCodes": "004"
+      },
+      {
+        "NextSignal": "TPFIX1",
+        "Switches": "TP3+",
+        "ARSCodes": "0004"
+      }
+    ],
+    "Name": "TPFIX31",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "FrontArsName": "3V",
+    "LetterB": "2111",
+    "Back": true,
+    "SignalType": 0
+  },
+  "68": {
+    "x": 78,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "004"
+      }
+    ],
+    "Name": "TPTC3V",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "DTM": true,
+    "Left": true,
+    "SignalType": 0
+  },
+  "69": {
+    "x": 139,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "TPTC3b",
+    "ARSOnly": true,
+    "FrontArsName": "3B",
+    "LensesStr": "",
+    "SignalType": 8
+  },
+  "69a": {
+    "x": 239,
+    "Routes": [
+      {
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "TPTC3",
+    "ARSOnly": true,
+    "FrontArsName": "3",
+    "LensesStr": "",
+    "SignalType": 8
+  },
+  "70": {
+    "x": 202,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "TPTC3a",
+    "ARSOnly": true,
+    "FrontArsName": "3A",
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "78": {
+    "x": 78,
+    "Name": "TP3", 
+    "LensesStr": "BWRWM", "FrontArsName": "3B", "LetterB": "3V",
+    "Pole": 1, "Back": true, "NonAutoStop": true, "Approve0": true,
+    "noPogashenie": 0, "SignalType": 8,
+    "Routes": [
+      {
+        "NextSignal": "", "Lights": "3", "ARSCodes": "2"
+      },
+      {
+				"RouteName": "TP3-1", "NextSignal": "*",
+        "Manual": true, "EnRou": true, "PRou": "1",
+        "Switches": "TP1-,TP3+", "RezabCommand": "suka",
+        "Lights": "3-3-3-3-1", "Rezab1": "3-3-3-3-1", "ARSCodes": "22224"
+      },
+      {
+				"RouteName": "TP3-2", "NextSignal": "*",
+        "Manual": true, "EnRou": true, "PRou": "2",
+        "Switches": "TP2-,TP3-",
+        "Lights": "3-3-3-3-3-1", "ARSCodes": "222224"
+      }
+    ]
+  }
+}

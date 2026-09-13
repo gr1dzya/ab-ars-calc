@@ -1,6 +1,6 @@
 {
   "1512": {
-    "x": 8782.36,
+    "x": 10899.36,
     "Routes": [
       {
         "Lights": " ",
@@ -12,7 +12,6 @@
     "ARSOnly": false,
     "LensesStr": "YGR",
     "SignalType": 6,
-    "TwoToSix": true,
     "FrontArsName": "1680",
     "Left": false,
     "Double": false,
@@ -20,7 +19,7 @@
     "NonAutoStop": true
   },
   "1514": {
-    "x": 8844.86,
+    "x": 10961.86,
     "Routes": [
       {
         "NextSignal": "TC1512",
@@ -33,7 +32,7 @@
     "SignalType": 0
   },
   "1612": {
-    "x": 7207.36,
+    "x": 9324.36,
     "Routes": [
       {
         "Lights": " ",
@@ -45,7 +44,6 @@
     "ARSOnly": false,
     "LensesStr": "YGR",
     "SignalType": 0,
-    "TwoToSix": true,
     "Approve0": true,
     "FrontArsName": "1780",
     "Left": false,
@@ -54,63 +52,59 @@
     "NonAutoStop": true
   },
   "1614": {
-    "x": 7269.86,
+    "x": 9386.86,
     "Routes": [
       {
-        "ARSCodes": "00467",
+        "ARSCodes": "0000007",
         "NextSignal": "*"
       }
     ],
     "Name": "TC1612",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1616": {
-    "x": 7407.36,
+    "x": 9524.36,
     "Routes": [
       {
-        "ARSCodes": "00467",
+        "ARSCodes": "000007",
         "NextSignal": "*"
       }
     ],
     "Name": "TC1614",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1618": {
-    "x": 7544.86,
+    "x": 9661.86,
     "Routes": [
       {
-        "ARSCodes": "00467",
+        "ARSCodes": "00007",
         "NextSignal": "*"
       }
     ],
     "Name": "TC1616",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1620": {
-    "x": 7682.36,
+    "x": 9799.36,
     "Routes": [
       {
-        "ARSCodes": "00467",
+        "ARSCodes": "00067",
         "NextSignal": "*"
       }
     ],
     "Name": "TC1618",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1622": {
-    "x": 7819.86,
+    "x": 9936.86,
     "Routes": [
       {
         "ARSCodes": "00467",
@@ -120,11 +114,10 @@
     "Name": "TC1620",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1624": {
-    "x": 7957.36,
+    "x": 10074.36,
     "Routes": [
       {
         "ARSCodes": "00467",
@@ -134,11 +127,10 @@
     "Name": "TC1622",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1664": {
-    "x": 8107.36,
+    "x": 10211.86,
     "Routes": [
       {
         "ARSCodes": "00467",
@@ -148,73 +140,67 @@
     "Name": "TC1624",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1666": {
-    "x": 8244.86,
+    "x": 10349.36,
     "Routes": [
       {
-        "ARSCodes": "004667",
+        "ARSCodes": "0046666667",
         "NextSignal": "*"
       }
     ],
     "Name": "TC1664",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1668": {
-    "x": 8369.86,
+    "x": 10474.36,
     "Routes": [
       {
-        "ARSCodes": "004447",
+        "ARSCodes": "004444447",
         "NextSignal": "*"
       }
     ],
     "Name": "TC1666",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1670": {
-    "x": 8444.86,
+    "x": 10561.86,
     "Routes": [
       {
-        "ARSCodes": "000467",
+        "ARSCodes": "00000007",
         "NextSignal": "*"
       }
     ],
     "Name": "TC1668",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1672": {
-    "x": 8507.36,
+    "x": 10624.36,
     "Routes": [
       {
-        "Lights": "4",
-        "NextSignal": "- NONE -",
-        "ARSCodes": "2"
+        "Lights": "4-4-4-4-4-4-1",
+        "RouteName": "SP2-2",
+        "Switches": "SP2+",
+        "ARSCodes": "2000007",
+        "NextSignal": "*"
       },
       {
-        "NextSignal": "*",
-        "Lights": "4-4-1",
-        "ARSCodes": "22044667",
-        "Manual": true,
-        "RouteName": "SP2-2",
-        "Switches": "SP_SW_2+"
+        "Lights": "4",
+        "ARSCodes": "2",
+        "Switches": "SP2-"
       }
     ],
     "Name": "SP168",
     "ARSOnly": false,
     "LensesStr": "BYGRW",
     "SignalType": 0,
-    "TwoToSix": true,
     "FrontArsName": "1670",
     "Left": false,
     "Double": false,
@@ -223,35 +209,33 @@
     "Pole": 1
   },
   "1674": {
-    "x": 8557.36,
+    "x": 10674.36,
     "Routes": [
       {
-        "ARSCodes": "004467",
+        "ARSCodes": "000007",
         "NextSignal": "*"
       }
     ],
     "Name": "TC1672",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1676": {
-    "x": 8607.36,
+    "x": 10724.36,
     "Routes": [
       {
-        "ARSCodes": "00446",
+        "ARSCodes": "00006",
         "NextSignal": "*"
       }
     ],
     "Name": "TC1674",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1678": {
-    "x": 8682.36,
+    "x": 10786.86,
     "Routes": [
       {
         "ARSCodes": "00046",
@@ -262,11 +246,10 @@
     "ARSOnly": true,
     "LensesStr": "",
     "SignalType": 0,
-    "Kanava": true,
-    "TwoToSix": true
+    "Kanava": true
   },
   "1680": {
-    "x": 8732.36,
+    "x": 10849.36,
     "Routes": [
       {
         "ARSCodes": "0004",
@@ -277,11 +260,10 @@
     "ARSOnly": true,
     "LensesStr": "",
     "SignalType": 0,
-    "Kanava": true,
-    "TwoToSix": true
+    "Kanava": true
   },
   "1712": {
-    "x": 4398.86,
+    "x": 6515.86,
     "Routes": [
       {
         "Lights": " ",
@@ -293,7 +275,6 @@
     "ARSOnly": false,
     "LensesStr": "YGR",
     "SignalType": 6,
-    "TwoToSix": true,
     "Approve0": true,
     "FrontArsName": "1880",
     "Left": false,
@@ -302,77 +283,72 @@
     "NonAutoStop": true
   },
   "1714": {
-    "x": 4448.86,
+    "x": 6565.86,
     "Routes": [
       {
-        "ARSCodes": "00467",
+        "ARSCodes": "0000007",
         "NextSignal": "*"
       }
     ],
     "Name": "TC1712",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1716": {
-    "x": 4523.86,
+    "x": 6640.86,
     "Routes": [
       {
-        "ARSCodes": "0047",
+        "ARSCodes": "000007",
         "NextSignal": "*"
       }
     ],
     "Name": "TC1714",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1718": {
-    "x": 4573.86,
+    "x": 6690.86,
     "Routes": [
       {
-        "ARSCodes": "0467",
+        "ARSCodes": "00007",
         "NextSignal": "*"
       }
     ],
     "Name": "TC1716",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1722": {
-    "x": 4698.86,
+    "x": 6815.86,
     "Routes": [
       {
-        "ARSCodes": "0467",
+        "ARSCodes": "0007",
         "NextSignal": "*"
       }
     ],
     "Name": "TC1718",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1724": {
-    "x": 4836.36,
+    "x": 6953.36,
     "Routes": [
       {
-        "ARSCodes": "04678",
+        "ARSCodes": "0067",
         "NextSignal": "*"
       }
     ],
     "Name": "TC1722",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1726": {
-    "x": 4973.86,
+    "x": 7090.86,
     "Routes": [
       {
         "ARSCodes": "04678",
@@ -382,11 +358,10 @@
     "Name": "TC1724",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1728": {
-    "x": 5111.36,
+    "x": 7228.36,
     "Routes": [
       {
         "ARSCodes": "04678",
@@ -396,11 +371,10 @@
     "Name": "TC1726",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1730": {
-    "x": 5248.86,
+    "x": 7365.86,
     "Routes": [
       {
         "ARSCodes": "04678",
@@ -410,11 +384,10 @@
     "Name": "TC1728",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1732": {
-    "x": 5386.36,
+    "x": 7503.36,
     "Routes": [
       {
         "ARSCodes": "04678",
@@ -424,11 +397,10 @@
     "Name": "TC1730",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1734": {
-    "x": 5523.86,
+    "x": 7640.86,
     "Routes": [
       {
         "ARSCodes": "04678",
@@ -438,11 +410,10 @@
     "Name": "TC1732",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1736": {
-    "x": 5661.36,
+    "x": 7778.36,
     "Routes": [
       {
         "ARSCodes": "04678",
@@ -452,11 +423,10 @@
     "Name": "TC1734",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1754": {
-    "x": 5782.36,
+    "x": 7899.36,
     "Routes": [
       {
         "ARSCodes": "04678",
@@ -466,11 +436,10 @@
     "Name": "TC1736",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1756": {
-    "x": 5919.86,
+    "x": 8036.86,
     "Routes": [
       {
         "ARSCodes": "04678",
@@ -480,11 +449,10 @@
     "Name": "TC1754",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1758": {
-    "x": 6057.36,
+    "x": 8174.36,
     "Routes": [
       {
         "ARSCodes": "04678",
@@ -494,11 +462,10 @@
     "Name": "TC1756",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1760": {
-    "x": 6194.86,
+    "x": 8311.86,
     "Routes": [
       {
         "ARSCodes": "0467",
@@ -508,11 +475,10 @@
     "Name": "TC1758",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1762": {
-    "x": 6332.36,
+    "x": 8449.36,
     "Routes": [
       {
         "ARSCodes": "0467",
@@ -522,11 +488,10 @@
     "Name": "TC1760",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1764": {
-    "x": 6469.86,
+    "x": 8586.86,
     "Routes": [
       {
         "ARSCodes": "04667",
@@ -536,11 +501,10 @@
     "Name": "TC1762",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1766": {
-    "x": 6594.86,
+    "x": 8711.86,
     "Routes": [
       {
         "ARSCodes": "0446",
@@ -550,11 +514,10 @@
     "Name": "TC1764",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1768": {
-    "x": 6719.86,
+    "x": 8836.86,
     "Routes": [
       {
         "ARSCodes": "0046",
@@ -564,11 +527,10 @@
     "Name": "TC1766",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1770": {
-    "x": 6819.86,
+    "x": 8936.86,
     "Routes": [
       {
         "ARSCodes": "00446",
@@ -578,11 +540,10 @@
     "Name": "TC1768",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1772": {
-    "x": 6907.36,
+    "x": 9024.36,
     "Routes": [
       {
         "ARSCodes": "00446",
@@ -592,11 +553,10 @@
     "Name": "TC1770",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1774": {
-    "x": 6969.86,
+    "x": 9086.86,
     "Routes": [
       {
         "ARSCodes": "00046",
@@ -606,11 +566,10 @@
     "Name": "TC1772",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1776": {
-    "x": 7032.36,
+    "x": 9149.36,
     "Routes": [
       {
         "ARSCodes": "00046",
@@ -621,11 +580,10 @@
     "ARSOnly": true,
     "LensesStr": "",
     "SignalType": 0,
-    "TwoToSix": true,
     "Kanava": true
   },
   "1778": {
-    "x": 7082.36,
+    "x": 9199.36,
     "Routes": [
       {
         "ARSCodes": "00446",
@@ -636,11 +594,10 @@
     "ARSOnly": true,
     "LensesStr": "",
     "SignalType": 0,
-    "TwoToSix": true,
     "Kanava": true
   },
   "1780": {
-    "x": 7144.86,
+    "x": 9261.86,
     "Routes": [
       {
         "ARSCodes": "00446",
@@ -651,11 +608,10 @@
     "ARSOnly": true,
     "LensesStr": "",
     "SignalType": 0,
-    "TwoToSix": true,
     "Kanava": true
   },
   "1812": {
-    "x": 1898.86,
+    "x": 4015.86,
     "Routes": [
       {
         "Lights": " ",
@@ -667,7 +623,6 @@
     "ARSOnly": false,
     "LensesStr": "YGR",
     "SignalType": 6,
-    "TwoToSix": true,
     "Approve0": true,
     "FrontArsName": "1980",
     "Left": false,
@@ -679,63 +634,59 @@
     "FKanava": true
   },
   "1814": {
-    "x": 1961.36,
+    "x": 4078.36,
     "Routes": [
       {
-        "ARSCodes": "0046",
+        "ARSCodes": "0000006",
         "NextSignal": "*"
       }
     ],
     "Name": "TC1812",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1816": {
-    "x": 2023.86,
+    "x": 4140.860000000001,
     "Routes": [
       {
-        "ARSCodes": "0046",
+        "ARSCodes": "000006",
         "NextSignal": "*"
       }
     ],
     "Name": "TC1814",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1818": {
-    "x": 2148.8599999999997,
+    "x": 4265.860000000001,
     "Routes": [
       {
-        "ARSCodes": "0046",
+        "ARSCodes": "00006",
         "NextSignal": "*"
       }
     ],
     "Name": "TC1816",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1820": {
-    "x": 2286.3599999999997,
+    "x": 4403.360000000001,
     "Routes": [
       {
-        "ARSCodes": "004678",
+        "ARSCodes": "000678",
         "NextSignal": "*"
       }
     ],
     "Name": "TC1818",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1822": {
-    "x": 2423.8599999999997,
+    "x": 4540.860000000001,
     "Routes": [
       {
         "ARSCodes": "004678",
@@ -745,11 +696,10 @@
     "Name": "TC1820",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1824": {
-    "x": 2561.3599999999997,
+    "x": 4678.360000000001,
     "Routes": [
       {
         "ARSCodes": "004678",
@@ -759,11 +709,10 @@
     "Name": "TC1822",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1826": {
-    "x": 2698.8599999999997,
+    "x": 4815.860000000001,
     "Routes": [
       {
         "ARSCodes": "04678",
@@ -773,11 +722,10 @@
     "Name": "TC1824",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1828": {
-    "x": 2836.3599999999997,
+    "x": 4953.360000000001,
     "Routes": [
       {
         "ARSCodes": "04678",
@@ -787,11 +735,10 @@
     "Name": "TC1826",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1830": {
-    "x": 2973.8599999999997,
+    "x": 5090.860000000001,
     "Routes": [
       {
         "ARSCodes": "04678",
@@ -801,11 +748,10 @@
     "Name": "TC1828",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1856": {
-    "x": 3111.3599999999997,
+    "x": 5228.360000000001,
     "Routes": [
       {
         "ARSCodes": "04678",
@@ -815,11 +761,10 @@
     "Name": "TC1830",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1858": {
-    "x": 3248.8599999999997,
+    "x": 5365.860000000001,
     "Routes": [
       {
         "ARSCodes": "04678",
@@ -829,11 +774,10 @@
     "Name": "TC1856",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1860": {
-    "x": 3386.3599999999997,
+    "x": 5503.360000000001,
     "Routes": [
       {
         "ARSCodes": "04678",
@@ -843,53 +787,49 @@
     "Name": "TC1858",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1862": {
-    "x": 3523.8599999999997,
+    "x": 5640.860000000001,
     "Routes": [
       {
-        "ARSCodes": "04678",
+        "ARSCodes": "046778",
         "NextSignal": "*"
       }
     ],
     "Name": "TC1860",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1864": {
-    "x": 3661.3599999999997,
-    "Routes": [
-      {
-        "ARSCodes": "04678",
-        "NextSignal": "*"
-      }
-    ],
-    "Name": "TC1862",
-    "ARSOnly": true,
-    "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
-  },
-  "1866": {
-    "x": 3798.8599999999997,
+    "x": 5778.360000000001,
     "Routes": [
       {
         "ARSCodes": "046678",
         "NextSignal": "*"
       }
     ],
+    "Name": "TC1862",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "1866": {
+    "x": 5915.860000000001,
+    "Routes": [
+      {
+        "ARSCodes": "044678",
+        "NextSignal": "*"
+      }
+    ],
     "Name": "TC1864",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1868": {
-    "x": 3936.3599999999997,
+    "x": 6053.360000000001,
     "Routes": [
       {
         "ARSCodes": "004678",
@@ -899,25 +839,23 @@
     "Name": "TC1866",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1870": {
-    "x": 4036.3599999999997,
+    "x": 6153.360000000001,
     "Routes": [
       {
-        "ARSCodes": "0046778",
+        "ARSCodes": "004678",
         "NextSignal": "*"
       }
     ],
     "Name": "TC1868",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1872": {
-    "x": 4111.36,
+    "x": 6228.360000000001,
     "Routes": [
       {
         "ARSCodes": "00446778",
@@ -927,15 +865,14 @@
     "Name": "TC1870",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1874": {
-    "x": 4173.86,
+    "x": 6290.860000000001,
     "Routes": [
       {
         "Lights": "3-1",
-        "Switches": "UN_SW_2+",
+        "Switches": "UN2+",
         "RouteName": "UN2-2",
         "ARSCodes": "2044667",
         "NextSignal": "*"
@@ -943,14 +880,13 @@
       {
         "Lights": "3",
         "ARSCodes": "2",
-        "Switches": "UN_SW_2-"
+        "Switches": "UN2-"
       }
     ],
     "Name": "UN188",
     "ARSOnly": false,
     "LensesStr": "BGRW",
     "SignalType": 0,
-    "TwoToSix": true,
     "FrontArsName": "1872",
     "Left": false,
     "Double": false,
@@ -959,7 +895,7 @@
     "Pole": 1
   },
   "1876": {
-    "x": 4236.36,
+    "x": 6353.360000000001,
     "Routes": [
       {
         "ARSCodes": "00046",
@@ -968,18 +904,17 @@
       {
         "ARSCodes": "0004",
         "NextSignal": "*",
-        "Switches": "UN_SW_2-"
+        "Switches": "UN2-"
       }
     ],
     "Name": "TC1874",
     "ARSOnly": true,
     "LensesStr": "",
     "SignalType": 0,
-    "TwoToSix": true,
     "RouteNumber": "2"
   },
   "1878": {
-    "x": 4298.86,
+    "x": 6415.860000000001,
     "Routes": [
       {
         "ARSCodes": "00046",
@@ -988,18 +923,17 @@
       {
         "ARSCodes": "0004",
         "NextSignal": "*",
-        "Switches": "UN_SW_2-"
+        "Switches": "UN2-"
       }
     ],
     "Name": "TC1876",
     "ARSOnly": true,
     "LensesStr": "",
     "SignalType": 0,
-    "TwoToSix": true,
     "Kanava": true
   },
   "1880": {
-    "x": 4348.86,
+    "x": 6465.860000000001,
     "Routes": [
       {
         "ARSCodes": "00046",
@@ -1008,21 +942,21 @@
       {
         "ARSCodes": "0004",
         "NextSignal": "*",
-        "Switches": "UN_SW_2-"
+        "Switches": "UN2-"
       }
     ],
     "Name": "TC1878",
     "ARSOnly": true,
     "LensesStr": "",
     "SignalType": 0,
-    "TwoToSix": true,
     "Kanava": true
   },
   "1912": {
-    "x": 473.86,
+    "x": 2590.86,
     "Routes": [
       {
         "Lights": " ",
+        "Later325": 6,
         "ARSCodes": "004",
         "NextSignal": "*"
       }
@@ -1031,7 +965,6 @@
     "ARSOnly": false,
     "LensesStr": "YGR",
     "SignalType": 6,
-    "TwoToSix": true,
     "Approve0": true,
     "FrontArsName": "2080",
     "Left": false,
@@ -1042,77 +975,72 @@
     "FKanava": true
   },
   "1914": {
-    "x": 561.36,
+    "x": 2678.36,
     "Routes": [
       {
-        "ARSCodes": "047",
+        "ARSCodes": "00007",
         "NextSignal": "*"
       }
     ],
     "Name": "TC1912",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
-  "1920": {
-    "x": 698.86,
+  "1916": {
+    "x": 2815.86,
     "Routes": [
       {
-        "ARSCodes": "047",
+        "ARSCodes": "0007",
         "NextSignal": "*"
       }
     ],
     "Name": "TC1914",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
-  "1922": {
-    "x": 836.36,
+  "1918": {
+    "x": 2953.36,
+    "Routes": [
+      {
+        "ARSCodes": "007",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC1916",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "1920": {
+    "x": 3090.86,
     "Routes": [
       {
         "ARSCodes": "047",
         "NextSignal": "*"
       }
     ],
-    "Name": "TC1920",
+    "Name": "TC1918",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
-  },
-  "1924": {
-    "x": 973.86,
-    "Routes": [
-      {
-        "ARSCodes": "047",
-        "NextSignal": "*"
-      }
-    ],
-    "Name": "TC1922",
-    "ARSOnly": true,
-    "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1960": {
-    "x": 1111.3600000000001,
+    "x": 3228.36,
     "Routes": [
       {
         "ARSCodes": "0067",
         "NextSignal": "*"
       }
     ],
-    "Name": "TC1924",
+    "Name": "TC1920",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1962": {
-    "x": 1248.8600000000001,
+    "x": 3365.86,
     "Routes": [
       {
         "ARSCodes": "004667",
@@ -1122,11 +1050,10 @@
     "Name": "TC1960",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1964": {
-    "x": 1386.3600000000001,
+    "x": 3503.36,
     "Routes": [
       {
         "ARSCodes": "004467",
@@ -1136,11 +1063,10 @@
     "Name": "TC1962",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1966": {
-    "x": 1461.3600000000001,
+    "x": 3578.36,
     "Routes": [
       {
         "ARSCodes": "000467",
@@ -1150,11 +1076,10 @@
     "Name": "TC1964",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1968": {
-    "x": 1536.3600000000001,
+    "x": 3653.36,
     "Routes": [
       {
         "ARSCodes": "000467",
@@ -1164,11 +1089,10 @@
     "Name": "TC1966",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1970": {
-    "x": 1598.8600000000001,
+    "x": 3715.86,
     "Routes": [
       {
         "ARSCodes": "000467",
@@ -1178,11 +1102,10 @@
     "Name": "TC1968",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1972": {
-    "x": 1661.3600000000001,
+    "x": 3778.36,
     "Routes": [
       {
         "ARSCodes": "000467",
@@ -1192,11 +1115,10 @@
     "Name": "TC1970",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1974": {
-    "x": 1711.3600000000001,
+    "x": 3828.36,
     "Routes": [
       {
         "ARSCodes": "004467",
@@ -1206,11 +1128,10 @@
     "Name": "TC1972",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "1978": {
-    "x": 1773.8600000000001,
+    "x": 3890.86,
     "Routes": [
       {
         "ARSCodes": "00446",
@@ -1221,11 +1142,10 @@
     "ARSOnly": true,
     "LensesStr": "",
     "SignalType": 0,
-    "TwoToSix": true,
     "Kanava": true
   },
   "1980": {
-    "x": 1836.3600000000001,
+    "x": 3953.36,
     "Routes": [
       {
         "ARSCodes": "00446",
@@ -1236,11 +1156,256 @@
     "ARSOnly": true,
     "LensesStr": "",
     "SignalType": 0,
-    "TwoToSix": true,
     "Kanava": true
   },
+  "2012": {
+    "x": 403.36,
+    "Routes": [
+      {
+        "Lights": " ",
+        "ARSCodes": "004",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "202M",
+    "ARSOnly": false,
+    "LensesStr": "GR",
+    "SignalType": 0,
+    "Approve0": true,
+    "FrontArsName": "2180",
+    "Left": false,
+    "Double": false,
+    "DoubleL": false,
+    "NonAutoStop": true,
+    "Krons": "L",
+    "LetterK": true
+  },
+  "2014": {
+    "x": 465.86,
+    "Routes": [
+      {
+        "ARSCodes": "0000007",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC2012",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "2016": {
+    "x": 528.36,
+    "Routes": [
+      {
+        "ARSCodes": "000007",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC2014",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "2018": {
+    "x": 640.86,
+    "Routes": [
+      {
+        "ARSCodes": "00007",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC2016",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "2020": {
+    "x": 778.36,
+    "Routes": [
+      {
+        "ARSCodes": "0007",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC2018",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "2022": {
+    "x": 915.86,
+    "Routes": [
+      {
+        "ARSCodes": "0067",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC2020",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "2024": {
+    "x": 1053.3600000000001,
+    "Routes": [
+      {
+        "ARSCodes": "0467",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC2022",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "2026": {
+    "x": 1190.8600000000001,
+    "Routes": [
+      {
+        "ARSCodes": "0467",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC2024",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "2028": {
+    "x": 1328.3600000000001,
+    "Routes": [
+      {
+        "ARSCodes": "0467",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC2026",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "2030": {
+    "x": 1465.8600000000001,
+    "Routes": [
+      {
+        "ARSCodes": "0467",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC2028",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "2032": {
+    "x": 1603.3600000000001,
+    "Routes": [
+      {
+        "ARSCodes": "0467",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC2030",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "2034": {
+    "x": 1740.8600000000001,
+    "Routes": [
+      {
+        "ARSCodes": "04667",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC2032",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "2036": {
+    "x": 1878.3600000000001,
+    "Routes": [
+      {
+        "ARSCodes": "04467",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC2034",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "Left": true
+  },
+  "2062": {
+    "x": 2015.8600000000001,
+    "Routes": [
+      {
+        "ARSCodes": "0046",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC2036",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "2064": {
+    "x": 2090.86,
+    "Routes": [
+      {
+        "ARSCodes": "00446",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC2062",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "2070": {
+    "x": 2165.86,
+    "Routes": [
+      {
+        "ARSCodes": "0006",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC2064",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "2072": {
+    "x": 2240.86,
+    "Routes": [
+      {
+        "Lights": "3-3-1",
+        "Switches": "UZ2+",
+        "RouteName": "UZ2-2",
+        "ARSCodes": "2046",
+        "NextSignal": "*"
+      },
+      {
+        "Lights": "3",
+        "ARSCodes": "2",
+        "Switches": "UZ2-"
+      }
+    ],
+    "Name": "UZ2",
+    "ARSOnly": false,
+    "LensesStr": "BGRW",
+    "SignalType": 0,
+    "FrontArsName": "2070",
+    "Left": false,
+    "Double": false,
+    "DoubleL": false,
+    "NonAutoStop": true,
+    "RouteNumberSetup": "D34",
+    "OW": "[4 0 -10]"
+  },
   "2074": {
-    "x": 223.86,
+    "x": 2315.86,
     "Routes": [
       {
         "ARSCodes": "004",
@@ -1250,11 +1415,10 @@
     "Name": "TC2072",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "2076": {
-    "x": 286.36,
+    "x": 2390.86,
     "Routes": [
       {
         "ARSCodes": "004",
@@ -1264,11 +1428,10 @@
     "Name": "TC2074",
     "ARSOnly": true,
     "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
+    "SignalType": 0
   },
   "2078": {
-    "x": 348.86,
+    "x": 2465.86,
     "Routes": [
       {
         "ARSCodes": "004",
@@ -1279,11 +1442,10 @@
     "ARSOnly": true,
     "LensesStr": "",
     "SignalType": 0,
-    "TwoToSix": true,
     "Kanava": true
   },
   "2080": {
-    "x": 411.36,
+    "x": 2528.36,
     "Routes": [
       {
         "ARSCodes": "004",
@@ -1294,11 +1456,38 @@
     "ARSOnly": true,
     "LensesStr": "",
     "SignalType": 0,
-    "TwoToSix": true,
+    "Kanava": true
+  },
+  "2178": {
+    "x": 278.36,
+    "Routes": [
+      {
+        "ARSCodes": "004",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC2176",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "Kanava": true
+  },
+  "2180": {
+    "x": 340.86,
+    "Routes": [
+      {
+        "ARSCodes": "004",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC2178",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
     "Kanava": true
   },
   "1876_back": {
-    "x": 4236.36,
+    "x": 6353.360000000001,
     "Name": "UND",
     "ARSOnly": false,
     "LensesStr": "BWR-WM",
@@ -1308,14 +1497,15 @@
     "Routes": [
       {
         "Lights": 3,
+        "ARSCodes": "2",
         "NextSignal": "*"
       },
       {
         "RouteName": "UND-3",
         "Lights": "3-3-3-3-3-1",
         "ARSCodes": "222224",
-        "Switches": "UN_SW_2-,UN_SW_4-,UN_SW_5-",
-        "NextSignal": "UNFIX8",
+        "Switches": "UN2-,UN4-,UN5-",
+        "NextSignal": "UNFIX4",
         "EnRou": true,
         "Manual": true
       },
@@ -1323,14 +1513,13 @@
         "RouteName": "UND-4",
         "Lights": "3-3-3-3-1",
         "ARSCodes": "22224",
-        "Switches": "UN_SW_2-,UN_SW_4+,UN_SW_6+",
-        "NextSignal": "UNFIX8",
+        "Switches": "UN2-,UN4+,UN6+",
+        "NextSignal": "UNFIX4",
         "EnRou": true,
         "Manual": true
       }
     ],
     "NonAutoStop": true,
-    "TwoToSix": true,
     "Approve0": true,
     "DTM": true,
     "Letter": "D"

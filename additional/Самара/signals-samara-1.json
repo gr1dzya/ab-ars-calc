@@ -280,7 +280,7 @@
     "x": 8315.68,
     "Routes": [
       {
-        "ARSCodes": "0468",
+        "ARSCodes": "0068",
         "NextSignal": "*"
       }
     ],
@@ -294,7 +294,7 @@
     "x": 8453.18,
     "Routes": [
       {
-        "ARSCodes": "0478",
+        "ARSCodes": "0068",
         "NextSignal": "*"
       }
     ],
@@ -308,7 +308,7 @@
     "x": 8590.68,
     "Routes": [
       {
-        "ARSCodes": "0478",
+        "ARSCodes": "0468",
         "NextSignal": "*"
       }
     ],
@@ -378,7 +378,7 @@
     "x": 9278.18,
     "Routes": [
       {
-        "ARSCodes": "0478",
+        "ARSCodes": "0468",
         "NextSignal": "*"
       }
     ],
@@ -440,7 +440,7 @@
     "x": 9703.18,
     "Routes": [
       {
-        "ARSCodes": "00446",
+        "ARSCodes": "004446",
         "NextSignal": "*"
       }
     ],
@@ -468,7 +468,7 @@
     "x": 9815.68,
     "Routes": [
       {
-        "ARSCodes": "00046",
+        "ARSCodes": "000446",
         "NextSignal": "*"
       }
     ],
@@ -505,7 +505,7 @@
     "x": 6290.68,
     "Routes": [
       {
-        "ARSCodes": "0046",
+        "ARSCodes": "0044446",
         "NextSignal": "*"
       }
     ],
@@ -631,7 +631,7 @@
     "x": 7365.68,
     "Routes": [
       {
-        "ARSCodes": "0478",
+        "ARSCodes": "0468",
         "NextSignal": "*"
       }
     ],
@@ -645,7 +645,7 @@
     "x": 7503.18,
     "Routes": [
       {
-        "ARSCodes": "04478",
+        "ARSCodes": "044678",
         "NextSignal": "*"
       }
     ],
@@ -687,7 +687,7 @@
     "x": 7765.68,
     "Routes": [
       {
-        "ARSCodes": "0044678",
+        "ARSCodes": "00446778",
         "NextSignal": "*"
       }
     ],
@@ -715,7 +715,7 @@
     "x": 7903.18,
     "Routes": [
       {
-        "ARSCodes": "00046",
+        "ARSCodes": "000446",
         "NextSignal": "*"
       }
     ],
@@ -729,7 +729,7 @@
     "x": 7953.18,
     "Routes": [
       {
-        "ARSCodes": "00046",
+        "ARSCodes": "000446",
         "NextSignal": "*"
       }
     ],
@@ -766,7 +766,7 @@
     "x": 5003.18,
     "Routes": [
       {
-        "ARSCodes": "006",
+        "ARSCodes": "00006",
         "NextSignal": "*"
       }
     ],
@@ -780,7 +780,7 @@
     "x": 5090.68,
     "Routes": [
       {
-        "ARSCodes": "046",
+        "ARSCodes": "0006",
         "NextSignal": "*"
       }
     ],
@@ -791,10 +791,10 @@
     "TwoToSix": true
   },
   "1317": {
-    "x": 5240.68,
+    "x": 5228.18,
     "Routes": [
       {
-        "ARSCodes": "046",
+        "ARSCodes": "006",
         "NextSignal": "*"
       }
     ],
@@ -805,10 +805,10 @@
     "TwoToSix": true
   },
   "1319": {
-    "x": 5390.68,
+    "x": 5365.68,
     "Routes": [
       {
-        "ARSCodes": "0468",
+        "ARSCodes": "0478",
         "NextSignal": "*"
       }
     ],
@@ -823,7 +823,7 @@
     "Routes": [
       {
         "Lights": "5-1",
-        "ARSCodes": "2068",
+        "ARSCodes": "20678",
         "NextSignal": "*"
       }
     ],
@@ -841,7 +841,7 @@
     "OW": "[-1 0 20]"
   },
   "1323": {
-    "x": 5640.68,
+    "x": 5628.18,
     "Routes": [
       {
         "ARSCodes": "04678",
@@ -855,7 +855,7 @@
     "TwoToSix": true
   },
   "1365": {
-    "x": 5778.18,
+    "x": 5765.68,
     "Routes": [
       {
         "ARSCodes": "0046778",
@@ -869,10 +869,10 @@
     "TwoToSix": true
   },
   "1367": {
-    "x": 5878.18,
+    "x": 5853.18,
     "Routes": [
       {
-        "ARSCodes": "0044667",
+        "ARSCodes": "004467",
         "NextSignal": "*"
       }
     ],
@@ -883,10 +883,10 @@
     "TwoToSix": true
   },
   "1369": {
-    "x": 5940.68,
+    "x": 5928.18,
     "Routes": [
       {
-        "ARSCodes": "000446",
+        "ARSCodes": "004446",
         "NextSignal": "*"
       }
     ],
@@ -942,7 +942,7 @@
     "x": 6140.68,
     "Routes": [
       {
-        "ARSCodes": "00046",
+        "ARSCodes": "000446",
         "NextSignal": "*"
       }
     ],
@@ -957,7 +957,7 @@
     "x": 6190.68,
     "Routes": [
       {
-        "ARSCodes": "00046",
+        "ARSCodes": "000446",
         "NextSignal": "*"
       }
     ],
@@ -994,7 +994,7 @@
     "x": 3628.18,
     "Routes": [
       {
-        "ARSCodes": "0067",
+        "ARSCodes": "000007",
         "NextSignal": "*"
       }
     ],
@@ -1008,7 +1008,7 @@
     "x": 3703.18,
     "Routes": [
       {
-        "ARSCodes": "0478",
+        "ARSCodes": "00008",
         "NextSignal": "*"
       }
     ],
@@ -1022,7 +1022,7 @@
     "x": 3840.68,
     "Routes": [
       {
-        "ARSCodes": "0478",
+        "ARSCodes": "0008",
         "NextSignal": "*"
       }
     ],
@@ -1036,7 +1036,7 @@
     "x": 3978.18,
     "Routes": [
       {
-        "ARSCodes": "0478",
+        "ARSCodes": "0078",
         "NextSignal": "*"
       }
     ],
@@ -1064,7 +1064,7 @@
     "x": 4253.18,
     "Routes": [
       {
-        "ARSCodes": "04678",
+        "ARSCodes": "0478",
         "NextSignal": "*"
       }
     ],
@@ -1074,11 +1074,11 @@
     "SignalType": 0,
     "TwoToSix": true
   },
-  "1465": {
-    "x": 4378.18,
+  "1467": {
+    "x": 4390.68,
     "Routes": [
       {
-        "ARSCodes": "004678",
+        "ARSCodes": "04678",
         "NextSignal": "*"
       }
     ],
@@ -1088,22 +1088,8 @@
     "SignalType": 0,
     "TwoToSix": true
   },
-  "1467": {
-    "x": 4478.18,
-    "Routes": [
-      {
-        "ARSCodes": "004678",
-        "NextSignal": "*"
-      }
-    ],
-    "Name": "TC1465",
-    "ARSOnly": true,
-    "LensesStr": "",
-    "SignalType": 0,
-    "TwoToSix": true
-  },
   "1469": {
-    "x": 4553.18,
+    "x": 4515.68,
     "Routes": [
       {
         "ARSCodes": "004678",
@@ -1120,7 +1106,7 @@
     "x": 4615.68,
     "Routes": [
       {
-        "ARSCodes": "004678",
+        "ARSCodes": "0044778",
         "NextSignal": "*"
       }
     ],
@@ -1176,7 +1162,7 @@
     "x": 4878.18,
     "Routes": [
       {
-        "ARSCodes": "0046",
+        "ARSCodes": "00446",
         "NextSignal": "*"
       }
     ],
@@ -1213,7 +1199,7 @@
     "x": 1740.68,
     "Routes": [
       {
-        "ARSCodes": "047",
+        "ARSCodes": "000007",
         "NextSignal": "*"
       }
     ],
@@ -1227,7 +1213,7 @@
     "x": 1878.18,
     "Routes": [
       {
-        "ARSCodes": "0478",
+        "ARSCodes": "00008",
         "NextSignal": "*"
       }
     ],
@@ -1241,7 +1227,7 @@
     "x": 2015.68,
     "Routes": [
       {
-        "ARSCodes": "0478",
+        "ARSCodes": "0008",
         "NextSignal": "*"
       }
     ],
@@ -1255,7 +1241,7 @@
     "x": 2153.1800000000003,
     "Routes": [
       {
-        "ARSCodes": "0478",
+        "ARSCodes": "0078",
         "NextSignal": "*"
       }
     ],
@@ -1269,7 +1255,7 @@
     "x": 2290.6800000000003,
     "Routes": [
       {
-        "ARSCodes": "0478",
+        "ARSCodes": "0468",
         "NextSignal": "*"
       }
     ],
@@ -1325,7 +1311,7 @@
     "x": 2815.6800000000003,
     "Routes": [
       {
-        "ARSCodes": "0467",
+        "ARSCodes": "0067",
         "NextSignal": "*"
       }
     ],
@@ -1353,7 +1339,7 @@
     "x": 3065.6800000000003,
     "Routes": [
       {
-        "ARSCodes": "046",
+        "ARSCodes": "0446",
         "NextSignal": "*"
       }
     ],

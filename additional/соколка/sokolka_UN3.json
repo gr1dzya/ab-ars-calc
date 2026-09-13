@@ -1,6 +1,6 @@
 {
   "66": {
-    "x": 1,
+    "x": 25,
     "Routes": [
       {
         "NextSignal": "*",
@@ -9,100 +9,105 @@
       },
       {
         "NextSignal": "*",
-        "Switches": "MO1-,MO3+,MO5+",
+        "Switches": "UN1-,UN3+,UN5+",
         "ARSCodes": "4"
       },
       {
-        "NextSignal": "MOFIX4",
-        "Switches": "MO1-,MO3-,MO6-",
+        "NextSignal": "UNFIX4",
+        "Switches": "UN1-,UN3-,UN6-",
         "ARSCodes": "4"
       }
     ],
-    "Name": "MOFIX3",
+    "Name": "UNFIX3",
     "ARSOnly": true,
     "Left": true,
     "LensesStr": "",
-    "FrontArsName": "6411",
+    "FrontArsName": "1811",
+    "LetterB": "5A",
     "SignalType": 0
   },
   "67": {
-    "x": 20.5,
+    "x": 109,
     "Routes": [
       {
-        "NextSignal": "MOFIX1",
-        "Switches": "MO5+",
-        "ARSCodes": "004"
+        "NextSignal": "UNFIX1",
+        "Switches": "UN5+",
+        "ARSCodes": "00004"
       },
       {
-        "NextSignal": "MOFIX42",
-        "Switches": "MO5-",
-        "ARSCodes": "0004"
+        "NextSignal": "UNFIX42",
+        "Switches": "UN5-",
+        "Repeater": true,
+        "ARSCodes": "000004"
       }
     ],
-    "Name": "MOFIX31",
+    "Name": "UNFIX31",
     "ARSOnly": true,
     "LensesStr": "",
     "FrontArsName": "5",
+    "LetterB": "5A",
     "PassOcc": true,
     "Back": true,
     "Left": true,
     "SignalType": 0
   },
   "68": {
-    "x": 42,
+    "x": 145,
     "Routes": [
       {
         "NextSignal": "*",
         "ARSCodes": "4"
       }
     ],
-    "Name": "MOTC5",
+    "Name": "UN3Back",
     "ARSOnly": true,
     "FrontArsName": "5",
+    "RouteNumber": "3",
     "LensesStr": "",
     "DTM": true,
     "SignalType": 0
   },
   "69": {
-    "x": 170,
+    "x": 295,
     "Routes": [
       {
         "NextSignal": "*",
         "ARSCodes": "1"
       }
     ],
-    "Name": "MOTC3A",
+    "Name": "UNTC3A",
     "ARSOnly": true,
-    "Left": true,
     "FrontArsName": "3A",
     "LensesStr": "",
     "SignalType": 0
   },
   "70": {
-    "x": 119,
+    "x": 245,
     "Routes": [
       {
         "NextSignal": "*",
         "ARSCodes": "4"
       }
     ],
-    "Name": "MOTC3",
+    "Name": "UNTC3",
     "ARSOnly": true,
-    "Left": true,
     "FrontArsName": "3",
     "LensesStr": "",
     "SignalType": 0
   },
   "78": {
-    "x": 42.5,
-    "Name": "MO3",
+    "x": 145,
+    "Name": "UN3",
     "ARSOnly": false,
-    "LensesStr": "BWRWM",
+    "LensesStr": "BWR-WM",
     "FrontArsName": "3",
+    "LetterB": "5",
     "noPogashenie": 0,
     "SignalType": 8,
+    "Approve0": true,
     "Back": true,
     "Pole": 1,
+    "NonAutoStop": true,
     "Routes": [
       {
         "NextSignal": "",
@@ -110,18 +115,18 @@
         "ARSCodes": "2"
       },
       {
-				"RouteName": "MO3-1", "NextSignal": "*",
+				"RouteName": "UN3-1", "NextSignal": "*",
         "Manual": true, "EnRou": true, "PRou": "1",
-        "Switches": "MO1-,MO3+,MO5+,MO6+",
-        "Lights": "3-3-3-3-2", "Rezab1": "3-3-3-3-1", "RezabCommand": "suka",
+        "Switches": "UN1-,UN3+,UN5+,UN6+",
+        "Lights": "3-3-3-3-1", "Rezab1": "3-3-3-3-1", "RezabCommand": "suka",
         "ARSCodes": "22224"
       },
       {
-				"RouteName": "MO3-2", "NextSignal": "*",
+				"RouteName": "UN3-2", "NextSignal": "*",
         "Manual": true, "EnRou": true, "PRou": "2",
-        "Switches": "MO2-,MO4-,MO5-,MO6+",
-        "Lights": "3-3-3-3-3-3-2", "Rezab1": "3-3-3-3-1", "RezabCommand": "suka",
-        "ARSCodes": "22224"
+        "Switches": "UN2-,UN4-,UN5-,UN6+",
+        "Lights": "3-3-3-3-3-1", "Rezab1": "3-3-3-3-1", "RezabCommand": "suka",
+        "ARSCodes": "222224"
       }
     ]
   }

@@ -4,11 +4,11 @@ local NEW_ERA = true
 local pogashenie = true
 local TwoToSix = true
 local Dnepr = true
-local sigType = 8
+local sigType = 6
 
 local angle_mirror = Angle(0, 180, 0)
 
-local sokolka_st = {
+--[[local sokolka_st = {
     TP211 = "BWY-GRW",
     TP205 = "BG-RW",
     TP3 = "BW-RW-M",
@@ -32,7 +32,7 @@ local sokolka_st = {
     SP163M = "BWY-GRW",
     SPD = "BYW-YRW",
     SPV = "BW-RW-M",
-}
+}]]
 
 local function getSignalTrackRerailTrace(trackID, x, isBack)
     local downVector = Vector(0, 0, -100) -- было -300
@@ -158,16 +158,16 @@ local function placeSignal(position, angles, options)
         ent.Params = editParams(options)
         ent.SignalType = options.SignalType ~= 0 and options.SignalType or sigType 
     else 
-        ent.SignalType = 0 
+     --   ent.SignalType = 0 
     end
 	ent.RouteNumberSetup = options.RouteNumberSetup
     ent.NonAutoStop = options.NonAutoStop
 	ent.RouteNumber = options.RouteNumber
-    if sokolka_st[options.Name] and not NEW_ERA then 
-        ent.LensesStr = sokolka_st[options.Name]
-    else
+    --if sokolka_st[options.Name] and not NEW_ERA then 
+    --    ent.LensesStr = sokolka_st[options.Name]
+    --else
         ent.LensesStr = options.LensesStr
-    end
+    --end
     if not NEW_ERA and string.sub(options.Name, 1, 1) == 'M' then ent.LensesStr = "RR" end
 	ent.Approve0 = options.Approve0
     ent.ARSOnly = options.ARSOnly
@@ -330,13 +330,13 @@ end
     importSignalData(args[1], tonumber(args[2]))
 end )]]
 
-importSignalData("signals-sokolka-1.json", 1, true)
+--[[importSignalData("signals-sokolka-1.json", 1, true)
 importSignalData("signals-sokolka-2.json", 2, true)
 importSignalData("signals-sokolka-1_additional.json", 1, false)
 importSignalData("signals-sokolka-2_additional.json", 2, false)
 importSignalData("sokolka_UN3.json", 4, true)
 importSignalData("sokolka_UN4.json", 5, true)
-importSignalData("sokolka_TP3.json", 7, true)
+importSignalData("sokolka_TP3.json", 7, true)]]
 
 
 
@@ -345,10 +345,11 @@ importSignalData("sokolka_TP3.json", 7, true)
  --importSignalData("signals-imagine-1_additional.json", 9, false)
  --importSignalData("signals-imagine-2_additional.json", 1, false)
 
---importSignalData("signals-loopline-1.json", 1, true)
---importSignalData("loopline_ADD1.json", 1, false)
---importSignalData("signals-loopline-2.json", 2, true)
---importSignalData("loopline_ADD2.json", 2, false)
+importSignalData("signals-loopline-1.json", 1, true)
+importSignalData("loopline_PN4.json", 6, true)
+importSignalData("loopline_ADD1.json", 1, false)
+importSignalData("signals-loopline-2.json", 2, true)
+importSignalData("loopline_ADD2.json", 2, false)
 
 --             importSignalData("signals-crossline-redux_pony10-1.json", 6, true)
 --             importSignalData("signals-crossline-redux_pony10-2.json", 7, true)
