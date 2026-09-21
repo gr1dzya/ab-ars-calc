@@ -1,5 +1,8 @@
 var lines = lines || {};
 lines['neocrimson_pony10'] = lines['neocrimson_pony10'] || {};
+lines['neocrimson_pony10']['config'] = {
+    wagonCount: 4,
+};
 lines['neocrimson_pony10']['1'] = [
   {
     name: 'Братеево',

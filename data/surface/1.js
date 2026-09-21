@@ -3,6 +3,9 @@ const Gay4 = 0
 // AKFIX2, AKFIX8, AKFIX7, AKFIX1, AKFIX3
 var lines = lines || {};
 lines['surface'] = lines['surface'] || {};
+lines['surface']['config'] = {
+    wagonCount: 4,
+};
 lines['surface']['1'] = [
     {
         name: 'Ул. Айзека Кляйнера',

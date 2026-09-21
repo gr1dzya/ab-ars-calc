@@ -1,5 +1,9 @@
 var lines = lines || {};
 lines['sokolka'] = lines['sokolka'] || {};
+lines['sokolka']['config'] = {
+    wagonCount: 8,
+    IS_OLD_ARS: false,
+};
 lines['sokolka']['1'] = [
     {
         name: 'СП',
@@ -15,7 +19,7 @@ lines['sokolka']['1'] = [
         },
         joints: [
             { x: 7 + 50, name: '1579', limit: 40, gmod: { Kanava: true } },
-            { x: 7 + 50 + 62.5, name: '1611', limit: 40, gmod: { Approve0: true, Routes: [{NextSignal: " "}] } },
+            { x: 7 + 50 + 62.5, name: '1611', limit: 70, gmod: { Approve0: true, Routes: [{NextSignal: " "}] } },
             { x: 7 + 50 + 62.5 + 50, name: '1613', limit: 70, gmod: { Routes: [{},{ARSCodes: "0", Switches: "SP1-"},{NextSignal: "*", ARSCodes: "004", Switches: "SP3-"}] } },
             { x: 7 + 50 + 62.5 + 50 + 50, name: '1615', limit: 70, gmod: { Routes: [{},{NextSignal: "*", ARSCodes: "0", Switches: "SP1-"},{NextSignal: "*", ARSCodes: "004", Switches: "SP3-"}] } },
             { x: 7 + 50 + 62.5 + 50 + 50 + 62.5, name: '1617', limit: 70, gmod: { Routes: [{},{NextSignal: "*", ARSCodes: "004", Switches: "SP1-"},{NextSignal: "*", ARSCodes: "004", Switches: "SP3-"}] } },
@@ -71,7 +75,7 @@ lines['sokolka']['1'] = [
     },
     {
         name: 'ВГ',
-        arsDrawBreakpoint: 10,
+        arsDrawBreakpoint: 9,
         arsAllSteps: false,
         tStay: 25,
         K: 1,
@@ -84,7 +88,7 @@ lines['sokolka']['1'] = [
         joints: [
             { x: -10.5 + 50, name: '1679', limit: 0, point: true, gmod: { Kanava: true } },
             { x: -10.5 + 50 + 50, name: '1711', limit: 40, point: true, gmod: { Approve0: true, Kanava: true, Later325: 7 } },
-            { x: 2 + 50 + 50 + 37.5, name: '1713', limit: 40, gmod: { Approve0: true } },
+            { x: 2 + 50 + 50 + 37.5, name: '1713', limit: 40, gmod: { Approve0: true }, later: { 40: 3 } },
             { x: 2 + 50 + 50 + 37.5 + 50, name: '1715', limit: 60, point: true, later: { 40: 3, 60: 2 } },
             { x: 2 + 50 + 50 + 37.5 + 50 + 37.5, name: '1717', limit: 60, point: true, later: { 40: 2, 60: 1 } },
             { x: 2 + 50 + 50 + 37.5 + 50 + 37.5 + 100, name: '1719', limit: 60, point: true, later: { 40: 1, 60: 1 } },
@@ -351,6 +355,9 @@ lines['sokolka']['1'] = [
                     OW: "[3 0 0]", RouteNumberSetup: "134",
                     Routes: [ 
                         { RouteName: "TP1P", Lights: "5-5-35", EnRou: true, Switches: "TP1+" }, 
+                        { 
+                            Lights: "5", ARSCodes: "2", Switches: "TP1-" 
+                        }, 
                         { 
                             RouteName: "TP1-1", 
                             Lights: "5-5-5-5-5-1", ARSCodes: "222224", 

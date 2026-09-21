@@ -1,5 +1,8 @@
 var lines = lines || {};
 lines['samara'] = lines['samara'] || {};
+lines['samara']['config'] = {
+    wagonCount: 4,
+};
 lines['samara']['1'] = [
     {
         name: 'Юнгородок',

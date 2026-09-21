@@ -1,5 +1,8 @@
 var lines = lines || {};
 lines['loopline'] = lines['loopline'] || {};
+lines['loopline']['config'] = {
+    wagonCount: 5,
+};
 lines['loopline']['1'] = [
     {
         name: 'ПТО',
@@ -79,7 +82,7 @@ lines['loopline']['1'] = [
             { x: 3385 +5 - 62.5 - 75 - 100, name: '203', limit: 80 },
             { x: 3385 +5 - 62.5 - 75, name: '205', limit: 70 },
             { x: 3385 +8 - 62.5, name: '207', limit: 60 },
-            { x: 3385 +8 - 12.5, name: '209', limit: 60, gmod: { Kanava: true } },
+            { x: 3385 +8 - 12.5, name: '209', limit: 60, gmod: { Kanava: true, Routes: [{ Switches: "PN1+" }, { Switches: "PN1-", ARSCodes: "004", NextSignal: "*" } ] } },
             { x: 3385 +8 + 62.5, name: '211', limit: 40 },
             { x: 3385 +8 + 62.5 + 50, name: '213', limit: 0 },
             { x: 3385 +8 + 62.5 + 50 + 37.5, name: '213а', limit: 0 },
@@ -148,7 +151,7 @@ lines['loopline']['1'] = [
             { x: 2008 + 12.5 + 50 + 50 + 62.5 + 50, name: '101б', limit: 0 },
         ],
         signals: [
-            { joint: '211', name: 'ПН-213',lenses: 'YG-Rw', guard: 35, service: 80, autostop: 1, g: '215', gmod: { Krons: "MM" } },   
+            { joint: '211', name: 'ПН-213Г',lenses: 'YG-Rw', guard: 35, service: 80, autostop: 1, g: '215', gmod: { Krons: "MNM", LensesStr: "YG-K-RW" } },   
             { joint: '213в', name: 'ПН-215',lenses: 'BYY-GRw', guard: 80, service: 75, autostop: 3, y: '215', g: 'NEXT_g', gmod: { Routes: [{ PogashenieLights: "5-5-5-1" }] } },   
             { joint: '215', name: 'ПН-217',lenses: 'BYG-Rw', guard: 80, service: 75, autostop: 3, left: true, g: '217а',
                 gmod: { 

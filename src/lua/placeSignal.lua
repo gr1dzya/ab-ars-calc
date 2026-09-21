@@ -2,9 +2,10 @@
 --local RAYS = false
 local NEW_ERA = true
 local pogashenie = true
-local TwoToSix = true
-local Dnepr = true
+local TwoToSix = false
+local DneprPogash = true
 local sigType = 6
+local PogashenieCommand = 'suka'
 
 local angle_mirror = Angle(0, 180, 0)
 
@@ -146,6 +147,10 @@ local function editParams(options)
 		Params.OW = true
 		Params.VectorOW = options.OW 
 	end 
+    if pogashenie and options.Approve0 then 
+        Params.PogashenieDnepr = true 
+        Params.PogashenieCommand = PogashenieCommand
+    end
 	return Params
 end
 
@@ -185,13 +190,13 @@ local function placeSignal(position, angles, options)
     --        Lights = options.Lights,
     --    },
     --})
-    if NEW_ERA and options.noPogashenie ~= 0 and (not options.ARSOnly or Dnepr) and pogashenie then
-        ent.Params.PogashenieCommand = "suka"
+    if NEW_ERA and not options.noPogashenie and (not options.ARSOnly or DneprPogash) and pogashenie then
+        ent.Params.PogashenieCommand = PogashenieCommand
         --ent.Params.PogashenieEnabled = false
         if not ent.Routes[1].PogashenieLights and not options.ARSOnly then 
             ent.Routes[1].PogashenieLights = "0" 
         end
-        if Dnepr then ent.Params.PogashenieDnepr = true end
+        if DneprPogash then ent.Params.PogashenieDnepr = true end
     end
 
     --[[if R50_MODE then
@@ -346,6 +351,7 @@ importSignalData("sokolka_TP3.json", 7, true)]]
  --importSignalData("signals-imagine-2_additional.json", 1, false)
 
 importSignalData("signals-loopline-1.json", 1, true)
+importSignalData("loopline_PN3.json", 7, true)
 importSignalData("loopline_PN4.json", 6, true)
 importSignalData("loopline_ADD1.json", 1, false)
 importSignalData("signals-loopline-2.json", 2, true)
