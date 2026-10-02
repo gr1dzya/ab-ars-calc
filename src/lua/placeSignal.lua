@@ -353,6 +353,8 @@ importSignalData("sokolka_TP3.json", 7, true)]]
 importSignalData("signals-loopline-1.json", 1, true)
 importSignalData("loopline_PN3.json", 7, true)
 importSignalData("loopline_PN4.json", 6, true)
+importSignalData("loopline_KR4.json", 3, true)
+importSignalData("loopline_PR21.json", 25, true)
 importSignalData("loopline_ADD1.json", 1, false)
 importSignalData("signals-loopline-2.json", 2, true)
 importSignalData("loopline_ADD2.json", 2, false)
