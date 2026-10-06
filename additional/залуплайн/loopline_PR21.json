@@ -1,0 +1,59 @@
+{
+  "1": {
+    "x": 84,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "0"
+      },
+      {
+        "NextSignal": "PRFIX2",
+        "Switches": "PR1-,PR2-",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "PR21FIX1",
+    "ARSOnly": true,
+    "Back": true,
+    "LensesStr": "",
+    "DTM": true
+  },
+  "2": {
+    "x": 0.1,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "0"
+      },
+      {
+        "NextSignal": "PRFIX1",
+        "Switches": "PR1-,PR2-",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "PR21FIX2",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "DTM": true
+  },
+  "3": {
+    "x": 48,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "0"
+      },
+      {
+        "NextSignal": "*",
+        "Switches": "PR1-,PR2-",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "PR21FIX3",
+    "ARSOnly": true,
+    "PassOcc": true,
+    "LensesStr": "",
+    "FrontArsName": "123",
+    "LetterB": "132"
+  }
+}

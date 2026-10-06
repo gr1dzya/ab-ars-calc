@@ -1,0 +1,128 @@
+{
+  "66": {
+    "x": 20,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Switches": "",
+        "ARSCodes": "1"
+      },
+      {
+        "NextSignal": "*",
+        "Switches": "KR2-,KR4+,KR6+",
+        "ARSCodes": "4"
+      },
+      {
+        "NextSignal": "KRFIX3",
+        "Switches": "KR2-,KR4-,KR5-",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "KRFIX4",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "Left": true,
+    "FrontArsName": "222",
+    "LetterB": "6A",
+    "SignalType": 0
+  },
+  "67": {
+    "x": 57,
+    "Routes": [
+      {
+        "NextSignal": "KRFIX2",
+        "Switches": "KR6+",
+        "ARSCodes": "004"
+      },
+      {
+        "NextSignal": "KRFIX31",
+        "Switches": "KR6-",
+        "ARSCodes": "0004"
+      }
+    ],
+    "Name": "KRFIX42",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "Left": true,
+    "FrontArsName": "6",
+    "LetterB": "6A",
+    "PassOcc": true,
+    "Back": true,
+    "SignalType": 0
+  },
+  "68": {
+    "x": 85,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "KRTC6",
+    "ARSOnly": true,
+    "RouteNumber": "4",
+    "LensesStr": "",
+    "DTM": true,
+    "SignalType": 0
+  },
+  "69": {
+    "x": 196,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "04"
+      }
+    ],
+    "Name": "KRTC4",
+    "ARSOnly": true,
+    "FrontArsName": "4",
+    "LensesStr": "",
+    "SignalType": 8
+  },
+  "69a": {
+    "x": 263,
+    "Routes": [
+      {
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "KRTC4a",
+    "ARSOnly": true,
+    "FrontArsName": "4A",
+    "LetterB": "220B",
+    "LensesStr": "",
+    "SignalType": 8
+  },
+  "78": {
+    "x": 85,
+    "Name": "KR2", 
+    "LensesStr": "BW-12-RW", 
+    "FrontArsName": "4",
+    "ARSOnly": false, 
+    "noPogashenie": true,
+    "Approve0": true,
+		"Krons": "LNL", 
+    "OW": "[-4.5 0 5]",
+    "Back": true, 
+    "Left": true,
+    "Routes": [
+      {
+        "NextSignal": "",
+        "Lights": "3",
+        "ARSCodes": "2"
+      },
+      {
+				"RouteName": "KR4-1", "Manual": true,
+        "NextSignal": "*", "EnRou": true, "PRou": "1",
+        "Switches": "KR1-,KR3-,KR6-",
+        "Lights": "3-3-3-3-3-3-3-2", "ARSCodes": "22222224", "PogashenieLights": "3-3-3-3-3-3-3-1", "PogashenieCommand": "suka"
+      },
+      {
+				"RouteName": "KR4-2", "Manual": true,
+        "NextSignal": "*", "EnRou": true, "PRou": "2",
+        "Switches": "KR2-,KR4+,KR5+,KR6+,KROP-",
+        "Lights": "3-3-3-3-3-2", "ARSCodes": "222224", "PogashenieLights": "3-3-3-3-3-1", "PogashenieCommand": "suka"
+      }
+    ]
+  }
+}

@@ -1,14 +1,410 @@
 {
   "1": {
-    "x": 168,
-    "Name": "MR2FIX",
+    "x": 20,
+    "Name": "MRFIX2",
+    "ARSOnly": true,
+    "PassOcc": true,
+    "LensesStr": "",
+    "RouteNumber": "F",
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "00046778"
+      }
+    ]
+  },
+  "2": {
+    "x": 10560.6,
+    "Name": "PNFIX2",
+    "ARSOnly": true,
+    "Back": true,
+    "LensesStr": "",
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "1"
+      }
+    ]
+  },
+  "3": {
+    "x": 10445.6,
+    "Name": "TC226Back",
+    "ARSOnly": true,
+    "Back": true,
+    "LensesStr": "",
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "04"
+      }
+    ]
+  },
+  "4": {
+    "x": 10383.1,
+    "Name": "PNA",
+    "Letter": "A",
+    "Back": true,
+    "Approve0": true,
+    "Left": true,
+    "noPogashenie": true,
+    "LensesStr": "YB-GR",
+		"DTM": true,
+    "Routes": [
+      {
+        "ARSCodes": "2",
+        "Lights": "4"
+      },
+      {
+        "NextSignal": "*",
+        "ARSCodes": "24",
+        "Switches": "PN2-",
+        "Lights": "4-41"
+      },
+      {
+        "RouteName": "DEPOT2",
+        "NextSignal": "*",
+        "Manual": true,
+        "ARSCodes": "24",
+        "Lights": "4-1-1-13", "PogashenieLights": "4-2"
+      }
+    ]
+  },
+  "5": {
+    "x": 9658.1,
+    "Name": "PNB",
+    "Letter": "B",
+    "Back": true,
+    "Approve0": true,
+    "noPogashenie": true,
+    "Left": true,
+    "LensesStr": "YBY-RW",
+		"DTM": true,
+    "Routes": [
+      {
+        "ARSCodes": "2",
+        "Lights": "4"
+      },
+      {
+        "RouteName": "DEPOT2",
+        "NextSignal": "PNST2DEPR",
+        "Manual": true,
+        "Switches": "PN12-,DEPDIR2-",
+        "ARSCodes": "224",
+        "Lights": "4-4-13", "PogashenieLights": "4-4-2"
+      }
+    ]
+  },
+  "6": {
+    "x": 9595.61,
+    "Name": "PNFIX6",
     "ARSOnly": true,
     "PassOcc": true,
     "LensesStr": "",
 		"DTM": true,
     "Routes": [
       {
+        "NextSignal": "*",
+        "ARSCodes": "004"
+      }
+    ]
+  },
+  "7": {
+    "x": 9808.1,
+    "Name": "TC234B_Back",
+    "ARSOnly": true,
+    "Back": true,
+    "PassOcc": true,
+    "LensesStr": "",
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "1"
+      },
+      {
+        "NextSignal": "*",
+        "ARSCodes": "0006",
+        "Switches": "PN12-"
+      }
+    ]
+  },
+  "8": {
+    "x": 8338.6,
+    "Name": "TC108Back",
+    "ARSOnly": true,
+    "Back": true,
+    "LensesStr": "",
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "04"
+      }
+    ]
+  },
+  "9": {
+    "x": 9170.6,
+    "Name": "KRFIX2",
+    "ARSOnly": true,
+    "Back": true,
+    "LensesStr": "",
+		"DTM": true,
+    "Routes": [
+      {
         "NextSignal": "*"
+      }
+    ]
+  },
+  "10": {
+    "x": 7951.11,
+    "Name": "TC116ABack",
+    "ARSOnly": true,
+    "Back": true,
+    "LensesStr": "",
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "*"
+      }
+    ]
+  },
+  "11": {
+    "x": 5588.61,
+    "Name": "PRFIX2",
+    "ARSOnly": true,
+    "LensesStr": "",
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "0000467"
+      }
+    ]
+  },
+  "12": {
+    "x": 5651.1,
+    "Name": "PRD",
+    "ARSOnly": false,
+    "LensesStr": "YBY-RW",
+		"Letter": "D",
+    "noPogashenie": 0,
+    "Back": true,
+    "Approve0": true,
+		"DTM": true,
+		"Left": true,
+    "Routes": [
+      {
+        "NextSignal": "",
+        "Lights": "4",
+        "ARSCodes": "2"
+      },
+      {
+        "NextSignal": "PR21FIX2",
+				"RouteName": "PRD-1",
+        "Manual": true,
+        "Later325": "7",
+        "Switches": "PR1-,PR2-",
+        "Lights": "4-4-4-4-4-13-13-1b3", "PogashenieLights": "4-4-4-4-4-2",
+        "ARSCodes": "222224", "PogashenieCommand": "suka"
+      }
+    ]
+  },
+  "13": {
+    "x": 10773.09,
+    "Name": "PNFIX218",
+    "ARSOnly": true,
+    "PassOcc": true,
+    "LensesStr": "",
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "04"
+      }
+    ]
+  },
+  "14": {
+    "x": 9595.6,
+    "Name": "PN232Back",
+    "ARSOnly": true,
+    "Back": true,
+    "LensesStr": "",
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "1"
+      },
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4",
+        "Switches": "PN12-"
+      }
+    ]
+  },
+  "15": {
+    "x": 8946,
+    "Name": "KRFIX6",
+    "ARSOnly": true,
+    "LensesStr": "",
+		"DTM": true,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Repeater": true
+      },
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4",
+        "Switches": "KR2-"
+      }
+    ]
+  },
+  "16": {
+    "x": 15630.6,
+    "Name": "MR2",
+    "ARSOnly": false,
+    "LensesStr": "BYW-RW",
+    "noPogashenie": 0,
+    "OnPoleZ": 10,
+    "FrontArsName": "6",
+    "LetterB": "6A",
+    "LetterK": true,
+    "Left": true,
+    "Approve0": true,
+    "Routes": [
+      {
+        "NextSignal": "",
+        "Lights": "4",
+        "ARSCodes": "2"
+      },
+      {
+        "NextSignal": "*",
+        "Lights": "4-42",
+        "ARSCodes": "20",
+        "Later325": "2",
+        "Switches": "MR8-,MR6-"
+      },
+      {
+        "NextSignal": "*",
+				"RouteName": "MR4-2",
+        "Manual": true,
+        "Switches": "MR2-,MR4-",
+        "Lights": "4-4-4-4-4-4-4-3", "PogashenieLights": "4-4-4-4-4-4-4-1",
+        "ARSCodes": "22222224"
+      }
+    ]
+  },
+  "19": {
+    "x": 15525.6,
+    "Name": "MRFIX4",
+    "ARSOnly": true,
+    "FrontArsName": "188",
+    "LetterB": "4",
+    "LensesStr": "",
+		"Left": true,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "0004"
+      }
+    ]
+  },
+  "20": {
+    "x": 15500,
+    "Name": "MRFIX6",
+    "ARSOnly": true,
+    "PassOcc": true,
+    "DTM": true,
+    "LensesStr": "",
+    "Routes": [
+      {
+        "NextSignal": "MRFIX2",
+        "Repeater": true
+      },
+      {
+        "NextSignal": "*",
+        "Switches": "MR8-,MR6-",
+        "Repeater": true
+      }
+    ]
+  },
+  "21": {
+    "x": 226.099,
+    "Name": "184FIX",
+    "ARSOnly": true,
+    "PassOcc": true,
+    "DTM": true,
+    "LensesStr": "",
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Repeater": true
+      },
+      {
+        "NextSignal": "*",
+        "Switches": "MR2-,MR4-",
+        "ARSCodes": "0004"
+      }
+    ]
+  },
+  "22": {
+    "x": 313.599,
+    "Name": "182FIX",
+    "ARSOnly": true,
+    "PassOcc": true,
+    "DTM": true,
+    "LensesStr": "",
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Repeater": true
+      },
+      {
+        "NextSignal": "*",
+        "Switches": "MR2-,MR4-",
+        "ARSCodes": "0004"
+      }
+    ]
+  },
+  "23": {
+    "x": 388.59,
+    "Name": "180FIX",
+    "ARSOnly": true,
+    "PassOcc": true,
+    "DTM": true,
+    "LensesStr": "",
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Repeater": true
+      },
+      {
+        "NextSignal": "*",
+        "Switches": "MR2-,MR4-",
+        "ARSCodes": "0004"
+      }
+    ]
+  },
+  "24": {
+    "x": 451.099,
+    "Name": "178FIX",
+    "ARSOnly": true,
+    "PassOcc": true,
+    "DTM": true,
+    "LensesStr": "",
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Repeater": true
+      },
+      {
+        "NextSignal": "*",
+        "Switches": "MR2-,MR4-",
+        "ARSCodes": "00004"
       }
     ]
   }

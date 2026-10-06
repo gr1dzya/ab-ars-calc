@@ -1,0 +1,131 @@
+{
+  "66": {
+    "x": 17,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "Switches": "",
+        "ARSCodes": "1"
+      },
+      {
+        "NextSignal": "*",
+        "Switches": "PN1-,PN3+,PN5+",
+        "ARSCodes": "4"
+      },
+      {
+        "NextSignal": "PNFIX4",
+        "Switches": "PN1-,PN3-,PN6-",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "PNFIX3",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "FrontArsName": "205",
+    "LetterB": "5A",
+    "SignalType": 0
+  },
+  "67": {
+    "x": 49,
+    "Routes": [
+      {
+        "NextSignal": "PNFIX1",
+        "Switches": "PN5+",
+        "ARSCodes": "00004"
+      },
+      {
+        "NextSignal": "PNFIX42",
+        "Switches": "PN5-",
+        "Repeater": true,
+        "ARSCodes": "000004"
+      }
+    ],
+    "Name": "PNFIX31",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "FrontArsName": "5",
+    "LetterB": "5A",
+    "PassOcc": true,
+    "Back": true,
+    "SignalType": 0
+  },
+  "68": {
+    "x": 73,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "PN3Back",
+    "ARSOnly": true,
+    "FrontArsName": "5",
+    "RouteNumber": "3",
+    "LensesStr": "",
+    "DTM": true,
+    "SignalType": 0
+  },
+  "69": {
+    "x": 206,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "PNTC3A",
+    "ARSOnly": true,
+    "FrontArsName": "3A",
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "70": {
+    "x": 136,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "PNTC3",
+    "ARSOnly": true,
+    "Left": true,
+    "FrontArsName": "3",
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "78": {
+    "x": 73,
+    "Name": "PN1", 
+    "LensesStr": "BW-12-RW", 
+    "ARSOnly": false, 
+    "noPogashenie": true,
+    "Approve0": true,
+		"Krons": "LNL", 
+    "OW": "[-6.5 0 -5]",
+    "FrontArsName": "3",
+    "LetterB": "5",
+    "Back": true,
+    "Routes": [
+      {
+        "NextSignal": "",
+        "Lights": "3",
+        "ARSCodes": "2"
+      },
+      {
+				"RouteName": "PN3-1", "NextSignal": "*",
+        "Manual": true, "EnRou": true, "PRou": "1",
+        "Switches": "PN1-,PN3+,PN5+,PN6+,PNOP1+",
+        "Lights": "3-3-3-3-3-2", "PogashenieLights": "3-3-3-3-3-1", "PogashenieCommand": "suka",
+        "ARSCodes": "222224"
+      },
+      {
+				"RouteName": "PN3-2", "NextSignal": "*",
+        "Manual": true, "EnRou": true, "PRou": "2",
+        "Switches": "PN2-,PN4-,PN5-,PN6+,PNOP2-",
+        "Lights": "3-3-3-3-3-2", "PogashenieLights": "3-3-3-3-3-1", "PogashenieCommand": "suka",
+        "ARSCodes": "222224"
+      }
+    ]
+  }
+}
