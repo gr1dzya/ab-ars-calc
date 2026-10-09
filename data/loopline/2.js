@@ -21,7 +21,7 @@ lines['loopline']['2'] = [
            { x: 573 - 12.5 - 62.5 - 62.5 - 75, name: '186а', limit: 80 },
            { x: 573 - 12.5 - 62.5 - 62.5, name: '186б', limit: 70 },
            { x: 573 - 12.5 - 62.5, name: '184', limit: 70 },
-           { x: 573 - 12.5, name: '182', limit: 60, gmod: { Kanava: true, Routes: [{},{ NextSignal: "*", ARSCodes: "0004", Switches: "MR2-,MR4-" }] } },
+           { x: 573 - 12.5, name: '182', limit: 60, gmod: { Kanava: true, Routes: [{},{ NextSignal: "*", ARSCodes: "0004", Switches: "MR2-,MR4-" }, { NextSignal: "*", Switches: "MK342-", ARSCodes: "0" }, { NextSignal: "*", Switches: "MK352-", ARSCodes: "0" }] } },
            { x: 573 + 37.5, name: '180', limit: 60, gmod: { Kanava: true, Routes: [{},{ NextSignal: "*", ARSCodes: "0004", Switches: "MR2-,MR4-" }] } },
            { x: 573 + 62.5 + 12.5, name: '178', limit: 40 },
            { x: 573 + 62.5 + 62.5, name: '176', limit: 0 },
@@ -83,12 +83,12 @@ lines['loopline']['2'] = [
            { x: 2684 -5 + 62.5 + 50 + 62.5 + 87.5 + 75, name: '148в', limit: 0 },
         ],
         signals: [
-            { joint: '178',  name: '176м',lenses: 'YY-GR', autostop: 3, guard: 35, service: 35, y: '176б',g: 'NEXT_y', gmod: { LetterK: true } },
-            { joint: '176б', name: '174', lenses: 'YY-GR', autostop: 1, guard: 80, service: 80, y: '174а',g: 'NEXT_y', gmod: { Krons: "MM", Double: true, DoubleL: true } },
-            { joint: '174',  name: '172м',lenses: 'YY-GR', autostop: 1, guard: 70, service: 70, y: '172а',g: 'NEXT_y', gmod: { Krons: "MM" } },
-            { joint: '172а', name: '170', lenses: 'YY-GR', autostop: 3, guard: 60, service: 60, y: '170а',g: 'NEXT_y', gmod: { Krons: "MM", LetterK: true } },
-            { joint: '170а', name: '168м',lenses: 'YY-GR', autostop: 3, guard: 65, service: 60, y: '168', g: 'NEXT_y', gmod: { SignalType: 7, Pole: 3 } },
-            { joint: '168',  name: '166', lenses: 'YY-GR', autostop: 3, guard: 70, service: 60, y: '166а',g: 'NEXT_y', gmod: { LetterK: true } },
+            { joint: '178',  name: '176м',lenses: 'YY-GR', autostop: 3, guard: 35, service: 35, y: '176б',g: 'NEXT_y', gmod: { LetterK: true, Routes: [{}, { NextSignal: "FIX1", Switches: "MK342-", Lights: "4", ARSCodes: "0" }, { NextSignal: "FIX1", Switches: "MK352-", Lights: "4", ARSCodes: "0" }] } },
+            { joint: '176б', name: '174', lenses: 'YY-GR', autostop: 1, guard: 80, service: 80, y: '174а',g: 'NEXT_y', gmod: { LetterK: true, Krons: "MM", Double: true, DoubleL: true } },
+            { joint: '174',  name: '172м',lenses: 'YY-GR', autostop: 1, guard: 70, service: 70, y: '172а',g: 'NEXT_y', gmod: { LetterK: true, Krons: "MM", Routes: [{}, { NextSignal: "*", Switches: "MK342-", Lights: "4", ARSCodes: "0" }] } },
+            { joint: '172а', name: '170', lenses: 'YY-GR', autostop: 3, guard: 60, service: 60, y: '170а',g: 'NEXT_y', gmod: { LetterK: true, Krons: "MM", LetterK: true, Routes: [{}, { Switches: "MK342-", Lights: "4", ARSCodes: "0" }] } },
+            { joint: '170а', name: '168м',lenses: 'YY-GR', autostop: 3, guard: 65, service: 60, y: '168', g: 'NEXT_y', gmod: { SignalType: 7, Pole: 3, Routes: [{}, { NextSignal: "*", Switches: "MK352-", Lights: "4" }] } },
+            { joint: '168',  name: '166', lenses: 'YY-GR', autostop: 3, guard: 70, service: 60, y: '166а',g: 'NEXT_y', gmod: { LetterK: true, Routes: [{}, { Switches: "MK352-", Lights: "4", ARSCodes: "0" }] } },
             { joint: '166',  name: '164', lenses: 'YY-GR', autostop: 3, guard: 70, service: 60, y: '164б',yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '164',  name: '162', lenses: 'YY-GR', autostop: 3, guard: 80, service: 25, y: '162', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '164а', name: '160', lenses: 'YY-GR', autostop: 3, guard: 70, service: 25, y: '160', yg: 'NEXT_y', g: 'SECOND_yg' },
@@ -193,7 +193,7 @@ lines['loopline']['2'] = [
            { x: 2637 + 0.5 - 62.5 - 50 - 62.5 - 62.5 - 75 - 75, name: '114', limit: 70 },
            { x: 2637 + 0.5 - 62.5 - 50 - 62.5 - 62.5 - 75, name: '114а', limit: 70 },
            { x: 2637 + 0.5 - 62.5 - 50 - 62.5 - 62.5, name: '114б', limit: 70 },
-           { x: 2637 + 0.5 - 62.5 - 50 - 62.5, name: '112', limit: 70, gmod: { Routes: [{Switches: "KROP2+"}, {Switches: "KROP2-", Lights: "4", ARSCodes: "2"}] } },
+           { x: 2637 + 0.5 - 62.5 - 50 - 62.5, name: '112', limit: 70, gmod: { Routes: [{Switches: "KROP+"}, {Switches: "KROP-", Lights: "4", ARSCodes: "2"}] } },
            { x: 2637 + 0.5 - 62.5 - 50, name: '110', limit: 70 },
            { x: 2637 + 0.5 - 62.5, name: '108', limit: 70 },
            { x: 2637 + 0.5, name: '106', limit: 60, gmod: {Kanava: true} },
@@ -215,7 +215,7 @@ lines['loopline']['2'] = [
             { joint: '112',  name:'КР-106',lenses:'YYG-Rw', autostop: 1, guard: 70, service: 35, left: true, y: '106', g: 'NEXT_yg', gmod: { LetterK: true } },
             { joint: '110',  name:'КР-104',lenses:'BYY-GRw',autostop: 1, guard: 70,                          yg:'104', gmod: { LetterK: true, Routes: [{ PogashenieLights: "5-1", Switches: "KROP+" }, { Switches: "KROP-", Lights: "5", ARSCodes: "2" }] } },
             { joint: '104',  name:'КР-102',lenses:   'X',   autostop: 3, guard: 35 },
-            { joint: '110', name: 'ОП', lenses: 'ZR', autostop: 3, back: true, gmod: { name: 'KROP', Letter: "OP", DTM: true } },    
+            { joint: '110', name: 'ОП', lenses: 'ZR', autostop: 3, back: true, gmod: { name: 'KROP', Letter: "OP", DTM: true, noPogashenie: true } },    
         ],
         mks: [
            { x: 2637 + 0.5 - 62.5 - 50 - 62.5 - 62.5 - 75 - 75 - 300 - 50 + 272, name: '312МК' },
@@ -262,10 +262,13 @@ lines['loopline']['2'] = [
                 gmod: { 
                     LensesStr: "YWY-2D-34-YGR-BW", Krons: "LNULN", ColorLens: true, LetterK: true, Pole: 3,
                     Routes: [
-                        { RouteName: "KR2-2", PogashenieLights: "6-7", Switches: "KR2+,KROP+" }, 
+                        { RouteName: "KR2-2", PogashenieLights: "6-7", Switches: "KR2+,KROP+,PRP+" }, 
                         { Lights: "6", ARSCodes: "2", Switches: "KR2-" },
-                        { RouteName: "KR2-3", Manual: true, EnRou: true, PRou: "3", NextSignal: "KRFIX4", Lights: "6-6-6-6-6-2", ARSCodes: "222224", PogashenieLights: "6-6-6-6-6-7", Switches: "KR2-,KR4-,KR5-" },
-                        { RouteName: "KR2-4", Manual: true, EnRou: true, PRou: "4", NextSignal: "KRFIX4", Lights: "6-6-6-6-2", ARSCodes: "22224", PogashenieLights: "6-6-6-6-7", Switches: "KR2-,KR4+,KR6+" }
+                        { Lights: "6", ARSCodes: "2", Switches: "PRP-" },
+                        { Lights: "6", ARSCodes: "2", Switches: "KROP-" },
+                        { RouteName: "KR2-3", Manual: true, EnRou: true, PRou: "3", NextSignal: "KRFIX4", Lights: "6-6-6-6-6-2", ARSCodes: "222224", PogashenieLights: "6-6-6-6-6-7", Switches: "KR2-,KR4-,KR5-,KROBDIR-" },
+                        { RouteName: "KR2-4", Manual: true, EnRou: true, PRou: "4", NextSignal: "KRFIX4", Lights: "6-6-6-6-2", ARSCodes: "22224", PogashenieLights: "6-6-6-6-7", Switches: "KR2-,KR4+,KR6+,KR5+" },
+                        { RouteName: "DEPOT4", Manual: true, PRou: "3D", NextSignal: "KRFIX4", Lights: "6-6-6-6-6-14", ARSCodes: "222224", PogashenieLights: "6-6-6-6-6-7", Switches: "KR2-,KR4-,KR5-,KROBDIR-,DEPDIR3-" }
                     ] 
                 } 
             },
@@ -331,8 +334,8 @@ lines['loopline']['2'] = [
                         { Lights: "6-6-6-64", Switches: "PN10-", ARSCodes: "2-2-2-4", NextSignal: "*" },
                         { RouteName: "PN2P", NextSignal: "*", Manual: true, Lights: "6-64", ARSCodes: "204", Switches: "PN2+" },
                         { RouteName: "PN2-3", NextSignal: "PNFIX4", Manual: true, Lights: "6-6-6-6-6-2", PogashenieLights: "6-6-6-6-6-1", ARSCodes: "222224", Switches: "PN2-,PN4-,PN5-", EnRou: true, PRou: "3" },
-                        { RouteName: "PN2-4", NextSignal: "PNFIX4", Manual: true, Lights: "6-6-6-6-6-2", PogashenieLights: "6-6-6-6-6-1", ARSCodes: "222224", Switches: "PN2-,PN4+,PN6+,PN10+,PN8+", EnRou: true, PRou: "4" },
-                        { RouteName: "PN2-4-2", NextSignal: "PNFIX4", Manual: true, Lights: "6-6-6-6-6-6-37", PogashenieLights: "6-6-6-6-6-6-1", ARSCodes: "2222224", Switches: "PN2-,PN4+,PN6+,PN10-,PN8-", PRou: "2L" }
+                        { RouteName: "PN2-4", NextSignal: "PNFIX4", Manual: true, Lights: "6-6-6-6-6-2", PogashenieLights: "6-6-6-6-6-1", ARSCodes: "222224", Switches: "PN2-,PN4+,PN5+,PN6+,PN10+,PN8+", EnRou: true, PRou: "4" },
+                        { RouteName: "PN2-4-2", NextSignal: "PNFIX4", Manual: true, Lights: "6-6-6-6-6-6-37", PogashenieLights: "6-6-6-6-6-6-1", ARSCodes: "2222224", Switches: "PN2-,PN4+,PN5+,PN6+,PN10-,PN8-", PRou: "2L" }
                     ] 
                 } 
             },
@@ -378,9 +381,9 @@ lines['loopline']['2'] = [
            { x: 1636 - 125 - 300 - 250 - 100 + 37.5, name: '192', limit: 80 },
            { x: 1636 - 125 - 300 + 25 - 150, name: '192а', limit: 80 },
            { x: 1636 - 125 - 300 + 25, name: '190', limit: 80, later:{80:2} },
-           { x: 1636 - 125 - 125, name: '190а', limit: 80, later: { 60: 1, 70: 1, 80: 1 }, gmod: { Routes: [{},{ NextSignal: "*", ARSCodes: "044446" }] } },
+           { x: 1636 - 125 - 125, name: '190а', limit: 80, later: { 60: 1, 70: 1, 80: 1 }, gmod: { Routes: [{},{ NextSignal: "*", ARSCodes: "044446", Switches: "MR6-,MR8-" }] } },
            { x: 1636 - 125, name: '6', limit: 80, gmod: { Routes: [{ NextSignal: "MRFIX2", ARSCodes: "222678" }] } },
-           { x: 1636 - 12.5 -5, name: '6A', limit: 80, gmod: { Left: true, RouteNumber: "P", Routes: [{ ARSCodes: "004" }] } },
+           { x: 1636 - 12.5 -5, name: '4A', limit: 80, gmod: { Left: true, RouteNumber: "P", Routes: [{ ARSCodes: "004" }] } },
            { x: 1636 + 100, name: 'MR2FIX', limit: 0, gmod: { Routes: [{ ARSCodes: "0" }, { NextSignal: "TC188", Switches: "MR4-,MR2-", ARSCodes: "0000004" }] } },
            { x: 1636 + 100 + 30, name: '1188б', limit: 0 },
            { x: 1636 + 100 + 30 + 30, name: '1188в', limit: 0 },

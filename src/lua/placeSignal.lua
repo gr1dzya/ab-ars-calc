@@ -159,30 +159,25 @@ local function placeSignal(position, angles, options)
     ent:SetPos(position)
     ent:SetAngles(angles)
     ent:Spawn()
-	if NEW_ERA then 
-        ent.Params = editParams(options)
-        ent.SignalType = options.SignalType ~= 0 and options.SignalType or sigType 
-    else 
-     --   ent.SignalType = 0 
-    end
-	ent.RouteNumberSetup = options.RouteNumberSetup
-    ent.NonAutoStop = options.NonAutoStop
-	ent.RouteNumber = options.RouteNumber
+
+    ent.Name = options.Name
+	if options.RouteNumberSetup then ent.RouteNumberSetup = options.RouteNumberSetup end
+    if options.NonAutoStop then ent.NonAutoStop = options.NonAutoStop end
+	if options.RouteNumber then ent.RouteNumber = options.RouteNumber end
     --if sokolka_st[options.Name] and not NEW_ERA then 
     --    ent.LensesStr = sokolka_st[options.Name]
     --else
         ent.LensesStr = options.LensesStr
     --end
     if not NEW_ERA and string.sub(options.Name, 1, 1) == 'M' then ent.LensesStr = "RR" end
-	ent.Approve0 = options.Approve0
-    ent.ARSOnly = options.ARSOnly
-    ent.DoubleL = options.DoubleL
-	ent.PassOcc = options.PassOcc
-    ent.Double = options.Double
-    ent.Name = options.Name
-    ent.Left = options.Left
+	if options.Approve0 then ent.Approve0 = options.Approve0 end
+    if options.ARSOnly then ent.ARSOnly = options.ARSOnly end
+    if options.DoubleL then ent.DoubleL = options.DoubleL end
+	if options.PassOcc then ent.PassOcc = options.PassOcc end
+    if options.Double then ent.Double = options.Double end
+    if options.Left then ent.Left = options.Left end
     if not NEW_ERA and options.Kanava then ent.Left = true end
-	ent.TwoToSix = TwoToSix
+	if TwoToSix then ent.TwoToSix = TwoToSix end
 	ent.Routes = options.Routes --({
     --    {
     --        NextSignal = "*",
@@ -190,6 +185,14 @@ local function placeSignal(position, angles, options)
     --        Lights = options.Lights,
     --    },
     --})
+
+    if NEW_ERA then 
+        ent.Params = editParams(options)
+        ent.SignalType = options.SignalType ~= 0 and options.SignalType or sigType 
+    else 
+        ent.SignalType = 0 
+    end
+    
     if NEW_ERA and not options.noPogashenie and (not options.ARSOnly or DneprPogash) and pogashenie then
         ent.Params.PogashenieCommand = PogashenieCommand
         --ent.Params.PogashenieEnabled = false
@@ -351,13 +354,17 @@ importSignalData("sokolka_TP3.json", 7, true)]]
  --importSignalData("signals-imagine-2_additional.json", 1, false)
 
 importSignalData("signals-loopline-1.json", 1, true)
+importSignalData("loopline_ADD1.json", 1, false)
 importSignalData("loopline_PN3.json", 7, true)
 importSignalData("loopline_PN4.json", 6, true)
+importSignalData("loopline_KR3.json", 4, true)
 importSignalData("loopline_KR4.json", 3, true)
 importSignalData("loopline_PR21.json", 25, true)
-importSignalData("loopline_ADD1.json", 1, false)
+importSignalData("loopline_VETKA1.json", 8, true)
+importSignalData("loopline_VETKA2.json", 5, true)
 importSignalData("signals-loopline-2.json", 2, true)
 importSignalData("loopline_ADD2.json", 2, false)
+importSignalData("signals-loopline-3.json", 8, false)
 
 --             importSignalData("signals-crossline-redux_pony10-1.json", 6, true)
 --             importSignalData("signals-crossline-redux_pony10-2.json", 7, true)
