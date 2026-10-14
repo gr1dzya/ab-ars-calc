@@ -1,0 +1,195 @@
+{
+  "5": {
+    "x": 900.0000000000001,
+    "Routes": [
+      {
+        "ARSCodes": "24446",
+        "NextSignal": "*",
+        "Lights": "4-42-42-42-13"
+      },
+      {
+        "Switches": "DEPDIR1+",
+        "ARSCodes": "1",
+        "Lights": "4"
+      }
+    ],
+    "Name": "PN3",
+    "ARSOnly": false,
+    "LensesStr": "YYG-RW",
+    "SignalType": 0,
+    "Pole": 1,
+    "FrontArsName": "5A",
+    "Left": false,
+    "Double": false,
+    "DoubleL": false,
+    "NonAutoStop": false
+  },
+  "215": {
+    "x": 1147.5,
+    "Routes": [
+      {
+        "ARSCodes": "2004",
+        "NextSignal": "*",
+        "Lights": "0"
+      }
+    ],
+    "Name": "PN5",
+    "ARSOnly": false,
+    "LensesStr": "X",
+    "SignalType": 0,
+    "FrontArsName": "5",
+    "Left": false,
+    "Double": false,
+    "DoubleL": false,
+    "NonAutoStop": false
+  },
+  "1SP": {
+    "x": 6.000000000000007,
+    "Routes": [
+      {
+        "ARSCodes": "1",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC0",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "DTM": true
+  },
+  "5d": {
+    "x": 125,
+    "Routes": [
+      {
+        "ARSCodes": "0",
+        "NextSignal": "*"
+      },
+      {
+        "Switches": "DEPDIR1+",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "TC1SP",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "DTM": true,
+    "Approve0": true
+  },
+  "5g": {
+    "x": 275,
+    "Routes": [
+      {
+        "ARSCodes": "04",
+        "NextSignal": "*"
+      },
+      {
+        "Switches": "DEPDIR1+",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "TC5D",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0,
+    "DTM": true,
+    "Approve0": true
+  },
+  "5v": {
+    "x": 425,
+    "Routes": [
+      {
+        "ARSCodes": "04",
+        "NextSignal": "*"
+      },
+      {
+        "Switches": "DEPDIR1+",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "TC5G",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "5b": {
+    "x": 612.5000000000001,
+    "Routes": [
+      {
+        "ARSCodes": "0046",
+        "NextSignal": "*",
+        "Lights": "4-42-42-1-1-1-3"
+      },
+      {
+        "Switches": "DEPDIR1+",
+        "ARSCodes": "1",
+        "Lights": "4"
+      }
+    ],
+    "Name": "1",
+    "ARSOnly": false,
+    "LensesStr": "YY-GR",
+    "SignalType": 0,
+    "FrontArsName": "5V",
+    "Left": true,
+    "Double": false,
+    "DoubleL": false,
+    "NonAutoStop": false
+  },
+  "5a": {
+    "x": 775.0000000000001,
+    "Routes": [
+      {
+        "ARSCodes": "006",
+        "NextSignal": "*"
+      },
+      {
+        "Switches": "DEPDIR1+",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "TC5B",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "213g": {
+    "x": 1158.5,
+    "Routes": [
+      {
+        "ARSCodes": "1",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC215",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "213v": {
+    "x": 1258.5,
+    "Routes": [
+      {
+        "ARSCodes": "1",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC213G",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "213b": {
+    "x": 1383.5,
+    "Routes": [
+      {
+        "ARSCodes": "1",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC213V",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0
+  }
+}

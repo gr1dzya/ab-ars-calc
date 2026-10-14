@@ -66,7 +66,7 @@
     "SignalType": 0
   },
   "69": {
-    "x": 206,
+    "x": 210.5,
     "Routes": [
       {
         "NextSignal": "*",
@@ -80,7 +80,7 @@
     "SignalType": 0
   },
   "70": {
-    "x": 136,
+    "x": 135.5,
     "Routes": [
       {
         "NextSignal": "*",
@@ -115,14 +115,14 @@
       {
 				"RouteName": "PN3-1", "NextSignal": "*",
         "Manual": true, "EnRou": true, "PRou": "1",
-        "Switches": "PN1-,PN3+,PN5+,PN6+,PNOP1+",
+        "Switches": "PN1-,PN3+,PN5+,PN6+",
         "Lights": "3-3-3-3-3-2", "PogashenieLights": "3-3-3-3-3-1", "PogashenieCommand": "suka",
         "ARSCodes": "222224"
       },
       {
 				"RouteName": "PN3-2", "NextSignal": "*",
         "Manual": true, "EnRou": true, "PRou": "2",
-        "Switches": "PN2-,PN4-,PN5-,PN6+,PNOP2-",
+        "Switches": "PN2-,PN4-,PN5-,PNOP2-",
         "Lights": "3-3-3-3-3-2", "PogashenieLights": "3-3-3-3-3-1", "PogashenieCommand": "suka",
         "ARSCodes": "222224"
       }

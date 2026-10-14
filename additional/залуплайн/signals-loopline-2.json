@@ -5,7 +5,7 @@
       {
         "RouteName": "MR2-2",
         "PogashenieLights": "6-6-6-2",
-        "Lights": "6-6-6-63-63-63-63-5",
+        "Lights": "6-6-6-63-63-63-5",
         "Switches": "MR2+,MR4+,MR6+,MR8+",
         "NextSignal": "MRFIX2",
         "ARSCodes": "222678"
@@ -136,7 +136,7 @@
     "LensesStr": "BYY-GRW",
     "SignalType": 0,
     "FrontArsName": "112",
-    "Left": false,
+    "Left": true,
     "Double": false,
     "DoubleL": false,
     "NonAutoStop": false,
@@ -146,13 +146,13 @@
     "x": 8163.6,
     "Routes": [
       {
-        "Switches": "KROP2+",
+        "Switches": "KROP+",
         "ARSCodes": "200467",
         "NextSignal": "*",
         "Lights": "4-42-42-42-1-3"
       },
       {
-        "Switches": "KROP2-",
+        "Switches": "KROP-",
         "Lights": "4",
         "ARSCodes": "2"
       }
@@ -542,7 +542,8 @@
     "Double": false,
     "DoubleL": false,
     "NonAutoStop": false,
-    "Pole": 1
+    "Pole": 1,
+    "Krons": "M"
   },
   "154": {
     "x": 3201.1,
@@ -679,6 +680,11 @@
         "ARSCodes": "046",
         "NextSignal": "*",
         "Lights": "4-42-42-1-1-1-3"
+      },
+      {
+        "Switches": "MK352-",
+        "Lights": "4",
+        "ARSCodes": "0"
       }
     ],
     "Name": "166",
@@ -725,6 +731,12 @@
         "ARSCodes": "0447",
         "NextSignal": "*",
         "Lights": "4-42-42-42-1-1-3"
+      },
+      {
+        "NextSignal": "*",
+        "Switches": "MK342-",
+        "Lights": "4",
+        "ARSCodes": "0"
       }
     ],
     "Name": "172M",
@@ -736,6 +748,7 @@
     "Double": false,
     "DoubleL": false,
     "NonAutoStop": false,
+    "LetterK": true,
     "Krons": "MM"
   },
   "176": {
@@ -759,6 +772,18 @@
         "ARSCodes": "00046",
         "NextSignal": "*",
         "Lights": "4-42-42-42-1-1-3"
+      },
+      {
+        "NextSignal": "FIX1",
+        "Switches": "MK342-",
+        "Lights": "4",
+        "ARSCodes": "0"
+      },
+      {
+        "NextSignal": "FIX1",
+        "Switches": "MK352-",
+        "Lights": "4",
+        "ARSCodes": "0"
       }
     ],
     "Name": "176M",
@@ -803,6 +828,16 @@
         "NextSignal": "*",
         "ARSCodes": "0004",
         "Switches": "MR2-,MR4-"
+      },
+      {
+        "NextSignal": "*",
+        "Switches": "MK342-",
+        "ARSCodes": "0"
+      },
+      {
+        "NextSignal": "*",
+        "Switches": "MK352-",
+        "ARSCodes": "0"
       }
     ],
     "Name": "TC184",
@@ -1139,7 +1174,8 @@
       },
       {
         "Switches": "PN2-",
-        "ARSCodes": "4"
+        "ARSCodes": "4",
+        "NextSignal": "*"
       }
     ],
     "Name": "TC222",
@@ -1153,12 +1189,12 @@
     "Routes": [
       {
         "RouteName": "PN2-2",
-        "PogashenieLights": "6-64-64-64-64-1",
+        "PogashenieLights": "6-63-63-63-63-7",
         "Switches": "PN2+,PN10+,PN8+,PNOP2+",
         "PogashenieARS": "204",
         "ARSCodes": "204446",
         "NextSignal": "*",
-        "Lights": "6-64-64-64-64-5"
+        "Lights": "6-63-63-63-63-5"
       },
       {
         "Lights": "6",
@@ -1166,7 +1202,7 @@
         "ARSCodes": "2"
       },
       {
-        "Lights": "6-6-6-64",
+        "Lights": "6-6-6-63",
         "Switches": "PN10-",
         "ARSCodes": "2-2-2-4",
         "NextSignal": "*"
@@ -1175,7 +1211,7 @@
         "RouteName": "PN2P",
         "NextSignal": "*",
         "Manual": true,
-        "Lights": "6-64",
+        "Lights": "6-63",
         "ARSCodes": "204",
         "Switches": "PN2+"
       },
@@ -1184,7 +1220,7 @@
         "NextSignal": "PNFIX4",
         "Manual": true,
         "Lights": "6-6-6-6-6-2",
-        "PogashenieLights": "6-6-6-6-6-1",
+        "PogashenieLights": "6-6-6-6-6-7",
         "ARSCodes": "222224",
         "Switches": "PN2-,PN4-,PN5-",
         "EnRou": true,
@@ -1195,9 +1231,9 @@
         "NextSignal": "PNFIX4",
         "Manual": true,
         "Lights": "6-6-6-6-6-2",
-        "PogashenieLights": "6-6-6-6-6-1",
+        "PogashenieLights": "6-6-6-6-6-7",
         "ARSCodes": "222224",
-        "Switches": "PN2-,PN4+,PN6+,PN10+,PN8+",
+        "Switches": "PN2-,PN4+,PN5+,PN6+,PN10+,PN8+,PRM-",
         "EnRou": true,
         "PRou": "4"
       },
@@ -1205,16 +1241,16 @@
         "RouteName": "PN2-4-2",
         "NextSignal": "PNFIX4",
         "Manual": true,
-        "Lights": "6-6-6-6-6-6-37",
-        "PogashenieLights": "6-6-6-6-6-6-1",
+        "Lights": "6-6-6-6-6-6-41",
+        "PogashenieLights": "6-6-6-6-6-6-7",
         "ARSCodes": "2222224",
-        "Switches": "PN2-,PN4+,PN6+,PN10-,PN8-",
+        "Switches": "PN2-,PN4+,PN5+,PN6+,PN10-,PN8-",
         "PRou": "2L"
       }
     ],
     "Name": "PN220MG",
     "ARSOnly": false,
-    "LensesStr": "BWY-2-F-L-YGR-YW-34-K",
+    "LensesStr": "YWY-2-F-L-YGR-BW-34-K",
     "SignalType": 0,
     "Approve0": true,
     "FrontArsName": "224",
@@ -1473,6 +1509,7 @@
     "Double": true,
     "DoubleL": true,
     "NonAutoStop": false,
+    "LetterK": true,
     "Krons": "MM"
   },
   "184_autostop": {
@@ -1501,6 +1538,11 @@
         "ARSCodes": "0446",
         "NextSignal": "*",
         "Lights": "4-42-42-1-3"
+      },
+      {
+        "Switches": "MK342-",
+        "Lights": "4",
+        "ARSCodes": "0"
       }
     ],
     "Name": "170",
@@ -1512,8 +1554,8 @@
     "Double": false,
     "DoubleL": false,
     "NonAutoStop": false,
-    "Krons": "MM",
-    "LetterK": true
+    "LetterK": true,
+    "Krons": "MM"
   },
   "170a": {
     "x": 1888.6,
@@ -1522,6 +1564,11 @@
         "ARSCodes": "046",
         "NextSignal": "*",
         "Lights": "4-42-1-1-3"
+      },
+      {
+        "NextSignal": "*",
+        "Switches": "MK352-",
+        "Lights": "4"
       }
     ],
     "Name": "168M",
@@ -1864,6 +1911,7 @@
     "name": "KROP",
     "Letter": "OP",
     "DTM": true,
+    "noPogashenie": true,
     "SignalName": "OP"
   },
   "102v": {
@@ -1872,7 +1920,7 @@
       {
         "RouteName": "KR2-2",
         "PogashenieLights": "6-7",
-        "Switches": "KR2+,KROP+",
+        "Switches": "KR2+,KROP+,PNP+",
         "ARSCodes": "278",
         "NextSignal": "*",
         "Lights": "6-63-63-5"
@@ -1883,6 +1931,16 @@
         "Switches": "KR2-"
       },
       {
+        "Lights": "6",
+        "ARSCodes": "2",
+        "Switches": "PNP-"
+      },
+      {
+        "Lights": "6",
+        "ARSCodes": "2",
+        "Switches": "KROP-"
+      },
+      {
         "RouteName": "KR2-3",
         "Manual": true,
         "EnRou": true,
@@ -1891,7 +1949,7 @@
         "Lights": "6-6-6-6-6-2",
         "ARSCodes": "222224",
         "PogashenieLights": "6-6-6-6-6-7",
-        "Switches": "KR2-,KR4-,KR5-"
+        "Switches": "KR2-,KR4-,KR5-,KROBDIR-"
       },
       {
         "RouteName": "KR2-4",
@@ -1902,7 +1960,17 @@
         "Lights": "6-6-6-6-2",
         "ARSCodes": "22224",
         "PogashenieLights": "6-6-6-6-7",
-        "Switches": "KR2-,KR4+,KR6+"
+        "Switches": "KR2-,KR4+,KR6+,KR5+"
+      },
+      {
+        "RouteName": "DEPOT4",
+        "Manual": true,
+        "PRou": "3D",
+        "NextSignal": "KRFIX4",
+        "Lights": "6-6-6-6-6-14",
+        "ARSCodes": "222224",
+        "PogashenieLights": "6-6-6-6-6-7",
+        "Switches": "KR2-,KR4-,KR5-,KROBDIR-,DEPDIR3-"
       }
     ],
     "Name": "KR236",
@@ -2236,7 +2304,8 @@
       },
       {
         "NextSignal": "*",
-        "ARSCodes": "044446"
+        "ARSCodes": "044446",
+        "Switches": "MR6-,MR8-"
       }
     ],
     "Name": "TC190",
@@ -2244,7 +2313,7 @@
     "LensesStr": "",
     "SignalType": 0
   },
-  "6A": {
+  "4A": {
     "x": 15580.6,
     "Routes": [
       {
@@ -2272,7 +2341,7 @@
         "ARSCodes": "0000004"
       }
     ],
-    "Name": "TC6A",
+    "Name": "TC4A",
     "ARSOnly": true,
     "LensesStr": "",
     "SignalType": 0

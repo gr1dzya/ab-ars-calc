@@ -173,7 +173,16 @@
       {
         "RouteName": "PR1-V",
         "Lights": "4-4-4-4-4-1",
+        "PogashenieLights": "0",
         "ARSCodes": "222224",
+        "NextSignal": "*",
+        "Manual": true
+      },
+      {
+        "RouteName": "PR1-3",
+        "Lights": "4-4-4-4-4-4-1",
+        "PogashenieLights": "0",
+        "ARSCodes": "2222224",
         "NextSignal": "*",
         "Manual": true
       }
@@ -193,8 +202,20 @@
     "x": 10076.1,
     "Routes": [
       {
+        "RouteName": "PR1-1",
         "ARSCodes": "00007",
         "NextSignal": "*"
+      },
+      {
+        "Switches": "PR3-",
+        "ARSCodes": "000004",
+        "NextSignal": "*"
+      },
+      {
+        "RouteName": "PR1-V",
+        "ARSCodes": "004",
+        "NextSignal": "*",
+        "Manual": true
       }
     ],
     "Name": "TC121",
@@ -207,11 +228,11 @@
     "Routes": [
       {
         "RouteName": "PR1-1",
-        "PogashenieLights": "6-1",
+        "PogashenieLights": "6-7",
         "Switches": "PR3+",
         "ARSCodes": "267",
         "NextSignal": "*",
-        "Lights": "6-64-64-3-3-5"
+        "Lights": "6-63-63-1-1-5"
       },
       {
         "Switches": "PR3-",
@@ -220,32 +241,33 @@
       },
       {
         "RouteName": "PR1-V",
-        "Lights": "6-64",
+        "Lights": "6-63",
         "NextSignal": "*",
         "ARSCodes": "24",
         "Manual": true
       },
       {
         "RouteName": "PR1-3",
-        "Lights": "6-6-6-2",
+        "Lights": "6-6-2",
         "Switches": "PR3-",
-        "NextSignal": "*",
-        "PogashenieLights": "6-6-6-1",
-        "ARSCodes": "2224",
+        "NextSignal": "PRFIX7",
+        "PogashenieLights": "6-6-7",
+        "ARSCodes": "224",
         "PRou": "P",
         "Manual": true
       }
     ],
     "Name": "PR127",
     "ARSOnly": false,
-    "LensesStr": "BWY-M-YGR-XW",
+    "LensesStr": "YWY-M-XGR-BW",
     "SignalType": 0,
     "FrontArsName": "123B",
     "Left": false,
     "Double": false,
     "DoubleL": false,
     "NonAutoStop": false,
-    "Krons": "LNLD"
+    "Krons": "LNLD",
+    "ColorLens": true
   },
   "127": {
     "x": 10663.6,
@@ -366,6 +388,18 @@
         "ARSCodes": "0004446",
         "NextSignal": "*",
         "Lights": "4-42-42-42-42-1-1-1-13-3"
+      },
+      {
+        "NextSignal": "FIX1",
+        "Switches": "MK341-",
+        "Lights": "4",
+        "ARSCodes": "0"
+      },
+      {
+        "NextSignal": "FIX1",
+        "Switches": "MK351-",
+        "Lights": "4",
+        "ARSCodes": "0"
       }
     ],
     "Name": "145M",
@@ -401,6 +435,11 @@
         "ARSCodes": "004678",
         "NextSignal": "*",
         "Lights": "4-42-42-42-1-3"
+      },
+      {
+        "Switches": "MK351-",
+        "Lights": "4",
+        "ARSCodes": "0"
       }
     ],
     "Name": "149M",
@@ -433,6 +472,11 @@
         "ARSCodes": "046",
         "NextSignal": "*",
         "Lights": "4-42-42-1-1-3"
+      },
+      {
+        "Switches": "MK341-",
+        "Lights": "4",
+        "ARSCodes": "0"
       }
     ],
     "Name": "153M",
@@ -912,6 +956,7 @@
     "x": 5060.6,
     "Routes": [
       {
+        "RouteName": "PN1-1",
         "PogashenieLights": "5-1",
         "Switches": "PN1+",
         "ARSCodes": "204467",
@@ -980,9 +1025,9 @@
     "Routes": [
       {
         "PogashenieARS": "2004",
-        "ARSCodes": "20044446",
+        "ARSCodes": "200444446",
         "NextSignal": "*",
-        "Lights": "3-31-31-31-31-31-31-2"
+        "Lights": "3-31-31-31-31-31-31-31-2"
       }
     ],
     "Name": "PN213G",
@@ -1001,7 +1046,7 @@
     "x": 5313.6,
     "Routes": [
       {
-        "ARSCodes": "0000006",
+        "ARSCodes": "00000006",
         "NextSignal": "*"
       }
     ],
@@ -1028,12 +1073,17 @@
         "Switches": "PN7-"
       },
       {
+        "Lights": "6",
+        "ARSCodes": "2",
+        "Switches": "PRP-"
+      },
+      {
         "RouteName": "DEPOT1",
         "NextSignal": "PNFIX7",
         "Lights": "6-6-6-24",
         "PogashenieLights": "6-6-6-1",
         "ARSCodes": "2224",
-        "Switches": "PN7-",
+        "Switches": "PN7-,DEPDIR1+",
         "PRou": "D",
         "Manual": true
       }
@@ -1042,12 +1092,13 @@
     "ARSOnly": false,
     "LensesStr": "BYG-M-YYR-XW",
     "SignalType": 0,
-    "FrontArsName": "213G",
+    "FrontArsName": "213D",
     "Left": true,
     "Double": false,
     "DoubleL": false,
     "NonAutoStop": false,
     "LetterK": true,
+    "ColorLens": true,
     "Krons": "LNLD"
   },
   "217": {
@@ -1147,6 +1198,11 @@
       {
         "ARSCodes": "00046",
         "NextSignal": "*"
+      },
+      {
+        "NextSignal": "*",
+        "ARSCodes": "0004",
+        "Switches": "KR1-"
       }
     ],
     "Name": "TC225",
@@ -1161,6 +1217,11 @@
       {
         "ARSCodes": "00046",
         "NextSignal": "*"
+      },
+      {
+        "NextSignal": "*",
+        "ARSCodes": "0004",
+        "Switches": "KR1-"
       }
     ],
     "Name": "TC227",
@@ -1483,7 +1544,7 @@
     "x": 5351.1,
     "Routes": [
       {
-        "ARSCodes": "000006",
+        "ARSCodes": "0000006",
         "NextSignal": "*"
       }
     ],
@@ -1496,7 +1557,7 @@
     "x": 5413.6,
     "Routes": [
       {
-        "ARSCodes": "00006",
+        "ARSCodes": "000006",
         "NextSignal": "*"
       }
     ],
@@ -1512,32 +1573,46 @@
     "IsAutostop": true
   },
   "213v": {
+    "x": 5613.6,
+    "Routes": [
+      {
+        "ARSCodes": "00008",
+        "NextSignal": "*"
+      }
+    ],
+    "Name": "TC213B",
+    "ARSOnly": true,
+    "LensesStr": "",
+    "SignalType": 0
+  },
+  "213g": {
     "x": 5738.6,
     "Routes": [
       {
-        "PogashenieLights": "5-5-5-1",
+        "PogashenieLights": "4-4-4-2",
         "ARSCodes": "2008",
         "NextSignal": "*",
-        "Lights": "5-53-53-2-2-4"
+        "Lights": "4-4-4-1-1-3"
       },
       {
         "Switches": "PN7-",
-        "Lights": "5-5-5-5-24",
+        "Lights": "4-4-4-4-13",
+        "PogashenieLights": "4-4-4-4-1",
         "ARSCodes": "22228",
         "NextSignal": "*"
       }
     ],
     "Name": "PN215",
     "ARSOnly": false,
-    "LensesStr": "BYY-GRW",
+    "LensesStr": "YBG-RW",
     "SignalType": 0,
-    "FrontArsName": "213B",
+    "FrontArsName": "213V",
     "Left": false,
     "Double": false,
     "DoubleL": false,
     "NonAutoStop": false
   },
-  "213g": {
+  "213d": {
     "x": 5863.6,
     "Routes": [
       {
@@ -1550,7 +1625,7 @@
         "NextSignal": "*"
       }
     ],
-    "Name": "TC213V",
+    "Name": "TC213G",
     "ARSOnly": true,
     "LensesStr": "",
     "SignalType": 0
@@ -1572,6 +1647,7 @@
     "x": 6638.6,
     "Routes": [
       {
+        "RouteName": "KR1-1",
         "PogashenieLights": "5-1",
         "Switches": "KR1+",
         "ARSCodes": "20478",
@@ -1667,7 +1743,7 @@
     "SignalName": "231",
     "IsAutostop": true
   },
-  "213v_back": {
+  "213g_back": {
     "x": 5738.6,
     "Name": "PNOP",
     "ARSOnly": false,
@@ -1814,39 +1890,56 @@
     "Routes": [
       {
         "RouteName": "PR1-1",
-        "PogashenieLights": "6-6-6-1",
+        "PogashenieLights": "5-5-5-1",
         "PogashenieARS": "2227",
-        "Switches": "PR1+",
+        "Switches": "PR1+,PKD6+",
         "ARSCodes": "2007",
         "NextSignal": "*",
-        "Lights": "6-64-64-3-3-5"
+        "Lights": "5-5-5-3-3-4"
       },
       {
         "Switches": "PR1-",
-        "Lights": "6",
+        "Lights": "5",
+        "ARSCodes": "2"
+      },
+      {
+        "Switches": "PKD6-",
+        "Lights": "5",
         "ARSCodes": "2"
       },
       {
         "RouteName": "PR1-V",
-        "Lights": "6-6-6-2",
+        "Lights": "5-5-5-2",
         "Switches": "PR1+",
         "NextSignal": "*",
-        "PogashenieLights": "6-6-6-1",
+        "PogashenieLights": "5-5-5-1",
         "ARSCodes": "2224",
+        "EnRou": true,
         "PRou": "V",
+        "Manual": true
+      },
+      {
+        "RouteName": "PR1-3",
+        "Lights": "5-5-5-5-2",
+        "Switches": "PR1+,PR3-",
+        "NextSignal": "*",
+        "PogashenieLights": "5-5-5-5-1",
+        "ARSCodes": "22224",
+        "EnRou": true,
+        "PRou": "3",
         "Manual": true
       }
     ],
     "Name": "PR125M",
     "ARSOnly": false,
-    "LensesStr": "BWY-M-YGR-XW",
+    "LensesStr": "BWY-M-GRW",
     "SignalType": 0,
     "FrontArsName": "123",
     "Left": false,
     "Double": false,
     "DoubleL": false,
     "NonAutoStop": false,
-    "Krons": "LNLD",
+    "Krons": "LD",
     "LetterK": true
   },
   "123b": {
@@ -1858,8 +1951,14 @@
         "NextSignal": "*"
       },
       {
+        "Switches": "PR3-",
+        "ARSCodes": "0004",
+        "NextSignal": "*"
+      },
+      {
         "Switches": "PR1-",
-        "ARSCodes": "004"
+        "ARSCodes": "004",
+        "NextSignal": "*"
       },
       {
         "RouteName": "PR1-V",
@@ -2057,6 +2156,11 @@
         "ARSCodes": "0467",
         "NextSignal": "*",
         "Lights": "4-42-42-1-1-3"
+      },
+      {
+        "Switches": "MK351-",
+        "Lights": "4",
+        "ARSCodes": "0"
       }
     ],
     "Name": "151",
@@ -2076,6 +2180,11 @@
         "ARSCodes": "046",
         "NextSignal": "*",
         "Lights": "4-42-42-1-1-3"
+      },
+      {
+        "Switches": "MK341-",
+        "Lights": "4",
+        "ARSCodes": "0"
       }
     ],
     "Name": "155",
@@ -2207,6 +2316,14 @@
         "PogashenieLights": "5-5-5-5-1",
         "ARSCodes": "22224",
         "NextSignal": "*",
+        "Manual": true
+      },
+      {
+        "RouteName": "MR1P",
+        "Switches": "MR1+,MR3+",
+        "Lights": "5",
+        "ARSCodes": "2",
+        "NextSignal": "FIX1",
         "Manual": true
       }
     ],

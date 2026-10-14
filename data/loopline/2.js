@@ -144,7 +144,7 @@ lines['loopline']['2'] = [
            { x: 2495 + 12.5 + 50 + 50 + 37.5 + 75, name: '124б', limit: 0 },
         ],
         signals: [
-            { joint: '152',  name: '148м',lenses:  'YGR',  autostop: 3, guard: 35, service: 35,             g: '148в', gmod: { Pole: 1 } },
+            { joint: '152',  name: '148м',lenses:  'YGR',  autostop: 3, guard: 35, service: 35,             g: '148в', gmod: { Pole: 1, Krons: "M" } },
             { joint: '148б', name: '146', lenses: 'YY-GR', autostop: 3, guard: 80, service: 70,             y: '146',  g: 'NEXT_y' },
             { joint: '146',  name: '144', lenses: 'YY-GR', autostop: 3, guard: 90, service: 80,             y: '144',  g: 'NEXT_y' },
             { joint: '144',  name: '142', lenses: 'YY-GR', autostop: 3, guard: 90, service: 80,             y: '142',  g: 'NEXT_g' },
@@ -213,7 +213,7 @@ lines['loopline']['2'] = [
             { joint: '114а', name:'КР-110',lenses:'YYG-Rw', autostop: 3, guard: 70, service: 35, left: true, y: '110', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '114б', name:'КР-108',lenses:'YYG-Rw', autostop: 1, guard: 70, service: 35, left: true, y: '108', yg: 'NEXT_y', g: 'NEXT_g' },
             { joint: '112',  name:'КР-106',lenses:'YYG-Rw', autostop: 1, guard: 70, service: 35, left: true, y: '106', g: 'NEXT_yg', gmod: { LetterK: true } },
-            { joint: '110',  name:'КР-104',lenses:'BYY-GRw',autostop: 1, guard: 70,                          yg:'104', gmod: { LetterK: true, Routes: [{ PogashenieLights: "5-1", Switches: "KROP+" }, { Switches: "KROP-", Lights: "5", ARSCodes: "2" }] } },
+            { joint: '110',  name:'КР-104',lenses:'BYY-GRw',autostop: 1, guard: 70, left: true,              yg:'104', gmod: { LetterK: true, Routes: [{ PogashenieLights: "5-1", Switches: "KROP+" }, { Switches: "KROP-", Lights: "5", ARSCodes: "2" }] } },
             { joint: '104',  name:'КР-102',lenses:   'X',   autostop: 3, guard: 35 },
             { joint: '110', name: 'ОП', lenses: 'ZR', autostop: 3, back: true, gmod: { name: 'KROP', Letter: "OP", DTM: true, noPogashenie: true } },    
         ],
@@ -262,9 +262,9 @@ lines['loopline']['2'] = [
                 gmod: { 
                     LensesStr: "YWY-2D-34-YGR-BW", Krons: "LNULN", ColorLens: true, LetterK: true, Pole: 3,
                     Routes: [
-                        { RouteName: "KR2-2", PogashenieLights: "6-7", Switches: "KR2+,KROP+,PRP+" }, 
+                        { RouteName: "KR2-2", PogashenieLights: "6-7", Switches: "KR2+,KROP+,PNP+" }, 
                         { Lights: "6", ARSCodes: "2", Switches: "KR2-" },
-                        { Lights: "6", ARSCodes: "2", Switches: "PRP-" },
+                        { Lights: "6", ARSCodes: "2", Switches: "PNP-" },
                         { Lights: "6", ARSCodes: "2", Switches: "KROP-" },
                         { RouteName: "KR2-3", Manual: true, EnRou: true, PRou: "3", NextSignal: "KRFIX4", Lights: "6-6-6-6-6-2", ARSCodes: "222224", PogashenieLights: "6-6-6-6-6-7", Switches: "KR2-,KR4-,KR5-,KROBDIR-" },
                         { RouteName: "KR2-4", Manual: true, EnRou: true, PRou: "4", NextSignal: "KRFIX4", Lights: "6-6-6-6-2", ARSCodes: "22224", PogashenieLights: "6-6-6-6-7", Switches: "KR2-,KR4+,KR6+,KR5+" },
@@ -299,7 +299,7 @@ lines['loopline']['2'] = [
         joints: [
            { x: -2.5, name: '224', limit: 0, gmod: {Kanava: true} },
            { x: 3514 -1.5 - 62.5 - 62.5 - 75 - 75 - 87.5 - 300 - 350 - 350 - 350 - 62.5 - 350 - 12.5 - 350 - 350 - 375 + 25 - 265, name: '222', limit: 60, later: { 40: -1, 60: 1 }, gmod: { Approve0: true, Routes: [{ PogashenieARS: "204" }] } },
-           { x: 3514 -1.5 - 62.5 - 62.5 - 75 - 75 - 87.5 - 300 - 350 - 350 - 350 - 62.5 - 350 - 12.5 - 350 - 350 - 375 + 25 - 265 + 52.5, name: '220', limit: 70, later: { 40: 2, 60: 1 }, gmod: { RouteNumber: "F", Routes: [{},{ Switches: "PN2-", ARSCodes: "4" }] } },
+           { x: 3514 -1.5 - 62.5 - 62.5 - 75 - 75 - 87.5 - 300 - 350 - 350 - 350 - 62.5 - 350 - 12.5 - 350 - 350 - 375 + 25 - 265 + 52.5, name: '220', limit: 70, later: { 40: 2, 60: 1 }, gmod: { RouteNumber: "F", Routes: [{},{ Switches: "PN2-", ARSCodes: "4", NextSignal: "*" }] } },
            { x: 3514 -1.5 - 62.5 - 62.5 - 75 - 75 - 87.5 - 300 - 350 - 350 - 350 - 62.5 - 350 - 12.5 - 350 - 350 - 375 + 25 - 265 + 52.5 + 62.5, name: '220а', limit: 70, later: { 40: 1 } },
            { x: 3514 -1.5 - 62.5 - 62.5 - 75 - 75 - 87.5 - 300 - 350 - 350 - 350 - 62.5 - 350 - 12.5 - 350 - 350 - 375 + 25 - 265 + 52.5 + 62.5 + 75 + 12.5, name: '220б', limit: 70 },
            { x: 3514 -1.5 - 62.5 - 62.5 - 75 - 75 - 87.5 - 300 - 350 - 350 - 350 - 62.5 - 350 - 12.5 - 350 - 350 - 375 + 25, name: '220в', limit: 70, gmod: { RouteNumber: "2" } },
@@ -325,17 +325,17 @@ lines['loopline']['2'] = [
            { x: 3514 + 1636 - 125 - 300 - 250 - 100 + 37.5 - 350 - 12.5 - 300, name: '194б', limit: 0 },
         ],
         signals: [
-            { joint: '222', name: 'ПН-220МГ', lenses: 'BWY-YGR-YW', autostop: 3, guard: 35, service: 35, g: '220в', 
+            { joint: '222', name: 'ПН-220МГ', lenses: 'YWY-YGR-BW', autostop: 3, guard: 35, service: 35, g: '220в', 
                 gmod: { 
-                    LensesStr: "BWY-2-F-L-YGR-YW-34-K", ColorLens: true, Pole: 4, OnPoleZ: 25,
+                    LensesStr: "YWY-2-F-L-YGR-BW-34-K", ColorLens: true, Pole: 4, OnPoleZ: 25,
                     Krons: "LNUSMNMN", Routes: [
-                        { RouteName: "PN2-2", PogashenieLights: "6-64-64-64-64-1", Switches: "PN2+,PN10+,PN8+,PNOP2+" },
+                        { RouteName: "PN2-2", PogashenieLights: "6-63-63-63-63-7", Switches: "PN2+,PN10+,PN8+,PNOP2+" },
                         { Lights: "6", Switches: "PN2-", ARSCodes: "2" },
-                        { Lights: "6-6-6-64", Switches: "PN10-", ARSCodes: "2-2-2-4", NextSignal: "*" },
-                        { RouteName: "PN2P", NextSignal: "*", Manual: true, Lights: "6-64", ARSCodes: "204", Switches: "PN2+" },
-                        { RouteName: "PN2-3", NextSignal: "PNFIX4", Manual: true, Lights: "6-6-6-6-6-2", PogashenieLights: "6-6-6-6-6-1", ARSCodes: "222224", Switches: "PN2-,PN4-,PN5-", EnRou: true, PRou: "3" },
-                        { RouteName: "PN2-4", NextSignal: "PNFIX4", Manual: true, Lights: "6-6-6-6-6-2", PogashenieLights: "6-6-6-6-6-1", ARSCodes: "222224", Switches: "PN2-,PN4+,PN5+,PN6+,PN10+,PN8+", EnRou: true, PRou: "4" },
-                        { RouteName: "PN2-4-2", NextSignal: "PNFIX4", Manual: true, Lights: "6-6-6-6-6-6-37", PogashenieLights: "6-6-6-6-6-6-1", ARSCodes: "2222224", Switches: "PN2-,PN4+,PN5+,PN6+,PN10-,PN8-", PRou: "2L" }
+                        { Lights: "6-6-6-63", Switches: "PN10-", ARSCodes: "2-2-2-4", NextSignal: "*" },
+                        { RouteName: "PN2P", NextSignal: "*", Manual: true, Lights: "6-63", ARSCodes: "204", Switches: "PN2+" },
+                        { RouteName: "PN2-3", NextSignal: "PNFIX4", Manual: true, Lights: "6-6-6-6-6-2", PogashenieLights: "6-6-6-6-6-7", ARSCodes: "222224", Switches: "PN2-,PN4-,PN5-", EnRou: true, PRou: "3" },
+                        { RouteName: "PN2-4", NextSignal: "PNFIX4", Manual: true, Lights: "6-6-6-6-6-2", PogashenieLights: "6-6-6-6-6-7", ARSCodes: "222224", Switches: "PN2-,PN4+,PN5+,PN6+,PN10+,PN8+,PRM-", EnRou: true, PRou: "4" },
+                        { RouteName: "PN2-4-2", NextSignal: "PNFIX4", Manual: true, Lights: "6-6-6-6-6-6-41", PogashenieLights: "6-6-6-6-6-6-7", ARSCodes: "2222224", Switches: "PN2-,PN4+,PN5+,PN6+,PN10-,PN8-", PRou: "2L" }
                     ] 
                 } 
             },
@@ -400,7 +400,7 @@ lines['loopline']['2'] = [
                     LensesStr: "YBY-M-YGR-XW", Krons: "MNLD", 
                     ColorLens: true, LetterK: true, OW: "[-7 0 15]", 
                     Routes: [
-                        { RouteName: "MR2-2", PogashenieLights: "6-6-6-2", Lights: "6-6-6-63-63-63-63-5", Switches: "MR2+,MR4+,MR6+,MR8+" },
+                        { RouteName: "MR2-2", PogashenieLights: "6-6-6-2", Lights: "6-6-6-63-63-63-5", Switches: "MR2+,MR4+,MR6+,MR8+" },
                         { Lights: "6", ARSCodes: "2", Switches: "MR2-" },
                         { Lights: "6", ARSCodes: "2", Switches: "MR8-" },
                         { RouteName: "MR2-4", PogashenieLights: "6-6-6-6-2", Lights: "6-6-6-6-14", ARSCodes: "22224", Switches: "MR8-,MR6-", NextSignal: "*", Manual: true }

@@ -1,0 +1,342 @@
+{
+  "1": {
+    "x": 1175,
+    "Name": "PN6",
+    "LensesStr": "YBY-RW",
+    "noPogashenie": 0,
+    "FrontArsName": "6",
+    "LetterB": "234A",
+    "Left": true,
+    "LetterK": true,
+    "Approve0": true,
+    "Routes": [
+      {
+				"ARSCodes": "2",
+				"Lights": "4"
+			},
+			{
+				"RouteName": "PN6-2", "Manual": true,
+				"NextSignal": "PNFIX6",
+				"Lights": "4-4-4-4-4-4-13-1b3", "PogashenieLights": "4-4-4-4-4-4-2",
+				"ARSCodes": "2222224", "Switches": "PN12-,DEPDIR2+"
+			},
+      {
+        "Switches": "DEPDIR2-",
+        "ARSCodes": "2", "Lights": "4"
+      }
+    ]
+  },
+  "2": {
+    "x": 1050,
+    "Name": "PN4",
+    "LensesStr": "YYG-RW",
+    "FrontArsName": "6A",
+    "LetterB": "6",
+    "Routes": [
+      {
+				"ARSCodes": "24444446", "NextSignal": "*",
+				"Lights": "4-42-42-42-42-42-42-13"
+			},
+      {
+        "Switches": "DEPDIR2-",
+        "ARSCodes": "2", "Lights": "4"
+      }
+    ]
+  },
+  "2back": {
+    "x": 1050,
+    "Name": "PN4Back",
+    "ARSOnly": true,
+    "DTM": true,
+    "Back": true,
+    "LensesStr": "",
+    "Routes": [
+      {
+				"ARSCodes": "04", "NextSignal": "*"
+			},
+      {
+        "Switches": "DEPDIR2+",
+        "ARSCodes": "1"
+      }
+    ]
+  },
+  "3": {
+    "x": 875,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "046"
+      },
+      {
+        "Switches": "DEPDIR2-",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "TC6B",
+    "ARSOnly": true,
+    "FrontArsName": "6B",
+    "LetterB": "6A",
+    "LensesStr": ""
+  },
+  "3back": {
+    "x": 875,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "046"
+      },
+      {
+        "Switches": "DEPDIR2+",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "TC6B_Back",
+    "ARSOnly": true,
+    "DTM": true,
+    "Back": true,
+    "LensesStr": ""
+  },
+  "4": {
+    "x": 750,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "046"
+      },
+      {
+        "Switches": "DEPDIR2-",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "TC6V",
+    "ARSOnly": true,
+    "FrontArsName": "6V",
+    "LetterB": "6B",
+    "LensesStr": ""
+  },
+  "4back": {
+    "x": 750,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "06"
+      },
+      {
+        "Switches": "DEPDIR2+",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "TC6V_Back",
+    "ARSOnly": true,
+    "Back": true,
+    "DTM": true,
+    "LensesStr": ""
+  },
+  "5": {
+    "x": 500,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "04"
+      },
+      {
+        "Switches": "DEPDIR2-",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "TC6G",
+    "ARSOnly": true,
+    "DTM": true,
+    "LensesStr": ""
+  },
+  "5back": {
+    "x": 500,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "04"
+      },
+      {
+        "Switches": "DEPDIR2+",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "TC6G_Back",
+    "FrontArsName": "6V",
+    "LetterB": "6G",
+    "ARSOnly": true,
+    "Back": true,
+    "LensesStr": ""
+  },
+  "6": {
+    "x": 387.5,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "004"
+      },
+      {
+        "Switches": "DEPDIR2-",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "TC6D",
+    "ARSOnly": true,
+    "DTM": true,
+    "LensesStr": ""
+  },
+  "6back": {
+    "x": 387.5,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "046", "Lights": "4-24-1-3"
+      },
+      {
+        "Switches": "DEPDIR2+",
+        "ARSCodes": "1", "Lights": "4", "PogashenieLights": "0"
+      }
+    ],
+    "Name": "2",
+    "FrontArsName": "6G",
+    "LetterB": "6D",
+    "Back": true,
+    "LetterK": true,
+    "Left": true,
+    "LensesStr": "YY-GR"
+  },
+  "7": {
+    "x": 237.5,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "04"
+      },
+      {
+        "Switches": "DEPDIR2-",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "TC6E",
+    "ARSOnly": true,
+    "Approve0": true,
+    "DTM": true,
+    "LensesStr": ""
+  },
+  "7back": {
+    "x": 237.5,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "24", "Lights": "4-24-1-13"
+      },
+      {
+        "Switches": "DEPDIR2+",
+        "ARSCodes": "1", "Lights": "4"
+      }
+    ],
+    "Name": "N2",
+    "FrontArsName": "6D",
+    "LetterB": "6E",
+    "Back": true,
+    "LetterK": true,
+    "Left": true,
+    "LensesStr": "YYG-RW"
+  },
+  "8": {
+    "x": 112.5,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "0"
+      },
+      {
+        "Switches": "DEPDIR2-",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "TC6J",
+    "ARSOnly": true,
+    "Approve0": true,
+    "DTM": true,
+    "LensesStr": ""
+  },
+  "8back": {
+    "x": 112.5,
+    "Routes": [
+      {
+        "ARSCodes": "2", "Lights": "2"
+      },
+      {
+        "RouteName": "N4-PA", "NextSignal": "2BACK", "Manual": true,
+        "ARSCodes": "24", "Lights": "2-1-1-1-1-1-1-1b", "Switches": "D2+,D4+,D6+,D8+,D10+,DEPDIR2-,DEPOTDIR-"
+      },
+      {
+        "RouteName": "N4-PB", "NextSignal": "2BACK", "Manual": true,
+        "ARSCodes": "24", "Lights": "2-1-1-1-1-1b", "Switches": "D2+,D4+,D6+,D8-,D5-,D7+,D9+,DEPDIR2-,DEPOTDIR-"
+      },
+      {
+        "RouteName": "N4-PV", "NextSignal": "2BACK", "Manual": true,
+        "ARSCodes": "24", "Lights": "2-1-1-1-1-1-1b", "Switches": "D2+,D4+,D6+,D8-,D5-,D7-,DEPDIR2-,DEPOTDIR-"
+      }
+    ],
+    "Name": "N4",
+    "Left": true,
+    "noPogashenie": true,
+    "LetterK": true,
+    "Pole": 1,
+    "FrontArsName": "6E",
+    "Back": true,
+		"NonAutoStop": true,
+    "LetterB": "6J",
+    "LensesStr": "YRW"
+  },
+  "9": {
+    "x": 37.5,
+    "Name": "E2",
+    "LensesStr": "BG-RW",
+    "noPogashenie": 0,
+    "FrontArsName": "2SP",
+    "LetterB": "6J",
+    "Approve0": true,
+    "LetterK": true,
+    "Routes": [
+      {
+				"ARSCodes": "2", "Lights": "3"
+			},
+			{
+				"RouteName": "E2-2", "Manual": true,
+				"NextSignal": "*",
+				"Lights": "3-3-3-3-3-3-2", "PogashenieLights": "3-3-3-3-3-3-1",
+				"ARSCodes": "2222220", "Switches": "DEPDIR2+"
+			}
+    ]
+  },
+  "10": {
+    "x": 1219,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "4"
+      }
+    ],
+    "Name": "PNFIX8",
+    "Back": true,
+    "ARSOnly": true,
+    "DTM": true,
+    "LensesStr": ""
+  },
+  "11": {
+    "x": 7,
+    "Routes": [
+      {
+        "NextSignal": "*",
+        "ARSCodes": "1"
+      }
+    ],
+    "Name": "2SP",
+    "ARSOnly": true,
+    "DTM": true,
+    "LensesStr": ""
+  }
+}

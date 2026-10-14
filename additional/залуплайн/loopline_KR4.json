@@ -51,7 +51,7 @@
     "SignalType": 0
   },
   "68": {
-    "x": 85,
+    "x": 87,
     "Routes": [
       {
         "NextSignal": "*",
@@ -66,7 +66,7 @@
     "SignalType": 0
   },
   "69": {
-    "x": 196,
+    "x": 188,
     "Routes": [
       {
         "NextSignal": "*",
@@ -94,7 +94,7 @@
     "SignalType": 8
   },
   "78": {
-    "x": 85,
+    "x": 87,
     "Name": "KR2", 
     "LensesStr": "BW-12-RW", 
     "FrontArsName": "4",
