@@ -112,7 +112,7 @@ lines['crossline-redux_pony10']['2'] = [
                 gmod: { 
                     Pole: 1, SignalType: 8, 
                     Routes:[
-                        { RouteName: "OL2-2", Rezab1: "5-1", Switches: "OL2+" },
+                        { RouteName: "OL2-2", PogashenieLights: "5-1", Switches: "OL2+" },
                         { Lights: "5", ARSCodes: "2", Switches: "OL2-" }
                     ] 
                 } 
@@ -222,7 +222,7 @@ lines['crossline-redux_pony10']['2'] = [
             { joint: '156г', name: 'РЕ-150', lenses: 'YYG-Rw', guard: 70, autostop: 1, shift: 5, left: true, y: '150', yg: 'NEXT_y', g: 'NEXT_g', },
             { joint: '154', name: 'РЕ-148', lenses: 'BYY-GRw', guard: 70, autostop: 1, left: true, y: '148', g: 'NEXT_yg', 
                 gmod: {Routes:[
-                    { Rezab1: "5-1", RouteName: "RE2-2", Switches: "RE2+" },
+                    { PogashenieLights: "5-1", RouteName: "RE2-2", Switches: "RE2+" },
                     { Lights: "5", ARSCodes: "2", Switches: "RE2-" }
                 ]} 
             },
@@ -272,7 +272,7 @@ lines['crossline-redux_pony10']['2'] = [
             { joint: '136', name: 'ОК-132', lenses: 'BYY-GRw', guard: 70, autostop: 1, y: '132', g: 'NEXT_yg', 
                 gmod: { 
                     Routes:[
-                        { RouteName: "OK2-2", Rezab1: "5-1", Switches: "OK2+" },
+                        { RouteName: "OK2-2", PogashenieLights: "5-1", Switches: "OK2+" },
                         { Lights: "5", ARSCodes: "2", Switches: "OK2-" }
                     ]
                 } 
@@ -410,7 +410,7 @@ lines['crossline-redux_pony10']['2'] = [
             { joint: '1104', name: 'ПХ-102', lenses: 'YGR-I', guard: 60, autostop: 1, shift: 15, y: '102а', g: 'NEXT_g', 
                 gmod: {  OW: "[-8 0 0]", Krons: "MN", Led: true, 
                     Routes:[
-                        { Rezab1: "3-2", RouteName: "PH2-2", Switches: "PH2+" },
+                        { PogashenieLights: "3-2", RouteName: "PH2-2", Switches: "PH2+" },
                         { Lights: "3", ARSCodes: "2", Switches: "PH2-" } 
                     ] 
                 } 
@@ -525,9 +525,9 @@ lines['crossline-redux_pony10']['2'] = [
             { joint: '82', name: '80', lenses: 'YGR', noRY: true, guard: 80, autostop: 1, y: '80б', g: 'NEXT_y', gmod: { Pole: 1, Led: true } },
             { joint: '80а', name: 'МЖ-78', lenses: 'YGR-I', noRY: true, guard: 80, autostop: 3, shift: 15, y: '78', yg: 'NEXT_y', g: 'NEXT_yg', gmod: { Pole: 1, Krons: "LN", Led: true } },
             { joint: '80б', name: 'МЖ-76', lenses: 'YGR-I', noRY: true, guard: 75, autostop: 1, y: '76', yg: 'NEXT_y', g: 'NEXT_g', gmod: { Pole: 1, Krons: "LN", Led: true } },
-            { joint: '78', name: 'МЖ-74Д', lenses: 'BYYGRw', guard: 70, autostop: 1, shift: 18, y: '74д', g: 'NEXT_yg', gmod: { Pole: 1, SignalType: 8, Routes:[{Rezab1: "5-1"}]} }, 
+            { joint: '78', name: 'МЖ-74Д', lenses: 'BYYGRw', guard: 70, autostop: 1, shift: 18, y: '74д', g: 'NEXT_yg', gmod: { Pole: 1, SignalType: 8, Routes:[{PogashenieLights: "5-1"}]} }, 
             { joint: '76', name: 'МЖ-74', lenses: 'YYGRw', guard: 60, autostop: 1, yg: '74', gmod: { Pole: 1, SignalType: 8 } },
-            { joint: '74', name: 'МЖ-72', lenses: 'WY-GRw', guard: 35, autostop: 3, 
+            { joint: '74', name: 'МЖ-72К', lenses: 'WY-GRw', guard: 35, autostop: 3, 
                 gmod: { 
                     Krons: "LNLNLN", LensesStr: "WY-34-GR-I-K-2", Led: true, noPogashenie: 0,
                     Routes: [
