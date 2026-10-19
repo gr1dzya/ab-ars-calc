@@ -266,6 +266,8 @@ lines['loopline']['2'] = [
                         { Lights: "6", ARSCodes: "2", Switches: "KR2-" },
                         { Lights: "6", ARSCodes: "2", Switches: "PNP-" },
                         { Lights: "6", ARSCodes: "2", Switches: "KROP-" },
+                        { Switches: "KR2-,KR4-,KR5-", Lights: "6", ARSCodes: "2", EnRou: true, PRou: "3" },
+                        { Switches: "KR2-,KR4+,KR5+", Lights: "6", ARSCodes: "2", EnRou: true, PRou: "4" },
                         { RouteName: "KR2-3", Manual: true, EnRou: true, PRou: "3", NextSignal: "KRFIX4", Lights: "6-6-6-6-6-2", ARSCodes: "222224", PogashenieLights: "6-6-6-6-6-7", Switches: "KR2-,KR4-,KR5-,KROBDIR-" },
                         { RouteName: "KR2-4", Manual: true, EnRou: true, PRou: "4", NextSignal: "KRFIX4", Lights: "6-6-6-6-2", ARSCodes: "22224", PogashenieLights: "6-6-6-6-7", Switches: "KR2-,KR4+,KR6+,KR5+" },
                         { RouteName: "DEPOT4", Manual: true, PRou: "3D", NextSignal: "KRFIX4", Lights: "6-6-6-6-6-14", ARSCodes: "222224", PogashenieLights: "6-6-6-6-6-7", Switches: "KR2-,KR4-,KR5-,KROBDIR-,DEPDIR3-" }
@@ -331,6 +333,9 @@ lines['loopline']['2'] = [
                     Krons: "LNUSMNMN", Routes: [
                         { RouteName: "PN2-2", PogashenieLights: "6-63-63-63-63-7", Switches: "PN2+,PN10+,PN8+,PNOP2+" },
                         { Lights: "6", Switches: "PN2-", ARSCodes: "2" },
+                        { Switches: "PN2-,PN4-,PN5-", Lights: "6", ARSCodes: "2", EnRou: true, PRou: "3" },
+                        { Switches: "PN2-,PN4+,PN5+", Lights: "6", ARSCodes: "2", EnRou: true, PRou: "4" },
+                        { Switches: "PN2-,PN4+,PN5+,PN10-,PN8-", Lights: "6", ARSCodes: "2", EnRou: true, PRou: "2L" },
                         { Lights: "6-6-6-63", Switches: "PN10-", ARSCodes: "2-2-2-4", NextSignal: "*" },
                         { RouteName: "PN2P", NextSignal: "*", Manual: true, Lights: "6-63", ARSCodes: "204", Switches: "PN2+" },
                         { RouteName: "PN2-3", NextSignal: "PNFIX4", Manual: true, Lights: "6-6-6-6-6-2", PogashenieLights: "6-6-6-6-6-7", ARSCodes: "222224", Switches: "PN2-,PN4-,PN5-", EnRou: true, PRou: "3" },
@@ -402,7 +407,7 @@ lines['loopline']['2'] = [
                     Routes: [
                         { RouteName: "MR2-2", PogashenieLights: "6-6-6-2", Lights: "6-6-6-63-63-63-5", Switches: "MR2+,MR4+,MR6+,MR8+" },
                         { Lights: "6", ARSCodes: "2", Switches: "MR2-" },
-                        { Lights: "6", ARSCodes: "2", Switches: "MR8-" },
+                        { Lights: "6", ARSCodes: "2", Switches: "MR8-", EnRou: true, PRou: "P" },
                         { RouteName: "MR2-4", PogashenieLights: "6-6-6-6-2", Lights: "6-6-6-6-14", ARSCodes: "22224", Switches: "MR8-,MR6-", NextSignal: "*", Manual: true }
                     ]
                 }

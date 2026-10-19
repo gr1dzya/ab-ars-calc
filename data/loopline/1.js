@@ -231,7 +231,7 @@ lines['loopline']['1'] = [
             { x: 2777 - 7.5 + 62.5 + 50 + 62.5 + 75, name: '123б', limit: 0 },
         ],
         signals: [
-            { joint: '231',  name: '101М',lenses: 'YY-GR', guard: 35, service: 80, autostop: 3,          y: '101в', g: 'NEXT_y', gmod: { Krons: "MM" } },  
+            { joint: '231',  name: '101М',lenses: 'YY-GR', guard: 35, service: 80, autostop: 3,          y: '101в', g: 'NEXT_y', gmod: { Krons: "MM", LetterK: true } },  
             { joint: '101в', name: '103', lenses: 'YY-GR', guard: 80, service: 80, autostop: 3,          y: '103а',  g: 'NEXT_g' },  
             { joint: '103',  name: '105', lenses:  'YGR',  guard: 80, service: 80, autostop: 3,          g: '105' },  
             { joint: '105',  name: '107', lenses: 'YY-GR', guard: 80, service: 80, autostop: 3,          y: '107а', g: 'NEXT_y' },  
@@ -412,7 +412,7 @@ lines['loopline']['1'] = [
                     LensesStr: "BWY-M-GRW", Krons: "LNL", OW: "[-7 0 0]", 
                     Routes: [
                         { RouteName: "MR1-1", Switches: "MR1+,MR3+", PogashenieLights: "5-5-1" },
-                        { Switches: "MR1-", Lights: "5", ARSCodes: "2" },
+                        { Switches: "MR1-", Lights: "5", ARSCodes: "2", EnRou: true, PRou: "P" },
                         { RouteName: "MR1-3", Switches: "MR1-,MR3-", Lights: "5-5-5-5-2", PogashenieLights: "5-5-5-5-1", ARSCodes: "22224", NextSignal: "*", Manual: true },
                         { RouteName: "MR1P", Switches: "MR1+,MR3+", Lights: "5", ARSCodes: "2", NextSignal: "FIX1", Manual: true }
                     ] 
