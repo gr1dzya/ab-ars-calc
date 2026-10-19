@@ -388,3 +388,6 @@ importSignalData("signals-loopline-3.json", 8, false)
 --importSignalData("SAMARA_2ADD.json", 2, false)
 
  --    importSignalData("signals-kalina-1.json", 1, true)
+
+--importSignalData("signals-neocrimson_pony10_new-1.json", 1, true)
+--importSignalData("signals-neocrimson_pony10_new-2.json", 2, true)
