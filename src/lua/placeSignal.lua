@@ -1,15 +1,18 @@
  --local R50_MODE = false
 --local RAYS = false
 local NEW_ERA = true
-local pogashenie = true
+local pogashenie = false
 local TwoToSix = false
-local DneprPogash = true
-local sigType = 6
+local DneprPogash = false
+local sigType = 7
 local PogashenieCommand = 'suka'
 
 local angle_mirror = Angle(0, 180, 0)
 
---[[local sokolka_st = {
+local surface = true
+local SOKOLKA = false
+
+local sokolka_st = {
     TP211 = "BWY-GRW",
     TP205 = "BG-RW",
     TP3 = "BW-RW-M",
@@ -33,7 +36,7 @@ local angle_mirror = Angle(0, 180, 0)
     SP163M = "BWY-GRW",
     SPD = "BYW-YRW",
     SPV = "BW-RW-M",
-}]]
+}
 
 local function getSignalTrackRerailTrace(trackID, x, isBack)
     local downVector = Vector(0, 0, -100) -- было -300
@@ -164,11 +167,11 @@ local function placeSignal(position, angles, options)
 	if options.RouteNumberSetup then ent.RouteNumberSetup = options.RouteNumberSetup end
     if options.NonAutoStop then ent.NonAutoStop = options.NonAutoStop end
 	if options.RouteNumber then ent.RouteNumber = options.RouteNumber end
-    --if sokolka_st[options.Name] and not NEW_ERA then 
-    --    ent.LensesStr = sokolka_st[options.Name]
-    --else
+    if SOKOLKA and sokolka_st[options.Name] and not NEW_ERA then 
+        ent.LensesStr = sokolka_st[options.Name]
+    else
         ent.LensesStr = options.LensesStr
-    --end
+    end
     if not NEW_ERA and string.sub(options.Name, 1, 1) == 'M' then ent.LensesStr = "RR" end
 	if options.Approve0 then ent.Approve0 = options.Approve0 end
     if options.ARSOnly then ent.ARSOnly = options.ARSOnly end
@@ -177,7 +180,7 @@ local function placeSignal(position, angles, options)
     if options.Double then ent.Double = options.Double end
     if options.Left then ent.Left = options.Left end
     if not NEW_ERA and options.Kanava then ent.Left = true end
-	if TwoToSix then ent.TwoToSix = TwoToSix end
+	if TwoToSix then ent.TwoToSix = true end
 	ent.Routes = options.Routes --({
     --    {
     --        NextSignal = "*",
@@ -189,13 +192,19 @@ local function placeSignal(position, angles, options)
     if NEW_ERA then 
         ent.Params = editParams(options)
         ent.SignalType = options.SignalType ~= 0 and options.SignalType or sigType 
+        if SOKOLKA and (ent.Name == '162M' or ent.Name == '171M') then ent.Params.Street = true end
     else 
         ent.SignalType = 0 
+    end
+
+    if surface then 
+        ent.Routes[1].PogashenieARS = '1' 
+        ent.Params.PogashenieCommand = PogashenieCommand
     end
     
     if NEW_ERA and not options.noPogashenie and (not options.ARSOnly or DneprPogash) and pogashenie then
         ent.Params.PogashenieCommand = PogashenieCommand
-        --ent.Params.PogashenieEnabled = false
+        
         if not ent.Routes[1].PogashenieLights and not options.ARSOnly then 
             ent.Routes[1].PogashenieLights = "0" 
         end
@@ -353,7 +362,7 @@ importSignalData("sokolka_TP3.json", 7, true)]]
  --importSignalData("signals-imagine-1_additional.json", 9, false)
  --importSignalData("signals-imagine-2_additional.json", 1, false)
 
-importSignalData("signals-loopline-1.json", 1, true)
+--[[importSignalData("signals-loopline-1.json", 1, true)
 importSignalData("loopline_ADD1.json", 1, false)
 importSignalData("loopline_PN3.json", 7, true)
 importSignalData("loopline_PN4.json", 6, true)
@@ -364,7 +373,7 @@ importSignalData("loopline_VETKA1.json", 8, true)
 importSignalData("loopline_VETKA2.json", 5, true)
 importSignalData("signals-loopline-2.json", 2, true)
 importSignalData("loopline_ADD2.json", 2, false)
-importSignalData("signals-loopline-3.json", 8, false)
+importSignalData("signals-loopline-3.json", 8, false)]]
 
 --             importSignalData("signals-crossline-redux_pony10-1.json", 6, true)
 --             importSignalData("signals-crossline-redux_pony10-2.json", 7, true)
@@ -378,10 +387,14 @@ importSignalData("signals-loopline-3.json", 8, false)
 --             importSignalData("Redux_PH3.json", 3, false)
 --             importSignalData("Redux_ML3.json", 9, false)
 --             importSignalData("Redux_ML4.json", 10, false)
---importSignalData("signals-surface-1.json", 7, true)
- --importSignalData("signals-surface-2.json", 8, true)
- --importSignalData("signals-surface-1_additional.json", 7, false)
- --importSignalData("signals-surface-2_additional.json", 8, false)
+
+
+importSignalData("signals-surface-1.json", 7, true)
+importSignalData("signals-surface-2.json", 8, true)
+importSignalData("signals-surface-1_additional.json", 7, false)
+importSignalData("signals-surface-2_additional.json", 8, false)
+
+
 --importSignalData("signals-samara-1.json", 1, true)
 --importSignalData("signals-samara-2.json", 2, true)
 --importSignalData("SAMARA_1ADD.json", 1, false)
