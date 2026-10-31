@@ -295,7 +295,7 @@ lines['neocrimson_pony10']['2'] = [
         name: 'Пионерская',
         trackLength: 1068,
         arsDrawBreakpoint: 6,
-        arsAllSteps: true,
+        arsAllSteps: false,
         tStay: 0,
         K: 1.5,
         curves: {

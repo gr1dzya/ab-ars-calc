@@ -425,7 +425,7 @@ lines['crossline-redux_pony10']['2'] = [
     {
         name: 'Политехническая',
         arsDrawBreakpoint: 10,
-        arsAllSteps: true,
+        arsAllSteps: false,
         tStay: 25,
         K: 1.5,
         interval: 44,
