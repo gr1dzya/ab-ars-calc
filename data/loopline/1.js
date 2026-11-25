@@ -154,7 +154,14 @@ lines['loopline']['1'] = [
         ],
         signals: [
             { joint: '211', name: 'ПН-213Г',lenses: 'YG-Rw', guard: 35, service: 80, autostop: 1, g: '215', gmod: { Krons: "MNM", LensesStr: "YG-K-RW" } },   
-            { joint: '213г',name: 'ПН-215',lenses: 'YBG-Rw', guard: 80, service: 75, autostop: 3, noRY: true, y: '215', g: 'NEXT_g', gmod: { Routes: [{ PogashenieLights: "4-4-4-2" }, { Switches: "PN7-", Lights: "4-4-4-4-13", PogashenieLights: "4-4-4-4-1", ARSCodes: "22228", NextSignal: "*" }] } },   
+            { joint: '213г',name: 'ПН-215',lenses: 'YBG-Rw', guard: 80, service: 75, autostop: 3, noRY: true, y: '215', g: 'NEXT_g', 
+                gmod: { 
+                    Routes: [
+                        { PogashenieLights: "4-4-4-2" }, 
+                        { Switches: "PN7-", Lights: "4-4-4-4-13", PogashenieLights: "4-4-4-4-2", ARSCodes: "22228", NextSignal: "*" }
+                    ] 
+                } 
+            },   
             { joint: '215', name: 'ПН-217',lenses: 'BYG-YYR-ZW', guard: 80, service: 75, autostop: 3, left: true, g: '217а',
                 gmod: { 
                     LetterK: true, ColorLens: true, LensesStr: "BYG-M-YYR-XW", Krons: "LNLD", 
