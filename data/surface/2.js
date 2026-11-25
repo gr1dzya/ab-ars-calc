@@ -258,7 +258,7 @@ lines['surface']['2'] = [
             { x: 10.5, name: '79', limit: 0 },
             //{ x: 10.5 + 50, name: 'KUFIX4', limit: 60 }, // apr
             { x: 10.5 + 50, name: '1811', limit: 60 }, //, gmod: { DTM: true, Routes: [{Switches: "KU3+"}, {Switches: "KU3-", NextSignal: "KUFIX4" }] }
-            { x: 10.5 + 50 + 75, name: '1813', limit: 60 },
+            { x: 10.5 + 50 + 75, name: '1813', limit: 60, gmod: { Routes: [{}, {Switches: "KU1-", ARSCodes: "4", RezabARS: "1" }, {Switches: "KU3-", ARSCodes: "4", RezabARS: "1" }] } },
             { x: 10.5 + 50 + 75 + 100, name: '1815', limit: 60 },
             { x: 10.5 + 50 + 75 + 100 + 112.5, name: '1817', limit: 60 },
             //{ x: 10.5 + 50 + 75 + 100 + 112.5 + 125, name: '1819', limit: 60 },
@@ -286,7 +286,7 @@ lines['surface']['2'] = [
             { x: 1223 - 12.5 - 50, name: '1877', limit: 60 },
             { x: 1223 - 12.5, name: '1879', limit: 60 },
             { x: 1223 + 50, name: '1911', limit: 40 },
-            { x: 1223 + 50 + 37.5, name: '1913', limit: 40 },
+            { x: 1223 + 50 + 50, name: '1913', limit: 40, gmod: { Routes: [{},{ARSCodes: "4", RezabARS: "1", Switches: "AK1-"}] } },
             { x: 1223 + 50 + 75, name: '1915', limit: 0 },
             { x: 1223 + 50 + 50 + 75, name: '1917', limit: 0 },
             { x: 1223 + 50 + 50 + 50 + 75, name: '1921', limit: 0 },
@@ -300,15 +300,15 @@ lines['surface']['2'] = [
             { joint: '1871', name: 'АК-1811', lenses: 'YRGW',  autostop: 1, noRY: true, guard: 60, y: '1879', yg: 'NEXT_y', g: 'NEXT_g', gmod: { Pole: 3, SignalType: 8, Street: true } },
             { joint: '1873', name: 'АК-1813', lenses: 'BYGRW', autostop: 1, noRY: true, guard: 60, y: '1911', g: 'NEXT_yg', gmod: { Pole: 3, SignalType: 8, Street: true, ColorLens: true } },
             { joint: '1875', name: 'АК-1815', lenses: 'YRGW',  autostop: 1, noRY: true, guard: 60, yg: '1913', gmod: { Pole: 3, SignalType: 8, Street: true } },
-            { joint: '1911', name: 'АК-191', lenses: 'BWZZ-RWM', autostop: 3, noRY: true, guard: 35, 
+            { joint: '1911', name: 'АК-191', lenses: 'BWYZ-RWM', autostop: 3, noRY: true, guard: 35, 
                 gmod: 
                 { 
                     Pole: 3, SignalType: 8, ColorLens: true, Street: true, 
                     Routes: [
-                        {Switches: "AK1+", RouteName: "AK1P", Lights: "5"}, 
-                        {Switches: "AK1+", NextSignal: "*", RouteName: "AK1-1", Manual: true, EnRou: true, PRou: "1", Lights: "5-5-5-5-5-2"}, 
-                        { Switches: "AK1-,AK3+,AK5+", NextSignal: "AKFIX3", Manual: true, EnRou: true, PRou: "3", RouteName: "AK1-3", Lights: "5-5-5-5-2" }, 
-                        { Switches: "AK1-,AK3-,AK6-", NextSignal: "AKFIX3", Manual: true, EnRou: true, PRou: "4", RouteName: "AK1-4", Lights: "5-5-5-5-2" }
+                        { Switches: "AK1+", RouteName: "AK1P", Lights: "5-53" }, 
+                        { Switches: "AK1+", NextSignal: "*", RouteName: "AK1-1", Manual: true, EnRou: true, PRou: "1", Lights: "5-5-5-5-5-2", ARSCodes: "222224", RezabARS: "1" }, 
+                        { Switches: "AK1-,AK3+,AK5+", NextSignal: "AKFIX3", Manual: true, EnRou: true, PRou: "3", RouteName: "AK1-3", Lights: "5-5-5-5-2", ARSCodes: "22224", RezabARS: "1" }, 
+                        { Switches: "AK1-,AK3-,AK6-", NextSignal: "AKFIX3", Manual: true, EnRou: true, PRou: "4", RouteName: "AK1-4", Lights: "5-5-5-5-2", ARSCodes: "22224", RezabARS: "1" }
                     ] 
                 } 
             },
